@@ -86,7 +86,7 @@ public class Admin_EnemyStatus : MonoBehaviour
             adminEnemy = null;
             adminEnemyD = null;
         }
-        else if (type == EnemyType.Golem)
+        else if (type == EnemyType.IronDog)
         {
             adminEnemyD = GetComponent<Admin_Enemy_D>();
             adminEnemy = null;
