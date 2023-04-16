@@ -44,6 +44,7 @@ public class Admin_EnemyStatus : MonoBehaviour
 
     private Admin_Enemy adminEnemy;
     private Admin_Enemy_G adminEnemyG;
+    private Admin_Enemy_D adminEnemyD;
     private AudioSource audioSource;
     private Admin admin;
     [HideInInspector]
@@ -57,7 +58,8 @@ public class Admin_EnemyStatus : MonoBehaviour
     private enum EnemyType
     {
         Ghost,
-        Golem
+        Golem,
+        IronDog
     }
 
     void Awake()
@@ -76,11 +78,19 @@ public class Admin_EnemyStatus : MonoBehaviour
         {
             adminEnemy = GetComponent<Admin_Enemy>();
             adminEnemyG = null;
+            adminEnemyD = null;
         }
         else if(type == EnemyType.Golem)
         {
             adminEnemyG = GetComponent<Admin_Enemy_G>();
             adminEnemy = null;
+            adminEnemyD = null;
+        }
+        else if (type == EnemyType.Golem)
+        {
+            adminEnemyD = GetComponent<Admin_Enemy_D>();
+            adminEnemy = null;
+            adminEnemyG = null;
         }
         
         appearScript = GetComponentInParent<AppearScript>();
@@ -144,6 +154,32 @@ public class Admin_EnemyStatus : MonoBehaviour
             }
             audioSource.PlayOneShot(audioClip[0]);
         }
+        else if(type == EnemyType.IronDog)
+        {
+            if(adminEnemyD.TalkEventFlag == true || HP <= 0) return;
+            HP -= damage;
+            // NowHPRatio = HP/HPStatus;
+            HPSlider.value = HP/HPStatus;
+
+            // if(adminEnemyG.LockedFlag == true)
+            // {
+            //     admin.ChangeEnemyHP(NowHPRatio);
+            // }
+            if(adminEnemyD.invincibleFlag == false && HP > 0)
+            {
+                adminEnemyD.SetState(Admin_Enemy_D.EnemyState.Damage);
+            }
+            else if(HP<=0)
+            {
+                adminEnemyD.SetState(Admin_Enemy_D.EnemyState.Die);
+                if(adminEnemyD.LockedFlag == true)
+                {
+                    admin.LockOff();
+                }
+            }
+            audioSource.PlayOneShot(audioClip[0]);
+        }
+
 
     }
 
@@ -170,6 +206,11 @@ public class Admin_EnemyStatus : MonoBehaviour
             adminEnemyG.LockedFlagImage.enabled = true;
             adminEnemyG.LockedFlag = true;
         }
+        else if(type == EnemyType.IronDog)
+        {
+            adminEnemyD.LockedFlagImage.enabled = true;
+            adminEnemyD.LockedFlag = true;
+        }
     }
     public void LockedOff()
     {
@@ -182,6 +223,11 @@ public class Admin_EnemyStatus : MonoBehaviour
         {
             adminEnemyG.LockedFlagImage.enabled = false;
             adminEnemyG.LockedFlag = false;
+        }
+        else if(type == EnemyType.IronDog)
+        {
+            adminEnemyD.LockedFlagImage.enabled = false;
+            adminEnemyD.LockedFlag = false;
         }
     }
 
@@ -196,6 +242,10 @@ public class Admin_EnemyStatus : MonoBehaviour
         {
             i = adminEnemyG.TalkEventFlag;
         }
+        else if(type == EnemyType.IronDog)
+        {
+            i = adminEnemyD.TalkEventFlag;
+        }
         return i;
     }
 
@@ -208,6 +258,10 @@ public class Admin_EnemyStatus : MonoBehaviour
         else if(type == EnemyType.Golem)
         {
             adminEnemyG.Reset();
+        }
+        else if(type == EnemyType.IronDog)
+        {
+            adminEnemyD.Reset();
         }
         HP = HPStatus;
         HPSlider.value = 1;

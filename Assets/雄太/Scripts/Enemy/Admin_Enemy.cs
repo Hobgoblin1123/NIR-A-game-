@@ -116,6 +116,7 @@ public class Admin_Enemy : MonoBehaviour
         invinciblecount = 0;
         animSpeedHash = Animator.StringToHash("Speed");
         StartPosition = transform.position;
+        enemyStatus.HPSlider.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
