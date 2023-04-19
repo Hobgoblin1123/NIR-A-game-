@@ -17,6 +17,8 @@ public class Admin_Date : MonoBehaviour
     private float SaveTime = 30;
     [SerializeField]
     private Vector3 FirstCharaPOsition;
+    [SerializeField]
+    public bool AutoSave = true;
     
 
     private void Awake() 
@@ -61,12 +63,16 @@ public class Admin_Date : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if(time > SaveTime)
+        if(AutoSave == true)
         {
-            SaveDate();
-            time = 0;
+            time += Time.deltaTime;
+            if(time > SaveTime)
+            {
+                SaveDate();
+                
+            }
         }
+        
     }
 
     public void SaveDate()
@@ -85,6 +91,7 @@ public class Admin_Date : MonoBehaviour
         PlayerPrefs.SetFloat("TimeRote" , rotatoSun.rote);
 
         PlayerPrefs.Save();
+        time = 0;
         Debug.Log("データをセーブしました");
     }
 

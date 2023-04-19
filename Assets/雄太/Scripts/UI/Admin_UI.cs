@@ -16,6 +16,10 @@ public class Admin_UI : MonoBehaviour
     [SerializeField]
     private Text FPS;
     private float time;
+    [SerializeField]
+    private Admin_Date admin_Date;
+    [SerializeField]
+    private Toggle toggle;
     
     // Start is called before the first frame update
     void Start()
@@ -195,5 +199,16 @@ public class Admin_UI : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+    }
+
+    public void Save()
+    {
+        admin_Date.SaveDate();
+        Admin_Date.SaveDateOther(0);
+    }
+
+    public void ChangeAutoSave()
+    {
+        admin_Date.AutoSave = toggle.isOn;
     }
 }
