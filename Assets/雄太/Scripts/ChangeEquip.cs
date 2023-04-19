@@ -39,6 +39,7 @@ public class ChangeEquip : MonoBehaviour
         }
 
         Admin.WeaponNumber = equipment;
+        // Admin_Date.SaveDateOther(3);
         admin.ReturnAccess();
     }
 }

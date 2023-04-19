@@ -37,8 +37,6 @@ public class Admin : MonoBehaviour
         // private Slider EnemyHP;
         [SerializeField]
         private RectTransform SelectEdge;
-        [SerializeField]
-        private Admin_Date adminDate;
 
 
     [Space(8)]
@@ -86,6 +84,8 @@ public class Admin : MonoBehaviour
     {
         CharaLevel = PlayerPrefs.GetInt("LEVEL");
         MainEXP = PlayerPrefs.GetFloat("EXP");
+        MainWeapon = PlayerPrefs.GetInt("MainW");
+        SubWeapon = PlayerPrefs.GetInt("SubW");
         HPStatus = 80 + CharaLevel*20;
         AttackStatus = 8 + CharaLevel*2;
         LevelUPEXP = 10 * CharaLevel * CharaLevel + 10 * CharaLevel;
@@ -163,7 +163,8 @@ public class Admin : MonoBehaviour
         animator.SetFloat("2Speed", 0);
         animator.SetBool("1Idle", false);
         animator.SetBool("2Idle", false);
-        characterScript.SetState(Move.MyState.Normal);        
+        characterScript.SetState(Move.MyState.Normal); 
+               
 
     }
 
@@ -183,7 +184,9 @@ public class Admin : MonoBehaviour
             characterScript.LevelUP();
             Debug.Log("キャラレベル　　" + CharaLevel);
         }
-        adminDate.SaveDate();
+
+
+        Admin_Date.SaveDateOther(1);
         //UIにステータスを表示する
         Statust_UI[0].text = string.Format("MaxHP " + HPStatus );
         Statust_UI[1].text = string.Format("Attack Power " + AttackStatus);
@@ -270,6 +273,7 @@ public class Admin : MonoBehaviour
         MainWeapon = number;
         ReturnAccess();
         changeEquip.ChangeWeapon();
+        Admin_Date.SaveDateOther(2);
     }
 
     public void ChangeSubWeapon(int number)
@@ -277,6 +281,7 @@ public class Admin : MonoBehaviour
         SubWeapon = number;
         ReturnAccess();
         changeEquip.ChangeWeapon();
+        Admin_Date.SaveDateOther(2);
     }
 
     public void ChangeAIMSpeed()

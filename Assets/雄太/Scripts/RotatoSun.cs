@@ -9,19 +9,24 @@ public class RotatoSun : MonoBehaviour
     [SerializeField]
     private float time = 0.1f;
     [SerializeField]
-    private float rote; //保存すべき変数 && transform.rotation.eulerAngeles
+    public float rote; //保存すべき変数 && transform.rotation.eulerAngeles
     [SerializeField]
     private float timescale =1;
     [SerializeField]
     private Material[] skyBox;
-    private Light light;
+    private Light light; 
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        rote = PlayerPrefs.GetFloat("TimeRote");
+        var r = Vector3.zero;
+        r.x = PlayerPrefs.GetFloat("Sun_x");
+        r.y = PlayerPrefs.GetFloat("Sun_y");
+        r.z = PlayerPrefs.GetFloat("Sun_z");
         light = GetComponent<Light>();
-        rote = 0;
         transform.rotation = new Quaternion(0,0,0,0);
-        transform.Rotate(9.691f , -111.762f , -49.3f);
+        transform.Rotate(r);
         light.intensity = 0.85f;
 
     }
@@ -82,5 +87,11 @@ public class RotatoSun : MonoBehaviour
             transform.Rotate(9.691f , -111.762f , -49.3f);
             rote = 0;
         }
+    }
+    public void FirstRotate()
+    {
+        transform.rotation = new Quaternion(0,0,0,0);
+        transform.Rotate(9.691f , -111.762f , -49.3f);
+        rote = 0;
     }
 }
