@@ -49,6 +49,11 @@ public class Move : MonoBehaviour
 
 	void Awake()
     {
+		var posi = new Vector3(0,0,0);
+		posi.x = PlayerPrefs.GetFloat("posi_X");
+		posi.y = PlayerPrefs.GetFloat("posi_y");
+		posi.z = PlayerPrefs.GetFloat("posi_z");
+		transform.position = posi;
 		//初期化
 		targetRotation = transform.rotation;
     }

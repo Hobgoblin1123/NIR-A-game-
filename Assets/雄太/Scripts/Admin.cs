@@ -37,6 +37,8 @@ public class Admin : MonoBehaviour
         // private Slider EnemyHP;
         [SerializeField]
         private RectTransform SelectEdge;
+        [SerializeField]
+        private Admin_Date adminDate;
 
 
     [Space(8)]
@@ -181,13 +183,7 @@ public class Admin : MonoBehaviour
             characterScript.LevelUP();
             Debug.Log("キャラレベル　　" + CharaLevel);
         }
-
-        PlayerPrefs.SetFloat("EXP",MainEXP);
-        PlayerPrefs.SetInt("LEVEL",CharaLevel);
-        PlayerPrefs.Save();
-        var savedData = PlayerPrefs.GetInt("LEVEL");
-        Debug.Log("現在のレベル" + savedData);
-
+        adminDate.SaveDate();
         //UIにステータスを表示する
         Statust_UI[0].text = string.Format("MaxHP " + HPStatus );
         Statust_UI[1].text = string.Format("Attack Power " + AttackStatus);
