@@ -12,6 +12,8 @@ public class Admin_Date : MonoBehaviour
     private RotatoSun rotatoSun;
     [SerializeField]
     private ChangeEquip changeEquip;
+    [SerializeField]
+    private Light Mainlight;
     private float time;
     [SerializeField]
     private float SaveTime = 30;
@@ -19,6 +21,7 @@ public class Admin_Date : MonoBehaviour
     private Vector3 FirstCharaPOsition;
     [SerializeField]
     public bool AutoSave = true;
+    
     
 
     private void Awake() 
@@ -118,5 +121,17 @@ public class Admin_Date : MonoBehaviour
 
         PlayerPrefs.Save();
 
+    }
+
+    public void ChangeShadowBool()
+    {
+        if(Mainlight.shadows == LightShadows.None)
+        {
+            Mainlight.shadows = LightShadows.Soft;
+        }
+        else if(Mainlight.shadows == LightShadows.Soft)
+        {
+            Mainlight.shadows = LightShadows.None;
+        }
     }
 }
