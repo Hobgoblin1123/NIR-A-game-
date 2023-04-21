@@ -34,8 +34,6 @@ public class Admin_Date : MonoBehaviour
             // PlayerPrefs.SetFloat("posi_z" , FirstCharaPOsition.z);
             Admin.CharaLevel = 1;
             Admin.MainEXP = 0;
-            Admin.MainWeapon = 2;
-            Admin.SubWeapon = 0;
             // PlayerPrefs.SetFloat("LEVEL" , 1);
             // PlayerPrefs.SetFloat("EXP" , 0);
             // PlayerPrefs.SetInt("MainW" , 2);
@@ -44,7 +42,7 @@ public class Admin_Date : MonoBehaviour
             rotatoSun.FirstRotate();
             var rote = rotatoSun.transform.rotation.eulerAngles;
             admin.ChangeMainWeapon(2);
-            admin.ChangeSubWeapon(0);
+            admin.ChangeSubWeapon(3);
             // PlayerPrefs.SetFloat("Sun_x" , rote.x);
             // PlayerPrefs.SetFloat("Sun_y" , rote.y);
             // PlayerPrefs.SetFloat("Sun_z" , rote.z);
@@ -54,7 +52,7 @@ public class Admin_Date : MonoBehaviour
             SaveDateOther(0);
             Debug.Log("初期追加");
         }
-        
+
     }
 
     // Start is called before the first frame update

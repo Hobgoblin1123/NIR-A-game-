@@ -9,7 +9,6 @@ public class Eff_DamageArea : MonoBehaviour
     private void Start() 
     {
         animator.SetTrigger("Effect");
-        Debug.Log("よんだぁ");
         Destroy(gameObject , DestroyCoUnt);
 
     }

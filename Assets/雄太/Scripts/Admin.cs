@@ -67,6 +67,7 @@ public class Admin : MonoBehaviour
 
 
     private int LevelUPEXP;
+    [SerializeField]
     private Move characterScript;     
     private AudioSource audioSource;
     
@@ -164,8 +165,7 @@ public class Admin : MonoBehaviour
         animator.SetBool("1Idle", false);
         animator.SetBool("2Idle", false);
         characterScript.SetState(Move.MyState.Normal); 
-               
-
+        
     }
 
     public void TakeEXP(float EXP)
