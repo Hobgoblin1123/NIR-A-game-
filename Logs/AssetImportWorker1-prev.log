@@ -15,7 +15,7 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50304
+52263
 Successfully changed project path to: C:/3Dgame/NIR-A-game-/NIR-A-game-
 C:/3Dgame/NIR-A-game-/NIR-A-game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10556] Host "[IP] 192.168.11.16 [Port] 0 [Flags] 2 [Guid] 1561580566 [EditorId] 1561580566 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8496] Host "[IP] 192.168.11.16 [Port] 0 [Flags] 2 [Guid] 3747196708 [EditorId] 3747196708 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10556] Host "[IP] 192.168.11.16 [Port] 0 [Flags] 2 [Guid] 1561580566 [EditorId] 1561580566 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8496] Host "[IP] 192.168.11.16 [Port] 0 [Flags] 2 [Guid] 3747196708 [EditorId] 3747196708 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 83.53 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 81.25 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -69,48 +69,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.100123 seconds.
-- Loaded All Assemblies, in  2.507 seconds
+Registered in 0.012882 seconds.
+- Loaded All Assemblies, in  0.762 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1222 ms
+Android Extension - Scanning For ADB Devices 617 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.588 seconds
+- Finished resetting the current domain, in  1.233 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1457ms)
-		BeginReloadAssembly (560ms)
+	ReloadAssembly (483ms)
+		BeginReloadAssembly (294ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
+			CreateAndSetChildDomain (2ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (556ms)
+			LoadAssemblies (289ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1016ms)
-				TypeCache.Initialize (1012ms)
-					TypeCache.ScanAssembly (1007ms)
-				ResolveRequiredComponents (2ms)
+			SetupTypeCache (268ms)
+				TypeCache.Initialize (267ms)
+					TypeCache.ScanAssembly (265ms)
+				ResolveRequiredComponents (0ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (2362ms)
+			SetupLoadedEditorAssemblies (1115ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (1585ms)
-				SetLoadedEditorAssemblies (23ms)
+				InitializePlatformSupportModulesInManaged (799ms)
+				SetLoadedEditorAssemblies (11ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (563ms)
-				ProcessInitializeOnLoadMethodAttributes (178ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (93ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -118,8 +118,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.067 seconds
-Refreshing native plugins compatible for Editor in 22.80 ms, found 7 plugins.
+- Loaded All Assemblies, in  1.854 seconds
+Refreshing native plugins compatible for Editor in 22.63 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -127,46 +127,46 @@ Native extension for WebGL target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.539 seconds
+- Finished resetting the current domain, in  1.884 seconds
 Domain Reload Profiling:
-	ReloadAssembly (719ms)
-		BeginReloadAssembly (452ms)
+	ReloadAssembly (495ms)
+		BeginReloadAssembly (288ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (22ms)
+			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (84ms)
-		LoadAllAssembliesAndSetupDomain (2342ms)
-			LoadAssemblies (1289ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		LoadAllAssembliesAndSetupDomain (1376ms)
+			LoadAssemblies (827ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1204ms)
-				TypeCache.Initialize (1080ms)
-					TypeCache.ScanAssembly (1055ms)
-				ResolveRequiredComponents (51ms)
+			SetupTypeCache (671ms)
+				TypeCache.Initialize (575ms)
+					TypeCache.ScanAssembly (568ms)
+				ResolveRequiredComponents (50ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (1829ms)
+			SetupLoadedEditorAssemblies (1388ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (91ms)
-				SetLoadedEditorAssemblies (15ms)
+				InitializePlatformSupportModulesInManaged (52ms)
+				SetLoadedEditorAssemblies (8ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (237ms)
-				ProcessInitializeOnLoadAttributes (1301ms)
-				ProcessInitializeOnLoadMethodAttributes (170ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (220ms)
+				ProcessInitializeOnLoadAttributes (1008ms)
+				ProcessInitializeOnLoadMethodAttributes (93ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Shader 'IL3DN/Branch': fallback shader 'False' not found
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 15.68 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 11.27 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 124 unused Assets / (2.3 MB). Loaded Objects now: 7296.
 Memory consumption went from 291.5 MB to 289.2 MB.
-Total: 28.181800 ms (FindLiveObjects: 1.334000 ms CreateObjectMapping: 1.026000 ms MarkObjects: 21.547900 ms  DeleteObjects: 4.271100 ms)
+Total: 51.974300 ms (FindLiveObjects: 2.682700 ms CreateObjectMapping: 0.743300 ms MarkObjects: 45.962800 ms  DeleteObjects: 2.581100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,137 +182,33 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1477.689893 seconds.
-  path: Assets/雄太/sounds/サウンドマーク.png
-  artifactKey: Guid(c08d2de8be96d14408f97b07cfbbc4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/サウンドマーク.png using Guid(c08d2de8be96d14408f97b07cfbbc4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bace5e788e9534b5fe9122f5caa060') in 0.302816 seconds 
+  Time since last request: 5739.199532 seconds.
+  path: Assets/雄太/image/SelectEdge.jpg
+  artifactKey: Guid(42e9a54fbb02f2a4ebc3c28a3432d45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/SelectEdge.jpg using Guid(42e9a54fbb02f2a4ebc3c28a3432d45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a4a99c5c9c7865031fea38a022be6f') in 0.499601 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/雄太/sounds/前方回避.mp3
-  artifactKey: Guid(9d7c111089185f44f95599359ebe3053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/前方回避.mp3 using Guid(9d7c111089185f44f95599359ebe3053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2130dc925615cedec0cdaf58c29d55') in 0.108747 seconds 
+  Time since last request: 0.000245 seconds.
+  path: Assets/雄太/image/回避用画面効果.png
+  artifactKey: Guid(6de055a8083564e4897b387be47c2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/回避用画面効果.png using Guid(6de055a8083564e4897b387be47c2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee22dc6e3a5c299951b6a9c65b40be7e') in 0.054032 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/雄太/sounds/剣　仮　ソード.mp3
-  artifactKey: Guid(7fa9c6491629ea6449f6fa07e6ae1e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/剣　仮　ソード.mp3 using Guid(7fa9c6491629ea6449f6fa07e6ae1e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7380c84eddf019634199d9e2c20a49') in 0.058646 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001483 seconds.
-  path: Assets/雄太/sounds/剣攻撃１.mp3
-  artifactKey: Guid(7ddc2193cc1610b4b93dcb6658804198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/剣攻撃１.mp3 using Guid(7ddc2193cc1610b4b93dcb6658804198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f5e2fdc985f4121b2fc76fe464cab9') in 0.039478 seconds 
+  Time since last request: 18.719721 seconds.
+  path: Assets/雄太/image/UI/小見出し.png
+  artifactKey: Guid(77f54a4ceb2227e43a90e058eeea85bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/UI/小見出し.png using Guid(77f54a4ceb2227e43a90e058eeea85bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9666966745716ba07290f487507860a') in 0.026751 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000030 seconds.
-  path: Assets/雄太/sounds/後方回避.mp3
-  artifactKey: Guid(6287a8c659afd1e41bcce8462c9b8233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/後方回避.mp3 using Guid(6287a8c659afd1e41bcce8462c9b8233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a0e61063876a4ce68f494487a1a6a6') in 0.062009 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/雄太/sounds/鎌3.mp3
-  artifactKey: Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌3.mp3 using Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee57a1b8a72553baea46785d7acefd1b') in 0.106358 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000439 seconds.
-  path: Assets/雄太/sounds/剣　ちょい長.mp3
-  artifactKey: Guid(ecf41780ee95b134da5520809862b91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/剣　ちょい長.mp3 using Guid(ecf41780ee95b134da5520809862b91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25637144066c7c8ab63032e5e9f5a22') in 0.053396 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/雄太/sounds/拳銃の弾切れ.mp3
-  artifactKey: Guid(d12ccbe0f11e48e439d075cb771e05eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/拳銃の弾切れ.mp3 using Guid(d12ccbe0f11e48e439d075cb771e05eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee6ec1338d5f9076593243035e6c0ed') in 0.076785 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.001605 seconds.
-  path: Assets/雄太/sounds/Gun Shot.mp3
-  artifactKey: Guid(83d5c92ae87fdc44ea94f2620a0e49ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/Gun Shot.mp3 using Guid(83d5c92ae87fdc44ea94f2620a0e49ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54bc64aa6b6461cab6298ce85c9be1e6') in 0.033396 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 9.225105 seconds.
-  path: Assets/雄太/sounds/鎌2.mp3
-  artifactKey: Guid(9a7a3640e04fa1246ae0863b91ec405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌2.mp3 using Guid(9a7a3640e04fa1246ae0863b91ec405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079c7aa15a9266668c51045620a392eb') in 0.059466 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 29.736426 seconds.
-  path: Assets/雄太/sounds/鎌3.mp3
-  artifactKey: Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌3.mp3 using Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819af7ab72de274aa8244e01e9987607') in 0.052583 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 18.014628 seconds.
-  path: Assets/雄太/sounds/鎌3.mp3
-  artifactKey: Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌3.mp3 using Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602f156171e1d82136deec2beded4b63') in 0.044854 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 20.818775 seconds.
-  path: Assets/雄太/sounds/鎌3.mp3
-  artifactKey: Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌3.mp3 using Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c3f779008b6dd138a422caa67709d8') in 0.044320 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1511.151505 seconds.
-  path: Assets/雄太/sounds/鎌2.mp3
-  artifactKey: Guid(9a7a3640e04fa1246ae0863b91ec405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌2.mp3 using Guid(9a7a3640e04fa1246ae0863b91ec405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240bc3541efc59a2eba7ad53e9c170f4') in 0.066954 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/雄太/sounds/鎌3.mp3
-  artifactKey: Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌3.mp3 using Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8eb71f2c3175caf7f7b48c60ebe06b') in 0.051190 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 391.487457 seconds.
-  path: Assets/雄太/sounds/鎌2.mp3
-  artifactKey: Guid(9a7a3640e04fa1246ae0863b91ec405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌2.mp3 using Guid(9a7a3640e04fa1246ae0863b91ec405b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '741cd53f6ffe12f3234b9897a7b59fb9') in 0.058601 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 14.562969 seconds.
-  path: Assets/雄太/sounds/鎌3.mp3
-  artifactKey: Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/sounds/鎌3.mp3 using Guid(459b5cd2f08fd8f4f94c9bbc063e66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431aace5e190c91f86495ea0a81d9cd6') in 0.151672 seconds 
+  path: Assets/雄太/image/UI/戻る.png
+  artifactKey: Guid(a219425c057cedf40b5e80e14ba2f2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/UI/戻る.png using Guid(a219425c057cedf40b5e80e14ba2f2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65123d2a042fc4c9207b71242fb4701b') in 0.023898 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
