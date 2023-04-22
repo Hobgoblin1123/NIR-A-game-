@@ -37,6 +37,8 @@ public class Admin_UI : MonoBehaviour
     private Toggledate[] toggledates;
     [SerializeField]
     private Light Mainlight;
+    [SerializeField]
+    private GameObject[] SettingPanel;
     public bool FullScreen;
     public bool shadows;
     public int ScreenResolution;
@@ -80,6 +82,7 @@ public class Admin_UI : MonoBehaviour
             item.enabled = false;
         }
         PauseCanvas.SetActive(false);
+        ChangeSetting(1);
     }
 
     // Update is called once per frame
@@ -172,6 +175,10 @@ public class Admin_UI : MonoBehaviour
         if(n == 1)
         {
             itemsDialog.reflesh();
+        }
+        if(n == 4)
+        {
+            ChangeSetting(1);
         }
 
     }
@@ -346,6 +353,21 @@ public class Admin_UI : MonoBehaviour
             Mainlight.shadows = LightShadows.None;
             Debug.Log("影オフ");
         }
+    }
+
+    public void ChangeSetting(int n)
+    {
+        foreach (var item in SettingPanel)
+        {
+            item.SetActive(false);
+        }
+        image[6].color = Color.white;
+        image[7].color = Color.white;
+        image[8].color = Color.white;
+        image[9].color = Color.white;
+
+        SettingPanel[n-1].SetActive(true);
+        image[n + 5].color = new Color(0,0.3f,1);
     }
 
 }
