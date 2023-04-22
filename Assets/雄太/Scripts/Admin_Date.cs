@@ -40,6 +40,10 @@ public class Admin_Date : MonoBehaviour
             admin.ChangeSubWeapon(3);
             admin_UI.AIM_X_speed = 8;
             admin_UI.AIM_Y_speed = 8;
+            admin_UI.NawFPS = 60;
+            admin_UI.FullScreen = true;
+            admin_UI.shadows = false;
+            admin_UI.ScreenResolution = 1;
 
             SaveDate();
             SaveDateOther(0);
@@ -105,22 +109,46 @@ public class Admin_Date : MonoBehaviour
 
         if(n == 0 || n == 3)
         {
+            PlayerPrefs.SetInt("FPS" , admin_UI.NawFPS);
+        }
+
+        if(n == 0 || n == 4)
+        {
             PlayerPrefs.SetFloat("Aim_X" , admin_UI.AIM_X_speed);
             PlayerPrefs.SetFloat("Aim_Y" , admin_UI.AIM_Y_speed);
         }
+        if(n == 0 || n == 5)
+        {
+            var i = 0;
+            if(admin_UI.FullScreen == true)
+            {
+                i = 0;
+            }
+            else
+            {
+                i = 1;
+            }
+            PlayerPrefs.SetInt("FullScreen" ,i);
+        }
+        if(n == 0 || n == 6)
+        {
+            PlayerPrefs.SetInt("ScreenResolution" , admin_UI.ScreenResolution);
+        }
+        if(n == 0 || n == 7)
+        {
+            var s = 0;
+            if(admin_UI.shadows == true)
+            {
+                s = 0;
+            }
+            else
+            {
+                s = 1;
+            }
+            PlayerPrefs.SetInt("Shadows" , s);
+        }
 
         PlayerPrefs.Save();
-    }
-
-    public void ChangeShadowBool()
-    {
-        if(Mainlight.shadows == LightShadows.None)
-        {
-            Mainlight.shadows = LightShadows.Soft;
-        }
-        else if(Mainlight.shadows == LightShadows.Soft)
-        {
-            Mainlight.shadows = LightShadows.None;
-        }
+        Debug.Log("個別情報を保存しました");
     }
 }

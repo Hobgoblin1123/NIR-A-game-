@@ -30,7 +30,16 @@ public class Admin_UI : MonoBehaviour
     private InputField aim_y_speed;
     public float AIM_X_speed;
     public float AIM_Y_speed; 
-    
+    public int NawFPS;
+    [SerializeField]
+    private Image[] image;
+    [SerializeField]
+    private Toggledate[] toggledates;
+    [SerializeField]
+    private Light Mainlight;
+    public bool FullScreen;
+    public bool shadows;
+    public int ScreenResolution;
     
     // Start is called before the first frame update
     void Start()
@@ -43,6 +52,25 @@ public class Admin_UI : MonoBehaviour
         QualitySettings.vSyncCount = 0;
         AIM_X_speed = PlayerPrefs.GetFloat("Aim_X");
         AIM_Y_speed = PlayerPrefs.GetFloat("Aim_Y");
+        ChangeFPS(PlayerPrefs.GetInt("FPS"));
+        
+        if(PlayerPrefs.GetInt("FullScreen") == 0)
+        {
+            toggledates[0].ToggleOn();
+            FullScreen = true;
+        }        
+        if(PlayerPrefs.GetInt("Shadows") == 0)
+        {
+            toggledates[1].ToggleOn();
+            shadows = true;
+            ChangeShadowBool();
+        }
+        else
+        {
+            shadows = false;
+            ChangeShadowBool();
+        }
+        ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
         aim_x_speed.text = AIM_X_speed.ToString();
         aim_y_speed .text = AIM_Y_speed.ToString();
         cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
@@ -217,7 +245,27 @@ public class Admin_UI : MonoBehaviour
 
     public void ChangeFPS(int n)
     {
-        Application.targetFrameRate = n;
+        NawFPS = n;
+        Application.targetFrameRate = NawFPS;
+        admin_Date.SaveDateOther(3);
+        if(n == 30)
+        {
+            image[0].color = new Color(0.6f,1,0.7f);
+            image[1].color = new Color(1,1,1);
+            image[2].color = new Color(1,1,1);
+        }
+        if(n == 60)
+        {
+            image[0].color = new Color(1,1,1);
+            image[1].color = new Color(0.6f,1,0.7f);
+            image[2].color = new Color(1,1,1);
+        }
+        if(n == 120)
+        {
+            image[0].color = new Color(1,1,1);
+            image[1].color = new Color(1,1,1);
+            image[2].color = new Color(0.6f,1,0.7f);
+        }
     }
 
     public void ChangeAIMSpeed()
@@ -237,8 +285,67 @@ public class Admin_UI : MonoBehaviour
         
         cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
         cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
-        admin_Date.SaveDateOther(3);
+        admin_Date.SaveDateOther(4);
 
         Debug.Log("感度を変更");
     }
+
+    public void ChangeToggle(int n)
+    {
+        if(n == 0)
+        {
+            FullScreen = toggledates[0].Value;
+            admin_Date.SaveDateOther(5);
+            ChangeScreenResolution(ScreenResolution);
+        }
+        if(n == 1)
+        {
+            shadows = toggledates[1].Value;
+            admin_Date.SaveDateOther(7);
+            ChangeShadowBool();
+        }
+    }
+
+    public void ChangeScreenResolution(int n)
+    {
+        Screen.SetResolution(Screen.currentResolution.width*5-n/4 , Screen.currentResolution.height*5-n/4 , FullScreen);
+        ScreenResolution = n;
+        Debug.Log( (Screen.currentResolution.width*(5-n)/4) );
+        Debug.Log(Screen.currentResolution.height*(5-n)/4);
+        Debug.Log("現在のフルスクリーンboolは　"+FullScreen);
+        admin_Date.SaveDateOther(6);
+        if(n == 1)
+        {
+            image[3].color = new Color(0.6f,1,0.7f);
+            image[4].color = new Color(1,1,1);
+            image[5].color = new Color(1,1,1);
+        }
+        if(n == 2)
+        {
+            image[3].color = new Color(1,1,1);
+            image[4].color = new Color(0.6f,1,0.7f);
+            image[5].color = new Color(1,1,1);
+        }
+        if(n == 3)
+        {
+            image[3].color = new Color(1,1,1);
+            image[4].color = new Color(1,1,1);
+            image[5].color = new Color(0.6f,1,0.7f);
+        }
+    }
+
+    public void ChangeShadowBool()
+    {
+        if(shadows == true)
+        {
+            Mainlight.shadows = LightShadows.Soft;
+            Debug.Log("影オン");
+        }
+        else
+        {
+            Mainlight.shadows = LightShadows.None;
+            Debug.Log("影オフ");
+        }
+    }
+
 }
