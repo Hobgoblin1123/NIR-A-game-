@@ -13,6 +13,8 @@ public class Admin_Date : MonoBehaviour
     [SerializeField]
     private ChangeEquip changeEquip;
     [SerializeField]
+    private Admin_UI admin_UI;
+    [SerializeField]
     private Light Mainlight;
     private float time;
     [SerializeField]
@@ -29,25 +31,16 @@ public class Admin_Date : MonoBehaviour
         if(PlayerPrefs.GetFloat("Sun_x") == 0)
         {
             move.transform.position = FirstCharaPOsition;
-            // PlayerPrefs.SetFloat("posi_X" , FirstCharaPOsition.x);
-            // PlayerPrefs.SetFloat("posi_y" , FirstCharaPOsition.y);
-            // PlayerPrefs.SetFloat("posi_z" , FirstCharaPOsition.z);
             Admin.CharaLevel = 1;
             Admin.MainEXP = 0;
-            // PlayerPrefs.SetFloat("LEVEL" , 1);
-            // PlayerPrefs.SetFloat("EXP" , 0);
-            // PlayerPrefs.SetInt("MainW" , 2);
-            // PlayerPrefs.SetInt("SubW" , 0);
 
             rotatoSun.FirstRotate();
             var rote = rotatoSun.transform.rotation.eulerAngles;
             admin.ChangeMainWeapon(2);
             admin.ChangeSubWeapon(3);
-            // PlayerPrefs.SetFloat("Sun_x" , rote.x);
-            // PlayerPrefs.SetFloat("Sun_y" , rote.y);
-            // PlayerPrefs.SetFloat("Sun_z" , rote.z);
-            // PlayerPrefs.SetFloat("TimeRote" , rotatoSun.rote);
-            // PlayerPrefs.Save();
+            admin_UI.AIM_X_speed = 8;
+            admin_UI.AIM_Y_speed = 8;
+
             SaveDate();
             SaveDateOther(0);
             Debug.Log("初期追加");
@@ -70,7 +63,6 @@ public class Admin_Date : MonoBehaviour
             if(time > SaveTime)
             {
                 SaveDate();
-                
             }
         }
         
@@ -83,7 +75,6 @@ public class Admin_Date : MonoBehaviour
         PlayerPrefs.SetFloat("posi_X" , posi.x);
         PlayerPrefs.SetFloat("posi_y" , posi.y);
         PlayerPrefs.SetFloat("posi_z" , posi.z);
-        
         //太陽位置、時間情報
         var rote = rotatoSun.transform.rotation.eulerAngles;
         PlayerPrefs.SetFloat("Sun_x" , rote.x);
@@ -97,7 +88,7 @@ public class Admin_Date : MonoBehaviour
     }
 
 
-    public static void SaveDateOther(int n)
+    public void SaveDateOther(int n)
     {
         if(n == 0 || n == 1)
         {
@@ -112,13 +103,13 @@ public class Admin_Date : MonoBehaviour
             PlayerPrefs.SetInt("SubW" , Admin.SubWeapon);
         }
 
-        // if(n == 0 || n == 3)
-        // {
-        //     PlayerPrefs.SetInt("NowW" , Admin.WeaponNumber);
-        // }
+        if(n == 0 || n == 3)
+        {
+            PlayerPrefs.SetFloat("Aim_X" , admin_UI.AIM_X_speed);
+            PlayerPrefs.SetFloat("Aim_Y" , admin_UI.AIM_Y_speed);
+        }
 
         PlayerPrefs.Save();
-
     }
 
     public void ChangeShadowBool()

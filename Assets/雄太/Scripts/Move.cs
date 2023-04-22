@@ -396,7 +396,7 @@ public class Move : MonoBehaviour
         Debug.Log("ラストアタック");
 	}
 
-	void StateEnd()
+	public void StateEnd()
 	{
 		if(state != MyState.JUAttack)
 		{

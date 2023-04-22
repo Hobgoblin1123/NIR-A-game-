@@ -30,15 +30,13 @@ public class Admin : MonoBehaviour
         [SerializeField]
         ChangeEquip changeEquip;
         [SerializeField]
-        private CinemachineVirtualCamera virtualCamera;
-        [SerializeField]
         private Animator animator; 
         // [SerializeField]
         // private Slider EnemyHP;
         [SerializeField]
         private RectTransform SelectEdge;
-
-
+        [SerializeField]
+        private Admin_Date admin_Date;
     [Space(8)]
 
 
@@ -47,8 +45,6 @@ public class Admin : MonoBehaviour
         private AudioClip[] BGM;
         [SerializeField]
         public float LockDistance = 10;
-        public float AIM_X_Speed = 8;
-        public float AIM_Y_speed = 8;
         public static int MainWeapon = 2;
         public static int SubWeapon = 1;  
         public float LockOffDistance;
@@ -72,7 +68,6 @@ public class Admin : MonoBehaviour
     private AudioSource audioSource;
     
     private SearchEnemy searchEnemy; 
-    private CinemachinePOV cinemachinePOV;
     private Flowchart flowchart;
     [HideInInspector]
     public Transform targetTransform; 
@@ -92,7 +87,6 @@ public class Admin : MonoBehaviour
         LevelUPEXP = 10 * CharaLevel * CharaLevel + 10 * CharaLevel;
         DefenceStatus = CharaLevel * 0.005f;
         WeaponNumber = MainWeapon;
-        cinemachinePOV = virtualCamera.GetCinemachineComponent<CinemachinePOV>();
         characterScript = GetComponentInParent<Move>();
     }
 
@@ -116,8 +110,6 @@ public class Admin : MonoBehaviour
 
         LockOn = false;
         //cinemachineのAIMのSpeedの値を初期値に設定
-        cinemachinePOV.m_HorizontalAxis.m_MaxSpeed  = AIM_X_Speed;
-        cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
         // EnemyHP.maxValue = 1;
         // EnemyHP.minValue = 0;
         // EnemyHP.value = 1;
@@ -186,7 +178,7 @@ public class Admin : MonoBehaviour
         }
 
 
-        Admin_Date.SaveDateOther(1);
+        admin_Date.SaveDateOther(1);
         //UIにステータスを表示する
         Statust_UI[0].text = string.Format("MaxHP " + HPStatus );
         Statust_UI[1].text = string.Format("Attack Power " + AttackStatus);
@@ -273,7 +265,6 @@ public class Admin : MonoBehaviour
         MainWeapon = number;
         ReturnAccess();
         changeEquip.ChangeWeapon();
-        Admin_Date.SaveDateOther(2);
     }
 
     public void ChangeSubWeapon(int number)
@@ -281,17 +272,7 @@ public class Admin : MonoBehaviour
         SubWeapon = number;
         ReturnAccess();
         changeEquip.ChangeWeapon();
-        Admin_Date.SaveDateOther(2);
-    }
-
-    public void ChangeAIMSpeed()
-    {
-        // string Text 
-        AIM_X_Speed = float.Parse(aim_x_speed.text);
-        AIM_Y_speed = float.Parse(aim_y_speed.text);
-        Debug.Log(AIM_X_Speed);
-        cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_Speed;
-        cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
+        admin_Date.SaveDateOther(2);
     }
 
 
