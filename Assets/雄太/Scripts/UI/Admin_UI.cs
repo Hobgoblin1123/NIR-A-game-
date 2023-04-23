@@ -103,6 +103,7 @@ public class Admin_UI : MonoBehaviour
             Destroy(ControlCanvas);
             Debug.Log("このデバイスはwindowsデバイスです。");
 		}
+
     }
 
     // Update is called once per frame
@@ -337,7 +338,8 @@ public class Admin_UI : MonoBehaviour
     {
         Screen.SetResolution(Screen.currentResolution.width*5-n/4 , Screen.currentResolution.height*5-n/4 , FullScreen);
         ScreenResolution = n;
-        Debug.Log( (Screen.currentResolution.width*(5-n)/4) );
+        Debug.Log(n);
+        Debug.Log( (Screen.currentResolution.width) );
         Debug.Log(Screen.currentResolution.height*(5-n)/4);
         Debug.Log("現在のフルスクリーンboolは　"+FullScreen);
         admin_Date.SaveDateOther(6);
