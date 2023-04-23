@@ -42,6 +42,13 @@ public class Admin_UI : MonoBehaviour
     public bool FullScreen;
     public bool shadows;
     public int ScreenResolution;
+    private bool isWorkeingMobilePlatform;
+    [SerializeField]
+    private Image isWorkeingMobileImage;
+    [SerializeField]
+    private ChangeEquip changeEquip;
+    [SerializeField]
+    private Canvas ControlCanvas;
     
     // Start is called before the first frame update
     void Start()
@@ -83,6 +90,19 @@ public class Admin_UI : MonoBehaviour
         }
         PauseCanvas.SetActive(false);
         ChangeSetting(1);
+
+
+
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) 
+		{
+            ControlCanvas.enabled = true;
+            Debug.Log("このデバイスはモバイルデバイスです。");
+		}
+		else if (Application.platform == RuntimePlatform.WindowsPlayer) 
+		{
+            Destroy(ControlCanvas);
+            Debug.Log("このデバイスはwindowsデバイスです。");
+		}
     }
 
     // Update is called once per frame
@@ -368,6 +388,14 @@ public class Admin_UI : MonoBehaviour
 
         SettingPanel[n-1].SetActive(true);
         image[n + 5].color = new Color(0,0.3f,1);
+    }
+    public void ChangeWeapon()
+    {
+        changeEquip.ChangeWeapon();
+    }
+    public void GetInput(int n)
+    {
+        move.GetInput(n);
     }
 
 }

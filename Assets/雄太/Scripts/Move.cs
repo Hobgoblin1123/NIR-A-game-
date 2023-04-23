@@ -46,6 +46,9 @@ public class Move : MonoBehaviour
 	public bool AutoRunFlag = true;
 	[SerializeField]
 	private Camera mainCamera;
+	[SerializeField]
+	private FixedJoystick fixedJoystick;
+	public bool isWorkeingMobilePlatform;
 
 	void Awake()
     {
@@ -56,7 +59,16 @@ public class Move : MonoBehaviour
 		transform.position = posi;
 		//初期化
 		targetRotation = transform.rotation;
-    }
+		if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) 
+		{
+			isWorkeingMobilePlatform = true;
+		}
+		else if (Application.platform == RuntimePlatform.WindowsPlayer) 
+		{
+			isWorkeingMobilePlatform = false;
+		}
+	}
+
 
 	public enum MyState
    {
@@ -182,8 +194,20 @@ public class Move : MonoBehaviour
 
 		if (state == MyState.Normal)
 		{
-			var horizontal = Input.GetAxis("Horizontal");
-			var vertical = Input.GetAxis("Vertical");
+			var horizontal = 0f;
+			var vertical = 0f;
+			if(isWorkeingMobilePlatform == false)
+			{
+				horizontal = Input.GetAxis("Horizontal");
+				vertical = Input.GetAxis("Vertical");
+			}
+			else
+			{
+				horizontal = fixedJoystick.Horizontal;
+				vertical = fixedJoystick.Vertical;
+			}
+			
+
 			var horizontalRotation = Quaternion.AngleAxis( mainCamera.transform.eulerAngles.y, Vector3.up);
 			velocity = horizontalRotation * new Vector3(horizontal, 0, vertical).normalized;
 			// var speed = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
@@ -232,10 +256,10 @@ public class Move : MonoBehaviour
 			// 	SetState(MyState.Jump);
 			// }
 			
-			if(Input.GetKeyDown("f") && Admin.WeaponNumber == 1 && state == MyState.Normal)
-			{
-				SetState(MyState.SPAttack);
-			}
+			// if(Input.GetKeyDown("f") && Admin.WeaponNumber == 1 && state == MyState.Normal)
+			// {
+			// 	SetState(MyState.SPAttack);
+			// }
 		}
 		
 
@@ -251,26 +275,11 @@ public class Move : MonoBehaviour
 			}			
 		}
 
-		if(state != MyState.TalkEvent)
-		{
-			if(state != MyState.JUAttack)
-			{
-				if(Input.GetMouseButtonDown(1) && physicalStrength > 2f && state != MyState.Damage && state !=MyState.Avoidance)
-				{
-					SetState(MyState.Avoidance);
-					physicalStrength -= 3;
-					physicalStrengthSlider.value = physicalStrength/15;
-					staminaCanvas.enabled = true;
-				}
+		if(Input.GetButtonDown("Fire1"))GetInput(1);
 
-				if(Input.GetButtonDown("Fire1") && state != MyState.Avoidance)
-				{
-					SetState(MyState.Attack);
-				}
-			
-			}
-		}	
-		else
+		if(Input.GetMouseButtonDown(1))GetInput(0);
+
+		if(state == MyState.TalkEvent)
 		{
 			Vector3 lockenemy = -transform.position +new Vector3(admin.targetTransform.position.x ,transform.position.y , admin.targetTransform.position.z);
 			targetRotation = Quaternion.LookRotation(lockenemy);
@@ -294,6 +303,29 @@ public class Move : MonoBehaviour
 		if(admin.LockEnemy == true)
 		{
 			lockInterval += Time.deltaTime;
+		}
+	}
+
+	public void GetInput(int n)
+	{
+		if(state != MyState.TalkEvent)
+		{
+			if(state != MyState.JUAttack)
+			{
+				if(n == 0 && physicalStrength > 2f && state != MyState.Damage && state !=MyState.Avoidance)
+				{
+					SetState(MyState.Avoidance);
+					physicalStrength -= 3;
+					physicalStrengthSlider.value = physicalStrength/15;
+					staminaCanvas.enabled = true;
+				}
+
+				if(n == 1 && state != MyState.Avoidance)
+				{
+					SetState(MyState.Attack);
+				}
+			
+			}
 		}
 	}
 	
