@@ -79,7 +79,7 @@ public class Admin_UI : MonoBehaviour
             shadows = false;
             ChangeShadowBool();
         }
-        ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
+        // ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
         aim_x_speed.text = AIM_X_speed.ToString();
         aim_y_speed .text = AIM_Y_speed.ToString();
         cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
@@ -96,11 +96,15 @@ public class Admin_UI : MonoBehaviour
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) 
 		{
             ControlCanvas.enabled = true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             Debug.Log("このデバイスはモバイルデバイスです。");
 		}
 		else if (Application.platform == RuntimePlatform.WindowsPlayer) 
 		{
             Destroy(ControlCanvas);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             Debug.Log("このデバイスはwindowsデバイスです。");
 		}
 
@@ -246,17 +250,21 @@ public class Admin_UI : MonoBehaviour
         if (PauseCanvas.activeSelf)
         {
             Time.timeScale = 0;
+            virtualCamera.enabled = false;
+            if(move.isWorkeingMobilePlatform == true)return;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            virtualCamera.enabled = false;
+            
         }
         else
         {
             move.LastAttack();
             Time.timeScale = 1;
+            virtualCamera.enabled = true;
+            if(move.isWorkeingMobilePlatform == true)return;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            virtualCamera.enabled = true;
+            
         }
     }
 
@@ -324,7 +332,7 @@ public class Admin_UI : MonoBehaviour
         {
             FullScreen = toggledates[0].Value;
             admin_Date.SaveDateOther(5);
-            ChangeScreenResolution(ScreenResolution);
+            // ChangeScreenResolution(ScreenResolution);
         }
         if(n == 1)
         {
@@ -334,34 +342,34 @@ public class Admin_UI : MonoBehaviour
         }
     }
 
-    public void ChangeScreenResolution(int n)
-    {
-        Screen.SetResolution(Screen.currentResolution.width*5-n/4 , Screen.currentResolution.height*5-n/4 , FullScreen);
-        ScreenResolution = n;
-        Debug.Log(n);
-        Debug.Log( (Screen.currentResolution.width) );
-        Debug.Log(Screen.currentResolution.height*(5-n)/4);
-        Debug.Log("現在のフルスクリーンboolは　"+FullScreen);
-        admin_Date.SaveDateOther(6);
-        if(n == 1)
-        {
-            image[3].color = new Color(0.6f,1,0.7f);
-            image[4].color = new Color(1,1,1);
-            image[5].color = new Color(1,1,1);
-        }
-        if(n == 2)
-        {
-            image[3].color = new Color(1,1,1);
-            image[4].color = new Color(0.6f,1,0.7f);
-            image[5].color = new Color(1,1,1);
-        }
-        if(n == 3)
-        {
-            image[3].color = new Color(1,1,1);
-            image[4].color = new Color(1,1,1);
-            image[5].color = new Color(0.6f,1,0.7f);
-        }
-    }
+    // public void ChangeScreenResolution(int n)
+    // {
+    //     Screen.SetResolution(Screen.currentResolution.width*5-n/4 , Screen.currentResolution.height*5-n/4 , FullScreen);
+    //     ScreenResolution = n;
+    //     Debug.Log(n);
+    //     Debug.Log( (Screen.currentResolution.width) );
+    //     Debug.Log(Screen.currentResolution.height*(5-n)/4);
+    //     Debug.Log("現在のフルスクリーンboolは　"+FullScreen);
+    //     admin_Date.SaveDateOther(6);
+    //     if(n == 1)
+    //     {
+    //         image[3].color = new Color(0.6f,1,0.7f);
+    //         image[4].color = new Color(1,1,1);
+    //         image[5].color = new Color(1,1,1);
+    //     }
+    //     if(n == 2)
+    //     {
+    //         image[3].color = new Color(1,1,1);
+    //         image[4].color = new Color(0.6f,1,0.7f);
+    //         image[5].color = new Color(1,1,1);
+    //     }
+    //     if(n == 3)
+    //     {
+    //         image[3].color = new Color(1,1,1);
+    //         image[4].color = new Color(1,1,1);
+    //         image[5].color = new Color(0.6f,1,0.7f);
+    //     }
+    // }
 
     public void ChangeShadowBool()
     {

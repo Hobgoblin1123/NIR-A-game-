@@ -376,4 +376,9 @@ public class Admin : MonoBehaviour
     {
         characterScript.AutoRunFlag = !characterScript.AutoRunFlag;
     }
+
+    public bool isWorkeingMobileImage()
+    {
+        return characterScript.isWorkeingMobilePlatform;
+    }
 }

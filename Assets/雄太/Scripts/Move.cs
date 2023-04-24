@@ -275,9 +275,9 @@ public class Move : MonoBehaviour
 			}			
 		}
 
-		if(Input.GetButtonDown("Fire1"))GetInput(1);
+		if(isWorkeingMobilePlatform == false && Input.GetButtonDown("Fire1"))GetInput(1);
 
-		if(Input.GetMouseButtonDown(1))GetInput(0);
+		if(isWorkeingMobilePlatform == false  && Input.GetMouseButtonDown(1))GetInput(0);
 
 		if(state == MyState.TalkEvent)
 		{

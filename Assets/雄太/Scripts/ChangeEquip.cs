@@ -17,7 +17,7 @@ public class ChangeEquip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e"))
+        if(admin.isWorkeingMobileImage() == false && Input.GetKeyDown("e"))
         {
             ChangeWeapon();
         }
