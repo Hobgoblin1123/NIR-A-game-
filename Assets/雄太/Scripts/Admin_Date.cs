@@ -148,6 +148,17 @@ public class Admin_Date : MonoBehaviour
             PlayerPrefs.SetInt("Shadows" , s);
         }
 
+        if(n == 0 || n == 8)
+        {
+            PlayerPrefs.SetInt("BGM" , admin_UI.BGMnumber);
+        }
+        if(n == 0 || n == 9)
+        {
+            PlayerPrefs.SetFloat("MVolume" , admin_UI.MasterVolume);
+            PlayerPrefs.SetFloat("BGMVolume" , admin_UI.BGMVolume);
+            PlayerPrefs.SetFloat("SEVolume" , admin_UI.SEVolume);
+        }
+
         PlayerPrefs.Save();
         Debug.Log("個別情報を保存しました");
     }

@@ -105,7 +105,7 @@ public class Admin : MonoBehaviour
         Statust_UI[4].text = string.Format("次レベル必要総経験値　"　+ LevelUPEXP);
         Statust_UI[5].text = string.Format("Level  " + CharaLevel);
 
-        audioSource.clip = BGM[4];
+        audioSource.clip = BGM[PlayerPrefs.GetInt("BGM")];
         audioSource.Play();
 
         LockOn = false;

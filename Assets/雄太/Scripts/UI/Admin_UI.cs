@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Cinemachine;
+using UnityEngine.Audio;
 
 public class Admin_UI : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Admin_UI : MonoBehaviour
     private GameObject PauseCanvas;
     [SerializeField]
     private Move move;
+    [SerializeField]
+    private Admin admin;
     [SerializeField]
     private Text FPS;
     private float time;
@@ -36,6 +39,8 @@ public class Admin_UI : MonoBehaviour
     [SerializeField]
     private Toggledate[] toggledates;
     [SerializeField]
+    private Slider[] slider;
+    [SerializeField]
     private Light Mainlight;
     [SerializeField]
     private GameObject[] SettingPanel;
@@ -45,10 +50,17 @@ public class Admin_UI : MonoBehaviour
     private bool isWorkeingMobilePlatform;
     [SerializeField]
     private Image isWorkeingMobileImage;
+    public int BGMnumber;
     [SerializeField]
     private ChangeEquip changeEquip;
     [SerializeField]
     private Canvas ControlCanvas;
+    [SerializeField]
+    private AudioMixer audioMixer;
+    public float MasterVolume;
+    public float BGMVolume;
+    public float SEVolume;
+    private bool ChangeVolumeFlag;
     
     // Start is called before the first frame update
     void Start()
@@ -79,6 +91,8 @@ public class Admin_UI : MonoBehaviour
             shadows = false;
             ChangeShadowBool();
         }
+        BGMnumber = PlayerPrefs.GetInt("BGM");
+        image[BGMnumber + 10].color = new Color(0.6f,1,0.7f);
         // ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
         aim_x_speed.text = AIM_X_speed.ToString();
         aim_y_speed .text = AIM_Y_speed.ToString();
@@ -290,18 +304,54 @@ public class Admin_UI : MonoBehaviour
             image[1].color = new Color(1,1,1);
             image[2].color = new Color(1,1,1);
         }
-        if(n == 60)
+        else if(n == 60)
         {
             image[0].color = new Color(1,1,1);
             image[1].color = new Color(0.6f,1,0.7f);
             image[2].color = new Color(1,1,1);
         }
-        if(n == 120)
+        else if(n == 120)
         {
             image[0].color = new Color(1,1,1);
             image[1].color = new Color(1,1,1);
             image[2].color = new Color(0.6f,1,0.7f);
         }
+    }
+    
+    public void ChangeBGM(int n)
+    {
+        admin.ChangeBGM(n);
+        BGMnumber = n;
+        admin_Date.SaveDateOther(8);
+        if(n == 0)
+        {
+            image[10].color = new Color(0.6f,1,0.7f);
+            image[11].color = new Color(1,1,1);
+            image[12].color = new Color(1,1,1);
+            image[13].color = new Color(1,1,1);
+        }
+        else if(n == 1)
+        {
+            image[10].color = new Color(1,1,1);
+            image[11].color = new Color(0.6f,1,0.7f);
+            image[12].color = new Color(1,1,1);
+            image[13].color = new Color(1,1,1);
+        }
+        else if(n == 2)
+        {
+            image[10].color = new Color(1,1,1);
+            image[11].color = new Color(1,1,1);
+            image[12].color = new Color(0.6f,1,0.7f);
+            image[13].color = new Color(1,1,1);
+        }
+        else if(n == 3)
+        {
+            image[10].color = new Color(1,1,1);
+            image[11].color = new Color(1,1,1);
+            image[12].color = new Color(1,1,1);
+            image[13].color = new Color(0.6f,1,0.7f);
+        }
+            
     }
 
     public void ChangeAIMSpeed()
@@ -339,6 +389,12 @@ public class Admin_UI : MonoBehaviour
             shadows = toggledates[1].Value;
             admin_Date.SaveDateOther(7);
             ChangeShadowBool();
+        }
+
+        if(ChangeVolumeFlag == true)
+        {
+            ChangeVolumeFlag = false;
+            admin_Date.SaveDateOther(9);
         }
     }
 
@@ -406,6 +462,28 @@ public class Admin_UI : MonoBehaviour
     public void GetInput(int n)
     {
         move.GetInput(n);
+    }
+
+    public void ChangeVolume(int n)
+    {
+        if(n == 0)
+        {
+            MasterVolume = slider[n].value;
+            audioMixer.SetFloat("Master" , MasterVolume);
+            Debug.Log("現在のマスター音量は" + MasterVolume);
+        }
+        else if(n == 1)
+        {
+            BGMVolume = slider[n].value;
+            audioMixer.SetFloat("Master" , MasterVolume);
+            Debug.Log("現在のマスター音量は" + MasterVolume);
+        }
+        else if(n == 2)
+        {
+            SEVolume = slider[n].value;
+        }
+        ChangeVolumeFlag = false;
+
     }
 
 }
