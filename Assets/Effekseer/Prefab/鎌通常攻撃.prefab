@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4694840906008560592}
   - component: {fileID: 6908376266641731181}
   m_Layer: 3
-  m_Name: "\u7247\u624B\u5263\u901A\u5E38\u653B\u6483"
+  m_Name: "\u938C\u901A\u5E38\u653B\u6483"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5565617086869709859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.72}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6103702739584635958
 MonoBehaviour:
@@ -49,7 +49,7 @@ MonoBehaviour:
   TimingOfUpdate: 0
   EmitterScale: 0
   TimeScale: 0
-  effectAsset: {fileID: 11400000, guid: 85b696eaa66b07a48a4c1ffffed62742, type: 2}
+  effectAsset: {fileID: 11400000, guid: 3cd458614549b30418be37756c9e7d4c, type: 2}
   playOnStart: 0
   isLooping: 0
 --- !u!135 &4694840906008560592
@@ -71,8 +71,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 4.65
-  m_Center: {x: -0.21, y: 0.11, z: -0.89}
+  m_Radius: 3.74
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6908376266641731181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,10 +85,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3655d39e3fdd58246864196fc2c0c628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDamageEffect: 1
-  DamageMagnification: 1
-  ContinueDamage: 0
-  DamageInterval: -0.02
+  isDamageEffect: 0
+  DamageMagnification: 1.17
+  ContinueDamage: 1
+  DamageInterval: 0
   firstTransForm:
   - position: {x: -0.22, y: 0.94, z: 0.41}
     Addrotation: {x: -0.28, y: -17, z: 169}
