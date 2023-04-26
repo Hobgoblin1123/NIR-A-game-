@@ -44,6 +44,9 @@ public class Admin_Date : MonoBehaviour
             admin_UI.FullScreen = true;
             admin_UI.shadows = false;
             admin_UI.ScreenResolution = 1;
+            admin_UI.MasterVolume = 1;
+            admin_UI.BGMVolume = 1;
+            admin_UI.SEVolume = 1;
 
             SaveDate();
             SaveDateOther(0);
@@ -157,6 +160,10 @@ public class Admin_Date : MonoBehaviour
             PlayerPrefs.SetFloat("MVolume" , admin_UI.MasterVolume);
             PlayerPrefs.SetFloat("BGMVolume" , admin_UI.BGMVolume);
             PlayerPrefs.SetFloat("SEVolume" , admin_UI.SEVolume);
+        }
+        if(n == 0 || n == 10)
+        {
+            PlayerPrefs.SetInt("AutoRun" , move.AutoRunFlag? 0:1);
         }
 
         PlayerPrefs.Save();

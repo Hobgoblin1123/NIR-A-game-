@@ -40,19 +40,10 @@ public class Toggledate : MonoBehaviour
 
     IEnumerator  MoveHandle()
     {
-        var n = 0f;
-        if(Value == true)
-        {
-            n = 5.5f;
-            backgroundImage.color = ON_BG_COLOR;
-        }
-        else
-        {
-            n = -5.5f;
-            backgroundImage.color = OFF_BG_COLOR;
-        }
+        var n = Value? 5.4f:-5.4f;
+        backgroundImage.color = Value? ON_BG_COLOR : OFF_BG_COLOR;
 
-        for (int i = 0; i < 14; i++)
+        for (int i = 0; i < 10; i++)
         {
             handle.position = handle.position + new Vector3(n ,0,0);
             yield return new WaitForSecondsRealtime(0.02f);

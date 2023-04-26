@@ -109,6 +109,7 @@ public class Admin : MonoBehaviour
         audioSource.Play();
 
         LockOn = false;
+        ChangeAutoRun(PlayerPrefs.GetInt("AutoRun"));
         //cinemachineのAIMのSpeedの値を初期値に設定
         // EnemyHP.maxValue = 1;
         // EnemyHP.minValue = 0;
@@ -372,9 +373,17 @@ public class Admin : MonoBehaviour
     //     EnemyHP.value = f;
     // }
 
-    public void ChangeAutoRun()
+    public void ChangeAutoRun(int n)
     {
-        characterScript.AutoRunFlag = !characterScript.AutoRunFlag;
+        if(n == 0)
+        {
+            characterScript.AutoRunFlag = true;
+        }
+        else if(n == 1)
+        {
+            characterScript.AutoRunFlag = false;
+        }
+        
     }
 
     public bool isWorkeingMobileImage()

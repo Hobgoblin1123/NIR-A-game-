@@ -91,6 +91,10 @@ public class Admin_UI : MonoBehaviour
             shadows = false;
             ChangeShadowBool();
         }
+        if(PlayerPrefs.GetInt("AutoRun") == 0)
+        {
+            toggledates[2].ToggleOn();
+        }
         BGMnumber = PlayerPrefs.GetInt("BGM");
         image[BGMnumber + 10].color = new Color(0.6f,1,0.7f);
         // ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
@@ -121,6 +125,16 @@ public class Admin_UI : MonoBehaviour
             Cursor.visible = false;
             Debug.Log("このデバイスはwindowsデバイスです。");
 		}
+
+            MasterVolume = PlayerPrefs.GetFloat("MVolume");
+            BGMVolume = PlayerPrefs.GetFloat("BGMVolume");
+            SEVolume = PlayerPrefs.GetFloat("SEVolume");
+            audioMixer.SetFloat("Master" , Mathf.Log10(MasterVolume) * 20);
+            audioMixer.SetFloat("BGM" , Mathf.Log10(BGMVolume) * 20);
+            audioMixer.SetFloat("SE" , Mathf.Log10(MasterVolume) * 20);
+            slider[0].value = MasterVolume;
+            slider[1].value = BGMVolume;
+            slider[2].value = SEVolume;
 
     }
 
@@ -280,6 +294,11 @@ public class Admin_UI : MonoBehaviour
             Cursor.visible = false;
             
         }
+        if(ChangeVolumeFlag == true)
+        {
+            ChangeVolumeFlag = false;
+            admin_Date.SaveDateOther(9);
+        }
     }
 
     public void Save()
@@ -390,11 +409,11 @@ public class Admin_UI : MonoBehaviour
             admin_Date.SaveDateOther(7);
             ChangeShadowBool();
         }
-
-        if(ChangeVolumeFlag == true)
+        if(n == 2)
         {
-            ChangeVolumeFlag = false;
-            admin_Date.SaveDateOther(9);
+            var s = toggledates[2].Value ? 0:1;
+            admin.ChangeAutoRun(s);
+            admin_Date.SaveDateOther(10);
         }
     }
 
@@ -463,26 +482,26 @@ public class Admin_UI : MonoBehaviour
     {
         move.GetInput(n);
     }
-
+public float n = 20;
     public void ChangeVolume(int n)
     {
         if(n == 0)
         {
-            MasterVolume = slider[n].value;
-            audioMixer.SetFloat("Master" , MasterVolume);
-            Debug.Log("現在のマスター音量は" + MasterVolume);
+            MasterVolume = slider[0].value;
+            audioMixer.SetFloat("Master" , Mathf.Log10(MasterVolume) * 20);
         }
         else if(n == 1)
         {
-            BGMVolume = slider[n].value;
-            audioMixer.SetFloat("Master" , MasterVolume);
-            Debug.Log("現在のマスター音量は" + MasterVolume);
+            BGMVolume = slider[1].value;
+            audioMixer.SetFloat("BGM" , Mathf.Log10(BGMVolume) * 20);
         }
         else if(n == 2)
         {
-            SEVolume = slider[n].value;
+            SEVolume = slider[2].value;
+            audioMixer.SetFloat("SE" , Mathf.Log10(MasterVolume) * 20);
         }
-        ChangeVolumeFlag = false;
+
+        ChangeVolumeFlag = true;
 
     }
 
