@@ -23,8 +23,6 @@ public class Admin_UI : MonoBehaviour
     [SerializeField]
     private Admin_Date admin_Date;
     [SerializeField]
-    private Toggle toggle;
-    [SerializeField]
     private CinemachineVirtualCamera virtualCamera;
     private CinemachinePOV cinemachinePOV;
     [SerializeField]
@@ -96,6 +94,15 @@ public class Admin_UI : MonoBehaviour
             toggledates[2].ToggleOn();
         }
         BGMnumber = PlayerPrefs.GetInt("BGM");
+        if(PlayerPrefs.GetInt("AutoSave")==0 )
+        {
+            toggledates[3].ToggleOn();
+            admin_Date.AutoSave = true;
+        }
+        else
+        {
+            admin_Date.AutoSave = false;
+        }
         image[BGMnumber + 10].color = new Color(0.6f,1,0.7f);
         // ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
         aim_x_speed.text = AIM_X_speed.ToString();
@@ -307,11 +314,6 @@ public class Admin_UI : MonoBehaviour
         admin_Date.SaveDateOther(0);
     }
 
-    public void ChangeAutoSave()
-    {
-        admin_Date.AutoSave = toggle.isOn;
-    }
-
     public void ChangeFPS(int n)
     {
         NawFPS = n;
@@ -414,6 +416,11 @@ public class Admin_UI : MonoBehaviour
             var s = toggledates[2].Value ? 0:1;
             admin.ChangeAutoRun(s);
             admin_Date.SaveDateOther(10);
+        }
+        if(n == 3)
+        {
+            admin_Date.AutoSave = toggledates[3].Value; 
+            admin_Date.SaveDateOther(11);
         }
     }
 

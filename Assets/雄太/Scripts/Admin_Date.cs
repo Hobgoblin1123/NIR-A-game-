@@ -165,6 +165,10 @@ public class Admin_Date : MonoBehaviour
         {
             PlayerPrefs.SetInt("AutoRun" , move.AutoRunFlag? 0:1);
         }
+        if(n == 0 || n == 11)
+        {
+            PlayerPrefs.SetInt("AutoSave" , AutoSave? 0:1);
+        }
 
         PlayerPrefs.Save();
         Debug.Log("個別情報を保存しました");
