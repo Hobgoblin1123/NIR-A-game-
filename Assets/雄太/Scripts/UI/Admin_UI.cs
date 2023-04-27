@@ -104,7 +104,7 @@ public class Admin_UI : MonoBehaviour
             admin_Date.AutoSave = false;
         }
         image[BGMnumber + 10].color = new Color(0.6f,1,0.7f);
-        // ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
+        ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
         aim_x_speed.text = AIM_X_speed.ToString();
         aim_y_speed .text = AIM_Y_speed.ToString();
         cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
@@ -146,9 +146,10 @@ public class Admin_UI : MonoBehaviour
 
             Debug.Log("現在の画面解像度は" + Screen.currentResolution);
             Debug.Log(admin);
-// Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
-//             Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
-//             Destroy(ControlCanvas);
+            
+            Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
+            Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
+            Destroy(ControlCanvas);
     }
 
     // Update is called once per frame
@@ -409,7 +410,7 @@ public class Admin_UI : MonoBehaviour
         {
             FullScreen = toggledates[0].Value;
             admin_Date.SaveDateOther(5);
-            // ChangeScreenResolution(ScreenResolution);
+            ChangeScreenResolution(ScreenResolution);
         }
         if(n == 1)
         {
@@ -430,34 +431,34 @@ public class Admin_UI : MonoBehaviour
         }
     }
 
-    // public void ChangeScreenResolution(int n)
-    // {
-    //     Screen.SetResolution(Screen.currentResolution.width*5-n/4 , Screen.currentResolution.height*5-n/4 , FullScreen);
-    //     ScreenResolution = n;
-    //     Debug.Log(n);
-    //     Debug.Log( (Screen.currentResolution.width) );
-    //     Debug.Log(Screen.currentResolution.height*(5-n)/4);
-    //     Debug.Log("現在のフルスクリーンboolは　"+FullScreen);
-    //     admin_Date.SaveDateOther(6);
-    //     if(n == 1)
-    //     {
-    //         image[3].color = new Color(0.6f,1,0.7f);
-    //         image[4].color = new Color(1,1,1);
-    //         image[5].color = new Color(1,1,1);
-    //     }
-    //     if(n == 2)
-    //     {
-    //         image[3].color = new Color(1,1,1);
-    //         image[4].color = new Color(0.6f,1,0.7f);
-    //         image[5].color = new Color(1,1,1);
-    //     }
-    //     if(n == 3)
-    //     {
-    //         image[3].color = new Color(1,1,1);
-    //         image[4].color = new Color(1,1,1);
-    //         image[5].color = new Color(0.6f,1,0.7f);
-    //     }
-    // }
+    public void ChangeScreenResolution(int n)
+    {
+        Screen.SetResolution(Screen.currentResolution.width*5-n/4 , Screen.currentResolution.height*5-n/4 , FullScreen);
+        ScreenResolution = n;
+        Debug.Log(n);
+        Debug.Log( (Screen.currentResolution.width) );
+        Debug.Log(Screen.currentResolution.height*(5-n)/4);
+        Debug.Log("現在のフルスクリーンboolは　"+FullScreen);
+        admin_Date.SaveDateOther(6);
+        if(n == 1)
+        {
+            image[3].color = new Color(0.6f,1,0.7f);
+            image[4].color = new Color(1,1,1);
+            image[5].color = new Color(1,1,1);
+        }
+        if(n == 2)
+        {
+            image[3].color = new Color(1,1,1);
+            image[4].color = new Color(0.6f,1,0.7f);
+            image[5].color = new Color(1,1,1);
+        }
+        if(n == 3)
+        {
+            image[3].color = new Color(1,1,1);
+            image[4].color = new Color(1,1,1);
+            image[5].color = new Color(0.6f,1,0.7f);
+        }
+    }
 
     public void ChangeShadowBool()
     {

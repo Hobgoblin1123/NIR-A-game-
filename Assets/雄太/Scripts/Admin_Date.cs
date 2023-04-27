@@ -53,6 +53,7 @@ public class Admin_Date : MonoBehaviour
             Debug.Log("初期追加");
         }
 
+
     }
 
     // Start is called before the first frame update
@@ -72,6 +73,7 @@ public class Admin_Date : MonoBehaviour
                 SaveDate();
             }
         }
+        Debug.Log(transform.position);
         
     }
 
