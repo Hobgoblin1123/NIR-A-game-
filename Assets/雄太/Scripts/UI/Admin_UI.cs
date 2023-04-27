@@ -127,7 +127,8 @@ public class Admin_UI : MonoBehaviour
 		}
 		else if (Application.platform == RuntimePlatform.WindowsPlayer) 
 		{
-            Destroy(ControlCanvas);
+            
+            ControlCanvas.enabled = false;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             Debug.Log("このデバイスはwindowsデバイスです。");
@@ -143,6 +144,11 @@ public class Admin_UI : MonoBehaviour
             slider[1].value = BGMVolume;
             slider[2].value = SEVolume;
 
+            Debug.Log("現在の画面解像度は" + Screen.currentResolution);
+            Debug.Log(admin);
+// Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
+//             Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
+//             Destroy(ControlCanvas);
     }
 
     // Update is called once per frame
