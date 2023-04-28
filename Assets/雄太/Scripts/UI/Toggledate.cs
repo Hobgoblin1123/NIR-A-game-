@@ -43,7 +43,7 @@ public class Toggledate : MonoBehaviour
         var n = Value? 5.4f:-5.4f;
         
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 14; i++)
         {
             handle.position = handle.position + new Vector3(n ,0,0);
             yield return new WaitForSecondsRealtime(0.02f);

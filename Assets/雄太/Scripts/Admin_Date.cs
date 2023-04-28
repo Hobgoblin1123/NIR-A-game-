@@ -73,7 +73,6 @@ public class Admin_Date : MonoBehaviour
                 SaveDate();
             }
         }
-        Debug.Log(transform.position);
         
     }
 
@@ -141,16 +140,7 @@ public class Admin_Date : MonoBehaviour
         }
         if(n == 0 || n == 7)
         {
-            var s = 0;
-            if(admin_UI.shadows == true)
-            {
-                s = 0;
-            }
-            else
-            {
-                s = 1;
-            }
-            PlayerPrefs.SetInt("Shadows" , s);
+            PlayerPrefs.SetInt("Shadows" , admin_UI.shadows?0:1);
         }
 
         if(n == 0 || n == 8)

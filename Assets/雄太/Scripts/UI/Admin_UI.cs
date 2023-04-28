@@ -59,6 +59,10 @@ public class Admin_UI : MonoBehaviour
     public float BGMVolume;
     public float SEVolume;
     private bool ChangeVolumeFlag;
+    [SerializeField]
+    private GameObject[] alarmCanvas;
+    [SerializeField]
+    private Canvas AlarmParent;
     
     // Start is called before the first frame update
     void Start()
@@ -496,7 +500,6 @@ public class Admin_UI : MonoBehaviour
     {
         move.GetInput(n);
     }
-public float n = 20;
     public void ChangeVolume(int n)
     {
         if(n == 0)
@@ -517,6 +520,14 @@ public float n = 20;
 
         ChangeVolumeFlag = true;
 
+    }
+
+    public void Alarm(int n)
+    {
+        if(n == 0)
+        {
+            Instantiate(alarmCanvas[0] , -Vector3.zero , Quaternion.identity , AlarmParent.transform);
+        }
     }
 
 }

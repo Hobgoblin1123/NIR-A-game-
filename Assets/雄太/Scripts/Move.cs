@@ -49,14 +49,27 @@ public class Move : MonoBehaviour
 	[SerializeField]
 	private FixedJoystick fixedJoystick;
 	public bool isWorkeingMobilePlatform;
-
+	[SerializeField]
+	private Vector3 ResetPosition;
+	[SerializeField]
+	private Admin_UI admin_UI;
 	void Awake()
     {
 		var posi = new Vector3(0,0,0);
 		posi.x = PlayerPrefs.GetFloat("posi_X");
 		posi.y = PlayerPrefs.GetFloat("posi_y");
 		posi.z = PlayerPrefs.GetFloat("posi_z");
-		transform.position = posi;
+		if(posi.y < -1)
+		{
+			transform.position = ResetPosition;
+			Debug.Log("ポジションをリセットしました");
+			admin_UI.Alarm(0);
+		}
+		else
+		{
+			transform.position = posi;
+		}
+		
 		//初期化
 		targetRotation = transform.rotation;
 		if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) 
