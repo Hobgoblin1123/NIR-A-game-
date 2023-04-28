@@ -47,6 +47,8 @@ public class Move : MonoBehaviour
 	[SerializeField]
 	private Camera mainCamera;
 	[SerializeField]
+	private GameObject ParentCamera;
+	[SerializeField]
 	private FixedJoystick fixedJoystick;
 	public bool isWorkeingMobilePlatform;
 	[SerializeField]
@@ -220,8 +222,10 @@ public class Move : MonoBehaviour
 				vertical = fixedJoystick.Vertical;
 			}
 			
+			var t = isWorkeingMobilePlatform? ParentCamera.transform : mainCamera.transform;
+			// Debug.Log(t.eulerAngles);
 
-			var horizontalRotation = Quaternion.AngleAxis( mainCamera.transform.eulerAngles.y, Vector3.up);
+			var horizontalRotation = Quaternion.AngleAxis( t.eulerAngles.y, Vector3.up);
 			velocity = horizontalRotation * new Vector3(horizontal, 0, vertical).normalized;
 			// var speed = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
 

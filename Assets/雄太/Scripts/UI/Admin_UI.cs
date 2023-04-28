@@ -70,8 +70,7 @@ public class Admin_UI : MonoBehaviour
         itemsDialog = GetComponentInChildren<ItemsDialog>();
         inventoryManager = GetComponentInChildren<InventoryManager>();
         cinemachinePOV = virtualCamera.GetCinemachineComponent<CinemachinePOV>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        
         QualitySettings.vSyncCount = 0;
         AIM_X_speed = PlayerPrefs.GetFloat("Aim_X");
         AIM_Y_speed = PlayerPrefs.GetFloat("Aim_Y");
@@ -120,7 +119,8 @@ public class Admin_UI : MonoBehaviour
         PauseCanvas.SetActive(false);
         ChangeSetting(1);
 
-
+        // Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.visible = false;
 
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) 
 		{
@@ -136,6 +136,9 @@ public class Admin_UI : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             Debug.Log("このデバイスはwindowsデバイスです。");
+            Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
+            Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
+            Destroy(ControlCanvas);
 		}
 
             MasterVolume = PlayerPrefs.GetFloat("MVolume");
@@ -151,9 +154,7 @@ public class Admin_UI : MonoBehaviour
             Debug.Log("現在の画面解像度は" + Screen.currentResolution);
             Debug.Log(admin);
             
-            Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
-            Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
-            Destroy(ControlCanvas);
+            
     }
 
     // Update is called once per frame
@@ -292,6 +293,11 @@ public class Admin_UI : MonoBehaviour
     public void Toggle1(){
 
         PauseCanvas.SetActive(!PauseCanvas.activeSelf);
+        if(ChangeVolumeFlag == true)
+        {
+            ChangeVolumeFlag = false;
+            admin_Date.SaveDateOther(9);
+        }
 
         if (PauseCanvas.activeSelf)
         {
@@ -312,11 +318,8 @@ public class Admin_UI : MonoBehaviour
             Cursor.visible = false;
             
         }
-        if(ChangeVolumeFlag == true)
-        {
-            ChangeVolumeFlag = false;
-            admin_Date.SaveDateOther(9);
-        }
+
+        
     }
 
     public void Save()
@@ -437,7 +440,7 @@ public class Admin_UI : MonoBehaviour
 
     public void ChangeScreenResolution(int n)
     {
-        Screen.SetResolution(Screen.currentResolution.width*5-n/4 , Screen.currentResolution.height*5-n/4 , FullScreen);
+        Screen.SetResolution(Screen.currentResolution.width , Screen.currentResolution.height, FullScreen);
         ScreenResolution = n;
         Debug.Log(n);
         Debug.Log( (Screen.currentResolution.width) );
