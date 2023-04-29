@@ -132,7 +132,7 @@ public class Admin_UI : MonoBehaviour
             isWorkeingMobilePlatform = true;
             Debug.Log("このデバイスはモバイルデバイスです。");
 		}
-		else if (Application.platform == RuntimePlatform.WindowsPlayer) 
+		else //if (Application.platform == RuntimePlatform.WindowsPlayer) 
 		{
             
             ControlCanvas.enabled = false;
@@ -144,7 +144,7 @@ public class Admin_UI : MonoBehaviour
             Debug.Log("このデバイスはwindowsデバイスです。");
             Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
             Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
-            Destroy(ControlCanvas);
+            Destroy(ControlCanvas.gameObject);
 		}
 
             MasterVolume = PlayerPrefs.GetFloat("MVolume");
