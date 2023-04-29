@@ -41,9 +41,10 @@ public class Toggledate : MonoBehaviour
     IEnumerator  MoveHandle()
     {
         var n = Value? 5.4f:-5.4f;
+        var s = admin_UI.isWorkeingMobilePlatform?18:14;
         
 
-        for (int i = 0; i < 14; i++)
+        for (int i = 0; i < s; i++)
         {
             handle.position = handle.position + new Vector3(n ,0,0);
             yield return new WaitForSecondsRealtime(0.02f);

@@ -17,7 +17,7 @@ public class roteCamera : MonoBehaviour
 
     /// <summary> カメラ速度（°/px） </summary>
     [SerializeField]
-    private float _angularPerPixel = 1f;
+    public Vector2 _angularPerPixel;
 
     /// <summary> カメラ操作として前フレームにタッチしたキャンバス上の座標 </summary>
     private Vector2 _lookPointerPosPre;

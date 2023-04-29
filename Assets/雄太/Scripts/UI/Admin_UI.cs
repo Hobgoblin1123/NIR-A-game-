@@ -45,7 +45,7 @@ public class Admin_UI : MonoBehaviour
     public bool FullScreen;
     public bool shadows;
     public int ScreenResolution;
-    private bool isWorkeingMobilePlatform;
+    public bool isWorkeingMobilePlatform;
     [SerializeField]
     private Image isWorkeingMobileImage;
     public int BGMnumber;
@@ -63,6 +63,8 @@ public class Admin_UI : MonoBehaviour
     private GameObject[] alarmCanvas;
     [SerializeField]
     private Canvas AlarmParent;
+    [SerializeField]
+    private roteCamera roteCamera;
     
     // Start is called before the first frame update
     void Start()
@@ -110,8 +112,7 @@ public class Admin_UI : MonoBehaviour
         ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
         aim_x_speed.text = AIM_X_speed.ToString();
         aim_y_speed .text = AIM_Y_speed.ToString();
-        cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
-        cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
+        
         foreach (var item in canvas)
         {
             item.enabled = false;
@@ -127,6 +128,8 @@ public class Admin_UI : MonoBehaviour
             ControlCanvas.enabled = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed) / 100 * 2.5f;
+            isWorkeingMobilePlatform = true;
             Debug.Log("このデバイスはモバイルデバイスです。");
 		}
 		else if (Application.platform == RuntimePlatform.WindowsPlayer) 
@@ -135,6 +138,9 @@ public class Admin_UI : MonoBehaviour
             ControlCanvas.enabled = false;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
+            cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
+            isWorkeingMobilePlatform = false;
             Debug.Log("このデバイスはwindowsデバイスです。");
             Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
             Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
@@ -303,7 +309,7 @@ public class Admin_UI : MonoBehaviour
         {
             Time.timeScale = 0;
             virtualCamera.enabled = false;
-            if(move.isWorkeingMobilePlatform == true)return;
+            if(isWorkeingMobilePlatform == true)return;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             
@@ -313,7 +319,7 @@ public class Admin_UI : MonoBehaviour
             move.LastAttack();
             Time.timeScale = 1;
             virtualCamera.enabled = true;
-            if(move.isWorkeingMobilePlatform == true)return;
+            if(isWorkeingMobilePlatform == true)return;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             
@@ -403,9 +409,17 @@ public class Admin_UI : MonoBehaviour
             AIM_Y_speed = 1;
             aim_y_speed.text = "1";
         }
+
+        if(isWorkeingMobilePlatform == true)
+        {
+            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed) / 100 * 2.5f;
+        }
+        else
+        {
+            cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
+            cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
+        }
         
-        cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
-        cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
         admin_Date.SaveDateOther(4);
 
         Debug.Log("感度を変更");

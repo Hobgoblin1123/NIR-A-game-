@@ -38,8 +38,7 @@ public class Admin_Date : MonoBehaviour
             var rote = rotatoSun.transform.rotation.eulerAngles;
             admin.ChangeMainWeapon(2);
             admin.ChangeSubWeapon(3);
-            admin_UI.AIM_X_speed = 8;
-            admin_UI.AIM_Y_speed = 8;
+            
             admin_UI.NawFPS = 60;
             admin_UI.FullScreen = true;
             admin_UI.shadows = false;
@@ -47,6 +46,17 @@ public class Admin_Date : MonoBehaviour
             admin_UI.MasterVolume = 1;
             admin_UI.BGMVolume = 1;
             admin_UI.SEVolume = 1;
+
+            if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                admin_UI.AIM_X_speed = 4;
+                admin_UI.AIM_Y_speed = 16;
+            }
+            else
+            {
+                admin_UI.AIM_X_speed = 6;
+                admin_UI.AIM_Y_speed = 6;
+            }
 
             SaveDate();
             SaveDateOther(0);
