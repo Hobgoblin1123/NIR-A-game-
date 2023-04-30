@@ -4,27 +4,30 @@ using UnityEngine;
 
 public class Admin_Date : MonoBehaviour
 {
-    [SerializeField]
-    private Move move;
-    [SerializeField]
-    private Admin admin;
-    [SerializeField]
-    private RotatoSun rotatoSun;
-    [SerializeField]
-    private ChangeEquip changeEquip;
-    [SerializeField]
-    private Admin_UI admin_UI;
-    [SerializeField]
-    private Light Mainlight;
+
+    [Header("アタッチスクリプト")]
+        [SerializeField]
+        private Move move;
+        [SerializeField]
+        private Admin admin;
+        [SerializeField]
+        private RotatoSun rotatoSun;
+        [SerializeField]
+        private ChangeEquip changeEquip;
+        [SerializeField]
+        private Admin_UI admin_UI;
+
+    [Space(6)]
+
+    [Header("その他")]
+        [SerializeField]
+        private float SaveTime = 30;
+        [SerializeField]
+        private Vector3 FirstCharaPOsition;
+        [SerializeField]
+        public bool AutoSave = true;
+
     private float time;
-    [SerializeField]
-    private float SaveTime = 30;
-    [SerializeField]
-    private Vector3 FirstCharaPOsition;
-    [SerializeField]
-    public bool AutoSave = true;
-    
-    
 
     private void Awake() 
     {
@@ -62,8 +65,6 @@ public class Admin_Date : MonoBehaviour
             SaveDateOther(0);
             Debug.Log("初期追加");
         }
-
-
     }
 
     // Start is called before the first frame update
@@ -133,16 +134,7 @@ public class Admin_Date : MonoBehaviour
         }
         if(n == 0 || n == 5)
         {
-            var i = 0;
-            if(admin_UI.FullScreen == true)
-            {
-                i = 0;
-            }
-            else
-            {
-                i = 1;
-            }
-            PlayerPrefs.SetInt("FullScreen" ,i);
+            PlayerPrefs.SetInt("FullScreen" ,admin_UI.FullScreen? 0:1);
         }
         if(n == 0 || n == 6)
         {

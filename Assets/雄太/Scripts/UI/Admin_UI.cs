@@ -7,64 +7,69 @@ using UnityEngine.Audio;
 
 public class Admin_UI : MonoBehaviour
 {
-    [SerializeField]
-    private Canvas[] canvas;
+    [Header("アタッチコンポーネント")]
+        [SerializeField]
+        private Canvas[] canvas;
+        [SerializeField]
+        private GameObject PauseCanvas;
+        [SerializeField]
+        private Image[] image;
+        [SerializeField]
+        private Toggledate[] toggledates;
+        [SerializeField]
+        private GameObject[] SettingPanel;
+        [SerializeField]
+        private Slider[] slider;
+        [SerializeField]
+        private GameObject[] alarmCanvas;
+        [SerializeField]
+        private Canvas ControlCanvas;
+        [SerializeField]
+        private Canvas AlarmParent;
+
+        [SerializeField]
+        private Move move;
+        [SerializeField]
+        private Admin admin;
+        [SerializeField]
+        private Admin_Date admin_Date;
+        [SerializeField]
+        private ChangeEquip changeEquip;
+        [SerializeField]
+        private roteCamera roteCamera;
+        [SerializeField]
+        private CinemachineVirtualCamera virtualCamera;
+        [SerializeField]
+        private InputField aim_x_speed;
+        [SerializeField]
+        private InputField aim_y_speed;
+        [SerializeField]
+        private Light Mainlight;
+
+    [Header("その他")]
+        [SerializeField]
+        private AudioMixer audioMixer;
+        [SerializeField]
+        private Image isWorkeingMobileImage;
+        public float MasterVolume;
+        public float BGMVolume;
+        public float SEVolume;
+        [SerializeField]
+        private Text FPS;
+        public float AIM_X_speed;
+        public float AIM_Y_speed; 
+        public int NawFPS;
+        public bool FullScreen;
+        public bool shadows;
+        public int ScreenResolution;
+        public bool isWorkeingMobilePlatform;
+        public int BGMnumber;
+
     private ItemsDialog itemsDialog;
     private InventoryManager inventoryManager;
-    [SerializeField]
-    private GameObject PauseCanvas;
-    [SerializeField]
-    private Move move;
-    [SerializeField]
-    private Admin admin;
-    [SerializeField]
-    private Text FPS;
     private float time;
-    [SerializeField]
-    private Admin_Date admin_Date;
-    [SerializeField]
-    private CinemachineVirtualCamera virtualCamera;
     private CinemachinePOV cinemachinePOV;
-    [SerializeField]
-    private InputField aim_x_speed;
-    [SerializeField]
-    private InputField aim_y_speed;
-    public float AIM_X_speed;
-    public float AIM_Y_speed; 
-    public int NawFPS;
-    [SerializeField]
-    private Image[] image;
-    [SerializeField]
-    private Toggledate[] toggledates;
-    [SerializeField]
-    private Slider[] slider;
-    [SerializeField]
-    private Light Mainlight;
-    [SerializeField]
-    private GameObject[] SettingPanel;
-    public bool FullScreen;
-    public bool shadows;
-    public int ScreenResolution;
-    public bool isWorkeingMobilePlatform;
-    [SerializeField]
-    private Image isWorkeingMobileImage;
-    public int BGMnumber;
-    [SerializeField]
-    private ChangeEquip changeEquip;
-    [SerializeField]
-    private Canvas ControlCanvas;
-    [SerializeField]
-    private AudioMixer audioMixer;
-    public float MasterVolume;
-    public float BGMVolume;
-    public float SEVolume;
     private bool ChangeVolumeFlag;
-    [SerializeField]
-    private GameObject[] alarmCanvas;
-    [SerializeField]
-    private Canvas AlarmParent;
-    [SerializeField]
-    private roteCamera roteCamera;
     
     // Start is called before the first frame update
     void Start()
@@ -120,9 +125,6 @@ public class Admin_UI : MonoBehaviour
         PauseCanvas.SetActive(false);
         ChangeSetting(1);
 
-        // Cursor.lockState = CursorLockMode.Locked;
-        // Cursor.visible = false;
-
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer) 
 		{
             ControlCanvas.enabled = true;
@@ -147,18 +149,18 @@ public class Admin_UI : MonoBehaviour
             Destroy(ControlCanvas.gameObject);
 		}
 
-            MasterVolume = PlayerPrefs.GetFloat("MVolume");
-            BGMVolume = PlayerPrefs.GetFloat("BGMVolume");
-            SEVolume = PlayerPrefs.GetFloat("SEVolume");
-            audioMixer.SetFloat("Master" , Mathf.Log10(MasterVolume) * 20);
-            audioMixer.SetFloat("BGM" , Mathf.Log10(BGMVolume) * 20);
-            audioMixer.SetFloat("SE" , Mathf.Log10(MasterVolume) * 20);
-            slider[0].value = MasterVolume;
-            slider[1].value = BGMVolume;
-            slider[2].value = SEVolume;
+        MasterVolume = PlayerPrefs.GetFloat("MVolume");
+        BGMVolume = PlayerPrefs.GetFloat("BGMVolume");
+        SEVolume = PlayerPrefs.GetFloat("SEVolume");
+        audioMixer.SetFloat("Master" , Mathf.Log10(MasterVolume) * 20);
+        audioMixer.SetFloat("BGM" , Mathf.Log10(BGMVolume) * 20);
+        audioMixer.SetFloat("SE" , Mathf.Log10(MasterVolume) * 20);
+        slider[0].value = MasterVolume;
+        slider[1].value = BGMVolume;
+        slider[2].value = SEVolume;
 
-            Debug.Log("現在の画面解像度は" + Screen.currentResolution);
-            Debug.Log(admin);
+        Debug.Log("現在の画面解像度は" + Screen.currentResolution);
+        Debug.Log(admin);
             
             
     }
