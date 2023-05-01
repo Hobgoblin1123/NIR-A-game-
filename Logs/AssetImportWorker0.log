@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.2/staging' branch; Version is '2022.2.12f1 (022dac4955a3) revision 142764'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ja' Physical Memory: 15715 MB
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ja' Physical Memory: 7831 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.2.12f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/dedro/NIR=A(game)
+C:/3Dgame/NIR-A-game-/NIR-A-game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53341
-Successfully changed project path to: C:/Users/dedro/NIR=A(game)
-C:/Users/dedro/NIR=A(game)
+50588
+Successfully changed project path to: C:/3Dgame/NIR-A-game-/NIR-A-game-
+C:/3Dgame/NIR-A-game-/NIR-A-game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,76 +47,326 @@ C:/Users/dedro/NIR=A(game)
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12772] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 578783234 [EditorId] 578783234 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [21692] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 799353818 [EditorId] 799353818 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12772] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 578783234 [EditorId] 578783234 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21692] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 799353818 [EditorId] 799353818 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 50.44 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 48.94 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/dedro/NIR=A(game)/Assets
+[Subsystems] Discovering subsystems at path C:/3Dgame/NIR-A-game-/NIR-A-game-/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Graphics (ID=0x1638)
-    Vendor:   ATI
-    VRAM:     7857 MB
-    Driver:   27.20.21020.9000
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     3915 MB
+    Driver:   31.0.101.4314
 Shader 'IL3DN/Branch': fallback shader 'False' not found
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56684
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012852 seconds.
-- Loaded All Assemblies, in  0.667 seconds
+Registered in 0.009295 seconds.
+- Loaded All Assemblies, in  0.829 seconds
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 422 ms
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.462 seconds
+- Finished resetting the current domain, in  0.973 seconds
 Domain Reload Profiling:
-	ReloadAssembly (426ms)
-		BeginReloadAssembly (251ms)
+	ReloadAssembly (534ms)
+		BeginReloadAssembly (265ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
+			CreateAndSetChildDomain (3ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (245ms)
+			LoadAssemblies (258ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (229ms)
-				TypeCache.Initialize (227ms)
-					TypeCache.ScanAssembly (223ms)
+			SetupTypeCache (277ms)
+				TypeCache.Initialize (275ms)
+					TypeCache.ScanAssembly (273ms)
 				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (368ms)
+			SetupLoadedEditorAssemblies (884ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (12ms)
+				InitializePlatformSupportModulesInManaged (568ms)
+				SetLoadedEditorAssemblies (10ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (253ms)
-				ProcessInitializeOnLoadMethodAttributes (87ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (88ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.469 seconds
-Refreshing native plugins compatible for Editor in 21.86 ms, found 7 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.506 seconds
+Refreshing native plugins compatible for Editor in 7.54 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\Users\dedro\NIR=A(game)\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.127 seconds
+Domain Reload Profiling:
+	ReloadAssembly (364ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		LoadAllAssembliesAndSetupDomain (1140ms)
+			LoadAssemblies (659ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (604ms)
+				TypeCache.Initialize (523ms)
+					TypeCache.ScanAssembly (512ms)
+				ResolveRequiredComponents (31ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1699ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (51ms)
+				SetLoadedEditorAssemblies (10ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (193ms)
+				ProcessInitializeOnLoadAttributes (1317ms)
+				ProcessInitializeOnLoadMethodAttributes (121ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 8.43 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7033 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 7490.
+Memory consumption went from 293.2 MB to 290.9 MB.
+Total: 8.196700 ms (FindLiveObjects: 0.713600 ms CreateObjectMapping: 0.497800 ms MarkObjects: 6.019500 ms  DeleteObjects: 0.964100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16990.667790 seconds.
+  path: Assets/雄太/武器/槍　縮尺調整済み.fbx
+  artifactKey: Guid(cbffad3723ccdff4fa79337811764d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/槍　縮尺調整済み.fbx using Guid(cbffad3723ccdff4fa79337811764d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16665204ccd7c982a39190d61f0662ce') in 3.271201 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 120.320386 seconds.
+  path: Assets/雄太/enemy/AxeBroken.fbx
+  artifactKey: Guid(78d1a63580243484e96b64b94038a9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/AxeBroken.fbx using Guid(78d1a63580243484e96b64b94038a9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83aba60995e8e175186bd801e99a42a') in 0.099099 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 3.509154 seconds.
+  path: Assets/雄太/enemy/prefab/Ghost.prefab
+  artifactKey: Guid(2b672ac2d79949a44b7743952336551a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/prefab/Ghost.prefab using Guid(2b672ac2d79949a44b7743952336551a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b1842f78ee654d8de77273aabe6294') in 1.785799 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 177
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/雄太/enemy/prefab/犬の敵.prefab
+  artifactKey: Guid(b0036b48d7cc9f7488bb966dc0755d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/prefab/犬の敵.prefab using Guid(b0036b48d7cc9f7488bb966dc0755d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51e73b3f75ac389bfc8df7fddfb5a63') in 0.219053 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 229
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/雄太/enemy/prefab/TalkSystem.prefab
+  artifactKey: Guid(0d73d3c28e0049142a6b0d42f54362fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/prefab/TalkSystem.prefab using Guid(0d73d3c28e0049142a6b0d42f54362fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be660085d76d6d41635ab40bd88749d') in 0.004623 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 187.507208 seconds.
+  path: Assets/models/2.blend
+  artifactKey: Guid(beaf1369a2c7ea24bb5d62a83e37ac8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/2.blend using Guid(beaf1369a2c7ea24bb5d62a83e37ac8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42864a5de8b58987081ab14dd9b161aa') in 0.034256 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/models/ita1.blend
+  artifactKey: Guid(bc2c2b1b3d252f8478926cb8f318c298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ita1.blend using Guid(bc2c2b1b3d252f8478926cb8f318c298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4106f5b0274ecd15624429a59ef503') in 0.032067 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/models/sousyoku.blend
+  artifactKey: Guid(61c4dff874ff72b43aed496fd7c4946a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/sousyoku.blend using Guid(61c4dff874ff72b43aed496fd7c4946a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460cbebd29e4fe87139c5082a1684905') in 0.030841 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/models/ita4.blend
+  artifactKey: Guid(fb52bbf8c97147b4fba46d3553d47734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ita4.blend using Guid(fb52bbf8c97147b4fba46d3553d47734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2212557a7a43049bd5bd63c83e5362c3') in 0.023276 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/models/ita3.blend
+  artifactKey: Guid(60f206ff1046a2c468190870b4cf1e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ita3.blend using Guid(60f206ff1046a2c468190870b4cf1e7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba70a705e4b49f260702a77d1b97316') in 0.027850 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/models/54a8125262956356.blend
+  artifactKey: Guid(94afcbf7386b9224e9a6af43e914865d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/54a8125262956356.blend using Guid(94afcbf7386b9224e9a6af43e914865d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92d25b3817e1cf5e54402fb436f18bf') in 0.025431 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/models/isiblock_nagai.blend
+  artifactKey: Guid(95e92a0e316d86f448b39838d3c01828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/isiblock_nagai.blend using Guid(95e92a0e316d86f448b39838d3c01828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab35593f401d52bf9845c61a6e11bea') in 0.025834 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1.806496 seconds.
+  path: Assets/models/ボスステージ/ボスステージ１.blend
+  artifactKey: Guid(f00902440e5bc46458ecd3d856fc0e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/ボスステージ１.blend using Guid(f00902440e5bc46458ecd3d856fc0e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4259abbafb257ed70357aff7ea82c6e3') in 0.105565 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/models/ボスステージ/黒.mat
+  artifactKey: Guid(2558104c25ea6cb45ac7ffed68b605c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/黒.mat using Guid(2558104c25ea6cb45ac7ffed68b605c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2241e9b2ff2b15fe630a37dd513369f3') in 1.598275 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 85.959240 seconds.
+  path: Assets/models/ボスステージ/ボスステージ１.blend
+  artifactKey: Guid(f00902440e5bc46458ecd3d856fc0e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/ボスステージ１.blend using Guid(f00902440e5bc46458ecd3d856fc0e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8996405a6e600f9d511a3eec74454c') in 0.072236 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 117.678916 seconds.
+  path: Assets/models/ボスステージ/ボスステージ１ Variant.prefab
+  artifactKey: Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/ボスステージ１ Variant.prefab using Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520f91b5e86fd8098f2922a1e3dd4d06') in 0.029126 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 11.057453 seconds.
+  path: Assets/models/ボスステージ/チュートリアル要.prefab
+  artifactKey: Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/チュートリアル要.prefab using Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c47911a0b440011e9d037cbc92bc47') in 0.016891 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 14)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 15)
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  6.356 seconds
+Refreshing native plugins compatible for Editor in 22.31 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
   at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
@@ -146,47 +396,375 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.247 seconds
+- Finished resetting the current domain, in  5.243 seconds
 Domain Reload Profiling:
-	ReloadAssembly (357ms)
-		BeginReloadAssembly (221ms)
+	ReloadAssembly (1978ms)
+		BeginReloadAssembly (1758ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (537ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		LoadAllAssembliesAndSetupDomain (1109ms)
-			LoadAssemblies (680ms)
+			ReleaseScriptingObjects (2ms)
+			CreateAndSetChildDomain (539ms)
+		LoadAllAssembliesAndSetupDomain (4371ms)
+			LoadAssemblies (3690ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (545ms)
-				TypeCache.Initialize (469ms)
-					TypeCache.ScanAssembly (458ms)
-				ResolveRequiredComponents (21ms)
+			SetupTypeCache (931ms)
+				TypeCache.Initialize (862ms)
+					TypeCache.ScanAssembly (821ms)
+				ResolveRequiredComponents (43ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (994ms)
+			SetupLoadedEditorAssemblies (1804ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (5ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (13ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (126ms)
-				ProcessInitializeOnLoadAttributes (750ms)
-				ProcessInitializeOnLoadMethodAttributes (98ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (1531ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
 Shader 'IL3DN/Branch': fallback shader 'False' not found
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 21.65 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 36.79 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7034 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 128 unused Assets / (2.3 MB). Loaded Objects now: 7491.
-Memory consumption went from 295.4 MB to 293.2 MB.
-Total: 10.754700 ms (FindLiveObjects: 1.528600 ms CreateObjectMapping: 0.546100 ms MarkObjects: 6.832000 ms  DeleteObjects: 1.845200 ms)
+Unloading 6779 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 80 unused Assets / (2.2 MB). Loaded Objects now: 7610.
+Memory consumption went from 248.2 MB to 246.0 MB.
+Total: 65.229400 ms (FindLiveObjects: 1.668900 ms CreateObjectMapping: 1.004900 ms MarkObjects: 55.992700 ms  DeleteObjects: 6.560500 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  4.585 seconds
+Refreshing native plugins compatible for Editor in 12.18 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ae93fefe62eb49e6b9ef3807ffd33dc7>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ae93fefe62eb49e6b9ef3807ffd33dc7>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.573 seconds
+Domain Reload Profiling:
+	ReloadAssembly (665ms)
+		BeginReloadAssembly (565ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (20ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (339ms)
+		LoadAllAssembliesAndSetupDomain (3919ms)
+			LoadAssemblies (3153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (883ms)
+				TypeCache.Initialize (813ms)
+					TypeCache.ScanAssembly (765ms)
+				ResolveRequiredComponents (27ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (1094ms)
+				ProcessInitializeOnLoadMethodAttributes (178ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (67ms)
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 74.73 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6763 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7627.
+Memory consumption went from 247.3 MB to 245.0 MB.
+Total: 15.330600 ms (FindLiveObjects: 1.471200 ms CreateObjectMapping: 0.955500 ms MarkObjects: 9.883600 ms  DeleteObjects: 3.017400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  4.963 seconds
+Refreshing native plugins compatible for Editor in 36.39 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ae93fefe62eb49e6b9ef3807ffd33dc7>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.954 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1514ms)
+		BeginReloadAssembly (1342ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (120ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (5ms)
+			CreateAndSetChildDomain (696ms)
+		LoadAllAssembliesAndSetupDomain (3492ms)
+			LoadAssemblies (2667ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (931ms)
+				TypeCache.Initialize (846ms)
+					TypeCache.ScanAssembly (802ms)
+				ResolveRequiredComponents (58ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1886ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (48ms)
+				SetLoadedEditorAssemblies (10ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (1517ms)
+				ProcessInitializeOnLoadMethodAttributes (169ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (97ms)
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 26.49 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6763 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7644.
+Memory consumption went from 247.3 MB to 245.1 MB.
+Total: 13.915800 ms (FindLiveObjects: 1.271900 ms CreateObjectMapping: 1.337000 ms MarkObjects: 9.246900 ms  DeleteObjects: 2.057800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.542 seconds
+Refreshing native plugins compatible for Editor in 8.32 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.897 seconds
+Domain Reload Profiling:
+	ReloadAssembly (451ms)
+		BeginReloadAssembly (358ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (175ms)
+		LoadAllAssembliesAndSetupDomain (2104ms)
+			LoadAssemblies (957ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1223ms)
+				TypeCache.Initialize (1147ms)
+					TypeCache.ScanAssembly (784ms)
+				ResolveRequiredComponents (32ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (2607ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (81ms)
+				SetLoadedEditorAssemblies (25ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (363ms)
+				ProcessInitializeOnLoadAttributes (1674ms)
+				ProcessInitializeOnLoadMethodAttributes (439ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (128ms)
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 21.95 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6763 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7661.
+Memory consumption went from 247.3 MB to 245.1 MB.
+Total: 16.876400 ms (FindLiveObjects: 1.289500 ms CreateObjectMapping: 1.397600 ms MarkObjects: 12.013500 ms  DeleteObjects: 2.171100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.847 seconds
+Refreshing native plugins compatible for Editor in 14.90 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.724 seconds
+Domain Reload Profiling:
+	ReloadAssembly (340ms)
+		BeginReloadAssembly (257ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (136ms)
+		LoadAllAssembliesAndSetupDomain (1507ms)
+			LoadAssemblies (817ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (752ms)
+				TypeCache.Initialize (673ms)
+					TypeCache.ScanAssembly (585ms)
+				ResolveRequiredComponents (66ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (695ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (492ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 20.05 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6763 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7678.
+Memory consumption went from 247.3 MB to 245.1 MB.
+Total: 51.966000 ms (FindLiveObjects: 5.366800 ms CreateObjectMapping: 0.896400 ms MarkObjects: 43.178100 ms  DeleteObjects: 2.522600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -201,49 +779,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 18607.701331 seconds.
-  path: Assets/MainAudioMixer.mixer
-  artifactKey: Guid(5c78cf1641130bb468627c963457ebb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MainAudioMixer.mixer using Guid(5c78cf1641130bb468627c963457ebb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65ba02a393d5f6af9f1231e0f22f9c9') in 0.029756 seconds 
+  Time since last request: 1678.353872 seconds.
+  path: Assets/models/ボスステージ/チュートリアル要.prefab
+  artifactKey: Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/チュートリアル要.prefab using Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c732557a5a45299144ffac8584d30e0') in 2.174371 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
+Number of asset objects unloaded after import = 61
 ========================================================================
 Received Import Request.
-  Time since last request: 114.445822 seconds.
-  path: Assets/雄太/chara/character/Animators/chaiser-1.fbx
-  artifactKey: Guid(6b8e6349f81cddd49aa65d36cf5a2519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/chaiser-1.fbx using Guid(6b8e6349f81cddd49aa65d36cf5a2519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7b9746cdaec0ef088ab0601815106e') in 0.700534 seconds 
+  Time since last request: 593.247173 seconds.
+  path: Assets/models/ボスステージ/チュートリアル要.prefab
+  artifactKey: Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/チュートリアル要.prefab using Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c710bd2103b04d4add49716b4082d79') in 0.657905 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 339
+Number of asset objects unloaded after import = 42
 ========================================================================
 Received Import Request.
-  Time since last request: 44.807105 seconds.
-  path: Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 1.anim
-  artifactKey: Guid(dfe96fd31ca762d4bbbd86ff52c24bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 1.anim using Guid(dfe96fd31ca762d4bbbd86ff52c24bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f6ecac96e115e7f62b5565b7ac5499') in 0.015313 seconds 
+  Time since last request: 114.583586 seconds.
+  path: Assets/models/ボスステージ/チュートリアル要.prefab
+  artifactKey: Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/ボスステージ/チュートリアル要.prefab using Guid(f6290b0c2ae08574a9c5ce056d22b2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27baafb9c9e1e5086727a1a08e57cb86') in 0.080909 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 249.068692 seconds.
-  path: Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 2.anim
-  artifactKey: Guid(fb9f358f3167ca547b3c14e9c2b2b7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 2.anim using Guid(fb9f358f3167ca547b3c14e9c2b2b7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe954b3a5d05d9f3e6e9115eb727a9c') in 0.018304 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 80.201468 seconds.
-  path: Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 3.anim
-  artifactKey: Guid(eaae365edee95984fb876926d290abe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 3.anim using Guid(eaae365edee95984fb876926d290abe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c5c5aea68e7fe8635e8bdd663bd33f') in 0.054706 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 71.694598 seconds.
-  path: Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 4.anim
-  artifactKey: Guid(ab0f2d3097adf644090d68c90b4aa312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/Chaiser-Hero_arm_chaiser-1_bone 4.anim using Guid(ab0f2d3097adf644090d68c90b4aa312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e370f2d80e796b54accb0afe547e5c2d') in 0.016267 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 51

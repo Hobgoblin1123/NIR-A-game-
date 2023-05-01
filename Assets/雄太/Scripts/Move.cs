@@ -236,15 +236,18 @@ public class Move : MonoBehaviour
 			
 			// 移動速度をAnimatorに反映
 			animator.SetFloat(animSpeedHash, Speed , 0.3f , Time.deltaTime);
-			animator.SetBool(Admin.WeaponNumber + "Idle", true);
+			animator.SetBool("Idle", true);
 		}
 		
 
-		if((state == MyState.Normal || state == MyState.Avoidance) && (Admin.WeaponNumber != 0) && (Admin.WeaponNumber != 3) && EventSystem.current.IsPointerOverGameObject())return;
+		if((Admin.WeaponNumber != 0) && (Admin.WeaponNumber != 3) && !EventSystem.current.IsPointerOverGameObject())
+		{
+			if(isWorkeingMobilePlatform == false && Input.GetButtonDown("Fire1"))GetInput(1);
 
-		if(isWorkeingMobilePlatform == false && Input.GetButtonDown("Fire1"))GetInput(1);
+			if(isWorkeingMobilePlatform == false  && Input.GetMouseButtonDown(1))GetInput(0);
+		}
 
-		if(isWorkeingMobilePlatform == false  && Input.GetMouseButtonDown(1))GetInput(0);
+		
 
 		if(state == MyState.TalkEvent)
 		{
@@ -272,7 +275,7 @@ public class Move : MonoBehaviour
 
 	public void GetInput(int n)
 	{
-		if(state != MyState.TalkEvent && state != MyState.JUAttack)return;
+		if(state == MyState.TalkEvent && state == MyState.JUAttack)return;
 
 		if(n == 0 && physicalStrength > 2f && state != MyState.Damage && state !=MyState.Avoidance)
 		{
