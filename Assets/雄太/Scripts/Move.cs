@@ -1,24 +1,19 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
-using UnityEngine.Animations.Rigging;
 using UnityEngine.UI;
 
 
 public class Move : MonoBehaviour
 {
-
-
 	private CharacterController characterController;
 	[HideInInspector]
 	public Vector3 velocity;
 	private Animator animator;
 	private float Speed;
-	// public MyWeapon weapon;
     public MyState state;
 	private Quaternion targetRotation;
 	private Admin admin;
-	// public bool InvincibleFlag;
 	private AudioSource audioSource;
 	[SerializeField]
 	private AudioClip[] sound;
@@ -32,16 +27,15 @@ public class Move : MonoBehaviour
     private Slider slider;	// シーンに配置したSlider格納用
     private float DefencePoint;
 	[SerializeField]
-	private float lockInterval;
+	private float lockInterval; //定数か対象
 	[SerializeField]
 	private float physicalStrength = 15;
 	private Slider physicalStrengthSlider;
 	[SerializeField]
 	private Canvas staminaCanvas;
-
 	[SerializeField]
 	private CanvasGroup AvoidanceDisplayEffect;
-	public float EffectVolum = 0.4f;
+	public float EffectVolum = 0.4f; //定数か対象
 	private int animSpeedHash;
 	public bool AutoRunFlag = true;
 	[SerializeField]
@@ -55,16 +49,21 @@ public class Move : MonoBehaviour
 	private Vector3 ResetPosition;
 	[SerializeField]
 	private Admin_UI admin_UI;
+
+
+
+	//スクリプト定数
+	const float JUST_AVOIDANCE_TIME_SCALE = 0.2f;
+	const float LOCK_INTERVAL = 3;
+	const float MAX_PHYSICAL_STRENGH = 15;
+	const float CHARACTER_ROTATE_SPEED = 600;
+
 	void Awake()
     {
-		var posi = new Vector3(0,0,0);
-		posi.x = PlayerPrefs.GetFloat("posi_X");
-		posi.y = PlayerPrefs.GetFloat("posi_y");
-		posi.z = PlayerPrefs.GetFloat("posi_z");
+		var posi = new Vector3(PlayerPrefs.GetFloat("posi_X"),PlayerPrefs.GetFloat("posi_y"),PlayerPrefs.GetFloat("posi_z"));
 		if(posi.y < -1)
 		{
 			transform.position = ResetPosition;
-			Debug.Log("ポジションをリセットしました");
 			admin_UI.Alarm(0);
 		}
 		else
@@ -97,15 +96,6 @@ public class Move : MonoBehaviour
 	Avoidance
     }
 
-	// public enum MyWeapon
-    // {
-	// 	noweapon,
-	// 	Sword,
-	// 	Spia,
-	// 	Gun
-    // }
-	// Use this for initialization
-
 	void Start()
 	{
 		characterController = GetComponent<CharacterController>();
@@ -122,6 +112,7 @@ public class Move : MonoBehaviour
 		AvoidanceDisplayEffect.alpha = 0;
 		physicalStrengthSlider.value = 1;
 	}
+
     public void TakeDamage(float damage)
     {
 		if(state != MyState.Avoidance && state != MyState.JUAttack)
@@ -129,11 +120,10 @@ public class Move : MonoBehaviour
 			SetState(MyState.Damage);
 			charahp -= damage * (1 - DefencePoint);
             slider.value = charahp;	// Sliderに現在HPを適用
-            Debug.Log("主人公HP = " + slider.value);
 		}
 		else if(state != MyState.JUAttack)
 		{
-			Time.timeScale = 0.2f;
+			Time.timeScale = JUST_AVOIDANCE_TIME_SCALE;
 			StartCoroutine(ResetTimeScale());
 			effects[3].gameObject.SetActive(true);
 			effects[3].EffectStart(0);
@@ -141,8 +131,7 @@ public class Move : MonoBehaviour
 			audioSource.volume = EffectVolum;
 			audioSource.PlayOneShot(sound[11]);
 			physicalStrength += 3;
-			physicalStrengthSlider.value = physicalStrength/5;
-			Debug.Log("ジャスト回避");
+			physicalStrengthSlider.value = physicalStrength/MAX_PHYSICAL_STRENGH;
 		}
 
 		if (slider.value <= 0)
@@ -153,25 +142,21 @@ public class Move : MonoBehaviour
 
 	IEnumerator ResetTimeScale()
 	{
-		var x = new WaitForSecondsRealtime(0.01f);
-		var y = new WaitForSecondsRealtime(0.05f);
-		var z = new WaitForSecondsRealtime(0.15f);
-		var q = new WaitForSecondsRealtime(0.02f);
 		float n = 0;
 		while(n<1)
 		{
 			n = n + 0.3f;
 			AvoidanceDisplayEffect.alpha = n;
-			yield return x;
+			yield return new WaitForSecondsRealtime(0.01f);
 		}
-		yield return y;
+		yield return  new WaitForSecondsRealtime(0.05f);
 		Time.timeScale = 1;
-		yield return z;
-		while(n>0)
+		yield return new WaitForSecondsRealtime(0.15f);
+		while(n > 0)
 		{
 			n = n - 0.1f;
 			AvoidanceDisplayEffect.alpha = n;
-			yield return q;
+			yield return new WaitForSecondsRealtime(0.02f);
 		}
 		yield return new WaitForSecondsRealtime(1);
 		effects[3].EffectEnd();
@@ -185,22 +170,17 @@ public class Move : MonoBehaviour
         slider.maxValue = charamaxHp;    // Sliderの最大値を敵キャラのHP最大値と合わせる
         charahp = charamaxHp;      // 初期状態はHP満タン
         slider.value = charahp;	// Sliderの初期状態を設定（HP満タン）
-        Debug.Log("レベルアップ　現在HPは"　+ charamaxHp);
     }
 
 	// Update is called once per frame
 	void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.H))
-		{
-			SetState(MyState.JUAttack);
+		if(Input.GetKeyDown(KeyCode.H))SetState(MyState.JUAttack);
 
-		}
-
-		if(physicalStrength < 15)
+		if(physicalStrength < MAX_PHYSICAL_STRENGH)
 		{
 			physicalStrength += Time.deltaTime;
-			physicalStrengthSlider.value = physicalStrength/15;
+			physicalStrengthSlider.value = physicalStrength/MAX_PHYSICAL_STRENGH;
 		}
 		else
 		{
@@ -223,18 +203,14 @@ public class Move : MonoBehaviour
 			}
 			
 			var t = isWorkeingMobilePlatform? ParentCamera.transform : mainCamera.transform;
-			// Debug.Log(t.eulerAngles);
-
 			var horizontalRotation = Quaternion.AngleAxis( t.eulerAngles.y, Vector3.up);
 			velocity = horizontalRotation * new Vector3(horizontal, 0, vertical).normalized;
-			// var speed = Input.GetKey(KeyCode.LeftShift) ? 2 : 1;
 
 			if (velocity.magnitude > 0.5f)
 			{
 				targetRotation = Quaternion.LookRotation(velocity, Vector3.up);
 			}
 
-			
 			if(AutoRunFlag == false)
 			{
 				if(Input.GetKey(KeyCode.LeftShift))
@@ -257,40 +233,14 @@ public class Move : MonoBehaviour
 					Speed = velocity.magnitude + velocity.magnitude;
 				}
 			}
-
-			// if(horizontal < 0.1f && vertical < 0.1f && animator.GetFloat(animSpeedHash) > 1.8f)
-			// {
-			// 	animator.SetTrigger("stop");
-			// 	animator.SetFloat(animSpeedHash,0);
-			// }
 			
 			// 移動速度をAnimatorに反映
 			animator.SetFloat(animSpeedHash, Speed , 0.3f , Time.deltaTime);
 			animator.SetBool(Admin.WeaponNumber + "Idle", true);
-
-			// if(Input.GetButtonDown("Jump"))
-			// {
-			// 	SetState(MyState.Jump);
-			// }
-			
-			// if(Input.GetKeyDown("f") && Admin.WeaponNumber == 1 && state == MyState.Normal)
-			// {
-			// 	SetState(MyState.SPAttack);
-			// }
 		}
 		
 
-		if(state == MyState.Normal || state == MyState.Avoidance)
-		{
-			if((Admin.WeaponNumber != 0) && (Admin.WeaponNumber != 3))
-			{
-
-				if(EventSystem.current.IsPointerOverGameObject())
-				{
-                    return;
-                }
-			}			
-		}
+		if((state == MyState.Normal || state == MyState.Avoidance) && (Admin.WeaponNumber != 0) && (Admin.WeaponNumber != 3) && EventSystem.current.IsPointerOverGameObject())return;
 
 		if(isWorkeingMobilePlatform == false && Input.GetButtonDown("Fire1"))GetInput(1);
 
@@ -310,12 +260,9 @@ public class Move : MonoBehaviour
 				targetRotation = Quaternion.LookRotation(lockenemy);
 			}
 
-			if(Input.GetKeyDown("q"))
-			{
-				admin.LockOff();
-			}
+			if(Input.GetKeyDown("q"))admin.LockOff();
 		}
-		transform.rotation = Quaternion.RotateTowards(transform.rotation , targetRotation , 600 * Time.deltaTime);
+		transform.rotation = Quaternion.RotateTowards(transform.rotation , targetRotation , CHARACTER_ROTATE_SPEED * Time.deltaTime);
 
 		if(admin.LockEnemy == true)
 		{
@@ -325,25 +272,17 @@ public class Move : MonoBehaviour
 
 	public void GetInput(int n)
 	{
-		if(state != MyState.TalkEvent)
-		{
-			if(state != MyState.JUAttack)
-			{
-				if(n == 0 && physicalStrength > 2f && state != MyState.Damage && state !=MyState.Avoidance)
-				{
-					SetState(MyState.Avoidance);
-					physicalStrength -= 3;
-					physicalStrengthSlider.value = physicalStrength/15;
-					staminaCanvas.enabled = true;
-				}
+		if(state != MyState.TalkEvent && state != MyState.JUAttack)return;
 
-				if(n == 1 && state != MyState.Avoidance)
-				{
-					SetState(MyState.Attack);
-				}
-			
-			}
+		if(n == 0 && physicalStrength > 2f && state != MyState.Damage && state !=MyState.Avoidance)
+		{
+			SetState(MyState.Avoidance);
+			physicalStrength -= 3;
+			physicalStrengthSlider.value = physicalStrength/MAX_PHYSICAL_STRENGH;
+			staminaCanvas.enabled = true;
 		}
+
+		if(n == 1 && state != MyState.Avoidance)SetState(MyState.Attack);
 	}
 	
 	public void SetState(MyState tempState)
@@ -360,7 +299,7 @@ public class Move : MonoBehaviour
 			{
 				admin.LockOnEnemy();
 			}
-			else if(lockInterval > 3)
+			else if(lockInterval > LOCK_INTERVAL)
 			{
 				admin.SecondLockOn();
 				lockInterval = 0;
@@ -374,7 +313,7 @@ public class Move : MonoBehaviour
 			{
 				admin.LockOnEnemy();
 			}	  
-			else if(lockInterval > 3)
+			else if(lockInterval > LOCK_INTERVAL)
 			{
 				admin.SecondLockOn();
 				lockInterval = 0;
@@ -399,12 +338,10 @@ public class Move : MonoBehaviour
 			if(Speed > 0.6)
 			{
 				animator.Play("回避.前方回避1" , 0,0.1f);
-				// InvincibleFlag = true;
 			}
 			else
 			{
 				animator.Play("回避.後方回避1" , 0,0.35f);
-				// InvincibleFlag = true;
 			}
 			ResetEffect();
 		}
@@ -414,7 +351,6 @@ public class Move : MonoBehaviour
 		    animator.Play("Damage");
 		    animator.ResetTrigger(Admin.WeaponNumber + "Attack");
 			ResetEffect();
-
 		}
 		else if(tempState == MyState.TalkEvent)
 		{
@@ -442,21 +378,13 @@ public class Move : MonoBehaviour
 	{
 		animator.ResetTrigger(Admin.WeaponNumber + "Attack");
         animator.ResetTrigger(Admin.WeaponNumber + "SPAttack");
-        Debug.Log("ラストアタック");
 	}
 
 	public void StateEnd()
 	{
-		if(state != MyState.JUAttack)
-		{
-			SetState(MyState.Normal);
-		}
+		if(state == MyState.JUAttack)return;
+		SetState(MyState.Normal);
 	}
-
-	// void EndDamage()
-	// {
-	// 	SetState(MyState.Normal);
-	// }
 
 	void JUAttackEnd()
 	{
@@ -485,11 +413,9 @@ public class Move : MonoBehaviour
 	{
 		foreach (var item in effects) 
 		{
-			if(item.gameObject.activeSelf == true)
-			{
-				item.gameObject.SetActive(false);
-				item.EffectEnd();
-			}
+			if(item.gameObject.activeSelf == false)return;
+			item.gameObject.SetActive(false);
+			item.EffectEnd();
 		}
 	}
 }

@@ -4,31 +4,23 @@ using Cinemachine;
 
 public class roteCamera : MonoBehaviour
 {
-    /// <summary> 移動操作としてタッチ開始したスクリーン座標 </summary>
-    private Vector2 _movePointerPosBegin;
-
-    private Vector3 _moveVector;
-    [SerializeField]
-    private GameObject _camera;
-
-    /// <summary> カメラ操作を受け付けるタッチエリア </summary>
-    [SerializeField]
-    private DragHandler _lookController;
-
-    /// <summary> カメラ速度（°/px） </summary>
-    [SerializeField]
-    public Vector2 _angularPerPixel;
-
-    /// <summary> カメラ操作として前フレームにタッチしたキャンバス上の座標 </summary>
-    private Vector2 _lookPointerPosPre;
     [SerializeField]
     private Camera MainCamera;
     [SerializeField]
+    private GameObject _camera;
+    [SerializeField]
     private CinemachineBrain cinemachineBrain;
     [SerializeField]
+    private DragHandler _lookController;
+    [SerializeField]
     private Transform targetTransform;
-    
-
+    /// <summary> カメラ速度（°/px） </summary>
+    [HideInInspector]
+    public Vector2 _angularPerPixel;
+    /// <summary> カメラ操作として前フレームにタッチしたキャンバス上の座標 </summary>
+    private Vector2 _lookPointerPosPre;
+    private Vector2 _movePointerPosBegin;
+    private Vector3 _moveVector;
 
     /// <summary> 起動時 </summary>
     private void Awake()
@@ -41,17 +33,19 @@ public class roteCamera : MonoBehaviour
             MainCamera.transform.position = new Vector3(0,-1.78f , -5.63f);
             MainCamera.transform.rotation = Quaternion.Euler(-34 , 0 , 0);
             cinemachineBrain.enabled = false;
-            Debug.Log("シネマシンの状態は" + cinemachineBrain.enabled);
+        }
+        else
+        {
+            cinemachineBrain.enabled = true;
         }
     }
 
-    private void Update() {
+    private void Update() 
+    {
         transform.position = targetTransform.position;
     }
 
-    ////////////////////////////////////////////////////////////
     /// 移動操作
-    ////////////////////////////////////////////////////////////
     #region Move
 
     /// <summary> ドラッグ操作開始（移動用） </summary>
@@ -77,9 +71,7 @@ public class roteCamera : MonoBehaviour
     }
      #endregion
 
-    ////////////////////////////////////////////////////////////
     /// カメラ操作
-    ////////////////////////////////////////////////////////////
     #region Look
     /// <summary> ドラッグ操作開始（カメラ用） </summary>
     private void OnBeginDragLook(PointerEventData eventData)
@@ -97,21 +89,14 @@ public class roteCamera : MonoBehaviour
         LookRotate(new Vector2(-vector.y, vector.x));
         _lookPointerPosPre = pointerPosOnCanvas;
     }
-[SerializeField]
-private Vector2 n;
+
+    [SerializeField]
+    private Vector2 n;
     private void LookRotate(Vector2 angles)
     {
         Vector2 deltaAngles = angles * _angularPerPixel;
         _camera.transform.localEulerAngles = new Vector3(Mathf.Clamp(deltaAngles.x + _camera.transform.localEulerAngles.x, n.x , n.y), _camera.transform.localEulerAngles.y);
         transform.eulerAngles += new Vector3(0f, deltaAngles.y);
-        // if(transform.localRotation.eulerAngles.x > 35 && transform.localRotation.eulerAngles.x < 150)
-        // {
-        //     transform.localRotation = Quaternion.Euler(35 , transform.localRotation.eulerAngles.y , transform.localRotation.eulerAngles.z);
-        // }
-        //  if(transform.localRotation.eulerAngles.x > -160 && transform.localRotation.eulerAngles.x < -35)
-        // {
-        //     transform.localRotation = Quaternion.Euler(-35 , transform.localRotation.eulerAngles.y , transform.localRotation.eulerAngles.z);
-        // }
     }
     #endregion
 }

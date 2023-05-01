@@ -28,7 +28,6 @@ public class RotatoSun : MonoBehaviour
         transform.rotation = new Quaternion(0,0,0,0);
         transform.Rotate(r);
         light.intensity = 0.85f;
-
     }
 
     // Update is called once per frame
@@ -70,8 +69,6 @@ public class RotatoSun : MonoBehaviour
         {
             GoSleep();
         }
-        //デバッグ用
-
     }
 
     public void GoSleep()
@@ -82,12 +79,13 @@ public class RotatoSun : MonoBehaviour
             transform.Rotate(349.85f , 68.64f , 49.23f);
             rote = 180;
         }
-        else //if( transform.rotation.eulerAngles.y > 73.597f || transform.rotation.eulerAngles.x < -111.762f)//yoru
+        else 
         {
             transform.Rotate(9.691f , -111.762f , -49.3f);
             rote = 0;
         }
     }
+
     public void FirstRotate()
     {
         transform.rotation = new Quaternion(0,0,0,0);

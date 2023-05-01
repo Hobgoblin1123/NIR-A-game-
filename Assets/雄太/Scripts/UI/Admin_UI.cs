@@ -70,6 +70,9 @@ public class Admin_UI : MonoBehaviour
     private float time;
     private CinemachinePOV cinemachinePOV;
     private bool ChangeVolumeFlag;
+
+    //スクリプト定数
+    const float CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE = 1/100*2.5f;
     
     // Start is called before the first frame update
     void Start()
@@ -113,6 +116,7 @@ public class Admin_UI : MonoBehaviour
         {
             admin_Date.AutoSave = false;
         }
+
         image[BGMnumber + 10].color = new Color(0.6f,1,0.7f);
         ChangeScreenResolution(PlayerPrefs.GetInt("ScreenResolution"));
         aim_x_speed.text = AIM_X_speed.ToString();
@@ -130,9 +134,8 @@ public class Admin_UI : MonoBehaviour
             ControlCanvas.enabled = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed) / 100 * 2.5f;
+            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed)*CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE;
             isWorkeingMobilePlatform = true;
-            Debug.Log("このデバイスはモバイルデバイスです。");
 		}
 		else //if (Application.platform == RuntimePlatform.WindowsPlayer) 
 		{
@@ -143,7 +146,6 @@ public class Admin_UI : MonoBehaviour
             cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;
             cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
             isWorkeingMobilePlatform = false;
-            Debug.Log("このデバイスはwindowsデバイスです。");
             Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
             Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
             Destroy(ControlCanvas.gameObject);
@@ -158,11 +160,6 @@ public class Admin_UI : MonoBehaviour
         slider[0].value = MasterVolume;
         slider[1].value = BGMVolume;
         slider[2].value = SEVolume;
-
-        Debug.Log("現在の画面解像度は" + Screen.currentResolution);
-        Debug.Log(admin);
-            
-            
     }
 
     // Update is called once per frame
@@ -176,13 +173,11 @@ public class Admin_UI : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.B))
         {
             GetKeyEscape(1);
-        
         }
 
         if(Input.GetKeyDown(KeyCode.V))
         {
             GetKeyEscape(2);
-        
         }
 
         if(Input.GetKeyDown(KeyCode.T))
@@ -247,20 +242,13 @@ public class Admin_UI : MonoBehaviour
 
     public void ChangeCanvas(int n)
     {
-        if(canvas[0].enabled == true)
-        {
-            canvas[0].enabled = false;
-        }
-        canvas[n].enabled = true;
-        if(n == 1)
-        {
-            itemsDialog.reflesh();
-        }
-        if(n == 4)
-        {
-            ChangeSetting(1);
-        }
+        if(canvas[0].enabled == true)canvas[0].enabled = false;
 
+        canvas[n].enabled = true;
+
+        if(n == 1)itemsDialog.reflesh();
+
+        if(n == 4)ChangeSetting(1);
     }
 
     public void BackPausePanel()
@@ -311,23 +299,21 @@ public class Admin_UI : MonoBehaviour
         {
             Time.timeScale = 0;
             virtualCamera.enabled = false;
-            if(isWorkeingMobilePlatform == true)return;
+            
+            if(isWorkeingMobilePlatform == false)return;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            
         }
         else
         {
             move.LastAttack();
             Time.timeScale = 1;
             virtualCamera.enabled = true;
-            if(isWorkeingMobilePlatform == true)return;
+
+            if(isWorkeingMobilePlatform == false)return;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            
-        }
-
-        
+        }        
     }
 
     public void Save()
@@ -394,7 +380,6 @@ public class Admin_UI : MonoBehaviour
             image[12].color = new Color(1,1,1);
             image[13].color = new Color(0.6f,1,0.7f);
         }
-            
     }
 
     public void ChangeAIMSpeed()
@@ -414,7 +399,7 @@ public class Admin_UI : MonoBehaviour
 
         if(isWorkeingMobilePlatform == true)
         {
-            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed) / 100 * 2.5f;
+            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed)*CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE;
         }
         else
         {
@@ -423,8 +408,6 @@ public class Admin_UI : MonoBehaviour
         }
         
         admin_Date.SaveDateOther(4);
-
-        Debug.Log("感度を変更");
     }
 
     public void ChangeToggle(int n)
@@ -458,10 +441,6 @@ public class Admin_UI : MonoBehaviour
     {
         Screen.SetResolution(Screen.currentResolution.width , Screen.currentResolution.height, FullScreen);
         ScreenResolution = n;
-        Debug.Log(n);
-        Debug.Log( (Screen.currentResolution.width) );
-        Debug.Log(Screen.currentResolution.height*(5-n)/4);
-        Debug.Log("現在のフルスクリーンboolは　"+FullScreen);
         admin_Date.SaveDateOther(6);
         if(n == 1)
         {
@@ -488,12 +467,10 @@ public class Admin_UI : MonoBehaviour
         if(shadows == true)
         {
             Mainlight.shadows = LightShadows.Soft;
-            Debug.Log("影オン");
         }
         else
         {
             Mainlight.shadows = LightShadows.None;
-            Debug.Log("影オフ");
         }
     }
 
@@ -511,14 +488,17 @@ public class Admin_UI : MonoBehaviour
         SettingPanel[n-1].SetActive(true);
         image[n + 5].color = new Color(0,0.3f,1);
     }
+
     public void ChangeWeapon()
     {
         changeEquip.ChangeWeapon();
     }
+
     public void GetInput(int n)
     {
         move.GetInput(n);
     }
+    
     public void ChangeVolume(int n)
     {
         if(n == 0)
@@ -538,7 +518,6 @@ public class Admin_UI : MonoBehaviour
         }
 
         ChangeVolumeFlag = true;
-
     }
 
     public void Alarm(int n)
@@ -548,5 +527,4 @@ public class Admin_UI : MonoBehaviour
             Instantiate(alarmCanvas[0] , -Vector3.zero , Quaternion.identity , AlarmParent.transform);
         }
     }
-
 }
