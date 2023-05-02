@@ -63,7 +63,6 @@ public class Admin_Date : MonoBehaviour
 
             SaveDate();
             SaveDateOther(0);
-            Debug.Log("初期追加");
         }
     }
 
@@ -84,7 +83,6 @@ public class Admin_Date : MonoBehaviour
                 SaveDate();
             }
         }
-        
     }
 
     public void SaveDate()

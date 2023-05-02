@@ -16,6 +16,10 @@ public class RotatoSun : MonoBehaviour
     private Material[] skyBox;
     private Light light; 
 
+
+
+    //
+
     // Start is called before the first frame update
     void Awake()
     {

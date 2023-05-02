@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Cinemachine;
 using Fungus;
 
 public class Admin : MonoBehaviour
@@ -20,10 +19,6 @@ public class Admin : MonoBehaviour
         [SerializeField]
         private Text[] Statust_UI;
         [SerializeField]
-        private InputField aim_y_speed;
-        [SerializeField]
-        private InputField aim_x_speed;
-        [SerializeField]
         private Slider VolumeSlider;
         [SerializeField]
         private Transform TalkButtonPanel;
@@ -31,8 +26,6 @@ public class Admin : MonoBehaviour
         ChangeEquip changeEquip;
         [SerializeField]
         private Animator animator; 
-        // [SerializeField]
-        // private Slider EnemyHP;
         [SerializeField]
         private RectTransform SelectEdge;
         [SerializeField]
@@ -96,7 +89,6 @@ public class Admin : MonoBehaviour
         flowchart = GetComponentInChildren<Flowchart>();
         audioSource = GetComponent<AudioSource>();
         searchEnemy = GetComponentInChildren<SearchEnemy>();
-        // EnemyHPCanvas = EnemyHP.GetComponentInParent<Canvas>();
         
         Statust_UI[0].text = string.Format("MaxHP " + HPStatus );
         Statust_UI[1].text = string.Format("Attack Power " + AttackStatus);
@@ -110,10 +102,6 @@ public class Admin : MonoBehaviour
 
         LockOn = false;
         ChangeAutoRun(PlayerPrefs.GetInt("AutoRun"));
-        //cinemachineのAIMのSpeedの値を初期値に設定
-        // EnemyHP.maxValue = 1;
-        // EnemyHP.minValue = 0;
-        // EnemyHP.value = 1;
     }
 
     void Update()
@@ -158,7 +146,6 @@ public class Admin : MonoBehaviour
         animator.SetBool("1Idle", false);
         animator.SetBool("2Idle", false);
         characterScript.SetState(Move.MyState.Normal); 
-        
     }
 
     public void TakeEXP(float EXP)
@@ -196,7 +183,6 @@ public class Admin : MonoBehaviour
             audioSource.clip = BGM[BGMnumber];
             audioSource.Play();            
         }
-
     }
 
     public void Volum()
@@ -217,8 +203,6 @@ public class Admin : MonoBehaviour
         {
             adminEnemy.LockedOn();
             LockOn = true;
-            // EnemyHPCanvas.enabled = true;
-            // EnemyHP.value = adminEnemy.NowHPRatio;
         }
         else
         {
@@ -231,8 +215,6 @@ public class Admin : MonoBehaviour
         
         // Ray ray = new Ray(transform.position , characterScript.velocity);
         RaycastHit hit;
-        // Debug.Log("あぁぁぁぁぁあ");
-        // Debug.DrawRay(transform.position, ray.direction * 10, Color.red, 5);
         if(Physics.BoxCast(transform.position , new Vector3(2,0.5f,0) , transform.forward , out hit , Quaternion.identity , 4)&& hit.collider.tag == "Enemy")
         {
             if(hit.collider.gameObject == LockEnemy) return;
@@ -241,11 +223,7 @@ public class Admin : MonoBehaviour
             if(s.TalkFalg() == true) return;
             LockEnemy = s.gameObject;
             s.LockedOn();
-            // EnemyHPCanvas.enabled = true;
-            // EnemyHP.value = s.NowHPRatio;
-            //  hit.transform.gawmeObject;
         }
-        
     }
 
     public void LockOff()
@@ -257,7 +235,6 @@ public class Admin : MonoBehaviour
        
         LockOn = false;
         LockEnemy = null;
-        // EnemyHPCanvas.enabled = false;
     }
 
 
@@ -335,43 +312,31 @@ public class Admin : MonoBehaviour
 
     private void Select()
     {
-        if(InTalkFlag == true)
-        {
-            talkObject[SelectEdNumber].TalkStart();
-        }
-        
+        if(InTalkFlag == false)return;
+        talkObject[SelectEdNumber].TalkStart();
     }
 
 
     void OnTriggerStay(Collider col) 
     {
-        if(col.tag == "Appear")
+        if(col.tag != "Appear")return;
+
+        var appearScript = col.GetComponent<AppearScript>();
+        if(appearScript.encountCharaFlag == false)
         {
-            
-            var appearScript = col.GetComponent<AppearScript>();
-            if(appearScript.encountCharaFlag == false)
-            {
-                appearScript.CharacterConnect();
-            }
-            else
-            {
-                appearScript.CharacterPosition = transform.parent.transform.position;
-            }
+            appearScript.CharacterConnect();
+        }
+        else
+        {
+            appearScript.CharacterPosition = transform.parent.transform.position;
         }
     }
 
     void OnTriggerExit(Collider col) 
     {
-        if(col.tag == "Appear")
-        {
-            Debug.Log("きえたーーーー");
+        if(col.tag != "Appear")return;
             col.GetComponent<AppearScript>().CharacterDisconnect();
-        }
     }
-    // public void ChangeEnemyHP(float f)
-    // {
-    //     EnemyHP.value = f;
-    // }
 
     public void ChangeAutoRun(int n)
     {

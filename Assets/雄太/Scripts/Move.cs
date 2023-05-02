@@ -27,7 +27,7 @@ public class Move : MonoBehaviour
     private Slider slider;	// シーンに配置したSlider格納用
     private float DefencePoint;
 	[SerializeField]
-	private float lockInterval; //定数か対象
+	private float lockInterval; 
 	[SerializeField]
 	private float physicalStrength = 15;
 	private Slider physicalStrengthSlider;
@@ -35,7 +35,6 @@ public class Move : MonoBehaviour
 	private Canvas staminaCanvas;
 	[SerializeField]
 	private CanvasGroup AvoidanceDisplayEffect;
-	public float EffectVolum = 0.4f; //定数か対象
 	private int animSpeedHash;
 	public bool AutoRunFlag = true;
 	[SerializeField]
@@ -57,6 +56,7 @@ public class Move : MonoBehaviour
 	const float LOCK_INTERVAL = 3;
 	const float MAX_PHYSICAL_STRENGH = 15;
 	const float CHARACTER_ROTATE_SPEED = 600;
+	const float EFFECT_VOLUME = 0.4f;
 
 	void Awake()
     {
@@ -128,7 +128,7 @@ public class Move : MonoBehaviour
 			effects[3].gameObject.SetActive(true);
 			effects[3].EffectStart(0);
 			SetState(MyState.JUAttack);
-			audioSource.volume = EffectVolum;
+			audioSource.volume = EFFECT_VOLUME;
 			audioSource.PlayOneShot(sound[11]);
 			physicalStrength += 3;
 			physicalStrengthSlider.value = physicalStrength/MAX_PHYSICAL_STRENGH;
@@ -364,7 +364,7 @@ public class Move : MonoBehaviour
 	// 以下　processcharaAnimaEvent
 	void AttackStart(int n)
 	{
-		audioSource.volume = EffectVolum;
+		audioSource.volume = EFFECT_VOLUME;
 		audioSource.PlayOneShot(sound[n]);
 	}
 
