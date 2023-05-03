@@ -7,7 +7,7 @@ public class ReviveArea : MonoBehaviour
     private Admin_Auto admin_Auto;
     [SerializeField]
     private float revivePoint = 0;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +33,6 @@ public class ReviveArea : MonoBehaviour
     void OnTriggerStay(Collider collider)
     {
         if(!collider.CompareTag("Player"))return;
-        Debug.Log("きてるきてる");
         revivePoint += 0.2f*Time.deltaTime;
     }
 

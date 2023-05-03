@@ -57,6 +57,7 @@ public class Move : MonoBehaviour
 	const float MAX_PHYSICAL_STRENGH = 15;
 	const float CHARACTER_ROTATE_SPEED = 600;
 	const float EFFECT_VOLUME = 0.4f;
+	const float REVIVE_TIME = 8;
 
 	void Awake()
     {
@@ -93,7 +94,8 @@ public class Move : MonoBehaviour
 	JUAttack,
 	Jump,
 	TalkEvent,
-	Avoidance
+	Avoidance,
+	Die
     }
 
 	void Start()
@@ -115,6 +117,8 @@ public class Move : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+		if(state == MyState.Die)return;
+
 		if(state != MyState.Avoidance && state != MyState.JUAttack)
 		{
 			SetState(MyState.Damage);
@@ -136,9 +140,10 @@ public class Move : MonoBehaviour
 
 		if (slider.value <= 0)
         {
-            Debug.Log("死亡");
+			SetState(MyState.Die);
         }
 	}
+	
 
 	IEnumerator ResetTimeScale()
 	{
@@ -175,6 +180,8 @@ public class Move : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		if(state == MyState.Die)return;
+
 		if(Input.GetKeyDown(KeyCode.H))SetState(MyState.JUAttack);
 
 		if(physicalStrength < MAX_PHYSICAL_STRENGH)
@@ -350,6 +357,7 @@ public class Move : MonoBehaviour
 		}
 		else if(tempState == MyState.Damage)
 		{
+			state = MyState.Damage;
 			velocity = Vector3.zero;
 		    animator.Play("Damage");
 		    animator.ResetTrigger(Admin.WeaponNumber + "Attack");
@@ -359,6 +367,24 @@ public class Move : MonoBehaviour
 		{
 			state = MyState.TalkEvent;
 		}
+		else if(tempState == MyState.Die)
+		{
+			state = MyState.Die;
+			animator.SetTrigger("Die");
+			this.tag = "Untagged";
+			StartCoroutine("Revive");
+		}
+	}
+	
+	IEnumerator Revive()
+	{
+		yield return new WaitForSecondsRealtime(REVIVE_TIME);
+		transform.position = ResetPosition;
+		charahp =charamaxHp;
+		slider.value = charahp;	
+		animator.Play("Idle");
+		SetState(MyState.Normal);
+		this.tag = "Player";
 	}
 
 	// 以下　processcharaAnimaEvent
@@ -385,7 +411,7 @@ public class Move : MonoBehaviour
 
 	public void StateEnd()
 	{
-		if(state == MyState.JUAttack)return;
+		if(state == MyState.JUAttack || state == MyState.Die)return;
 		SetState(MyState.Normal);
 	}
 
