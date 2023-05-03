@@ -4,17 +4,11 @@ using System.Collections.Generic;
 
 public class AppearScript : MonoBehaviour
 {
-	[SerializeField]
-	// private GameObject[] enemy;
-	// [HideInInspector]
 	public Vector3 CharacterPosition;
-	// [SerializeField]
-	// private List<Admin_EnemyStatus> enemyStatus;
 	public bool encountCharaFlag;
 
 	public Enemy[] enemy;
 	private float time;
-
 
 	[System.Serializable]
 	public struct Enemy
@@ -25,7 +19,6 @@ public class AppearScript : MonoBehaviour
 		public float ReSpawnCount;
 		[HideInInspector]
 		public float ReSpawnTime;
-
 	}
 
 
