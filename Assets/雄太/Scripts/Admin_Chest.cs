@@ -5,23 +5,18 @@ using DG.Tweening;
 
 public class Admin_Chest : MonoBehaviour
 {
-    private Animator animator;
     [SerializeField]
     private ParticleSystem particleSystem;
     [SerializeField]
     private Item[] item;
 
     const float OUT_ITEM_WAIT_TIME = 0.5f;
-    private void Start() {
-        animator = GetComponent<Animator>();
-    }
     public void Open()
     {
-        animator.SetTrigger("Open");
+        GetComponent<Animator>().SetTrigger("Open");
+        GetComponent<AudioSource>().Play();
         particleSystem.Play();
         StartCoroutine("OutItem");
-
-        
     }
 
     IEnumerator OutItem()
