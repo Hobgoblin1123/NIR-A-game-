@@ -23,6 +23,10 @@ public class TalkEvent : MonoBehaviour
     private Item item;
 
 
+    [SerializeField]
+    private Admin_Chest admin_Chest;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,10 +43,8 @@ public class TalkEvent : MonoBehaviour
     
     void Update()
     {
-        if(item == null)
-        {
-            EnemyObj.transform.rotation = Quaternion.RotateTowards(EnemyObj.transform.rotation , targetRotation , 300*Time.deltaTime);
-        }
+        if(item != null || admin_Chest != null)return;
+        EnemyObj.transform.rotation = Quaternion.RotateTowards(EnemyObj.transform.rotation , targetRotation , 300*Time.deltaTime);
     }
     void OnTriggerStay(Collider col)
     {
@@ -64,16 +66,22 @@ public class TalkEvent : MonoBehaviour
 
     public void TalkStart()
     {
-        if(item == null)
+        if(item == null && admin_Chest == null)
         {
             admin.Talk(talkNumber , this);
             velocity = -EnemyObj.transform.position + TargetObj.transform.position;
             targetRotation = Quaternion.LookRotation(new Vector3(velocity.x , 0 , velocity.z));
         }
-        else
+        else if(item != null && admin_Chest == null)
         {
             item.GetItem();
             admin.OutTalkRange(this);
+        }
+        else if(admin_Chest != null)
+        {
+            admin_Chest.Open();
+            admin.OutTalkRange(this);
+            Destroy(gameObject);
         }
         
     }
