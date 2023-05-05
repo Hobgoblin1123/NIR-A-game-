@@ -1,7 +1,7 @@
 
 using UnityEngine;
 using System.Collections;
- 
+ //旧スクリプトです
 public class AttackByEffect : MonoBehaviour 
 {
 
