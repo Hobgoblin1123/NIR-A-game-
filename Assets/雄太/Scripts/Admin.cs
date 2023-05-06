@@ -51,6 +51,7 @@ public class Admin : MonoBehaviour
         public List<TalkEvent> talkObject;  //トークエリア内にいるtalkeventが配列化される
         public TalkEvent TalkTargetObj;     //現在話しているオブジェクトが追加される
         public static int WeaponNumber;     //現在装備している武器ナンバーを定義
+        public  int skillPoints = 10;             //スキルを取得するのに必要なスキルポイントを格納
         
 
 
@@ -373,5 +374,22 @@ public class Admin : MonoBehaviour
     public bool isWorkeingMobileImage()
     {
         return characterScript.isWorkeingMobilePlatform;
+    }
+
+    public void RaiseHPBySkillTree()
+    {
+        var n = Admin_SkillTree.AllRaiseHP;
+        HPStatus += n;
+        characterScript.charahp += n;
+        characterScript.slider.value = characterScript.charahp/HPStatus;
+    }
+
+    public static float LastAttackStatus()
+    {
+        return AttackStatus+Admin_SkillTree.AllRaiseAttack;
+    }
+    public static float LastDefenceStatus()
+    {
+        return DefenceStatus + Admin_SkillTree.AllRaiseDefence;
     }
 }

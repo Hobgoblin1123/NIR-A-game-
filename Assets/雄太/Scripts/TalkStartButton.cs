@@ -5,7 +5,7 @@ public class TalkStartButton : MonoBehaviour
 {
     [SerializeField]
     private string ButtonText = "話す";     //takjButtonのテキストの内容を設定
-    [HideInInspector]
+    // [HideInInspector]
     public TalkEvent parentObj;            //親にあるTalkButtonを定義。この変数はTalkEventによって自動的に定義される
     // Start is called before the first frame update
     void Start()

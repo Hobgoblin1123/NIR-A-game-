@@ -28,9 +28,9 @@ public class Admin_UI : MonoBehaviour
         [SerializeField]
         private Move move;//アタッチ
         [SerializeField]
-        private Admin admin;//アタッチ
+        public Admin admin;//アタッチ
         [SerializeField]
-        private Admin_Date admin_Date;//アタッチ
+        public Admin_Date admin_Date;//アタッチ
         [SerializeField]
         private ChangeEquip changeEquip;//アタッチ
         [SerializeField]
@@ -66,6 +66,7 @@ public class Admin_UI : MonoBehaviour
     private float time;//FPSを更新する時間をカウント
     private CinemachinePOV cinemachinePOV;//勝手にアタッチされる　POVを制御するコンポーネント
     private bool ChangeVolumeFlag;//音量関連の設定がポーズ中に実行されたかどうか
+    public bool ChangeSkillTree = false;
 
     //スクリプト定数
     const float CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE = 1/100*2.5f;
@@ -297,12 +298,19 @@ public class Admin_UI : MonoBehaviour
             admin_Date.SaveDateOther(9);//その時に、ボリューム設定を変更していたら、変更を保存する
         }
 
+        if(ChangeSkillTree == true)
+        {
+            ChangeSkillTree = false;
+            admin_Date.SaveDateOther(12);
+            Debug.Log("スキルツリーを保存");
+        }
+
         if (PauseCanvas.activeSelf)//ポーズ状態なら実行
         {
             Time.timeScale = 0;//タイムスケールを0に　⁼　時間停止
             virtualCamera.enabled = false;//カメラの回転を停止
             
-            if(isWorkeingMobilePlatform == false)return;//パソコンの時のみ、カーソルを表示させる
+            if(isWorkeingMobilePlatform == true)return;//パソコンの時のみ、カーソルを表示させる
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
@@ -312,7 +320,7 @@ public class Admin_UI : MonoBehaviour
             Time.timeScale = 1;//タイムスケールをもとに戻す　= 時は動き出す
             virtualCamera.enabled = true;//カメラの回転を復活させる
 
-            if(isWorkeingMobilePlatform == false)return;//パソコンの時のみ、カーソルを隠す
+            if(isWorkeingMobilePlatform == true)return;//パソコンの時のみ、カーソルを隠す
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }        

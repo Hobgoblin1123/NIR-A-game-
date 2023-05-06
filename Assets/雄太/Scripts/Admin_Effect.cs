@@ -100,7 +100,7 @@ public class Admin_Effect : MonoBehaviour
     {        
         if(collider.tag == "Enemy" &&ContinueDamage == false)
         {
-            var damage = Admin.AttackStatus * DamageMagnification;//ダメージ量を計算
+            var damage = Admin.LastAttackStatus() * DamageMagnification + Admin_SkillTree.AllRaiseDamage;//ダメージ量を計算
             Debug.Log(collider + "に" + damage + "だめーじ");
             collider.GetComponent<Admin_EnemyStatus>().TakeDamage(damage);//相手にダメージを与えるよ
         }
@@ -115,7 +115,7 @@ public class Admin_Effect : MonoBehaviour
             time += Time.deltaTime;//時間を増やすよ
             if(time > DamageInterval)//時間になったら攻撃をするよ
             {
-                var damage = Admin.AttackStatus*DamageMagnification;//ダメージ量を計算
+                var damage = Admin.LastAttackStatus()*DamageMagnification;//ダメージ量を計算
                 collider.GetComponent<Admin_EnemyStatus>().TakeDamage(damage);//相手にダメージを与えるよ
                 time = 0;//時間をリセットするよ
             }

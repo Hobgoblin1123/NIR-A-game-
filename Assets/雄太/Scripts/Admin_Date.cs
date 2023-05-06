@@ -16,6 +16,8 @@ public class Admin_Date : MonoBehaviour
         private ChangeEquip changeEquip;//アタッチ
         [SerializeField]      
         private Admin_UI admin_UI;    //アタッチ
+        [SerializeField]
+        private Admin_SkillTree admin_SkillTree;//アタッチ
 
     [Space(6)]
 
@@ -151,6 +153,17 @@ public class Admin_Date : MonoBehaviour
         if(n == 0 || n == 11)//自動保存設定を保存
         {
             PlayerPrefs.SetInt("AutoSave" , AutoSave? 0:1);
+        }
+        if(n == 0 || n == 12)
+        {
+            for (int i = 0; i < admin_SkillTree.skillsTreeUnites.Length; i++)
+            {
+                for (int t = 0; t < admin_SkillTree.skillsTreeUnites[i].skills.Length; t++)
+                {
+                    if(admin_SkillTree.skillsTreeUnites[i].skills[t].skillOn == false)
+                    PlayerPrefs.SetInt(i.ToString() , t);
+                }
+            }
         }
 
         PlayerPrefs.Save();//セーブを実行

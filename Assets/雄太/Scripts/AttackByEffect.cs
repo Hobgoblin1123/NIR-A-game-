@@ -21,7 +21,7 @@ public class AttackByEffect : MonoBehaviour
 		{
 			if(Damagecontinue == false )
 			{
-				damage = Admin.AttackStatus * DamageMagnification;
+				damage = Admin.LastAttackStatus() * DamageMagnification;
 				Debug.Log("敵にヒット");
 				// col.GetComponent<MoveEnemy>().TakeDamage();
 				// col.GetComponent<HP>().TakeDamage(damage);
@@ -43,7 +43,7 @@ public class AttackByEffect : MonoBehaviour
 		if(EffectDamageFlag == true && col.tag == "Enemy" &&  Damagecontinue == true)
 		{
 			currentTime += Time.deltaTime;
-			damage = Admin.AttackStatus * DamageMagnification;
+			damage = Admin.LastAttackStatus() * DamageMagnification;
 
 			if(currentTime > DamageInterval)
 			{

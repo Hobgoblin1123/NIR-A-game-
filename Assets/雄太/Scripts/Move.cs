@@ -21,11 +21,9 @@ public class Move : MonoBehaviour
 	private Admin_Effect[] effects;                 //主人公が使うエフェクト(prefabではなく、あらかじめインスタンス化すること)を格納
 	// HP関連
 
-	private  float charamaxHp;	                    // 敵キャラのHP最大値を定義
-    private float charahp;                          //現在HPを定義
+    public float charahp;                          //現在HPを定義
     [SerializeField]
-    private Slider slider;	                        // シーンに配置したSliderを格納
-    private float DefencePoint;
+    public Slider slider;	                        // シーンに配置したSliderを格納
 	[SerializeField]
 	private float lockInterval;                     //再ロックができるようになる時間を定義  
 	[SerializeField]
@@ -110,11 +108,9 @@ public class Move : MonoBehaviour
 		physicalStrengthSlider = staminaCanvas.GetComponentInChildren<Slider>();
 		//移動に使う2Speedのハッシュを取得
 		animSpeedHash = Animator.StringToHash("2Speed");
-		charamaxHp = Admin.HPStatus;//HPを設定
-        slider.maxValue = charamaxHp;    // Sliderの最大値を敵キャラのHP最大値と合わせる
-        charahp = charamaxHp;      // 初期状態はHP満タン
-        slider.value = charahp;	// Sliderの初期状態を設定（HP満タン）
-        DefencePoint = Admin.DefenceStatus;//防御力を設定
+        charahp =  Admin.HPStatus;      // 初期状態はHP満タン
+		slider.maxValue = 1;
+        slider.value = 1;	// Sliderの初期状態を設定（HP満タン）
 		AvoidanceDisplayEffect.alpha = 0;//回避時の画面エフェクトの透明度を0にする
 		physicalStrengthSlider.value = 1;//スタミナの表示量をMAXにする
 	}
@@ -126,8 +122,10 @@ public class Move : MonoBehaviour
 		if(state != MyState.Avoidance && state != MyState.JUAttack)//回避、特殊攻撃でなければダメージを受ける
 		{
 			SetState(MyState.Damage);//ダメージ状態に変更
-			charahp -= damage * (1 - DefencePoint);//現在HPを計算
-            slider.value = charahp;	// Sliderに現在HPを適用
+			var b = damage - Admin.LastDefenceStatus();
+			if(b < 0)b = 0;
+			charahp -= b;//現在HPを計算
+            slider.value = charahp/ Admin.HPStatus;	// Sliderに現在HPを適用
 		}
 		else if(state != MyState.JUAttack)//回避中にダメージ判定を受けたら実行
 		{
@@ -146,6 +144,7 @@ public class Move : MonoBehaviour
         {
 			SetState(MyState.Die);
         }
+		Debug.Log(charahp);
 	}
 	
 
@@ -174,11 +173,8 @@ public class Move : MonoBehaviour
 
 	public void LevelUP()
     {
-        charamaxHp = Admin.HPStatus;//最大HPを更新
-		DefencePoint = Admin.DefenceStatus;//防御力を更新
-        slider.maxValue = charamaxHp;    // Sliderの最大値を敵キャラのHP最大値と合わせる
-        charahp = charamaxHp;      // 初期状態はHP満タン
-        slider.value = charahp;	// Sliderの初期状態を設定（HP満タン）
+        charahp =  Admin.HPStatus;      // 初期状態はHP満タン
+        slider.value = 1;	// Sliderの初期状態を設定（HP満タン）
     }
 
 	// Update is called once per frame
@@ -402,8 +398,8 @@ public class Move : MonoBehaviour
 	{
 		yield return new WaitForSecondsRealtime(REVIVE_TIME);//REVIVE‗TIMEだけまつ
 		transform.position = ResetPosition;//位置情報を設定したリセットポジションに変更する
-		charahp =charamaxHp;//HPを全回復させる
-		slider.value = charahp;	//HPバーに変更を適用する
+		charahp = Admin.HPStatus;//HPを全回復させる
+		slider.value = 1;	//HPバーに変更を適用する
 		animator.Play("Idle");//アニメーションのIDLEを再生する
 		SetState(MyState.Normal);//状態をノーマルにする
 		this.tag = "Player";//タグをプレイヤーに治す
