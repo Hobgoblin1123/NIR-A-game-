@@ -10,7 +10,7 @@ public class TalkStartButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Text>().text = ButtonText; //子オブジェクトのＴｅｘｔを探し、textの内容を変更
+        GetComponentInChildren<Text>().text = ButtonText; //子オブジェクトのＴｅｘｔを探し、textの内容を変更
     }
 
     public void OnClick()
