@@ -15,7 +15,7 @@ C:/Users/dedro/NIR=A(game)
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50618
+51997
 Successfully changed project path to: C:/Users/dedro/NIR=A(game)
 C:/Users/dedro/NIR=A(game)
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/dedro/NIR=A(game)
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25840] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 1563048602 [EditorId] 1563048602 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25520] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 500648597 [EditorId] 500648597 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25840] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 1563048602 [EditorId] 1563048602 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25520] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 500648597 [EditorId] 500648597 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 35.67 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 33.01 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -69,41 +69,41 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008998 seconds.
-- Loaded All Assemblies, in  0.446 seconds
+Registered in 0.009297 seconds.
+- Loaded All Assemblies, in  0.411 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.338 seconds
+- Finished resetting the current domain, in  0.300 seconds
 Domain Reload Profiling:
-	ReloadAssembly (275ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (255ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
+			CreateAndSetChildDomain (2ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (145ms)
+			LoadAssemblies (131ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (161ms)
-				TypeCache.Initialize (160ms)
-					TypeCache.ScanAssembly (157ms)
+			SetupTypeCache (146ms)
+				TypeCache.Initialize (145ms)
+					TypeCache.ScanAssembly (143ms)
 				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (264ms)
+			SetupLoadedEditorAssemblies (243ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (6ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (185ms)
-				ProcessInitializeOnLoadMethodAttributes (58ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -113,53 +113,53 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.224 seconds
-Refreshing native plugins compatible for Editor in 21.96 ms, found 7 plugins.
+- Loaded All Assemblies, in  0.878 seconds
+Refreshing native plugins compatible for Editor in 13.79 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.130 seconds
+- Finished resetting the current domain, in  0.835 seconds
 Domain Reload Profiling:
-	ReloadAssembly (308ms)
-		BeginReloadAssembly (197ms)
+	ReloadAssembly (225ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		LoadAllAssembliesAndSetupDomain (912ms)
-			LoadAssemblies (566ms)
+			CreateAndSetChildDomain (26ms)
+		LoadAllAssembliesAndSetupDomain (649ms)
+			LoadAssemblies (398ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (446ms)
-				TypeCache.Initialize (383ms)
-					TypeCache.ScanAssembly (373ms)
-				ResolveRequiredComponents (23ms)
+			SetupTypeCache (321ms)
+				TypeCache.Initialize (275ms)
+					TypeCache.ScanAssembly (269ms)
+				ResolveRequiredComponents (16ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (886ms)
+			SetupLoadedEditorAssemblies (664ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (676ms)
-				ProcessInitializeOnLoadMethodAttributes (89ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (511ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Shader 'IL3DN/Branch': fallback shader 'False' not found
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 18.44 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 18.68 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7033 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 7490.
 Memory consumption went from 295.9 MB to 293.7 MB.
-Total: 8.891200 ms (FindLiveObjects: 0.975400 ms CreateObjectMapping: 0.558500 ms MarkObjects: 5.661000 ms  DeleteObjects: 1.695100 ms)
+Total: 8.848500 ms (FindLiveObjects: 1.488200 ms CreateObjectMapping: 0.336300 ms MarkObjects: 5.576000 ms  DeleteObjects: 1.446200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -175,41 +175,49 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 30581.168099 seconds.
-  path: Assets/雄太/chara/character/Animators/鎌通常1-2.anim
-  artifactKey: Guid(10d116ca357e0114b92848fdf0f70b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/鎌通常1-2.anim using Guid(10d116ca357e0114b92848fdf0f70b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609bff8ca7d7859f25fac29e5474d885') in 0.025425 seconds 
+  Time since last request: 4432.338160 seconds.
+  path: Assets/雄太/chara/character/Animators/鎌通常2-1.anim
+  artifactKey: Guid(1daafd03a81169d4d9c5f702aa648ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/character/Animators/鎌通常2-1.anim using Guid(1daafd03a81169d4d9c5f702aa648ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908640b2ed2bc8fcce76bc0f2e60918c') in 0.027843 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 26.439362 seconds.
-  path: Assets/雄太/chara/character/Animators/鎌通常2-3.anim
-  artifactKey: Guid(1369864f26e1a0445896eb58b6e6dca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/鎌通常2-3.anim using Guid(1369864f26e1a0445896eb58b6e6dca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7405060806e5a81ae146983ed0788935') in 0.008528 seconds 
+  Time since last request: 0.000057 seconds.
+  path: Assets/雄太/chara/character/Animators/鎌通常3.anim
+  artifactKey: Guid(1c215937e5445294dac1e3901acd929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/character/Animators/鎌通常3.anim using Guid(1c215937e5445294dac1e3901acd929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704ab51ee273a2d466a9abdfcfc98fc6') in 0.016907 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 1113.673247 seconds.
-  path: Assets/雄太/chara/character/Main Charactor.controller
-  artifactKey: Guid(adde6c5ae3621d94e9307eeb95563b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Main Charactor.controller using Guid(adde6c5ae3621d94e9307eeb95563b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a57827c1492630ab5fe33813d2319a') in 0.523667 seconds 
+  Time since last request: 0.563904 seconds.
+  path: Assets/雄太/chara/character/Animators/鎌通常4-1.anim
+  artifactKey: Guid(c61f727c6b1998e4c9d4b54288ea8180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/character/Animators/鎌通常4-1.anim using Guid(c61f727c6b1998e4c9d4b54288ea8180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108075e365c80d3371b14a1aa4bacf10') in 0.012932 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 168
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 802.551561 seconds.
-  path: Assets/雄太/chara/character/Main Charactor.controller
-  artifactKey: Guid(adde6c5ae3621d94e9307eeb95563b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Main Charactor.controller using Guid(adde6c5ae3621d94e9307eeb95563b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58e036192699d41c175601fcee7a7bba') in 0.519049 seconds 
+  Time since last request: 1.017265 seconds.
+  path: Assets/雄太/chara/character/Animators/鎌通常4-2.anim
+  artifactKey: Guid(083adba7d39d388419206e1c310b0b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/character/Animators/鎌通常4-2.anim using Guid(083adba7d39d388419206e1c310b0b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2fed4731aeed619fcae8bac909443fe') in 0.013355 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 168
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 3.004996 seconds.
-  path: Assets/雄太/chara/Shader/Alpha.mat
-  artifactKey: Guid(f1fb746fe7bd19142a4faa110df46413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/Shader/Alpha.mat using Guid(f1fb746fe7bd19142a4faa110df46413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0adb61bba92617218e2242a6ca7f7be5') in 1.374584 seconds 
+  Time since last request: 0.685718 seconds.
+  path: Assets/雄太/chara/character/Animators/鎌通常4-3.anim
+  artifactKey: Guid(06f9c5efe647d474085792c231869ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/character/Animators/鎌通常4-3.anim using Guid(06f9c5efe647d474085792c231869ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a69c0125d575b5895a9ec658249d1a0') in 0.021306 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.605564 seconds.
+  path: Assets/雄太/chara/character/Animators/鎌通常4-4.anim
+  artifactKey: Guid(9c26e8c160789ab45abde2ad34016347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/character/Animators/鎌通常4-4.anim using Guid(9c26e8c160789ab45abde2ad34016347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05705e11f8dd4d65f0aeb4b12baad08') in 0.031381 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
