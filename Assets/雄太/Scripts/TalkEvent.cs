@@ -83,6 +83,7 @@ public class TalkEvent : MonoBehaviour
         {
             admin_Chest.Open();
             admin.OutTalkRange(this);
+            Destroy(this.gameObject);
         }
         
     }

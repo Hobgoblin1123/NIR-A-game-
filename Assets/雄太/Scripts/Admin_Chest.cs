@@ -18,7 +18,6 @@ public class Admin_Chest : MonoBehaviour
         GetComponent<AudioSource>().Play();//開封音を再生
         particleSystem.Play();//開封エフェクトを再生
         StartCoroutine("OutItem");//アイテムを放出するコルーチンを起動する
-        Destroy(gameObject);//このチェストを開くスクリプト、選択するオブジェクト等を削除する（宝箱自体は残る）
     }
 
     IEnumerator OutItem()
