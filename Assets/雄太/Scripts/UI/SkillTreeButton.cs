@@ -34,7 +34,7 @@ public class SkillTreeButton : MonoBehaviour
     public void OnClick()
     {
         var admin_SkillTree = GetComponentInParent<Admin_SkillTree>();
-        admin_SkillTree.SkillGet(treeUniteNumber , skillNumber);
+        admin_SkillTree.SelectSkill(treeUniteNumber , skillNumber);
 
     }
 

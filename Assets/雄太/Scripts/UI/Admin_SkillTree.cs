@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Admin_SkillTree : MonoBehaviour
 {
@@ -47,6 +48,18 @@ public class Admin_SkillTree : MonoBehaviour
     public static float AllRaiseDefence;
     [SerializeField]
     public static float AllRaiseDamage;
+    private int selectedTreeUniteNumber;
+    private int selectedSkillNumber;
+    [SerializeField]
+    private Text skillPointText;
+    [SerializeField]
+    private GameObject[] AlartPanel;
+    [SerializeField]
+    private TextMeshProUGUI explanationPanel;
+    [SerializeField]
+    private TextMeshProUGUI explanationPoint;
+    [SerializeField]
+    private GameObject explanationParent;
 
     
     // Start is called before the first frame update
@@ -92,22 +105,36 @@ public class Admin_SkillTree : MonoBehaviour
                     }
                     admin.RaiseHPBySkillTree();
                 }
+                if(t == skillsTreeUnites[i].skills.Length-1)
+                {
+                    skillsTreeUnites[i].isEnd = true;
+                }
             }
         }
+
+        skillPointText.text = PlayerPrefs.GetInt("skillPoint").ToString();
     }
 
     // Update is called once per frame
     
-    public void SkillGet(int treeUniteType , int skillUnmder)
+    public void SkillGet()
     {
-        var g = skillsTreeUnites[treeUniteType].skills[skillUnmder];
-        if(GetSkillAvtiveSelf(treeUniteType , skillUnmder -1) == true)
+        var g = skillsTreeUnites[selectedTreeUniteNumber].skills[selectedSkillNumber];
+        if(g.skillOn == true)
         {
-            if(admin.skillPoints > g.needPoint)
+            Alarm(0);
+            Debug.Log("すでに取得していますよ");
+            return;
+        }
+        if(GetSkillAvtiveSelf(selectedTreeUniteNumber , selectedSkillNumber -1) == true)
+        {
+            if(admin.skillPoints >= g.needPoint)
             {
                 g.skillOn = true;
-                skillsTreeUnites[treeUniteType].skills[skillUnmder].skillOn= true;
+                skillsTreeUnites[selectedTreeUniteNumber].skills[selectedSkillNumber].skillOn= true;
                 g.button.SkillOn();
+                admin.skillPoints -= g.needPoint;
+                skillPointText.text = admin.skillPoints.ToString();
                 Debug.Log("取得");
 
 
@@ -136,28 +163,30 @@ public class Admin_SkillTree : MonoBehaviour
                 }
 
 
-                if(skillUnmder == skillsTreeUnites[treeUniteType].skills.Length-1)
+                if(selectedSkillNumber == skillsTreeUnites[selectedTreeUniteNumber].skills.Length-1)
                 {
-                    skillsTreeUnites[treeUniteType].isEnd = true;
-                    if(JudgeNextLevel(skillsTreeUnites[treeUniteType].nextBranchNumber) == true)
+                    skillsTreeUnites[selectedTreeUniteNumber].isEnd = true;
+                    if(JudgeNextLevel(skillsTreeUnites[selectedTreeUniteNumber].nextBranchNumber) == true)
                     {
-                        skillsTreeUnites[skillsTreeUnites[treeUniteType].nextBranchNumber].skills[0].skillOn = true;
-                        Debug.Log("こい....高見えぇぇぇぇぇ");
+                        skillsTreeUnites[skillsTreeUnites[selectedTreeUniteNumber].nextBranchNumber].skills[0].skillOn = true;
+                        Debug.Log("次の幹へ行けます");
                     }
                     else
                     {
-                        Debug.Log("次の開放はまだ無理だね");
+                        Debug.Log("次の幹へはまだ無理だね");
                     }
                 }
             }
             else
             {
+                Alarm(1);
                 Debug.Log("ポイントが足りませんよ");
             }
             
         }
         else
         {
+            Alarm(2);
             Debug.Log("まだ取れませんよ");
         }
 
@@ -191,6 +220,48 @@ public class Admin_SkillTree : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    public void SelectSkill(int treeUniteNumber , int skillNumber)
+    {
+        selectedTreeUniteNumber = treeUniteNumber;
+        selectedSkillNumber = skillNumber;
+        var n = skillsTreeUnites[treeUniteNumber].skills[skillNumber];
+        Explanation(n.skillType , n.addStatus , n.needPoint);
+    }
+
+    private void Alarm(int n)
+    {
+        Instantiate(AlartPanel[n] ,this.transform);
+    }
+
+    private void Explanation(SkillType skillType , float raiseStatus , int point)
+    {
+        if(skillType == SkillType.RaiseAttack)
+        {
+            explanationPanel.text = "有効にすると攻撃ステータスを"+raiseStatus+"上昇させる";
+            explanationPoint.text = "スキルポイントを"+point+"使用する";
+        }
+        else if(skillType == SkillType.RaiseDamage)
+        {
+            explanationPanel.text = "有効にすると敵に与えるダメージが実数値で"+raiseStatus+"上昇する";
+            explanationPoint.text = "スキルポイントを"+point+"使用する";
+        }
+        else if(skillType == SkillType.RaiseDefence)
+        {
+            explanationPanel.text = "有効にすると防御ステータスを"+raiseStatus+"上昇させる";
+            explanationPoint.text = "スキルポイントを"+point+"使用する";
+        }
+        else if(skillType == SkillType.RaiseHP)
+        {
+            explanationPanel.text = "有効にするとHPステータスを"+raiseStatus+"上昇させる";
+            explanationPoint.text = "スキルポイントを"+point+"使用する";
+        }
+        else if(skillType == SkillType.SPSkill1)
+        {
+            explanationPanel.text = "有効にすると特殊スキルを取得";
+            explanationPoint.text = "スキルポイントを"+point+"使用する";
         }
     }
 }

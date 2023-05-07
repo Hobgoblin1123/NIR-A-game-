@@ -105,6 +105,7 @@ public class Admin : MonoBehaviour
 
         LockOn = false;
         ChangeAutoRun(PlayerPrefs.GetInt("AutoRun"));//自動ダッシュをするかしないか保存されたデータを読み込み
+        skillPoints = PlayerPrefs.GetInt("skillPoint");
     }
 
     void Update()

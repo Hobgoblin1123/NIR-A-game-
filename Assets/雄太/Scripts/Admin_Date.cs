@@ -50,6 +50,7 @@ public class Admin_Date : MonoBehaviour
             admin_UI.MasterVolume = 1;//マスターボリュームを設定
             admin_UI.BGMVolume = 1;//BGMボリュームを設定
             admin_UI.SEVolume = 1;//SEボリュームを設定
+            admin.skillPoints = 6;
 
             if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
             {
@@ -177,9 +178,17 @@ public class Admin_Date : MonoBehaviour
                     Debug.Log("スキルの幹は" + i + "で保存されたスキル番号は" + (h-1));
                     break;
                     }
+                    if(h == admin_SkillTree.skillsTreeUnites[i].skills.Length-1 && admin_SkillTree.GetSkillAvtiveSelf(i,h) == true)
+                    {
+                        PlayerPrefs.SetInt(i.ToString() , h);
+                        Debug.Log("スキルツリーの枝の最大値まで行きました。");
+                        break;
+                    }
                     
                 }
             }
+
+            PlayerPrefs.SetInt("skillPoint" , admin.skillPoints);
         }
 
         PlayerPrefs.Save();//セーブを実行

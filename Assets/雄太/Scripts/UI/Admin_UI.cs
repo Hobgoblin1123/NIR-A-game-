@@ -548,9 +548,7 @@ public class Admin_UI : MonoBehaviour
     //警告を出すときに呼ばれる関数
     public void Alarm(int n)
     {
-        if(n == 0)//わたされたintにおうじて、表示する警告を変えている
-        {
-            Instantiate(alarmCanvas[0] , -Vector3.zero , Quaternion.identity , AlarmParent.transform);
-        }
+        //わたされたintにおうじて、表示する警告を変えている
+        Instantiate(alarmCanvas[n] , Vector3.zero , Quaternion.identity , AlarmParent.transform);
     }
 }
