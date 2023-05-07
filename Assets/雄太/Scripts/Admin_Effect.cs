@@ -102,6 +102,8 @@ public class Admin_Effect : MonoBehaviour
         {
             var damage = Admin.LastAttackStatus() * DamageMagnification + Admin_SkillTree.AllRaiseDamage;//ダメージ量を計算
             Debug.Log(collider + "に" + damage + "だめーじ");
+            Debug.Log(Admin.LastAttackStatus());
+            Debug.Log(Admin_SkillTree.AllRaiseDamage);
             collider.GetComponent<Admin_EnemyStatus>().TakeDamage(damage);//相手にダメージを与えるよ
         }
     }

@@ -63,8 +63,12 @@ public class Admin_SkillTree : MonoBehaviour
 
     
     // Start is called before the first frame update
-    void Start()
+    public void StartByAdmin_UI()
     {
+        AllRaiseAttack = 0;
+        AllRaiseDamage = 0;
+        AllRaiseDefence = 0;
+        AllRaiseHP = 0;
         admin_UI = GetComponentInParent<Admin_UI>();
         admin = admin_UI.admin;
         admin_Date = admin_UI.admin_Date;
@@ -78,7 +82,7 @@ public class Admin_SkillTree : MonoBehaviour
                 {
                     var g = skillsTreeUnites[i].skills[t];
                     skillsTreeUnites[i].skills[t].skillOn = true;
-                    Debug.Log("エラーが呼ばれたときの番号は" + g + "であり、その番号は" + t) ;
+                    Debug.Log("エラーが呼ばれたときの番号は" + i + "であり、その番号は" + t) ;
                     g.button.StartSet();
 
                     if(g.skillType == SkillType.RaiseAttack)

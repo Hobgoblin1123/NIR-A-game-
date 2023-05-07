@@ -77,6 +77,7 @@ public class Admin_UI : MonoBehaviour
         itemsDialog = GetComponentInChildren<ItemsDialog>();//取得
         inventoryManager = GetComponentInChildren<InventoryManager>();//取得
         cinemachinePOV = virtualCamera.GetCinemachineComponent<CinemachinePOV>();//すでにアタッチされてるバーチャルカメラから取得
+        GetComponentInChildren<Admin_SkillTree>().StartByAdmin_UI();
         
         QualitySettings.vSyncCount = 0;//FPSの自動変動を防止
         //保存されているエイム、FPS設定情報等をロード
