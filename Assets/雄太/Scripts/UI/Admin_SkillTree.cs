@@ -64,7 +64,8 @@ public class Admin_SkillTree : MonoBehaviour
                 if(t <= n)
                 {
                     var g = skillsTreeUnites[i].skills[t];
-                    g.skillOn = true;
+                    skillsTreeUnites[i].skills[t].skillOn = true;
+                    Debug.Log("エラーが呼ばれたときの番号は" + g + "であり、その番号は" + t) ;
                     g.button.StartSet();
 
                     if(g.skillType == SkillType.RaiseAttack)
@@ -100,7 +101,7 @@ public class Admin_SkillTree : MonoBehaviour
     public void SkillGet(int treeUniteType , int skillUnmder)
     {
         var g = skillsTreeUnites[treeUniteType].skills[skillUnmder];
-        if(skillsTreeUnites[treeUniteType].skills[skillUnmder-1].skillOn == true)
+        if(GetSkillAvtiveSelf(treeUniteType , skillUnmder -1) == true)
         {
             if(admin.skillPoints > g.needPoint)
             {
@@ -133,7 +134,6 @@ public class Admin_SkillTree : MonoBehaviour
                 {
                     Debug.Log("なんか特別なやつもらえるらしいけどなにも実装してないでwwwww");
                 }
-
 
 
                 if(skillUnmder == skillsTreeUnites[treeUniteType].skills.Length-1)
@@ -180,5 +180,17 @@ public class Admin_SkillTree : MonoBehaviour
             if(skillsTreeUnites[item].isEnd == false)return false;
         }
         return true;
+    }
+
+    public bool GetSkillAvtiveSelf(int BranchNumber , int skillNumber)
+    {
+        if( skillsTreeUnites[BranchNumber].skills[skillNumber].skillOn == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

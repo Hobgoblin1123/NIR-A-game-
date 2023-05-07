@@ -11,6 +11,7 @@ public class SkillTreeButton : MonoBehaviour
     private int skillNumber;
     [SerializeField]
     public bool value = false;
+    [SerializeField]
     private Image image;
 
 
@@ -21,7 +22,7 @@ public class SkillTreeButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        image = GetComponent<Image>();
+        image = GetComponentInChildren<Image>();
     }
 
     // Update is called once per frame
@@ -34,7 +35,6 @@ public class SkillTreeButton : MonoBehaviour
     {
         var admin_SkillTree = GetComponentInParent<Admin_SkillTree>();
         admin_SkillTree.SkillGet(treeUniteNumber , skillNumber);
-        
 
     }
 

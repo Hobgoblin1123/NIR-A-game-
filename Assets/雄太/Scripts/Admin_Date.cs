@@ -62,6 +62,7 @@ public class Admin_Date : MonoBehaviour
                 //パソコンなら以下のように感度を設定
                 admin_UI.AIM_X_speed = 6;
                 admin_UI.AIM_Y_speed = 6;
+                Debug.Log("パソコンで新規設定");
             }
 
             SaveDate();
@@ -122,7 +123,16 @@ public class Admin_Date : MonoBehaviour
             PlayerPrefs.SetInt("SubW" , Admin.SubWeapon);
         }
 
-        if(n == 0 || n == 3)//ターゲットＦＰＳ情報を保存
+         if(n == 0 || n == 3)
+        {
+            PlayerPrefs.SetInt("FPS" , admin_UI.NawFPS);
+        }
+
+        if(n == 0 || n == 4)
+        {
+            PlayerPrefs.SetFloat("Aim_X" , admin_UI.AIM_X_speed);
+            PlayerPrefs.SetFloat("Aim_Y" , admin_UI.AIM_Y_speed);
+        }
         if(n == 0 || n == 5)
         {
             PlayerPrefs.SetInt("FullScreen" ,admin_UI.FullScreen? 0:1);
@@ -158,10 +168,16 @@ public class Admin_Date : MonoBehaviour
         {
             for (int i = 0; i < admin_SkillTree.skillsTreeUnites.Length; i++)
             {
-                for (int t = 0; t < admin_SkillTree.skillsTreeUnites[i].skills.Length; t++)
+                for (int h = 0; h < admin_SkillTree.skillsTreeUnites[i].skills.Length; h++)
                 {
-                    if(admin_SkillTree.skillsTreeUnites[i].skills[t].skillOn == false)
-                    PlayerPrefs.SetInt(i.ToString() , t);
+                    if(admin_SkillTree.GetSkillAvtiveSelf(i,h) == false)
+                    {
+                        Debug.Log(admin_SkillTree.GetSkillAvtiveSelf(i,h));
+                    PlayerPrefs.SetInt(i.ToString() , h -1);
+                    Debug.Log("スキルの幹は" + i + "で保存されたスキル番号は" + (h-1));
+                    break;
+                    }
+                    
                 }
             }
         }

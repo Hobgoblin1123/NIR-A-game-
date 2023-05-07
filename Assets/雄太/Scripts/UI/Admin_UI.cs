@@ -144,8 +144,10 @@ public class Admin_UI : MonoBehaviour
             ControlCanvas.enabled = false;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            Debug.Log(AIM_X_speed);
             cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;//感度を設定
             cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
+            Debug.Log("感度更新できてるはず");
             isWorkeingMobilePlatform = false;
             Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());
             Destroy(ControlCanvas.gameObject.GetComponent<GraphicRaycaster>());
