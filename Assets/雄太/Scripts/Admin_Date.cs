@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Admin_Date : MonoBehaviour
 {
-
     [Header("アタッチスクリプト")]
         [SerializeField]
         private Move move;           //アタッチ
@@ -175,6 +174,7 @@ public class Admin_Date : MonoBehaviour
                     {
                         Debug.Log(admin_SkillTree.GetSkillAvtiveSelf(i,h));
                     PlayerPrefs.SetInt(i.ToString() , h -1);
+                    Debug.Log(admin.isWorkeingMobileImage());
                     Debug.Log("スキルの幹は" + i + "で保存されたスキル番号は" + (h-1));
                     break;
                     }
@@ -184,10 +184,8 @@ public class Admin_Date : MonoBehaviour
                         Debug.Log("スキルツリーの枝の最大値まで行きました。");
                         break;
                     }
-                    
                 }
             }
-
             PlayerPrefs.SetInt("skillPoint" , admin.skillPoints);
         }
 

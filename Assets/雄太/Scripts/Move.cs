@@ -46,6 +46,8 @@ public class Move : MonoBehaviour
 	private Vector3 ResetPosition;                  //位置異常の時に移動するpositionを設定
 	[SerializeField]
 	private Admin_UI admin_UI;                      //Admin_UIをアタッチ
+	[SerializeField]
+	private bool tutorial;
 
 
 
@@ -61,6 +63,10 @@ public class Move : MonoBehaviour
     {
 		//スタートするときに、前回保存した位置に移動する
 		var posi = new Vector3(PlayerPrefs.GetFloat("posi_X"),PlayerPrefs.GetFloat("posi_y"),PlayerPrefs.GetFloat("posi_z"));
+		if(tutorial == true)
+		{
+			posi = new Vector3(1,3,21);
+		}
 		//ただし、そのY座標がが-1より小さい場合は一以上とみなし警告文を表示し、位置をリセットする
 		if(posi.y < -1)
 		{

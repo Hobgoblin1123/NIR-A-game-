@@ -22,6 +22,8 @@ public class Admin_tutorial : MonoBehaviour
     private Admin_EnemyStatus statusB;
     [SerializeField]
     private int stateNumber;
+    [SerializeField]
+    private GameObject chara;
     // Start is called before the first frame update
     void Start()
     {
@@ -79,15 +81,18 @@ public class Admin_tutorial : MonoBehaviour
         else if(n == 2)
         {
             stateNumber = 1;
+            statusA.HP = 20;
             move.enabled = true;
         }
         else if(n == 3)
         {
             stateNumber = 4;
+            move.enabled = true;
         }
         else if(n == 4)
         {
             stateNumber = 6;
+            move.enabled = true;
         }
     }
 
@@ -96,5 +101,15 @@ public class Admin_tutorial : MonoBehaviour
         yield return new WaitForSecondsRealtime(4);
         PlayTimeLine(3);
         Destroy(statusB.transform.parent.gameObject);
+    }
+
+    public void SetCharaPosition(int n)
+    {
+        Debug.Log("そのにりり");
+        if(n == 0)
+        {
+            chara.transform.position = new Vector3(1,3,-21);
+            Debug.Log("キャラ移動");
+        }
     }
 }
