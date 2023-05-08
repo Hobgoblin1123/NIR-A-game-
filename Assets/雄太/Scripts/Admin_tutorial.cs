@@ -49,8 +49,10 @@ public class Admin_tutorial : MonoBehaviour
         {
             if(move.state == Move.MyState.JUAttack)
             {
+                Debug.Log("ジャスト回避はいりましたぁぁぁぁぁぁ");
                 stateNumber = 5;
-                StartCoroutine("DelayNext");
+                Destroy(statusB.transform.parent.gameObject);
+                PlayTimeLine(3);
             }
         }
         else if(stateNumber == 6)
@@ -83,6 +85,7 @@ public class Admin_tutorial : MonoBehaviour
             stateNumber = 1;
             statusA.HP = 20;
             move.enabled = true;
+            Admin.AttackStatus = 10;
         }
         else if(n == 3)
         {
