@@ -51,7 +51,7 @@ public class Admin_tutorial : MonoBehaviour
             {
                 Debug.Log("ジャスト回避はいりましたぁぁぁぁぁぁ");
                 stateNumber = 5;
-                Destroy(statusB.transform.parent.gameObject);
+                Destroy(statusB.transform.parent.gameObject,3);
                 PlayTimeLine(3);
             }
         }

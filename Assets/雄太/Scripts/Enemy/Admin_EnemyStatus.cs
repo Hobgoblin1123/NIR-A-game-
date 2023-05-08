@@ -111,6 +111,7 @@ public class Admin_EnemyStatus : MonoBehaviour
             audioSource.PlayOneShot(audioClip[0]);
 
             HPSlider.value = HP/HPStatus;
+            HPSlider.gameObject.SetActive(true);
             
             // if(adminEnemy.LockedFlag == true)
             // {

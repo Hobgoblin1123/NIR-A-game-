@@ -169,6 +169,7 @@ public class Admin : MonoBehaviour
             AttackStatus = 8 + CharaLevel*2;
             DefenceStatus = CharaLevel * 0.005f;
             characterScript.LevelUP();//moveを通じてHPを回復させる
+            RaiseHPBySkillTree();
         }
 
 
@@ -379,7 +380,7 @@ public class Admin : MonoBehaviour
 
     public void RaiseHPBySkillTree()
     {
-        var n = Admin_SkillTree.AllRaiseHP;
+        var n = Admin_SkillTree.AllRaiseHP/100*HPStatus;
         HPStatus += n;
         characterScript.charahp += n;
         characterScript.slider.value = characterScript.charahp/HPStatus;
@@ -387,10 +388,10 @@ public class Admin : MonoBehaviour
 
     public static float LastAttackStatus()
     {
-        return AttackStatus+Admin_SkillTree.AllRaiseAttack;
+        return AttackStatus+Admin_SkillTree.AllRaiseAttack/100*AttackStatus;
     }
     public static float LastDefenceStatus()
     {
-        return DefenceStatus + Admin_SkillTree.AllRaiseDefence;
+        return DefenceStatus + Admin_SkillTree.AllRaiseDefence/100*DefenceStatus;
     }
 }

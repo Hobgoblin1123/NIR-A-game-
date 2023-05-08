@@ -244,7 +244,7 @@ public class Admin_SkillTree : MonoBehaviour
     {
         if(skillType == SkillType.RaiseAttack)
         {
-            explanationPanel.text = "有効にすると攻撃ステータスを"+raiseStatus+"上昇させる";
+            explanationPanel.text = "有効にすると攻撃ステータスを"+raiseStatus+"%上昇させる";
             explanationPoint.text = "スキルポイントを"+point+"使用する";
         }
         else if(skillType == SkillType.RaiseDamage)
@@ -254,12 +254,12 @@ public class Admin_SkillTree : MonoBehaviour
         }
         else if(skillType == SkillType.RaiseDefence)
         {
-            explanationPanel.text = "有効にすると防御ステータスを"+raiseStatus+"上昇させる";
+            explanationPanel.text = "有効にすると防御ステータスを"+raiseStatus+"%上昇させる";
             explanationPoint.text = "スキルポイントを"+point+"使用する";
         }
         else if(skillType == SkillType.RaiseHP)
         {
-            explanationPanel.text = "有効にするとHPステータスを"+raiseStatus+"上昇させる";
+            explanationPanel.text = "有効にするとHPステータスを"+raiseStatus+"%上昇させる";
             explanationPoint.text = "スキルポイントを"+point+"使用する";
         }
         else if(skillType == SkillType.SPSkill1)
