@@ -8,6 +8,8 @@ public class ChangeEquip : MonoBehaviour
     private int equipment = 1;　//装備している武器番号を格納
     [SerializeField]
     private Admin admin;       //adminをアタッチ
+    [SerializeField]
+    private bool tutorial = false;
 
     // Use this for initialization
     void Start()
@@ -17,6 +19,7 @@ public class ChangeEquip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(tutorial == true)return;
         if(admin.isWorkeingMobileImage() == false && Input.GetKeyDown("e"))
         {
             ChangeWeapon();//PCで動作していて、eキーが押されたとき、武器変更を実行

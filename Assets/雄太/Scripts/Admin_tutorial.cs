@@ -28,6 +28,13 @@ public class Admin_tutorial : MonoBehaviour
     void Start()
     {
         PlayTimeLine(0);
+        StartCoroutine("Off");
+        
+    }
+
+    IEnumerator Off()
+    {
+        yield return new WaitForSeconds(0.4f);
         move.enabled = false;
     }
 

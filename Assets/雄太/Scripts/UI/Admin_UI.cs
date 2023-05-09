@@ -67,6 +67,8 @@ public class Admin_UI : MonoBehaviour
     private CinemachinePOV cinemachinePOV;//勝手にアタッチされる　POVを制御するコンポーネント
     private bool ChangeVolumeFlag;//音量関連の設定がポーズ中に実行されたかどうか
     public bool ChangeSkillTree = false;
+    [SerializeField]
+    private bool tutorial;
 
     //スクリプト定数
     const float CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE = 1/100*2.5f;
@@ -170,6 +172,8 @@ public class Admin_UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(tutorial == true)return;
+        
         if(Input.GetKeyDown(KeyCode.Escape))//エスケープが押されたら、ポーズ画面にする
         {
             GetKeyEscape(0);
