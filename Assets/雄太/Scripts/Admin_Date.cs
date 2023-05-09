@@ -166,27 +166,44 @@ public class Admin_Date : MonoBehaviour
         }
         if(n == 0 || n == 12)
         {
-            for (int i = 0; i < admin_SkillTree.skillsTreeUnites.Length; i++)
+            if(n == 0)
             {
-                for (int h = 0; h < admin_SkillTree.skillsTreeUnites[i].skills.Length; h++)
+                for (int i = 0; i < admin_SkillTree.skillsTreeUnites.Length; i++)
                 {
-                    if(admin_SkillTree.GetSkillAvtiveSelf(i,h) == false)
+                    if(admin_SkillTree.skillsTreeUnites[i].skills[0].skillOn == true)
                     {
-                        Debug.Log(admin_SkillTree.GetSkillAvtiveSelf(i,h));
-                    PlayerPrefs.SetInt(i.ToString() , h -1);
-                    Debug.Log(admin.isWorkeingMobileImage());
-                    Debug.Log("スキルの幹は" + i + "で保存されたスキル番号は" + (h-1));
-                    break;
+                        PlayerPrefs.SetInt(i.ToString() , 0);
                     }
-                    if(h == admin_SkillTree.skillsTreeUnites[i].skills.Length-1 && admin_SkillTree.GetSkillAvtiveSelf(i,h) == true)
+                    else
                     {
-                        PlayerPrefs.SetInt(i.ToString() , h);
-                        Debug.Log("スキルツリーの枝の最大値まで行きました。");
-                        break;
+                        PlayerPrefs.SetInt(i.ToString() , -1);
                     }
                 }
             }
-            PlayerPrefs.SetInt("skillPoint" , admin.skillPoints);
+            else
+            {
+                for (int i = 0; i < admin_SkillTree.skillsTreeUnites.Length; i++)
+                {
+                    for (int h = 0; h < admin_SkillTree.skillsTreeUnites[i].skills.Length; h++)
+                    {
+                        if(admin_SkillTree.GetSkillAvtiveSelf(i,h) == false)
+                        {
+                        Debug.Log(admin_SkillTree.GetSkillAvtiveSelf(i,h));
+                        PlayerPrefs.SetInt(i.ToString() , h -1);
+                        Debug.Log(admin.isWorkeingMobileImage());
+                        Debug.Log("スキルの幹は" + i + "で保存されたスキル番号は" + (h-1));
+                        break;
+                        }
+                        if(h == admin_SkillTree.skillsTreeUnites[i].skills.Length-1 && admin_SkillTree.GetSkillAvtiveSelf(i,h) == true)
+                        {
+                            PlayerPrefs.SetInt(i.ToString() , h);
+                            Debug.Log("スキルツリーの枝の最大値まで行きました。");
+                            break;
+                        }
+                    }
+                }
+                PlayerPrefs.SetInt("skillPoint" , admin.skillPoints);
+            }
         }
 
         PlayerPrefs.Save();//セーブを実行

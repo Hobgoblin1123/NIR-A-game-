@@ -92,7 +92,15 @@ public class Admin_Effect : MonoBehaviour
 
     public void EffectEnd()
     {
-        effekseerEmitter.Stop();//エフェクトを停止
+        if(effekseerEmitter != null)
+        {
+            effekseerEmitter.Stop();//エフェクトを停止
+        }
+        else
+        {
+            effect.Stop();
+        }
+        
     }
 
     // ダメージエフェクトで範囲内に敵がいる場合に実行される関数

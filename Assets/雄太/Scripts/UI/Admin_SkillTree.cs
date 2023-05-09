@@ -12,7 +12,7 @@ public class Admin_SkillTree : MonoBehaviour
     {
         public Skills[] skills;
         public bool isEnd;
-        public int nextBranchNumber;
+        public int[] nextBranchNumber;
     }
 
     [System.Serializable]
@@ -88,7 +88,6 @@ public class Admin_SkillTree : MonoBehaviour
                     if(g.skillType == SkillType.RaiseAttack)
                     {
                         AllRaiseAttack += g.addStatus;
-                        Debug.Log(AllRaiseAttack);
                     }
                     else if(g.skillType == SkillType.RaiseHP)
                     {
@@ -109,7 +108,7 @@ public class Admin_SkillTree : MonoBehaviour
                     }
                     admin.RaiseHPBySkillTree();
                 }
-                if(t == skillsTreeUnites[i].skills.Length-1)
+                if(n == skillsTreeUnites[i].skills.Length-1)
                 {
                     skillsTreeUnites[i].isEnd = true;
                 }
@@ -172,7 +171,7 @@ public class Admin_SkillTree : MonoBehaviour
                     skillsTreeUnites[selectedTreeUniteNumber].isEnd = true;
                     if(JudgeNextLevel(skillsTreeUnites[selectedTreeUniteNumber].nextBranchNumber) == true)
                     {
-                        skillsTreeUnites[skillsTreeUnites[selectedTreeUniteNumber].nextBranchNumber].skills[0].skillOn = true;
+                        skillsTreeUnites[skillsTreeUnites[selectedTreeUniteNumber].nextBranchNumber[0]].skills[0].skillOn = true;
                         Debug.Log("次の幹へ行けます");
                     }
                     else
@@ -196,23 +195,44 @@ public class Admin_SkillTree : MonoBehaviour
 
         admin_UI.ChangeSkillTree = true;
     }
-    private bool JudgeNextLevel(int nextTreeNumber)
+    private bool JudgeNextLevel(int[] n)
     {
-        if(nextTreeNumber < 0)return false;
+        Debug.Log(n);
+        if(n[0] < 0)return false;
 
-        List<int> array = new List<int>();
-        for (int i = 0; i < skillsTreeUnites.Length; i++)
+        if(n.Length == 1)
         {
-            if (skillsTreeUnites[i].nextBranchNumber == nextTreeNumber)
+            List<int> array = new List<int>();
+            for (int i = 0; i < skillsTreeUnites.Length; i++)
             {
-                array.Add(i);
+                Debug.Log(i);
+                if (skillsTreeUnites[i].nextBranchNumber[0] == n[0])
+                {
+                    array.Add(i);
+                    Debug.Log("次の枝を開放します" + i);
+                    Debug.Log(array);
+                }
             }
+
+            foreach (var item in array)
+            {
+                if(skillsTreeUnites[item].isEnd == false)return false;
+
+            }
+            
+            return true;
         }
-        foreach (var item in array)
+        else if(n.Length > 1)
         {
-            if(skillsTreeUnites[item].isEnd == false)return false;
+            foreach (var item in n)
+            {
+                skillsTreeUnites[item].skills[0].skillOn = true;
+            }
+            return false;
         }
-        return true;
+        return false;
+
+        
     }
 
     public bool GetSkillAvtiveSelf(int BranchNumber , int skillNumber)
