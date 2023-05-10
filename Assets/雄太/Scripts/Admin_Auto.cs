@@ -155,20 +155,22 @@ public class Admin_Auto : MonoBehaviour
         if(state == CharaState.Down)return;//ダウン状態なら実行しない
         SetState(CharaState.Idle);//アイドル状態にする
     }
-    public void EffectOff()
+    public void EffectOff(int n)
     {
-
+        admin_Effects[n].EffectEnd();
+		admin_Effects[n].gameObject.SetActive(false);
     }
-    public void EffectOn()
+    public void EffectOn(AnimationEvent animationEvent)
     {
-
+        admin_Effects[animationEvent.intParameter].gameObject.SetActive(true);
+		admin_Effects[animationEvent.intParameter].EffectStart((int)animationEvent.floatParameter);
     }
     public void FootSound()
     {
 
     }
-    public void AttackStart()
+    public void AttackStart(int n)
     {
-
+        audioSource.PlayOneShot(audioClips[n]);
     }
 }
