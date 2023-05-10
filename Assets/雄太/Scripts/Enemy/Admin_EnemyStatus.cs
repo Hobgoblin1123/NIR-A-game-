@@ -59,7 +59,8 @@ public class Admin_EnemyStatus : MonoBehaviour
     {
         Ghost,
         Golem,
-        IronDog
+        IronDog,
+        ForHeavenlyKing
     }
 
     void Awake()
@@ -93,10 +94,12 @@ public class Admin_EnemyStatus : MonoBehaviour
             adminEnemyG = null;
         }
         
-        appearScript = GetComponentInParent<AppearScript>();
+        
         HP = HPStatus;
         // NowHPRatio = HP/HPStatus;
         HPSlider.value = 1;
+        if(type == EnemyType.ForHeavenlyKing)return;
+        appearScript = GetComponentInParent<AppearScript>();
     }
 
 
@@ -186,11 +189,12 @@ public class Admin_EnemyStatus : MonoBehaviour
 
     private void DestroyEvent()
     {
-        var drop = GetComponent<MobItemDropper>();
-        drop.DropIfNeeded();
         admin.TakeEXP(exp);
         Debug.Log("死亡");
 
+        if(type ==  EnemyType.ForHeavenlyKing)return;
+        var drop = GetComponent<MobItemDropper>();
+        drop.DropIfNeeded();
         appearScript.EnemyDie(appearNumber);
         Reset();
     }
