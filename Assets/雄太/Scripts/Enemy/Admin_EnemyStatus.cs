@@ -45,6 +45,7 @@ public class Admin_EnemyStatus : MonoBehaviour
     private Admin_Enemy adminEnemy;
     private Admin_Enemy_G adminEnemyG;
     private Admin_Enemy_D adminEnemyD;
+    private Admin_ForHeavenlyKing admin_ForHeavenlyKing;
     private AudioSource audioSource;
     private Admin admin;
     [HideInInspector]
@@ -92,6 +93,10 @@ public class Admin_EnemyStatus : MonoBehaviour
             adminEnemyD = GetComponent<Admin_Enemy_D>();
             adminEnemy = null;
             adminEnemyG = null;
+        }
+        else if(type ==EnemyType.ForHeavenlyKing)
+        {
+            admin_ForHeavenlyKing = GetComponent<Admin_ForHeavenlyKing>();
         }
         
         
@@ -180,6 +185,16 @@ public class Admin_EnemyStatus : MonoBehaviour
                 {
                     admin.LockOff();
                 }
+            }
+            audioSource.PlayOneShot(audioClip[0]);
+        }
+        else if(type == EnemyType.ForHeavenlyKing)
+        {
+            HP -= damage;
+            HPSlider.value = HP/HPStatus;
+             if(HP<=0)
+            {
+                admin_ForHeavenlyKing.SetState(Admin_ForHeavenlyKing.EnemyState.Die);
             }
             audioSource.PlayOneShot(audioClip[0]);
         }

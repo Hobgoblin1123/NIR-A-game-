@@ -34,6 +34,8 @@ public class Admin_EnemyEffect : MonoBehaviour
     private float colliderMoveTime = 0f;//コライダーが動く場合、移動する時間
 
     float damage;
+    [SerializeField]
+    private bool SPDamage;
     private bool emitterFlag = true;
     private Collider coll;
     [SerializeField]
@@ -126,8 +128,19 @@ public class Admin_EnemyEffect : MonoBehaviour
 
         if(collider.CompareTag("Player"))
         {
-            collider.GetComponent<Move>().TakeDamage(damage);
-            Debug.Log(collider + "に" + damage + "だめーじ");
+            var c = collider.GetComponent<Move>();
+            if(SPDamage == false)
+            {
+                c.TakeDamage(damage);
+                Debug.Log(collider + "に" + damage + "だめーじ");
+            }
+            else
+            {
+                var dame = c.charahp*0.9f;
+                c.TakeDamage(dame);
+                Debug.Log(("残りHPの9割のダメージを与えるよん"));
+            }
+            
         }
         if(collider.CompareTag("AutoChara"))
         {
