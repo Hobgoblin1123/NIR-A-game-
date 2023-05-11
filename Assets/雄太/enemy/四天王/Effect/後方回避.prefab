@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6246866893679700831}
   - component: {fileID: 8064198791383204965}
-  - component: {fileID: -5312263960308731402}
+  - component: {fileID: 5912808413591457752}
   m_Layer: 0
   m_Name: "\u5F8C\u65B9\u56DE\u907F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6246866893679700831
 Transform:
   m_ObjectHideFlags: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   effectAsset: {fileID: 11400000, guid: 74f9041add7e0434e8de89a525ac3628, type: 2}
   playOnStart: 0
   isLooping: 0
---- !u!114 &-5312263960308731402
+--- !u!114 &5912808413591457752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,16 +60,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8856274638192125784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3655d39e3fdd58246864196fc2c0c628, type: 3}
+  m_Script: {fileID: 11500000, guid: ea50821423895744c96e37d7ef108de8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isDamageEffect: 0
-  DamageMagnification: 1
+  canMoveCollider: 0
+  effect: {fileID: 0}
+  DamageMagnification: 0
   ContinueDamage: 0
   DamageInterval: 0
-  firstTransForm:
-  - position: {x: 0, y: 0, z: 0}
-    Addrotation: {x: 0, y: 0, z: 0}
-    scale: {x: 0.5, y: 0.5, z: 0.5}
+  firstTransForm: []
   time: 0
-  EffectType: 0
+  colliderObj: {fileID: 0}
+  colliderMoveTransform: {x: 0, y: 0, z: 0}
+  colliderMoveTime: 0
+  ColliderONTime: 0

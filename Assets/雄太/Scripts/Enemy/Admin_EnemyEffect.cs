@@ -1,12 +1,16 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Effekseer;
+using DG.Tweening;
 
 public class Admin_EnemyEffect : MonoBehaviour
 {
     [SerializeField]
     private bool isDamageEffect = true;
+    [SerializeField]
+    private bool canMoveCollider = false;        //コライダーが移動する処理をする場合はここにチェック
+    [SerializeField]
+    private ParticleSystem effect;               //ParticleSystemを使ってエフェクトを再生するときはアタッチする
 
     [SerializeField , Header("ダメージ倍率")]
     private float DamageMagnification = 1;
@@ -21,19 +25,20 @@ public class Admin_EnemyEffect : MonoBehaviour
     public FirstTransForm[] firstTransForm;
     [SerializeField]
     private float time;
-    [HideInInspector]
-    public int EffectType = 0;
-    // [SerializeField]
     private EffekseerEmitter effekseerEmitter;
-    float damage;
     [SerializeField]
+    private GameObject colliderObj;               //コライダーを動かく場合、動かすコライダーがついたprefabがアタッチされる
+    [SerializeField]
+    private Vector3 colliderMoveTransform = Vector3.zero;//　コライダーが移動する移動先のlocalPosition
+    [SerializeField]
+    private float colliderMoveTime = 0f;//コライダーが動く場合、移動する時間
+
+    float damage;
     private bool emitterFlag = true;
     private Collider coll;
     [SerializeField]
     private float ColliderONTime = 0;
     private float ColliderOFFTime;
-    [SerializeField]
-    private int repetitionCount = 1;
 
     [System.Serializable]
     public struct FirstTransForm
@@ -45,9 +50,14 @@ public class Admin_EnemyEffect : MonoBehaviour
 
     void Awake()
     {
-        if(emitterFlag == true)
+        if(GetComponent<EffekseerEmitter>())
         {
             effekseerEmitter = GetComponent<EffekseerEmitter>();
+            emitterFlag = true;
+        }
+        else
+        {
+            emitterFlag = false;
         }
         if(isDamageEffect == false)
         {
@@ -83,10 +93,18 @@ public class Admin_EnemyEffect : MonoBehaviour
         time = DamageInterval;
         if(emitterFlag == true)
         {
-            for (int i = 0; i < repetitionCount + 1; i++)
-            {
-                effekseerEmitter.Play();
-            }
+            effekseerEmitter.Play();
+        }
+        else
+        {
+            effect.Play();
+        }
+
+        if(canMoveCollider == true)
+        {
+            var g = Instantiate(colliderObj,transform.position,transform.rotation,this.transform);
+            g.transform.DOLocalMove(colliderMoveTransform , colliderMoveTime);
+            Destroy(g,colliderMoveTime);
         }
     }
 
@@ -96,9 +114,13 @@ public class Admin_EnemyEffect : MonoBehaviour
         {
             effekseerEmitter.Stop();
         }
+        else
+        {
+            effect.Stop();
+        }
     }
 
-    void OnTriggerEnter(Collider collider)
+    public void OnTriggerEnter(Collider collider)
     {
         if(ContinueDamage == true)return;
 
@@ -113,7 +135,7 @@ public class Admin_EnemyEffect : MonoBehaviour
         }
     }
 
-    void OnTriggerStay(Collider collider)
+    public void OnTriggerStay(Collider collider)
     {
         if(ContinueDamage == false)return;
 

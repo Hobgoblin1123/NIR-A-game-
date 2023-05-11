@@ -60,8 +60,17 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5565617086869709859}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 0
+  serializedVersion: 2
   m_Radius: 0.54
   m_Height: 28.52
   m_Direction: 2
@@ -79,7 +88,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDamageEffect: 1
-  DamageMagnification: 1
+  canMoveCollider: 0
+  effect: {fileID: 0}
+  DamageMagnification: 0.3
   ContinueDamage: 1
   DamageInterval: 0.1
   firstTransForm:
@@ -87,7 +98,7 @@ MonoBehaviour:
     Addrotation: {x: 0, y: 0, z: 0}
     scale: {x: 10, y: 10, z: 10}
   time: 0
-  EffectType: 0
-  emitterFlag: 1
+  colliderObj: {fileID: 0}
+  colliderMoveTransform: {x: 0, y: 0, z: 0}
+  colliderMoveTime: 0
   ColliderONTime: 2
-  repetitionCount: 3

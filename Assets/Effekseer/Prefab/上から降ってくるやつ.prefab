@@ -63,7 +63,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea50821423895744c96e37d7ef108de8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDamageEffect: 0
+  isDamageEffect: 1
+  canMoveCollider: 0
+  effect: {fileID: 0}
   DamageMagnification: 1
   ContinueDamage: 0
   DamageInterval: 0.2
@@ -72,7 +74,7 @@ MonoBehaviour:
     Addrotation: {x: 0, y: 0, z: 0}
     scale: {x: 0.2, y: 0.2, z: 0.2}
   time: 0
-  EffectType: 0
-  emitterFlag: 1
+  colliderObj: {fileID: 0}
+  colliderMoveTransform: {x: 0, y: 0, z: 0}
+  colliderMoveTime: 0
   ColliderONTime: 0
-  repetitionCount: 1

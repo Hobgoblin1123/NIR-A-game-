@@ -9743,6 +9743,7 @@ GameObject:
   - component: {fileID: 5862613817031353211}
   - component: {fileID: 6469354921825657977}
   - component: {fileID: 5744350271466584198}
+  - component: {fileID: 1001319034229214731}
   m_Layer: 0
   m_Name: "\u96F7\u307E\u3068\u3063\u3066\u308B\u6F14\u51FA"
   m_TagString: Untagged
@@ -14571,3 +14572,27 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &1001319034229214731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7131401307255788800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea50821423895744c96e37d7ef108de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDamageEffect: 0
+  canMoveCollider: 0
+  effect: {fileID: 6469354921825657977}
+  DamageMagnification: 0
+  ContinueDamage: 0
+  DamageInterval: 0
+  firstTransForm: []
+  time: 0
+  colliderObj: {fileID: 0}
+  colliderMoveTransform: {x: 0, y: 0, z: 0}
+  colliderMoveTime: 0
+  ColliderONTime: 0

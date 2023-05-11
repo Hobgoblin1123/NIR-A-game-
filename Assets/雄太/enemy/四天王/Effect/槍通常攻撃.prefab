@@ -9,10 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5565617086869709884}
-  - component: {fileID: 8364530466533310530}
-  - component: {fileID: 4437839046597466938}
   - component: {fileID: 6103702739584635958}
   - component: {fileID: 163314352532738715}
+  - component: {fileID: 7203531232360645831}
   m_Layer: 0
   m_Name: "\u69CD\u901A\u5E38\u653B\u6483"
   m_TagString: Untagged
@@ -35,41 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8364530466533310530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5565617086869709859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77a2aa89fc64e8a4f8ce4dd9b7d62608, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DamageMagnification: 10
-  EffectDamageFlag: 1
-  Damagecontinue: 0
-  DamageInterval: 0.24
---- !u!114 &4437839046597466938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5565617086869709859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62251c0ff733ddc4e8b47a2fc6362e8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DestroyTimer: 0.2
-  RotationX: 0
-  PositionY: 1.4
-  PositionZ: 2.12
-  ColliderDestroyTimer: 0.3
-  colliderOntimer: 0
-  collider: {fileID: 163314352532738715}
 --- !u!114 &6103702739584635958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +50,7 @@ MonoBehaviour:
   EmitterScale: 0
   TimeScale: 0
   effectAsset: {fileID: 11400000, guid: e65b071d8487b89458090452ca73557e, type: 2}
-  playOnStart: 1
+  playOnStart: 0
   isLooping: 0
 --- !u!136 &163314352532738715
 CapsuleCollider:
@@ -96,9 +60,42 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5565617086869709859}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_Radius: 4.99
-  m_Height: 13.25
+  serializedVersion: 2
+  m_Radius: 4.3
+  m_Height: 13.6
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -6}
+--- !u!114 &7203531232360645831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565617086869709859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea50821423895744c96e37d7ef108de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDamageEffect: 1
+  canMoveCollider: 0
+  effect: {fileID: 0}
+  DamageMagnification: 0.3
+  ContinueDamage: 1
+  DamageInterval: 0.1
+  firstTransForm: []
+  time: 0
+  colliderObj: {fileID: 0}
+  colliderMoveTransform: {x: 0, y: 0, z: 0}
+  colliderMoveTime: 0
+  ColliderONTime: 0

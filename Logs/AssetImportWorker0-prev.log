@@ -15,7 +15,7 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55229
+50083
 Successfully changed project path to: C:/3Dgame/NIR-A-game-/NIR-A-game-
 C:/3Dgame/NIR-A-game-/NIR-A-game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [26048] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 1483337679 [EditorId] 1483337679 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20576] Host "[IP] 192.168.11.6 [Port] 0 [Flags] 2 [Guid] 1672442171 [EditorId] 1672442171 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [26048] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 1483337679 [EditorId] 1483337679 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20576] Host "[IP] 192.168.11.6 [Port] 0 [Flags] 2 [Guid] 1672442171 [EditorId] 1672442171 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 41.23 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1533.88 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -69,48 +69,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012651 seconds.
-- Loaded All Assemblies, in  0.925 seconds
+Registered in 0.974560 seconds.
+- Loaded All Assemblies, in  9.638 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 769 ms
+Android Extension - Scanning For ADB Devices 467 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.666 seconds
+- Finished resetting the current domain, in  1.106 seconds
 Domain Reload Profiling:
-	ReloadAssembly (586ms)
-		BeginReloadAssembly (378ms)
+	ReloadAssembly (8711ms)
+		BeginReloadAssembly (7591ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (4ms)
+			CreateAndSetChildDomain (3ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (369ms)
+			LoadAssemblies (7583ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (326ms)
-				TypeCache.Initialize (325ms)
-					TypeCache.ScanAssembly (321ms)
+			SetupTypeCache (917ms)
+				TypeCache.Initialize (915ms)
+					TypeCache.ScanAssembly (913ms)
 				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (1431ms)
+			SetupLoadedEditorAssemblies (1018ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (956ms)
-				SetLoadedEditorAssemblies (10ms)
+				InitializePlatformSupportModulesInManaged (777ms)
+				SetLoadedEditorAssemblies (6ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (304ms)
-				ProcessInitializeOnLoadMethodAttributes (147ms)
+				ProcessInitializeOnLoadAttributes (154ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (12ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -118,55 +118,81 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.920 seconds
-Refreshing native plugins compatible for Editor in 1761.28 ms, found 7 plugins.
+- Loaded All Assemblies, in 22.820 seconds
+Refreshing native plugins compatible for Editor in 8.54 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ae93fefe62eb49e6b9ef3807ffd33dc7>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  7.284 seconds
+- Finished resetting the current domain, in  2.452 seconds
 Domain Reload Profiling:
-	ReloadAssembly (470ms)
-		BeginReloadAssembly (275ms)
+	ReloadAssembly (434ms)
+		BeginReloadAssembly (253ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		LoadAllAssembliesAndSetupDomain (2502ms)
-			LoadAssemblies (1001ms)
+			CreateAndSetChildDomain (34ms)
+		LoadAllAssembliesAndSetupDomain (22374ms)
+			LoadAssemblies (21735ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1570ms)
-				TypeCache.Initialize (884ms)
-					TypeCache.ScanAssembly (874ms)
-				ResolveRequiredComponents (40ms)
+			SetupTypeCache (784ms)
+				TypeCache.Initialize (680ms)
+					TypeCache.ScanAssembly (672ms)
+				ResolveRequiredComponents (28ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (6206ms)
-				LogAssemblyErrors (2ms)
-				InitializePlatformSupportModulesInManaged (125ms)
-				SetLoadedEditorAssemblies (15ms)
+			SetupLoadedEditorAssemblies (2086ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (36ms)
+				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (177ms)
-				ProcessInitializeOnLoadAttributes (5651ms)
-				ProcessInitializeOnLoadMethodAttributes (223ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (1766ms)
+				ProcessInitializeOnLoadMethodAttributes (114ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 24.45 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 17.70 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7074 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 7536.
-Memory consumption went from 304.5 MB to 302.3 MB.
-Total: 11.656500 ms (FindLiveObjects: 1.009400 ms CreateObjectMapping: 0.532500 ms MarkObjects: 8.037000 ms  DeleteObjects: 2.075100 ms)
+Unloading 7076 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (2.3 MB). Loaded Objects now: 7538.
+Memory consumption went from 304.9 MB to 302.6 MB.
+Total: 11.023300 ms (FindLiveObjects: 3.153700 ms CreateObjectMapping: 0.606500 ms MarkObjects: 6.153500 ms  DeleteObjects: 1.107100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,25 +208,804 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 99187.255542 seconds.
-  path: Assets/雄太/enemy/四天王/animation/ためて爆発.anim
-  artifactKey: Guid(4e801775670179043ac085f03073a024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/animation/ためて爆発.anim using Guid(4e801775670179043ac085f03073a024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888472bd09c222d4b9e705a77112ca36') in 0.265588 seconds 
+  Time since last request: 440.343435 seconds.
+  path: Assets/雄太/enemy/四天王/1_2_1.blend
+  artifactKey: Guid(591e9eed8ce389f4bb6842de1b0bfd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/1_2_1.blend using Guid(591e9eed8ce389f4bb6842de1b0bfd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712e0aa3dad9f9eade7bc0fdd7f0ccbf') in 0.987222 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 322
+========================================================================
+Received Import Request.
+  Time since last request: 96.791568 seconds.
+  path: Assets/雄太/chara/ヒロイン/1_2_1.blend
+  artifactKey: Guid(c44cf4b5e1415c545aa97ec668528e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/ヒロイン/1_2_1.blend using Guid(c44cf4b5e1415c545aa97ec668528e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c5c3197807887d7f2aa081a064ce57') in 0.214172 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 321
+========================================================================
+Received Import Request.
+  Time since last request: 129.326466 seconds.
+  path: Assets/雄太/chara/ヒロイン/1_2_1.blend
+  artifactKey: Guid(c44cf4b5e1415c545aa97ec668528e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/ヒロイン/1_2_1.blend using Guid(c44cf4b5e1415c545aa97ec668528e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddfdcf8fdadeb785a7b10c882d77d903') in 0.209575 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 321
+========================================================================
+Received Import Request.
+  Time since last request: 7661.555777 seconds.
+  path: Assets/雄太/enemy/Ghost/Ghost.blend
+  artifactKey: Guid(d49a65cf55a24d34d87a4c7842fe27fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/Ghost/Ghost.blend using Guid(d49a65cf55a24d34d87a4c7842fe27fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df53fb21c7da089eaf491efdd4b5cac') in 0.509794 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/雄太/enemy/Ghost
+  artifactKey: Guid(ac0795d40da296542bad9a6c28becbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/Ghost using Guid(ac0795d40da296542bad9a6c28becbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec15f747a4a1809443d6d7dd3177a6b') in 0.001448 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/雄太/enemy/Ghost/main.mat
+  artifactKey: Guid(4b569a12d84ad484f818bbea248f8ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/Ghost/main.mat using Guid(4b569a12d84ad484f818bbea248f8ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9312bcab5362b2a5a249714fbeab1bb7') in 0.052138 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/雄太/enemy/Ghost/main.png
+  artifactKey: Guid(e1174f875f5898a4d82e77d08db8eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/Ghost/main.png using Guid(e1174f875f5898a4d82e77d08db8eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9565679526299071ba3798e1a8b8532') in 0.469612 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 29.028695 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab
+  artifactKey: Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab using Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359daba9ee540efda912ea4d077e2eb4') in 0.233385 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.204705 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab
+  artifactKey: Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab using Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c839b793ecb422c144ccb5e26e01e9f') in 0.008602 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 7.246821 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab
+  artifactKey: Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab using Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8702d3506e0486cf52653bc1eec20ff') in 0.005001 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 39.665830 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
+  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f21bc8e315caad256866ee24ee997b') in 0.129318 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 9.979446 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
+  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6946308621a030ac32d8fdab0ea54722') in 0.030243 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 7.015855 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
+  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f649c7a06cc03e86f3d6414b9ba00237') in 0.020209 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 13.122594 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
+  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a8664f9fdfc01fb76edcb6eaf3fcac6') in 0.023053 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  5.809 seconds
+Refreshing native plugins compatible for Editor in 19.32 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 36.948 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2668ms)
+		BeginReloadAssembly (2497ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (281ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (2ms)
+			CreateAndSetChildDomain (1718ms)
+		LoadAllAssembliesAndSetupDomain (3138ms)
+			LoadAssemblies (2312ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1004ms)
+				TypeCache.Initialize (959ms)
+					TypeCache.ScanAssembly (908ms)
+				ResolveRequiredComponents (27ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1585ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (143ms)
+				ProcessInitializeOnLoadAttributes (1180ms)
+				ProcessInitializeOnLoadMethodAttributes (204ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (1ms)
+			AwakeInstancesAfterBackupRestoration (59ms)
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 32.61 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6801 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7662.
+Memory consumption went from 253.6 MB to 251.4 MB.
+Total: 16.294500 ms (FindLiveObjects: 1.370400 ms CreateObjectMapping: 0.483600 ms MarkObjects: 11.965800 ms  DeleteObjects: 2.472200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1980.019946 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab
+  artifactKey: Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab using Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9026013ed2252beaaf5f0cf05d7208c') in 0.699850 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab
+  artifactKey: Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab using Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6383e5bb8c620dbcb34fb745eb4f0962') in 0.034404 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab
+  artifactKey: Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab using Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8830a93b9f915e344b861a50f6cd185e') in 0.011443 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1007.687576 seconds.
+  path: Assets/雄太/chara/80d7c79c952a6b8a.blend
+  artifactKey: Guid(f58fa7a29eaecb645a3816043f745fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/80d7c79c952a6b8a.blend using Guid(f58fa7a29eaecb645a3816043f745fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df455ad316730391876d66226b9004a0') in 3.066201 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 455
+========================================================================
+Received Import Request.
+  Time since last request: 23.623984 seconds.
+  path: Assets/雄太/chara/80d7c79c952a6b8a.blend
+  artifactKey: Guid(f58fa7a29eaecb645a3816043f745fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/80d7c79c952a6b8a.blend using Guid(f58fa7a29eaecb645a3816043f745fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c11a9ada4b1af604b8e1e86df2977d8') in 0.185455 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 438
+========================================================================
+Received Import Request.
+  Time since last request: 146.586104 seconds.
+  path: Assets/雄太/chara/Scene.anim
+  artifactKey: Guid(505abc60be66ebb44a7cd303acab893c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/chara/Scene.anim using Guid(505abc60be66ebb44a7cd303acab893c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed09128d971e8964cb7150fcf87bb54') in 0.031479 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 37.189715 seconds.
-  path: Assets/雄太/enemy/四天王/animation/レーザー１.anim
-  artifactKey: Guid(d2a07ddef5d34ca4d99b418b52701cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/animation/レーザー１.anim using Guid(d2a07ddef5d34ca4d99b418b52701cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40b9f746d17fc20bdfcd8e09beb346c') in 0.037164 seconds 
+  Time since last request: 445.301002 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
+  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f86fc714452350c6611612c9749f559') in 0.198951 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 30
 ========================================================================
 Received Import Request.
-  Time since last request: 8.086743 seconds.
-  path: Assets/雄太/enemy/四天王/animation/レーザー２.anim
-  artifactKey: Guid(457b92546b30a6846b522e8180d668c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/animation/レーザー２.anim using Guid(457b92546b30a6846b522e8180d668c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73719f45deeb239640a07c8f1dd1d271') in 0.026148 seconds 
+  Time since last request: 7.839366 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
+  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a008da93a0dc41a131a8ff04c5382855') in 0.025466 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 5.141528 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
+  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7d3b4a95c68937ce6e575178fc929d') in 0.030195 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 2.645643 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
+  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645485405ecab9b1f09886c4289f0fd0') in 0.029840 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 7.611704 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
+  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b86ba5e724d1de677d11afb5f62594') in 0.033021 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 48.207331 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab
+  artifactKey: Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab using Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cfca1b9d17e0fccc75a31c2a1ce76bf') in 0.030677 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.685237 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab
+  artifactKey: Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab using Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e004fbbffa3cf37dd2dacba5dce21a92') in 0.008116 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 3.614596 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab
+  artifactKey: Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab using Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5056b7213159eb8c193547d6204293') in 0.008816 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 1.181071 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab
+  artifactKey: Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab using Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05aa5cd3c86064fe8c13ad467107202') in 0.008936 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 5.869850 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab
+  artifactKey: Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab using Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7823d9dd8a867580f8010765995612ef') in 0.008148 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  5.726 seconds
+Refreshing native plugins compatible for Editor in 27.11 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ae93fefe62eb49e6b9ef3807ffd33dc7>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 14.638 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1971ms)
+		BeginReloadAssembly (1600ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (392ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (2ms)
+			CreateAndSetChildDomain (718ms)
+		LoadAllAssembliesAndSetupDomain (3754ms)
+			LoadAssemblies (2119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1858ms)
+				TypeCache.Initialize (1757ms)
+					TypeCache.ScanAssembly (1683ms)
+				ResolveRequiredComponents (57ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1095ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (39ms)
+				SetLoadedEditorAssemblies (13ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (777ms)
+				ProcessInitializeOnLoadMethodAttributes (130ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 10.79 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6785 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7719.
+Memory consumption went from 252.8 MB to 250.6 MB.
+Total: 19.753200 ms (FindLiveObjects: 3.852900 ms CreateObjectMapping: 1.413300 ms MarkObjects: 10.812600 ms  DeleteObjects: 3.672100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 113.983190 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
+  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5db0ce6be46ad9e960762b18b7168ad') in 0.404849 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 0.161024 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
+  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9529063765b5ac5bba9fb06a9f344ac5') in 0.029684 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 2.215839 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327a840dcbc9951f329150d0a3eadd5e') in 0.033241 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 5.264905 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b47284f06425800cb31d3ee1a7df21') in 0.048552 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 4.712989 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cce2461eede636b99d456cbde60517') in 0.078461 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 1.583445 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3f3860f09634f71212cc7092813d1c') in 0.023610 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 35.937406 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab
+  artifactKey: Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab using Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b4373de200b07c9e7f396816048d61') in 0.014714 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2.414881 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab
+  artifactKey: Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab using Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f0b82f6f84684d1c9ad27cb9e13a01') in 0.006540 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 6.817004 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab
+  artifactKey: Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab using Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a8887ec3a458e995f605e256411ad6') in 0.008874 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  3.014 seconds
+Refreshing native plugins compatible for Editor in 30.47 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.259 seconds
+Domain Reload Profiling:
+	ReloadAssembly (541ms)
+		BeginReloadAssembly (443ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (41ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (239ms)
+		LoadAllAssembliesAndSetupDomain (2477ms)
+			LoadAssemblies (1037ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1518ms)
+				TypeCache.Initialize (1402ms)
+					TypeCache.ScanAssembly (1035ms)
+				ResolveRequiredComponents (73ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1446ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (59ms)
+				SetLoadedEditorAssemblies (12ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (1071ms)
+				ProcessInitializeOnLoadMethodAttributes (171ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (57ms)
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 24.01 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6785 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7777.
+Memory consumption went from 252.9 MB to 250.7 MB.
+Total: 10.761700 ms (FindLiveObjects: 1.414100 ms CreateObjectMapping: 1.243500 ms MarkObjects: 6.433300 ms  DeleteObjects: 1.668700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 63.318583 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab
+  artifactKey: Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　紫.prefab using Guid(19604293fd645594e8624bdbdb336c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd8f489a1e61537c6a5990cea34d10a') in 0.088209 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab
+  artifactKey: Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab using Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db8c290aa43ec601330b4a0b35013de3') in 0.010604 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab
+  artifactKey: Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab using Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638fcabfdbd14173b2222bb1827db55e') in 0.007826 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
+  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53803ccc08543aeea5dc2043d00cde82') in 0.330931 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 22.856713 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da0de88302271c88792d09639c0e062') in 0.025517 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 1.797759 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b319f004805599618360ea5a6808f9') in 0.020496 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 27.282466 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb99b9e49c6750a0f3136d33f8d9b8d') in 0.029103 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 19.933554 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a943f02a37b29ef4d7dae4c738f6927') in 0.033177 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 5.309043 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8182e61715f06817aa8aa9c2ae37993d') in 0.038853 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.381312 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '683af061032c57ae4f47be0cc19f10d7') in 0.034058 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 42.934213 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab
+  artifactKey: Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/上から降ってくるやつ.prefab using Guid(34ad81a2d55007648be53e4b2c6c2d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199ce5592c2dc35d19eab22ec8ec7e58') in 0.011366 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 33.317687 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab
+  artifactKey: Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab using Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd37c348e4717a158edb80e78fb9cbf5') in 0.036668 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 4.206395 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab
+  artifactKey: Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab using Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a00c816a06dfcae56111af9fd94fb3') in 0.025394 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 5.557270 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab
+  artifactKey: Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab using Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a06a447998ac144ccd0b78b741fb36') in 0.029165 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 3.065581 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab
+  artifactKey: Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab using Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1b4353d89f769703795730eaa73944') in 0.030291 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 5.311629 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab
+  artifactKey: Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab using Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db41b3841700166781c505406a0d09a') in 0.031434 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 0.350428 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab
+  artifactKey: Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab using Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab001bd7e4825e0225e251a5d1998fca') in 0.025008 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 25.416932 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
+  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9680e3aa181d25651c38eb2cfd6dd6b9') in 0.033896 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 11.497328 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
+  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665cea5230aea2e7e7817793b9937a83') in 0.027041 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 7.562041 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
+  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23fb4988457ba906e3b2dcc31ad736d') in 0.029166 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 6.150168 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
+  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7932bd9e9eb487517be6828b7f5b8c41') in 0.025735 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 0.395507 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
+  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b1abc4ba5c22aa9c32c9ff2af07a21') in 0.025711 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 0.798550 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
+  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f331e2255568a281044097ccd016ea21') in 0.030213 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 4.934018 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
+  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84d5003f712025fa02d3e6d5c5c6af2') in 0.031867 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 60.631789 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab
+  artifactKey: Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab using Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9e1d2bbe5fb97130b04ef2fd115b56') in 0.036053 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 6.671396 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab
+  artifactKey: Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab using Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d25b525637fe78b3b273dd3065daf66') in 0.027261 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 4.177582 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab
+  artifactKey: Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab using Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5751c7973ff4ed105214c65e8fa978') in 0.028217 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 19.851350 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab
+  artifactKey: Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab using Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824bd833948d4d2684e7b33f88c33a77') in 0.041677 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 5.878061 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab
+  artifactKey: Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab using Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eef13c8c80e2edbaadb1f3d5cf5dbe4') in 0.020935 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 2.426909 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab
+  artifactKey: Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab using Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942d214ea76769d6d492f39aca9e6921') in 0.025128 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.948136 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab
+  artifactKey: Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab using Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d218ab97a82b8c3e28f06734f244d1f') in 0.026988 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 2.411855 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab
+  artifactKey: Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab using Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf802101897720a492c821ffa8a40e74') in 0.028317 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 24.352277 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab
+  artifactKey: Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/回避攻撃.prefab using Guid(a5d91ed7cd06aa64da8debcdb496ded0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c00fe5fd9a3d3d2dd8f7cdd9921922') in 0.026053 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
