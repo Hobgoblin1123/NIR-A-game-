@@ -16,17 +16,14 @@ public class Admin_EnemyStatus : MonoBehaviour
     [Header("キャラステータス") , Tooltip("ここの変数は変更しても意味がないよ　ステータスを上昇させたいなら下の上昇数値でレベルを上げるか、ステータスごとに上昇値を設定してね")]
         public float HPStatus;
         public float AttackStatus;
-        public float DefenceStatus;
 
     [Space(8)]
 
     [Header("ステータス上昇値") , Tooltip("ステータスの上昇値を設定する場所　Speedを０にすると全く動かなくなるよ")]
         [SerializeField]
-        private float RiseHPStatus;
+        public float RiseHPStatus;
         [SerializeField]
-        private float RiseAttackStatus;
-        [SerializeField]
-        private float RiseDefenceStatus;
+        public float RiseAttackStatus;
         [SerializeField]
         public float MoveSpeed = 1;
 
@@ -66,14 +63,14 @@ public class Admin_EnemyStatus : MonoBehaviour
 
     void Awake()
     {
-        HPStatus = EnemyLevel*20 + RiseHPStatus;
-        AttackStatus = 10 + EnemyLevel*4 + RiseAttackStatus;   
-        DefenceStatus = EnemyLevel*0.5f + RiseDefenceStatus;
+           
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        HPStatus = EnemyLevel*40 + RiseHPStatus;
+        AttackStatus =  + EnemyLevel*2 + RiseAttackStatus;
         admin = GameObject.Find("管理").GetComponent<Admin>();
         audioSource = GetComponent<AudioSource>();
         if(type == EnemyType.Ghost)

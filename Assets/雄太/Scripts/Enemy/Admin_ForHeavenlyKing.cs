@@ -20,27 +20,25 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     private Quaternion lookPosition;
     public Transform charaTransform;
     private float distance;
-    [SerializeField]
     private float longAttackInterval = 10;
-    [SerializeField]
-    private float maxWaiteTimeFormAttack = 4;
     [SerializeField]
     private AudioClip[] audioClips;
     [SerializeField]
     private Admin_EnemyEffect[] effect;
     private float longAttackIntervalTime;
     private int damageCount;
-    [SerializeField]
     private int takeDistanceDamageCount = 10;
     [SerializeField]
     private Transform[] takeDistancePosition;
+    private bool isHalfHP = false;
+    private bool SPAttack;
 
 
 
 
 
     //定数
-    const float CAN_ATTACL_DISTAMCE = 25;
+    const float CAN_ATTACL_DISTAMCE = 18;
     // const float LONG_ATTACK_INTERVAL = ;
     public enum EnemyState
     {
@@ -51,18 +49,47 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         Avoidance,
         SPAttack1,
         SPAttack2,
+        SPAttackEnd,
         Die,
         Wait
+    }
+
+    void Awake()
+    {
+        admin_EnemyStatus = GetComponent<Admin_EnemyStatus>();
+        if(aiLevel == 1)
+        {
+            longAttackInterval = 20;
+            takeDistanceDamageCount = 80;
+            admin_EnemyStatus.EnemyLevel = 40;
+            admin_EnemyStatus.RiseAttackStatus = 20;
+        }
+        else if(aiLevel == 2)
+        {
+            longAttackInterval = 8;
+            takeDistanceDamageCount = 60;
+            admin_EnemyStatus.EnemyLevel = 50;
+            admin_EnemyStatus.RiseAttackStatus = 10;
+        }
+        else if( aiLevel == 3)
+        {
+            longAttackInterval = 3;
+            takeDistanceDamageCount = 20;
+            admin_EnemyStatus.EnemyLevel = 60;
+            admin_EnemyStatus.RiseAttackStatus = 30;
+        }
     }
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
-        admin_EnemyStatus = GetComponent<Admin_EnemyStatus>();
+        
         audioSource = GetComponent<AudioSource>();
+        
         longAttackIntervalTime -= longAttackInterval;
         SetState(EnemyState.Move);
+        SPAttack = false;
     }
 
     // Update is called once per frame
@@ -126,7 +153,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             }
             else if(PostState == EnemyState.Attack || PostState == EnemyState.LongAttack)
             {
-                elapsedTime = Random.Range(4 - aiLevel , maxWaiteTimeFormAttack +4-aiLevel);
+                int n = aiLevel >= 3? 0:3;
+                elapsedTime = Random.Range(4 - aiLevel , n +5-aiLevel);
             }
         }
         else if(s == EnemyState.Move)
@@ -138,18 +166,41 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             animator.SetFloat("Speed" ,0);
             lookPosition = Quaternion.LookRotation(charaTransform.position - transform.position).normalized;
             int n = Random.Range(0,100);
-            if(n < 40)
+            if(isHalfHP == false)
             {
-                animator.SetTrigger("Attack1");
-            }
-            else if(n > 60)
-            {
-                animator.SetTrigger("Attack3");
+                if(n < 40)
+                {
+                    animator.SetTrigger("Attack1");
+                }
+                else if(n > 60)
+                {
+                    animator.SetTrigger("Attack3");
+                }
+                else
+                {
+                    animator.SetTrigger("Attack2");
+                }
             }
             else
             {
-                animator.SetTrigger("Attack2");
+                if(n < 30)
+                {
+                    animator.SetTrigger("Attack1");
+                }
+                else if(n >= 30 && n < 50)
+                {
+                    animator.SetTrigger("Attack3");
+                }
+                else if(n > 90)
+                {
+                    animator.SetTrigger("Attack2");
+                }
+                else
+                {
+                    animator.SetTrigger("Attack7");
+                }
             }
+            
         }
         else if(s ==EnemyState.LongAttack)
         {
@@ -170,15 +221,39 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             }
             longAttackIntervalTime = -longAttackInterval;
         }
+        else if(s == EnemyState.SPAttackEnd)
+        {
+            if(aiLevel < 3)
+            {
+                animator.SetFloat("Speed" , 0);
+                animator.SetTrigger("Attack7");
+                return;
+            }
+
+            animator.SetFloat("Speed" , 0);
+            animator.SetTrigger("Attack8");
+        }
     }
 
     public void Damage(float hp)
     {
         damageCount ++;
+        var n = hp/admin_EnemyStatus.HPStatus;
         if(damageCount > takeDistanceDamageCount)
         {
             TakeDistance();
             damageCount = 0;
+        }
+        if(n <= 0.5f && isHalfHP == false)
+        {
+            isHalfHP = true;
+            animator.SetFloat("Speed",0);
+            animator.SetTrigger("Attack7");
+        }
+        else if(n <= 0.15 && SPAttack == false)
+        {
+            SPAttack = true;
+            SetState(EnemyState.SPAttackEnd);
         }
         if(hp <= 0)
         {

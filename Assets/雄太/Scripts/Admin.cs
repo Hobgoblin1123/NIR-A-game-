@@ -67,6 +67,8 @@ public class Admin : MonoBehaviour
     // private Canvas EnemyHPCanvas;
     [SerializeField]
     private int SelectEdNumber;              //会話ボタン配列の何番目を選んでいるか定義
+    [SerializeField]
+    private bool isTestStage = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -76,10 +78,14 @@ public class Admin : MonoBehaviour
         MainEXP = PlayerPrefs.GetFloat("EXP");
         MainWeapon = PlayerPrefs.GetInt("MainW");
         SubWeapon = PlayerPrefs.GetInt("SubW");
+        if(isTestStage == true)
+        {
+            CharaLevel = 50;
+        }
         HPStatus = 80 + CharaLevel*20;
         AttackStatus = 8 + CharaLevel*2;
         LevelUPEXP = 10 * CharaLevel * CharaLevel + 10 * CharaLevel;
-        DefenceStatus = CharaLevel * 0.005f;
+        DefenceStatus = CharaLevel * 1.5f;
         WeaponNumber = MainWeapon;
         characterScript = GetComponentInParent<Move>();
     }
