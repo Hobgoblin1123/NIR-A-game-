@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5565617086869709884
 Transform:
@@ -28,11 +28,11 @@ Transform:
   m_GameObject: {fileID: 5565617086869709859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.50000006, y: 0.50000006, z: 0.50000024}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6103702739584635958
 MonoBehaviour:
@@ -41,7 +41,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5565617086869709859}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35d396bcb8480c24eb784eebe6096a99, type: 3}
   m_Name: 
@@ -49,7 +49,7 @@ MonoBehaviour:
   TimingOfUpdate: 0
   EmitterScale: 0
   TimeScale: 0
-  effectAsset: {fileID: 11400000, guid: 3cd458614549b30418be37756c9e7d4c, type: 2}
+  effectAsset: {fileID: 11400000, guid: fa1ae124237cd194fb3126ca83401351, type: 2}
   playOnStart: 0
   isLooping: 0
 --- !u!135 &4694840906008560592
@@ -86,18 +86,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDamageEffect: 0
-  DamageMagnification: 1.17
+  canMoveCollider: 0
+  effect: {fileID: 0}
+  DamageMagnification: 0.1
   ContinueDamage: 1
   DamageInterval: 0
   firstTransForm:
-  - position: {x: -0.22, y: 0.94, z: 0.41}
-    Addrotation: {x: -0.28, y: -17, z: 169}
+  - position: {x: 0.086, y: 1.176, z: 0.931}
+    Addrotation: {x: 180, y: -355.85, z: 633.922}
     scale: {x: 0.5, y: 0.5, z: 0.5}
-  - position: {x: 0, y: 1.47, z: 0.48}
-    Addrotation: {x: -2.1, y: 27, z: 46.8}
-    scale: {x: 0.5, y: 0.5, z: 0.5}
-  - position: {x: 0.26, y: 1.26, z: 0}
-    Addrotation: {x: 8.4, y: 72.5, z: 59.5}
-    scale: {x: 0.6, y: 0.6, z: 0.6}
   time: 0
-  EffectType: 0
+  colliderObj: {fileID: 0}
+  colliderMoveTransform: {x: 0, y: 0, z: 0}
+  colliderMoveTime: 0
