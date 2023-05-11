@@ -41,6 +41,12 @@ public class Admin_EnemyEffect : MonoBehaviour
     [SerializeField]
     private float ColliderONTime = 0;
     private float ColliderOFFTime;
+    [SerializeField]
+    private bool SPEffect = false;
+    [SerializeField]
+    private Admin_EnemyEffect[] SPEffects;
+    [SerializeField]
+    private Admin_EnemyEffect[] SPEffects2;
 
     [System.Serializable]
     public struct FirstTransForm
@@ -52,6 +58,7 @@ public class Admin_EnemyEffect : MonoBehaviour
 
     void Awake()
     {
+        if(SPEffect == true)return;
         if(GetComponent<EffekseerEmitter>())
         {
             effekseerEmitter = GetComponent<EffekseerEmitter>();
@@ -69,6 +76,7 @@ public class Admin_EnemyEffect : MonoBehaviour
 
     void Start()
     {
+        if(SPEffect == true)return;
         damage = GetComponentInParent<Admin_EnemyStatus>().AttackStatus * DamageMagnification;
         coll = GetComponent<Collider>();
         if(ColliderONTime > 0)
@@ -87,6 +95,15 @@ public class Admin_EnemyEffect : MonoBehaviour
     
     public void EffectStart(int n)
     {
+        if(SPEffect == true)
+        {
+            SPEffects[n].gameObject.SetActive(true);
+            SPEffects[n].EffectStart(0);
+            SPEffects2[n].gameObject.SetActive(true);
+            SPEffects2[n].EffectStart(0);
+            return;
+        }
+
         var parent = GetComponentInParent<Transform>();
         transform.rotation = transform.parent.rotation;
         transform.localPosition = firstTransForm[n].position;
@@ -112,6 +129,21 @@ public class Admin_EnemyEffect : MonoBehaviour
 
     public void EffectEnd()
     {
+        if(SPEffect == true)
+        {
+            foreach (var item in SPEffects)
+            {
+                item.EffectEnd();
+                item.gameObject.SetActive(false);
+                return;
+            }
+            foreach (var item in SPEffects2)
+            {
+                item.EffectEnd();
+                item.gameObject.SetActive(false);
+                return;
+            }
+        }
         if(emitterFlag == true)
         {
             effekseerEmitter.Stop();
