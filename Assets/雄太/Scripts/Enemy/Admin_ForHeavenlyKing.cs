@@ -57,7 +57,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         admin_EnemyStatus = GetComponent<Admin_EnemyStatus>();
         audioSource = GetComponent<AudioSource>();
         longAttackIntervalTime -= longAttackInterval;
-        DecideNextState();
+        SetState(EnemyState.Move);
     }
 
     // Update is called once per frame
@@ -67,7 +67,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
 
         if(state == EnemyState.Move)
         {
-            lookPosition = Quaternion.LookRotation(transform.position - charaTransform.position);
+            lookPosition = Quaternion.LookRotation(charaTransform.position).normalized ;
+            transform.LookAt(charaTransform);
             if(distance < CAN_ATTACL_DISTAMCE)
             {
                 animator.SetFloat("Speed" , 0);
@@ -86,8 +87,9 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         if(state != EnemyState.LongAttack)
         {
             longAttackIntervalTime += Time.deltaTime;
-            if(longAttackIntervalTime > 0 && distance > CAN_ATTACL_DISTAMCE && state == EnemyState.Move && state == EnemyState.Idle && state == EnemyState.Wait)
+            if(longAttackIntervalTime > 0 && distance > CAN_ATTACL_DISTAMCE && (state == EnemyState.Move || state == EnemyState.Idle || state == EnemyState.Wait))
             {
+                Debug.Log("遠距離攻撃の条件範囲内です");
                 SetState(EnemyState.LongAttack);
             } 
         }
@@ -98,12 +100,12 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             SetState(EnemyState.Move);
         }
 
-        if(aiLevel == 3)
+        if(aiLevel == 1)
         {
-            lookPosition = Quaternion.LookRotation(charaTransform.position);
+            lookPosition = Quaternion.LookRotation(charaTransform.position).normalized;
         }
 
-        transform.rotation = Quaternion.RotateTowards(transform.rotation , lookPosition , 300*Time.deltaTime);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation , lookPosition  , 300*Time.deltaTime);
     }
 
     public void SetState(EnemyState s)
@@ -129,6 +131,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         }
         else if(s == EnemyState.Attack)
         {
+            animator.SetFloat("Speed" ,0);
+            lookPosition = Quaternion.LookRotation(charaTransform.position).normalized;
             int n = Random.Range(0,100);
             if(n < 50)
             {
@@ -145,6 +149,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         }
         else if(s ==EnemyState.LongAttack)
         {
+            animator.SetFloat("Speed" ,0);
+            lookPosition = Quaternion.LookRotation(charaTransform.position).normalized;
             int n = Random.Range(0,100);
             if(n < 50)
             {
@@ -188,7 +194,9 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     {
         if(aiLevel == 3)return;
 
-        lookPosition = Quaternion.LookRotation(charaTransform.position);
+        lookPosition = Quaternion.LookRotation(charaTransform.position).normalized;
+        transform.LookAt(charaTransform);
+        Debug.Log("向きを変更します");
     }
 
     public void Sound(int n)
