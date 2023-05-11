@@ -192,10 +192,7 @@ public class Admin_EnemyStatus : MonoBehaviour
         {
             HP -= damage;
             HPSlider.value = HP/HPStatus;
-             if(HP<=0)
-            {
-                admin_ForHeavenlyKing.SetState(Admin_ForHeavenlyKing.EnemyState.Die);
-            }
+            admin_ForHeavenlyKing.Damage(HP);
             audioSource.PlayOneShot(audioClip[0]);
         }
 

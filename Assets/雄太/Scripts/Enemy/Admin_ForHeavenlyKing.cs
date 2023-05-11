@@ -29,6 +29,11 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     [SerializeField]
     private Admin_EnemyEffect[] effect;
     private float longAttackIntervalTime;
+    private int damageCount;
+    [SerializeField]
+    private int takeDistanceDamageCount = 10;
+    [SerializeField]
+    private Transform[] takeDistancePosition;
 
 
 
@@ -104,7 +109,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             lookPosition = Quaternion.LookRotation(charaTransform.position - transform.position).normalized;
         }
 
-        transform.rotation = Quaternion.RotateTowards(transform.rotation , lookPosition  , 300*Time.deltaTime);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation , lookPosition  , 600*Time.deltaTime);
     }
 
     public void SetState(EnemyState s)
@@ -121,7 +126,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             }
             else if(PostState == EnemyState.Attack || PostState == EnemyState.LongAttack)
             {
-                elapsedTime = Random.Range(1 , maxWaiteTimeFormAttack +1);
+                elapsedTime = Random.Range(4 - aiLevel , maxWaiteTimeFormAttack +4-aiLevel);
             }
         }
         else if(s == EnemyState.Move)
@@ -133,11 +138,11 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             animator.SetFloat("Speed" ,0);
             lookPosition = Quaternion.LookRotation(charaTransform.position - transform.position).normalized;
             int n = Random.Range(0,100);
-            if(n < 50)
+            if(n < 40)
             {
                 animator.SetTrigger("Attack1");
             }
-            else if(n > 75)
+            else if(n > 60)
             {
                 animator.SetTrigger("Attack3");
             }
@@ -165,6 +170,28 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             }
             longAttackIntervalTime = -longAttackInterval;
         }
+    }
+
+    public void Damage(float hp)
+    {
+        damageCount ++;
+        if(damageCount > takeDistanceDamageCount)
+        {
+            TakeDistance();
+            damageCount = 0;
+        }
+        if(hp <= 0)
+        {
+            SetState(EnemyState.Die);
+        }
+    }
+
+    private void TakeDistance()
+    {
+        transform.position = takeDistancePosition[Random.Range(0 , takeDistancePosition.Length)].position;
+        effect[14].gameObject.SetActive(true);
+        effect[14].EffectStart(0);
+        SetState(EnemyState.LongAttack);
     }
 
     private void DecideNextState()
