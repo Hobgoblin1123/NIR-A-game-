@@ -37,6 +37,11 @@ public class Admin_SkillTree : MonoBehaviour
         RaiseDefence,
         RaiseDamage,
         SPSkill1,
+        SPSkill2,
+        SPskill3,
+        SPSkill4,
+        SPSkill5,
+        SPSkill6,
         None
     }
 
