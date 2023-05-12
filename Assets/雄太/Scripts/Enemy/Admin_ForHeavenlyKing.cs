@@ -32,6 +32,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     private Transform[] takeDistancePosition;
     private bool isHalfHP = false;
     private bool SPAttack;
+    [SerializeField]
+    private ExplainMantTimes SPeffect1;
 
 
 
@@ -304,8 +306,16 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
 
     public void EffectOn(AnimationEvent animationEvent)
     {
+        if(animationEvent.intParameter == -1)
+        {
+            Instantiate(SPeffect1.gameObject , charaTransform.transform.position , transform.rotation , transform);
+            return;
+        }
+
         effect[animationEvent.intParameter].gameObject.SetActive(true);
         effect[animationEvent.intParameter].EffectStart((int)animationEvent.floatParameter);
+
+        
     }
     public void EffectOff(int n)
     {

@@ -95,14 +95,14 @@ public class Admin_EnemyEffect : MonoBehaviour
     
     public void EffectStart(int n)
     {
-        if(SPEffect == true)
-        {
-            SPEffects[n].gameObject.SetActive(true);
-            SPEffects[n].EffectStart(0);
-            SPEffects2[n].gameObject.SetActive(true);
-            SPEffects2[n].EffectStart(0);
-            return;
-        }
+        // if(SPEffect == true)
+        // {
+        //     SPEffects[n].gameObject.SetActive(true);
+        //     SPEffects[n].EffectStart(0);
+        //     SPEffects2[n].gameObject.SetActive(true);
+        //     SPEffects2[n].EffectStart(0);
+        //     return;
+        // }
 
         var parent = GetComponentInParent<Transform>();
         transform.rotation = transform.parent.rotation;
@@ -129,21 +129,21 @@ public class Admin_EnemyEffect : MonoBehaviour
 
     public void EffectEnd()
     {
-        if(SPEffect == true)
-        {
-            foreach (var item in SPEffects)
-            {
-                item.EffectEnd();
-                item.gameObject.SetActive(false);
-                return;
-            }
-            foreach (var item in SPEffects2)
-            {
-                item.EffectEnd();
-                item.gameObject.SetActive(false);
-                return;
-            }
-        }
+        // if(SPEffect == true)
+        // {
+        //     foreach (var item in SPEffects)
+        //     {
+        //         item.EffectEnd();
+        //         item.gameObject.SetActive(false);
+        //         return;
+        //     }
+        //     foreach (var item in SPEffects2)
+        //     {
+        //         item.EffectEnd();
+        //         item.gameObject.SetActive(false);
+        //         return;
+        //     }
+        // }
         if(emitterFlag == true)
         {
             effekseerEmitter.Stop();

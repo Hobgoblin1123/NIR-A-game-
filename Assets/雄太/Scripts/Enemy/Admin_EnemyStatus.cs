@@ -281,4 +281,9 @@ public class Admin_EnemyStatus : MonoBehaviour
         HPSlider.value = 1;
         // NowHPRatio = HP/HPStatus;
     }
+
+    public Vector3 GetCharaTransForm()
+    {
+        return admin_ForHeavenlyKing.charaTransform.position;
+    }
 }
