@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Admin_ForHeavenlyKing : MonoBehaviour
 {
@@ -77,10 +78,11 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         }
         else if( aiLevel == 3)
         {
-            longAttackInterval = 3;
-            takeDistanceDamageCount = 20;
-            admin_EnemyStatus.EnemyLevel = 60;
-            admin_EnemyStatus.RiseAttackStatus = 30;
+            longAttackInterval = 2;
+            takeDistanceDamageCount = 10;
+            admin_EnemyStatus.EnemyLevel = 70;
+            admin_EnemyStatus.RiseAttackStatus = 40;
+            admin_EnemyStatus.RiseHPStatus = 2000;
         }
     }
     // Start is called before the first frame update
@@ -270,7 +272,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
 
     private void TakeDistance()
     {
-        transform.position = takeDistancePosition[Random.Range(0 , takeDistancePosition.Length)].position;
+        transform.DOMove(takeDistancePosition[Random.Range(0 , takeDistancePosition.Length)].position , 0.5f);
         effect[14].gameObject.SetActive(true);
         effect[14].EffectStart(0);
         SetState(EnemyState.LongAttack);
