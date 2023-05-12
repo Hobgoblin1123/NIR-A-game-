@@ -1,0 +1,961 @@
+Using pre-set license
+Built from '2022.2/staging' branch; Version is '2022.2.12f1 (022dac4955a3) revision 142764'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ja' Physical Memory: 15715 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.2.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/dedro/NIR=A(game)
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55227
+Successfully changed project path to: C:/Users/dedro/NIR=A(game)
+C:/Users/dedro/NIR=A(game)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19108] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 3041801655 [EditorId] 3041801655 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19108] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 3041801655 [EditorId] 3041801655 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 38.62 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.2.12f1 (022dac4955a3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/dedro/NIR=A(game)/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1638)
+    Vendor:   ATI
+    VRAM:     7857 MB
+    Driver:   27.20.21020.9000
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009817 seconds.
+- Loaded All Assemblies, in  0.512 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.400 seconds
+Domain Reload Profiling:
+	ReloadAssembly (295ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		LoadAllAssembliesAndSetupDomain (0ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (206ms)
+				TypeCache.Initialize (204ms)
+					TypeCache.ScanAssembly (201ms)
+				ResolveRequiredComponents (1ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (317ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (210ms)
+				ProcessInitializeOnLoadMethodAttributes (83ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.627 seconds
+Refreshing native plugins compatible for Editor in 19.99 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.478 seconds
+Domain Reload Profiling:
+	ReloadAssembly (396ms)
+		BeginReloadAssembly (260ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		LoadAllAssembliesAndSetupDomain (1228ms)
+			LoadAssemblies (725ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (620ms)
+				TypeCache.Initialize (539ms)
+					TypeCache.ScanAssembly (527ms)
+				ResolveRequiredComponents (29ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1161ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (890ms)
+				ProcessInitializeOnLoadMethodAttributes (109ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.24 seconds
+Refreshing native plugins compatible for Editor in 19.74 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 7516.
+Memory consumption went from 303.8 MB to 301.6 MB.
+Total: 9.606100 ms (FindLiveObjects: 1.302000 ms CreateObjectMapping: 0.367300 ms MarkObjects: 6.502800 ms  DeleteObjects: 1.431800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7298.008846 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/glow_additive.mat
+  artifactKey: Guid(c112008183b41d14aa04264c3faf43bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/glow_additive.mat using Guid(c112008183b41d14aa04264c3faf43bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac69c5ca59675d5890385ac024dbb1a') in 0.551587 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_weed.wav
+  artifactKey: Guid(e2d5bcd98020a4b46a1018acb18a57dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_weed.wav using Guid(e2d5bcd98020a4b46a1018acb18a57dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6104595bb8ea4ffe1165dbf553ab83') in 0.052861 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_wind_low.wav
+  artifactKey: Guid(dc9fdb003bfe30b4cbd33db9460f9877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_wind_low.wav using Guid(dc9fdb003bfe30b4cbd33db9460f9877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3a1e2288920cb0e5da11fd246d105b') in 0.023911 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_bell.wav
+  artifactKey: Guid(aac1114a20144fe499b871829e8e09af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_bell.wav using Guid(aac1114a20144fe499b871829e8e09af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a1890a7f7c32b1537c3b5b1374a7b8') in 0.023063 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_pitch.wav
+  artifactKey: Guid(fbb182c8d4550ca47b0305c7fb17eb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_pitch.wav using Guid(fbb182c8d4550ca47b0305c7fb17eb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b748233b4d61f6dc6c40a59d118ac841') in 0.022862 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_wind_high.wav
+  artifactKey: Guid(ce123f16d081aea418bf4bb6aed72d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_wind_high.wav using Guid(ce123f16d081aea418bf4bb6aed72d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2343947426d01febd086bbf4b9efa348') in 0.021122 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_explode.wav
+  artifactKey: Guid(b0573550b6d78184392b747f5a8654bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_explode.wav using Guid(b0573550b6d78184392b747f5a8654bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7cf7dea386df5a043986a4540224996') in 0.025620 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_wind_reverb.wav
+  artifactKey: Guid(bd4f2318843509e4f9037e0e4e958059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_wind_reverb.wav using Guid(bd4f2318843509e4f9037e0e4e958059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01cb1406de9d2542e66299878da893c') in 0.025219 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_phase.wav
+  artifactKey: Guid(2730dabe428b664408e69221e6e0c698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_phase.wav using Guid(2730dabe428b664408e69221e6e0c698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5bf637bbb233ba636ecbb6ef7f19f1') in 0.020103 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_rattle.wav
+  artifactKey: Guid(392f560b914595b4287b8959de804d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_rattle.wav using Guid(392f560b914595b4287b8959de804d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3667507c208cf49a73aa67bbd1e9f9a') in 0.024938 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_sigh.wav
+  artifactKey: Guid(8cc92287c63e60f4a80d4d3bb00c1a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_sigh.wav using Guid(8cc92287c63e60f4a80d4d3bb00c1a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24d541e728dd9223df6c199b5230c6d') in 0.015624 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_heat.wav
+  artifactKey: Guid(10606e691bbb3c443aa3e9d5ba7c6b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_heat.wav using Guid(10606e691bbb3c443aa3e9d5ba7c6b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16250b2799b1e9c0eeb237412633d072') in 0.015833 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_bell.wav
+  artifactKey: Guid(7b9f12baa330dcc4b91a40308fda0032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_bell.wav using Guid(7b9f12baa330dcc4b91a40308fda0032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5f1b91885e22299c6dfa882c4f7df9') in 0.039871 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_tick.wav
+  artifactKey: Guid(b76cf4dd6b4a0ec46ab876520f202165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_tick.wav using Guid(b76cf4dd6b4a0ec46ab876520f202165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ebdf86c9ba0e8972ab44b2de5edc42') in 0.024340 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_bell.wav
+  artifactKey: Guid(ba1bd2aff3f658a40aaab0c27298e81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_bell.wav using Guid(ba1bd2aff3f658a40aaab0c27298e81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b625cd7201ccf410538aa354c9590ee3') in 0.021120 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_wind.wav
+  artifactKey: Guid(cec6492994e24e644aea06ba25a951fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_wind.wav using Guid(cec6492994e24e644aea06ba25a951fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af97c5a6548957f928729937274e5aa2') in 0.021993 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_weed.wav
+  artifactKey: Guid(1b5be9570f0a192409cdd7468d25b3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_weed.wav using Guid(1b5be9570f0a192409cdd7468d25b3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6cf337c07e17076a011e7ab6912ecc') in 0.019993 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.703624 seconds.
+  path: Assets/雄太/Effects/FBX
+  artifactKey: Guid(164bbc195e6445945b3eed41df229ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/FBX using Guid(164bbc195e6445945b3eed41df229ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d6a94c89b0f82c70cd9422535d2c3e') in 0.007030 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.878621 seconds.
+  path: Assets/雄太/Effects/FBX/eff_fbx001.blend
+  artifactKey: Guid(a273b0c31bea7874e90480aa560efad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/FBX/eff_fbx001.blend using Guid(a273b0c31bea7874e90480aa560efad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0cab50a8757ebaf28ee7f14ebda028') in 0.153883 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.267680 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect
+  artifactKey: Guid(88cb082ab9606af4aa78cb7da744ab30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect using Guid(88cb082ab9606af4aa78cb7da744ab30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacb8599b7a857042ddd62a55f410cab') in 0.007484 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.308328 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect/fbx
+  artifactKey: Guid(479c887994be3534fbea004afb0b2451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect/fbx using Guid(479c887994be3534fbea004afb0b2451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139a5f9bc863ac76577203688ff54ca0') in 0.000954 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.045374 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect/fbx/fbx_sphere_01.fbx
+  artifactKey: Guid(8f0111492fe0bf749b1424a818cc0aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect/fbx/fbx_sphere_01.fbx using Guid(8f0111492fe0bf749b1424a818cc0aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86849b5e0bcf735e733c679b14fbe485') in 0.037052 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect/fbx/fbx_spherTop_01.fbx
+  artifactKey: Guid(860290adc33fd8e45aebfd272bed90c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect/fbx/fbx_spherTop_01.fbx using Guid(860290adc33fd8e45aebfd272bed90c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c71205df61df6dfd8a4a949da034903') in 0.031420 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 2.531612 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect/prefab
+  artifactKey: Guid(975874dfe8ba2f54f97bed859fada898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect/prefab using Guid(975874dfe8ba2f54f97bed859fada898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82973b44f7560ad03cf171d197497ce') in 0.000935 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.063740 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect/prefab/explosionSample.prefab
+  artifactKey: Guid(05f67036d79f1264ebd59faace980cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect/prefab/explosionSample.prefab using Guid(05f67036d79f1264ebd59faace980cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5646a75e106aa71fc2ad46345fc3bbec') in 0.756358 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 3.358842 seconds.
+  path: Assets/雄太/武器/槍　縮尺調整済み.fbx
+  artifactKey: Guid(cbffad3723ccdff4fa79337811764d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/槍　縮尺調整済み.fbx using Guid(cbffad3723ccdff4fa79337811764d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad22dafefe9e752b302fe48e36d910f') in 2.272913 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 1.933535 seconds.
+  path: Assets/雄太/Partcle
+  artifactKey: Guid(23381b1a59371c04781730eae00c3a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Partcle using Guid(23381b1a59371c04781730eae00c3a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c542457ab8389f0344a09fa154c0f3f') in 0.000838 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.515792 seconds.
+  path: Assets/雄太/Partcle/Prefab
+  artifactKey: Guid(e90553fd4dcb74f48b46d2d1090ab94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Partcle/Prefab using Guid(e90553fd4dcb74f48b46d2d1090ab94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48922b96ed096df2462b25321b48e965') in 0.001981 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.329068 seconds.
+  path: Assets/雄太/Partcle/Prefab/OpenChest.prefab
+  artifactKey: Guid(963005d27e84c3e4184da34fccefab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Partcle/Prefab/OpenChest.prefab using Guid(963005d27e84c3e4184da34fccefab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02502f1010549d5beedc050dac3fdab4') in 0.893913 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 61.410989 seconds.
+  path: Assets/雄太/enemy/四天王/宝箱レア度2 Variant.prefab
+  artifactKey: Guid(481ebbb3877539c4ca5b18a1ddc80c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/宝箱レア度2 Variant.prefab using Guid(481ebbb3877539c4ca5b18a1ddc80c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de6f469c00b4cd0961d4171373b75dc') in 0.095441 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 217
+========================================================================
+Received Import Request.
+  Time since last request: 5.445325 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab
+  artifactKey: Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/AttackAlam.prefab using Guid(f3ecaf0e6a7b7da4db5934f3e7ef3202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a4c71af353dc2aa49571d592047e80') in 0.009531 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab
+  artifactKey: Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃ため.prefab using Guid(bb60fbc571184ce409197dc039c68d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5863f741351bc73cc2e329cf010d46c3') in 0.050667 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab
+  artifactKey: Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザーの後ろ.prefab using Guid(845300329abd1ab4e878334afccefdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f527f7c3639252ca29ffc4553a329f32') in 0.043315 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/四天王がまとうオーラ.prefab
+  artifactKey: Guid(37b4b5171e9c2d34989d3fe4f2f5f815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/四天王がまとうオーラ.prefab using Guid(37b4b5171e9c2d34989d3fe4f2f5f815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1247d09333ca01013cc8eda64b62483') in 0.028828 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/上からため.prefab
+  artifactKey: Guid(38ef26b6d25315f4bae117545486b2a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/上からため.prefab using Guid(38ef26b6d25315f4bae117545486b2a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a315718de907b5dcee0d19865566bfcd') in 0.011021 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/レーザー　複数本.prefab
+  artifactKey: Guid(52d7b94f90c459d48a6e0761fbe55be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/レーザー　複数本.prefab using Guid(52d7b94f90c459d48a6e0761fbe55be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6861dd3edb7cadc3dc74b1b9caee883') in 0.067074 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 399
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
+  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe436da85e9aa62ff859f8efed9d3868') in 0.039957 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/突進.prefab
+  artifactKey: Guid(da73f99ac6c52154a8ff5e30e3f7938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/突進.prefab using Guid(da73f99ac6c52154a8ff5e30e3f7938e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700f24a55a642783628c781f63ca60ec') in 0.008647 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/転移後エフェクト.prefab
+  artifactKey: Guid(7376cff3116e55f408d0a3fb3666d497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/転移後エフェクト.prefab using Guid(7376cff3116e55f408d0a3fb3666d497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a2b6f584dd8785b3a9ef58f4cbb42d') in 0.026066 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/雷まとってる演出.prefab
+  artifactKey: Guid(1f038ca5ee051ec429ab2cfe3417e767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/雷まとってる演出.prefab using Guid(1f038ca5ee051ec429ab2cfe3417e767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63217568cd035638421786f0c46f156d') in 0.046165 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
+  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a17aad7ef2a319fb6c374971a720b9') in 0.026540 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/雄太/enemy/四天王/Effect/槍通常攻撃.prefab
+  artifactKey: Guid(5d10966b7377905428edf3c5b0f578fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/Effect/槍通常攻撃.prefab using Guid(5d10966b7377905428edf3c5b0f578fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14f059e6e190cdbb8dc161add0af14d') in 0.010448 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 23.716705 seconds.
+  path: Assets/ジャスト回避.signal
+  artifactKey: Guid(638e69800b3ad9f49bb924a8de90754c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ジャスト回避.signal using Guid(638e69800b3ad9f49bb924a8de90754c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce94f8085262e939b92abb67449e388') in 0.002904 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.059443 seconds.
+  path: Assets/ラスト戦闘.signal
+  artifactKey: Guid(d87fbaf61c391734aa5dfe998a704381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ラスト戦闘.signal using Guid(d87fbaf61c391734aa5dfe998a704381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975b3f9dcc480066460eadeaed9c306a') in 0.003808 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.556210 seconds.
+  path: Assets/雄太
+  artifactKey: Guid(5a144309d39da9e49876c07c19ed052b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太 using Guid(5a144309d39da9e49876c07c19ed052b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61406fa81edc237cc38062bdd2a15c3e') in 0.000663 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 17.303323 seconds.
+  path: Assets/Original prefab/UI/DisplayEffectCanvas.prefab
+  artifactKey: Guid(169ebe07a83a0ef49820759d698a6134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/UI/DisplayEffectCanvas.prefab using Guid(169ebe07a83a0ef49820759d698a6134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c2bd0cca7abeed00b9a6d903fd5706') in 0.004932 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_01.prefab
+  artifactKey: Guid(e48c7d7ec43014ad882cf23f3bb48ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_01.prefab using Guid(e48c7d7ec43014ad882cf23f3bb48ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9c66f0439ea0d4556e7c67ef934c20') in 0.056583 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_03.prefab
+  artifactKey: Guid(c17698f595aa942cab4326f0ffaf25c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_03.prefab using Guid(c17698f595aa942cab4326f0ffaf25c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a537da04472ac00888dd6754a2b3552d') in 0.065778 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_01_8x4-32.png
+  artifactKey: Guid(4ff5de4bdb9704c38a0cd21ac3191c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_01_8x4-32.png using Guid(4ff5de4bdb9704c38a0cd21ac3191c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736cdc02db09eb828df42a58bd8aa15a') in 0.032182 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_01.mat
+  artifactKey: Guid(acd51d388e03b43ee91f50f360703603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_01.mat using Guid(acd51d388e03b43ee91f50f360703603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4f81fe84bfd08bd0d63bf9e1a3fa62') in 0.029973 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.414723 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_03_8x4-32.png
+  artifactKey: Guid(611ab02a1b0c34eacac1a04aa2bdcddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_03_8x4-32.png using Guid(611ab02a1b0c34eacac1a04aa2bdcddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad915ec88b5f38ae8d2fa4f1a8f6ec6') in 0.032139 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.864660 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_04.mat
+  artifactKey: Guid(9d7b7705dd2cc450c991a93f6474f081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_04.mat using Guid(9d7b7705dd2cc450c991a93f6474f081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be969c3c805d8bf6281d6e9c3a6a6621') in 0.045615 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_05.mat
+  artifactKey: Guid(a551b9b2ea53445be86fd523d3a8aa60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_05.mat using Guid(a551b9b2ea53445be86fd523d3a8aa60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9829f03414192b311a907845f25cd2d3') in 0.088997 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_06.mat
+  artifactKey: Guid(a520c59bd52a84761853f1676c85041d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_06.mat using Guid(a520c59bd52a84761853f1676c85041d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb65eb4043299a2a88c7418781bef497') in 0.051304 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_08.prefab
+  artifactKey: Guid(d50f5f5d5a171443fa76bc1f6fc90473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_08.prefab using Guid(d50f5f5d5a171443fa76bc1f6fc90473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a1a0354ca82d9b37d313cd71f501dd') in 0.038596 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_08.mat
+  artifactKey: Guid(02fe6122f18ad42c98742a5c28931947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_08.mat using Guid(02fe6122f18ad42c98742a5c28931947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6249f2b76e02f1eb828df4327f6a2655') in 0.051932 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_07_8x8-64.png
+  artifactKey: Guid(411d5d12701d34c578b3282ddfab9b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Materials/Effect_07_8x8-64.png using Guid(411d5d12701d34c578b3282ddfab9b0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda10d886d15dcddcc136d4f42701fdc') in 0.081870 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_05.prefab
+  artifactKey: Guid(6746092d79f3e4fe1bfa983603238e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/_Creepy_Cat/3D Games Effects Pack Free/_Prefabs/Effect_05.prefab using Guid(6746092d79f3e4fe1bfa983603238e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1911b8296a1f6352b313444b81f1bc5') in 0.059293 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/雄太/newEffect/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/EnergyEffect.tif
+  artifactKey: Guid(5dd198d85c911d44f8a3f9f9d6b00be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/EnergyEffect.tif using Guid(5dd198d85c911d44f8a3f9f9d6b00be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01cd424c4fb7bd568d5c618c93af2b24') in 0.026519 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.765836 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect/texture/eff_tex_explosion_001.png
+  artifactKey: Guid(ede9e9704a6ffb04aacbcbca13564bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect/texture/eff_tex_explosion_001.png using Guid(ede9e9704a6ffb04aacbcbca13564bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ab9dfddd6a6c9d2d9e076b8d76ba70') in 0.028156 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/雄太/enemy/Shader/eff_tex_grow_001.png
+  artifactKey: Guid(79bccb80463f03f43b041708ad2a1005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/Shader/eff_tex_grow_001.png using Guid(79bccb80463f03f43b041708ad2a1005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5413a3f69635a595ff050260ad54db6d') in 0.022758 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 32.034274 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/Fire effect.prefab
+  artifactKey: Guid(ba1b9e2ea89c3ed46b0e18f4e6be1e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/Fire effect.prefab using Guid(ba1b9e2ea89c3ed46b0e18f4e6be1e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41afa711f2915d08b741c8dd545d9cb3') in 0.093839 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/雄太/newEffect/Travis Game Assets/Hit Impact Effects/Demo Scene/Textures/HitImpactEffects_SpeedIcon.png
+  artifactKey: Guid(835585f30fdfa484492ff297af1cafaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Travis Game Assets/Hit Impact Effects/Demo Scene/Textures/HitImpactEffects_SpeedIcon.png using Guid(835585f30fdfa484492ff297af1cafaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f38948a90bf00d9414c3653981141ec') in 0.044478 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/雄太/Effects/nextn3DEffect/shader/NextnEffectAlphaShader.shadergraph
+  artifactKey: Guid(9074f29b4c4bdd74b8c74c210fcc238e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/Effects/nextn3DEffect/shader/NextnEffectAlphaShader.shadergraph using Guid(9074f29b4c4bdd74b8c74c210fcc238e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e371d31c7e9970d4f135c8e0342cc4') in 0.026989 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/雄太/newEffect/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/PlasmaExplosionEffect.prefab
+  artifactKey: Guid(96730f8640590934eacb6f860058e7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/PlasmaExplosionEffect.prefab using Guid(96730f8640590934eacb6f860058e7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8673d31148e6f90f049ad7038c52bf7') in 0.092610 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/雄太/newEffect/Travis Game Assets/Hit Impact Effects/Demo Scene/Materials/HitImpactEffects_Floor.mat
+  artifactKey: Guid(b0b4e880ae2ab6540b044e0c0252a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Travis Game Assets/Hit Impact Effects/Demo Scene/Materials/HitImpactEffects_Floor.mat using Guid(b0b4e880ae2ab6540b044e0c0252a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304bb1df6bfc49df88ed63a3752d1346') in 0.031486 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/雄太/newEffect/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopStreamEffect.prefab
+  artifactKey: Guid(a3768c8a9d1b90d4bb0eb0e4bdbe730c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopStreamEffect.prefab using Guid(a3768c8a9d1b90d4bb0eb0e4bdbe730c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bcf143b46eded223c4affc6c39d633c') in 0.182361 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/雄太/newEffect/Travis Game Assets/Hit Impact Effects/Demo Scene/Textures/HitImpactEffects_FloorIcon.png
+  artifactKey: Guid(d479ca3249c55844098864b714fbe36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Travis Game Assets/Hit Impact Effects/Demo Scene/Textures/HitImpactEffects_FloorIcon.png using Guid(d479ca3249c55844098864b714fbe36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eaff449ceda45d8ca3bf45a24c387fa') in 0.028907 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 28.441653 seconds.
+  path: Assets/Effekseer/Example/Effects/連続爆発.asset
+  artifactKey: Guid(5751f2c5cdd6e2a4c9ade72b24a8ceed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Example/Effects/連続爆発.asset using Guid(5751f2c5cdd6e2a4c9ade72b24a8ceed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c34cb624cb8afebb1980a58ab31948') in 0.008230 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 16.163586 seconds.
+  path: Assets/Effekseer/Prefab/AttackAlam.prefab
+  artifactKey: Guid(200b63fb2508cf34ba8006eaf210a37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Prefab/AttackAlam.prefab using Guid(200b63fb2508cf34ba8006eaf210a37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e004d6da882a3d679a59546a6f69a4') in 0.004450 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Effekseer/Prefab/上から降ってくるやつ.prefab
+  artifactKey: Guid(08e4744e72b06614f99b33ed396a12ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Prefab/上から降ってくるやつ.prefab using Guid(08e4744e72b06614f99b33ed396a12ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295b8b3953d7a594ae167b719c57a811') in 0.012321 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Effekseer/Prefab/突進エフェクト.prefab
+  artifactKey: Guid(3edbe39c0e66f4b4881719cd0c5926c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Prefab/突進エフェクト.prefab using Guid(3edbe39c0e66f4b4881719cd0c5926c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7860ba53ef358a1fa93f45a92632ab34') in 0.007409 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Effekseer/Prefab/岩.prefab
+  artifactKey: Guid(c488fb33cbe104449a2c9240574c963b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Prefab/岩.prefab using Guid(c488fb33cbe104449a2c9240574c963b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efbf0461f6ec3735b64b053fa1bedba') in 0.014113 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Effekseer/Prefab/連続爆発.prefab
+  artifactKey: Guid(3e1fc69fefc2c274f951024e20e6b909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Prefab/連続爆発.prefab using Guid(3e1fc69fefc2c274f951024e20e6b909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836b9a5d879fb93959da79bc6b170489') in 0.010033 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 116.354938 seconds.
+  path: Assets/Effekseer/Example/Effects/592d2b0b560d5829.asset
+  artifactKey: Guid(f90e0c8e6e063624ea7f8bdd4678855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Example/Effects/592d2b0b560d5829.asset using Guid(f90e0c8e6e063624ea7f8bdd4678855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc005ff1e812ce7181407526835dddc7') in 0.002930 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 106.483527 seconds.
+  path: Assets/Effekseer/Example/New Material.mat
+  artifactKey: Guid(520bdb177e47b4c4dbc1e79d0d480bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Example/New Material.mat using Guid(520bdb177e47b4c4dbc1e79d0d480bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8adc377dbe8d69ece5b5b9cfbd29b63') in 1.062012 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4621.518194 seconds.
+  path: Assets/雄太/sounds/explosion_loud.mp3
+  artifactKey: Guid(7541025806f0f4449ae6dec7d4cbe8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/sounds/explosion_loud.mp3 using Guid(7541025806f0f4449ae6dec7d4cbe8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '445c5fe80a4e76e005535e38cdd2cacb') in 0.097285 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.234986 seconds.
+  path: Assets/雄太/sounds/explosion_loud.mp3
+  artifactKey: Guid(7541025806f0f4449ae6dec7d4cbe8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/sounds/explosion_loud.mp3 using Guid(7541025806f0f4449ae6dec7d4cbe8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f247c073f594ffcae21e357839dd32c8') in 0.013636 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 22.676733 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_whistle.wav
+  artifactKey: Guid(54575495169c29343a4a2e5729709bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_whistle.wav using Guid(54575495169c29343a4a2e5729709bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd474f6cf10c34506b268bca08eb053') in 0.022056 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.521403 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_weed.wav
+  artifactKey: Guid(c6236786972bc63468a551df46a2515f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_weed.wav using Guid(c6236786972bc63468a551df46a2515f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ccb11a16c55d0347c85cbada1276df') in 0.013868 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.060637 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_explode.wav
+  artifactKey: Guid(523ebf68884d98049942c0866eb29b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_explode.wav using Guid(523ebf68884d98049942c0866eb29b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43ca01ea86c50e8db643d614da04bee') in 0.016565 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.195200 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_bell.wav
+  artifactKey: Guid(28e9b4a6c3d32174983bf47e70dcb41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_3_bell.wav using Guid(28e9b4a6c3d32174983bf47e70dcb41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3413549ec08c2317b9b41aabc4643bc2') in 0.015642 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002150 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_weed.wav
+  artifactKey: Guid(a272418358c9d334c9d5f0b806191bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_weed.wav using Guid(a272418358c9d334c9d5f0b806191bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2c4c23e03c4ded2e552572ec77c69a') in 0.013876 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.081850 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_spiral.wav
+  artifactKey: Guid(02ebc5dabe8e4ae45b1034a08e923a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_explosion_2_spiral.wav using Guid(02ebc5dabe8e4ae45b1034a08e923a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8109286fdf50b38d004984c4fc97124') in 0.015588 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
