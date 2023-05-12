@@ -15,7 +15,7 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56805
+59768
 Successfully changed project path to: C:/3Dgame/NIR-A-game-/NIR-A-game-
 C:/3Dgame/NIR-A-game-/NIR-A-game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8308] Host "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 1765847287 [EditorId] 1765847287 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24252] Host "[IP] 192.168.11.3 [Port] 0 [Flags] 2 [Guid] 645862528 [EditorId] 645862528 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8308] Host "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 1765847287 [EditorId] 1765847287 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24252] Host "[IP] 192.168.11.3 [Port] 0 [Flags] 2 [Guid] 645862528 [EditorId] 645862528 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 1609.21 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 808.74 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011118 seconds.
-- Loaded All Assemblies, in  0.768 seconds
+Registered in 0.015701 seconds.
+- Loaded All Assemblies, in  0.630 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 539 ms
+Android Extension - Scanning For ADB Devices 665 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.288 seconds
+- Finished resetting the current domain, in  1.197 seconds
 Domain Reload Profiling:
-	ReloadAssembly (415ms)
-		BeginReloadAssembly (237ms)
+	ReloadAssembly (358ms)
+		BeginReloadAssembly (190ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (235ms)
+			LoadAssemblies (188ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (323ms)
-				TypeCache.Initialize (321ms)
-					TypeCache.ScanAssembly (318ms)
+			SetupTypeCache (261ms)
+				TypeCache.Initialize (259ms)
+					TypeCache.ScanAssembly (255ms)
 				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (1106ms)
+			SetupLoadedEditorAssemblies (1092ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (734ms)
-				SetLoadedEditorAssemblies (8ms)
+				InitializePlatformSupportModulesInManaged (808ms)
+				SetLoadedEditorAssemblies (9ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (243ms)
-				ProcessInitializeOnLoadMethodAttributes (116ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (87ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.333 seconds
-Refreshing native plugins compatible for Editor in 35.98 ms, found 7 plugins.
+- Loaded All Assemblies, in  1.820 seconds
+Refreshing native plugins compatible for Editor in 22.63 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -127,46 +127,46 @@ Native extension for WebGL target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.159 seconds
+- Finished resetting the current domain, in  2.621 seconds
 Domain Reload Profiling:
-	ReloadAssembly (582ms)
-		BeginReloadAssembly (378ms)
+	ReloadAssembly (556ms)
+		BeginReloadAssembly (366ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
+			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		LoadAllAssembliesAndSetupDomain (2751ms)
-			LoadAssemblies (1725ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (68ms)
+		LoadAllAssembliesAndSetupDomain (1260ms)
+			LoadAssemblies (817ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1144ms)
-				TypeCache.Initialize (1009ms)
-					TypeCache.ScanAssembly (987ms)
-				ResolveRequiredComponents (55ms)
+			SetupTypeCache (632ms)
+				TypeCache.Initialize (538ms)
+					TypeCache.ScanAssembly (525ms)
+				ResolveRequiredComponents (31ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (2636ms)
+			SetupLoadedEditorAssemblies (2278ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (42ms)
-				SetLoadedEditorAssemblies (7ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (6ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (266ms)
-				ProcessInitializeOnLoadAttributes (2134ms)
-				ProcessInitializeOnLoadMethodAttributes (176ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (2001ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 12.42 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 11.32 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7079 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 7541.
-Memory consumption went from 304.8 MB to 302.5 MB.
-Total: 35.720900 ms (FindLiveObjects: 21.609100 ms CreateObjectMapping: 0.966900 ms MarkObjects: 10.557200 ms  DeleteObjects: 2.584900 ms)
+Memory consumption went from 305.0 MB to 302.7 MB.
+Total: 10.547200 ms (FindLiveObjects: 1.365700 ms CreateObjectMapping: 0.802400 ms MarkObjects: 5.448900 ms  DeleteObjects: 2.927500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,107 +182,161 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 10845.389252 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab
-  artifactKey: Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/即死攻撃メイン.prefab using Guid(f22e89bd8ed589d4a871172109ec1cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c70f3a54b6482b6933dc2f0a421b09a9') in 1.918354 seconds 
+  Time since last request: 21702.383568 seconds.
+  path: Assets/雄太/enemy/Ghost/Animation/Die.anim
+  artifactKey: Guid(364f47367d970e848b2fb3a320686def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/Ghost/Animation/Die.anim using Guid(364f47367d970e848b2fb3a320686def) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9658902b44bfd86bfa59ce4f89be35') in 0.027338 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 112
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab
-  artifactKey: Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/即死爆発その１.prefab using Guid(436a47d4c387ec84e811f71f4a3d3d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f27ebaafdc82f7c131e2c39c9cce31d') in 0.048234 seconds 
+  Time since last request: 0.000066 seconds.
+  path: Assets/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd
+  artifactKey: Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd using Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196cc79ee5a86c3e234c5a98e329ba64') in 0.073870 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/通常攻撃のため.prefab
-  artifactKey: Guid(8ad9a07bfd7bbda4ba0760abe36fdcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/通常攻撃のため.prefab using Guid(8ad9a07bfd7bbda4ba0760abe36fdcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caba475e96f38efc1353e553988accc7') in 0.039996 seconds 
+  Time since last request: 0.000572 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg
+  artifactKey: Guid(6eb184de103d4b3f812b38561065192f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg using Guid(6eb184de103d4b3f812b38561065192f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5e5e886890535c3a8e81b22d71c674f') in 0.023100 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/レーザー　複数本.prefab
-  artifactKey: Guid(52d7b94f90c459d48a6e0761fbe55be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/レーザー　複数本.prefab using Guid(52d7b94f90c459d48a6e0761fbe55be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df03674c6ac3fcc5f67a28391d063c98') in 0.135989 seconds 
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg
+  artifactKey: Guid(2ce5c55e85304b819a1826ecbc839aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg using Guid(2ce5c55e85304b819a1826ecbc839aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3d2dba70ee1c5b1b7dc716e162c18a') in 0.024189 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 399
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab
-  artifactKey: Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/ボスの爆発.prefab using Guid(2f9c06ba16d08f54dae79730ee646c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45d1c0d0dca8cef4018959f5693ac97') in 0.131567 seconds 
+  Time since last request: 0.000031 seconds.
+  path: Assets/雄太/newEffect/Hovl Studio/Magic effects pack/Materials/Gradient.mat
+  artifactKey: Guid(2ae196836e3f6ce438e93e246a6ab900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/Hovl Studio/Magic effects pack/Materials/Gradient.mat using Guid(2ae196836e3f6ce438e93e246a6ab900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5805ab525e8379370239938ec3189b6') in 0.455875 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
+Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/転移後エフェクト.prefab
-  artifactKey: Guid(7376cff3116e55f408d0a3fb3666d497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/転移後エフェクト.prefab using Guid(7376cff3116e55f408d0a3fb3666d497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eccd0301cc42b14de355705ed5ecdf0b') in 0.104281 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/Standard Assets/Environment/Water/Water/Textures/WaterProDaytimeGradient.psd
+  artifactKey: Guid(ab97f9ab7c2ce724ebc9446060a819a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/Water/Water/Textures/WaterProDaytimeGradient.psd using Guid(ab97f9ab7c2ce724ebc9446060a819a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61bb661585326cfea657c5df2432f5f') in 0.011293 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/雷まとってる演出.prefab
-  artifactKey: Guid(1f038ca5ee051ec429ab2cfe3417e767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/雷まとってる演出.prefab using Guid(1f038ca5ee051ec429ab2cfe3417e767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb01e8828c1e9f9e870e9f785d96f03') in 0.075624 seconds 
+  Time since last request: 0.000057 seconds.
+  path: Assets/IL3DN/Graphics/Textures/IL3DN_FX_GradientRadial.psd
+  artifactKey: Guid(f28423396372f574b88e3b41854652e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Graphics/Textures/IL3DN_FX_GradientRadial.psd using Guid(f28423396372f574b88e3b41854652e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9606036652ca0edb5c339cc95715416') in 0.015162 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab
-  artifactKey: Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/スラッシュ候補.prefab using Guid(2cc75fd744255954db5635d3615e0f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a462ee1839a52d887907bc4fa3ee8e0') in 0.149465 seconds 
+  Time since last request: 0.000258 seconds.
+  path: Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd
+  artifactKey: Guid(8403d3349d112ba4d000be1be39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd using Guid(8403d3349d112ba4d000be1be39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d9b37c936dee6fdd2ddfd85f897fa5') in 0.012272 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 79.213053 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発.prefab
-  artifactKey: Guid(2f6adb18a4ade7247b3724e9e55d6448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発.prefab using Guid(2f6adb18a4ade7247b3724e9e55d6448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcb8152fd730a8eca7b751d8e036805') in 0.071318 seconds 
+  Time since last request: 40.592445 seconds.
+  path: Assets/雄太/enemy/四天王/animation/四天王.controller
+  artifactKey: Guid(63eb1795f7b71364cae077b9e834fa8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/animation/四天王.controller using Guid(63eb1795f7b71364cae077b9e834fa8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a99ab1bf02e747082ec0fb5b2c2976') in 0.238651 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
+Number of asset objects unloaded after import = 55
 ========================================================================
 Received Import Request.
-  Time since last request: 1.502860 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発.prefab
-  artifactKey: Guid(2f6adb18a4ade7247b3724e9e55d6448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発.prefab using Guid(2f6adb18a4ade7247b3724e9e55d6448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38bb74fde6289e319c4ee6483ab8d56f') in 0.014193 seconds 
+  Time since last request: 36.790053 seconds.
+  path: Assets/雄太/enemy/四天王/第四四天王 完全版.prefab
+  artifactKey: Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/第四四天王 完全版.prefab using Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Failed to create MaterialEnum, enum UnityEditor.Rendering.HighDefinition.TransparentCullMode not found
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+UnityEditor.MaterialEnumDrawer:.ctor (string)
+System.Reflection.RuntimeConstructorInfo:InternalInvoke (object,object[],bool)
+System.Reflection.RuntimeConstructorInfo:DoInvoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.RuntimeConstructorInfo:Invoke (System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.RuntimeType:CreateInstanceImpl (System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo,object[],System.Threading.StackCrawlMark&)
+System.Activator:CreateInstance (System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo,object[])
+System.Activator:CreateInstance (System.Type,object[])
+UnityEditor.MaterialPropertyHandler:CreatePropertyDrawer (System.Type,string)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyDrawer (string,bool&)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialPropertyHandler:GetHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawers (UnityEngine.Object[])
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawersFromNative (UnityEngine.Material)
+UnityEngine.Rendering.ScriptableRenderContext:Internal_Cull (UnityEngine.Rendering.ScriptableCullingParameters&,UnityEngine.Rendering.ScriptableRenderContext,intptr)
+UnityEngine.Rendering.ScriptableRenderContext:Cull (UnityEngine.Rendering.ScriptableCullingParameters&)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:622)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:527)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:369)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview (UnityEditor.GameObjectInspector/PreviewData)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs Line: 622)
+
+Failed to create material drawer Enum with arguments 'UnityEditor.Rendering.HighDefinition.TransparentCullMode'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyDrawer (string,bool&)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialPropertyHandler:GetHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawers (UnityEngine.Object[])
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawersFromNative (UnityEngine.Material)
+UnityEngine.Rendering.ScriptableRenderContext:Internal_Cull (UnityEngine.Rendering.ScriptableCullingParameters&,UnityEngine.Rendering.ScriptableRenderContext,intptr)
+UnityEngine.Rendering.ScriptableRenderContext:Cull (UnityEngine.Rendering.ScriptableCullingParameters&)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:622)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:527)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:369)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview (UnityEditor.GameObjectInspector/PreviewData)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs Line: 622)
+
+ -> (artifact id: '746f5cf40b1ed47edddbdd87ff8c2715') in 1.288541 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
+Number of asset objects unloaded after import = 3390
 ========================================================================
 Received Import Request.
-  Time since last request: 28.192129 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発.prefab
-  artifactKey: Guid(2f6adb18a4ade7247b3724e9e55d6448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発.prefab using Guid(2f6adb18a4ade7247b3724e9e55d6448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7258cd89f874abb55100538487c7c49c') in 0.013502 seconds 
+  Time since last request: 6.657022 seconds.
+  path: Assets/雄太/enemy/四天王/animation/Die.anim
+  artifactKey: Guid(0c4beffbc53e31544b9521b1e30230db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/animation/Die.anim using Guid(0c4beffbc53e31544b9521b1e30230db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b2974fef69a69666274887948f2202') in 0.038103 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 37.117635 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6521bf5cd53d164ae3bb9c205a3958') in 0.180577 seconds 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  4.702 seconds
-Refreshing native plugins compatible for Editor in 96.59 ms, found 7 plugins.
+- Loaded All Assemblies, in  4.394 seconds
+Refreshing native plugins compatible for Editor in 11.63 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -290,45 +344,45 @@ Native extension for WebGL target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 12.430 seconds
+- Finished resetting the current domain, in  5.525 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1245ms)
-		BeginReloadAssembly (1037ms)
+	ReloadAssembly (1417ms)
+		BeginReloadAssembly (1302ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (213ms)
+			DisableScriptedObjects (438ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (495ms)
-		LoadAllAssembliesAndSetupDomain (3457ms)
-			LoadAssemblies (1822ms)
+			CreateAndSetChildDomain (562ms)
+		LoadAllAssembliesAndSetupDomain (2972ms)
+			LoadAssemblies (2151ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1807ms)
-				TypeCache.Initialize (1351ms)
-					TypeCache.ScanAssembly (1260ms)
-				ResolveRequiredComponents (291ms)
+			SetupTypeCache (962ms)
+				TypeCache.Initialize (849ms)
+					TypeCache.ScanAssembly (815ms)
+				ResolveRequiredComponents (52ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (3363ms)
+			SetupLoadedEditorAssemblies (934ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (169ms)
-				SetLoadedEditorAssemblies (44ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (13ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (658ms)
-				ProcessInitializeOnLoadAttributes (2391ms)
-				ProcessInitializeOnLoadMethodAttributes (95ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (645ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (29ms)
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 79.42 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 28.10 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6804 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7628.
-Memory consumption went from 251.5 MB to 249.3 MB.
-Total: 231.780500 ms (FindLiveObjects: 55.871300 ms CreateObjectMapping: 15.700900 ms MarkObjects: 61.338200 ms  DeleteObjects: 98.865100 ms)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7665.
+Memory consumption went from 255.0 MB to 252.8 MB.
+Total: 21.524500 ms (FindLiveObjects: 1.645100 ms CreateObjectMapping: 0.621000 ms MarkObjects: 17.397800 ms  DeleteObjects: 1.855900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -345,83 +399,285 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 3548.780011 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3452f3e37139fd9ee35186afe565915') in 0.695617 seconds 
+  Time since last request: 385.826365 seconds.
+  path: Assets/models/Prefab/ShintoShrine (1) Variant.prefab
+  artifactKey: Guid(7772a4150343cc3448c387ba6e267160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/Prefab/ShintoShrine (1) Variant.prefab using Guid(7772a4150343cc3448c387ba6e267160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b8326c9e8c296d27eb564c82f2308ec') in 0.581731 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 623
+Number of asset objects unloaded after import = 870
 ========================================================================
 Received Import Request.
-  Time since last request: 13.676008 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140b990606871051679e6740abde2fca') in 0.071574 seconds 
+  Time since last request: 0.000042 seconds.
+  path: Assets/models/Prefab/校舎　軽量化モデル.prefab
+  artifactKey: Guid(c8c31900987fe0640a89b6d4ea0f1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/Prefab/校舎　軽量化モデル.prefab using Guid(c8c31900987fe0640a89b6d4ea0f1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4389dfd752fdb5939d36da733933f7') in 2.029695 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 145
 ========================================================================
 Received Import Request.
-  Time since last request: 4.563758 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad21b26b9c3da859ffc1378259fe33e') in 0.110442 seconds 
+  Time since last request: 0.000058 seconds.
+  path: Assets/models/Prefab
+  artifactKey: Guid(77aa9bfaf1f603d40b201a527305ba48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/Prefab using Guid(77aa9bfaf1f603d40b201a527305ba48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cdd172a73a920d6f95eed164e745a1a') in 0.002489 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 4.243695 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55b88b2eb9daa3f370c852d2d87b104') in 0.152891 seconds 
+  Time since last request: 0.000121 seconds.
+  path: Assets/models/Prefab/鳥居 Variant.prefab
+  artifactKey: Guid(be2081f394d42fa458e7a882fca8fb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/Prefab/鳥居 Variant.prefab using Guid(be2081f394d42fa458e7a882fca8fb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041715b33cdb9e22542ef76699f11863') in 0.085390 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 32
 ========================================================================
 Received Import Request.
-  Time since last request: 3.739150 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7d2d0341be2b2c9417a5421c6bdddb') in 0.132336 seconds 
+  Time since last request: 0.000028 seconds.
+  path: Assets/models/Prefab/鳥居.prefab
+  artifactKey: Guid(27b24e381800faa4eb019cc5cc07a7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/Prefab/鳥居.prefab using Guid(27b24e381800faa4eb019cc5cc07a7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2336c4d888ff3fa25f8666a7484bc6d') in 0.029921 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 47
 ========================================================================
 Received Import Request.
-  Time since last request: 4.354191 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e58b99eebaa79d07629a6140006a7f2') in 0.082066 seconds 
+  Time since last request: 3.511742 seconds.
+  path: Assets/models/宝箱
+  artifactKey: Guid(5b65aed37e5439b49aca898387277c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/宝箱 using Guid(5b65aed37e5439b49aca898387277c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c4b1d01418ac7afc08ef3a4be1bca5') in 0.001331 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 4.177422 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567e5ca9cc4f5c0fd4582cc7e0a5649d') in 0.083936 seconds 
+  Time since last request: 5.470303 seconds.
+  path: Assets/models/宝箱/prefab/宝箱レア度2 Variant.prefab
+  artifactKey: Guid(568438e0e36c6eb4ba64ac73b5acb4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/宝箱/prefab/宝箱レア度2 Variant.prefab using Guid(568438e0e36c6eb4ba64ac73b5acb4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e8cd6fb403b4d50cdd215f1492a49d5') in 0.386834 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 217
 ========================================================================
 Received Import Request.
-  Time since last request: 6.657960 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5fe42d72bf457c3f4262f15d0470e6f') in 0.071141 seconds 
+  Time since last request: 0.000045 seconds.
+  path: Assets/models/宝箱/prefab/宝箱レア度１ Variant.prefab
+  artifactKey: Guid(8ca38a4813c9be042bd37e32c2b2dc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/models/宝箱/prefab/宝箱レア度１ Variant.prefab using Guid(8ca38a4813c9be042bd37e32c2b2dc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac007401c9d425c04d818d80b5429e8d') in 0.074170 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 159
 ========================================================================
 Received Import Request.
-  Time since last request: 4.949016 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929996cb93efedd98053b9e5a4e03c7d') in 0.077898 seconds 
+  Time since last request: 12.488993 seconds.
+  path: Assets/雄太/enemy/四天王/第四四天王 完全版.prefab
+  artifactKey: Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/第四四天王 完全版.prefab using Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Failed to create MaterialEnum, enum UnityEditor.Rendering.HighDefinition.TransparentCullMode not found
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+UnityEditor.MaterialEnumDrawer:.ctor (string)
+System.Reflection.RuntimeConstructorInfo:InternalInvoke (object,object[],bool)
+System.Reflection.RuntimeConstructorInfo:DoInvoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.RuntimeConstructorInfo:Invoke (System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.RuntimeType:CreateInstanceImpl (System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo,object[],System.Threading.StackCrawlMark&)
+System.Activator:CreateInstance (System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo,object[])
+System.Activator:CreateInstance (System.Type,object[])
+UnityEditor.MaterialPropertyHandler:CreatePropertyDrawer (System.Type,string)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyDrawer (string,bool&)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialPropertyHandler:GetHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawers (UnityEngine.Object[])
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawersFromNative (UnityEngine.Material)
+UnityEngine.Rendering.ScriptableRenderContext:Internal_Cull (UnityEngine.Rendering.ScriptableCullingParameters&,UnityEngine.Rendering.ScriptableRenderContext,intptr)
+UnityEngine.Rendering.ScriptableRenderContext:Cull (UnityEngine.Rendering.ScriptableCullingParameters&)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:622)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:527)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:369)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview (UnityEditor.GameObjectInspector/PreviewData)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs Line: 622)
+
+Failed to create material drawer Enum with arguments 'UnityEditor.Rendering.HighDefinition.TransparentCullMode'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyDrawer (string,bool&)
+UnityEditor.MaterialPropertyHandler:GetShaderPropertyHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialPropertyHandler:GetHandler (UnityEngine.Shader,string)
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawers (UnityEngine.Object[])
+UnityEditor.MaterialEditor:ApplyMaterialPropertyDrawersFromNative (UnityEngine.Material)
+UnityEngine.Rendering.ScriptableRenderContext:Internal_Cull (UnityEngine.Rendering.ScriptableCullingParameters&,UnityEngine.Rendering.ScriptableRenderContext,intptr)
+UnityEngine.Rendering.ScriptableRenderContext:Cull (UnityEngine.Rendering.ScriptableCullingParameters&)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:622)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:527)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs:369)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,UnityEngine.Object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.GameObjectInspector:DoRenderPreview (UnityEditor.GameObjectInspector/PreviewData)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+(Filename: ./Library/PackageCache/com.unity.render-pipelines.universal@14.0.6/Runtime/UniversalRenderPipeline.cs Line: 622)
+
+ -> (artifact id: '8e6c21001ecb32dbf27e1d145a21a13a') in 0.920101 seconds 
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 604
+Number of asset objects unloaded after import = 3390
+========================================================================
+Received Import Request.
+  Time since last request: 0.876304 seconds.
+  path: Assets/雄太/enemy/四天王/宝箱レア度2 Variant.prefab
+  artifactKey: Guid(481ebbb3877539c4ca5b18a1ddc80c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/宝箱レア度2 Variant.prefab using Guid(481ebbb3877539c4ca5b18a1ddc80c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b4d28a76758224d1de5f9847391ed0') in 0.054198 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 217
+========================================================================
+Received Import Request.
+  Time since last request: 0.045290 seconds.
+  path: Assets/雄太/enemy/四天王/第四四天王 完全版.prefab
+  artifactKey: Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/第四四天王 完全版.prefab using Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8d0dca3c943316f347c1065d0bfba3') in 0.697238 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3390
+========================================================================
+Received Import Request.
+  Time since last request: 55.508060 seconds.
+  path: Assets/雄太/enemy/四天王/第四四天王 完全版.prefab
+  artifactKey: Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/第四四天王 完全版.prefab using Guid(68dfb0810f134004dacc880691aa2362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42da008a1d6e6a9e18586c134f060f68') in 0.792332 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3390
+========================================================================
+Received Import Request.
+  Time since last request: 93.035071 seconds.
+  path: Assets/雄太/enemy/四天王/animation/Die.anim
+  artifactKey: Guid(0c4beffbc53e31544b9521b1e30230db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/enemy/四天王/animation/Die.anim using Guid(0c4beffbc53e31544b9521b1e30230db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b1daf5fa8c67076b193771463a23bd') in 0.042482 seconds 
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 5)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 7)
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  4.386 seconds
+Refreshing native plugins compatible for Editor in 19.21 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <27586baf39bf4babbfd8a2caabe8e228>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ae93fefe62eb49e6b9ef3807ffd33dc7>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  9.845 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1749ms)
+		BeginReloadAssembly (1640ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (281ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (4ms)
+			CreateAndSetChildDomain (961ms)
+		LoadAllAssembliesAndSetupDomain (2639ms)
+			LoadAssemblies (1535ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1260ms)
+				TypeCache.Initialize (1194ms)
+					TypeCache.ScanAssembly (1038ms)
+				ResolveRequiredComponents (42ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (2725ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (91ms)
+				SetLoadedEditorAssemblies (44ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (367ms)
+				ProcessInitializeOnLoadAttributes (1975ms)
+				ProcessInitializeOnLoadMethodAttributes (230ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (80ms)
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 52.37 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6788 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7723.
+Memory consumption went from 254.9 MB to 252.8 MB.
+Total: 15.479000 ms (FindLiveObjects: 1.044200 ms CreateObjectMapping: 1.028900 ms MarkObjects: 10.855600 ms  DeleteObjects: 2.547300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  4.935 seconds
-Refreshing native plugins compatible for Editor in 26.12 ms, found 7 plugins.
+- Loaded All Assemblies, in  4.732 seconds
+Refreshing native plugins compatible for Editor in 89.43 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -429,112 +685,45 @@ Native extension for WebGL target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 14.250 seconds
+- Finished resetting the current domain, in  3.982 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1194ms)
-		BeginReloadAssembly (1089ms)
+	ReloadAssembly (2013ms)
+		BeginReloadAssembly (1906ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (127ms)
+			DisableScriptedObjects (37ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (657ms)
-		LoadAllAssembliesAndSetupDomain (3740ms)
-			LoadAssemblies (1819ms)
+			ReleaseScriptingObjects (24ms)
+			CreateAndSetChildDomain (1060ms)
+		LoadAllAssembliesAndSetupDomain (2776ms)
+			LoadAssemblies (1760ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (2101ms)
-				TypeCache.Initialize (1800ms)
-					TypeCache.ScanAssembly (1719ms)
-				ResolveRequiredComponents (135ms)
+			SetupTypeCache (1263ms)
+				TypeCache.Initialize (1155ms)
+					TypeCache.ScanAssembly (1058ms)
+				ResolveRequiredComponents (41ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (1939ms)
+			SetupLoadedEditorAssemblies (909ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (75ms)
-				SetLoadedEditorAssemblies (42ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (10ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (207ms)
-				ProcessInitializeOnLoadAttributes (1333ms)
-				ProcessInitializeOnLoadMethodAttributes (269ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (632ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (65ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 16.23 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 10.87 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6788 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7685.
-Memory consumption went from 250.7 MB to 248.5 MB.
-Total: 15.085200 ms (FindLiveObjects: 1.752800 ms CreateObjectMapping: 0.736700 ms MarkObjects: 10.503100 ms  DeleteObjects: 2.090000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  5.167 seconds
-Refreshing native plugins compatible for Editor in 39.96 ms, found 7 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-New main project
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  9.097 seconds
-Domain Reload Profiling:
-	ReloadAssembly (462ms)
-		BeginReloadAssembly (343ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (17ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (171ms)
-		LoadAllAssembliesAndSetupDomain (4710ms)
-			LoadAssemblies (1938ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (2848ms)
-				TypeCache.Initialize (1042ms)
-					TypeCache.ScanAssembly (1017ms)
-				ResolveRequiredComponents (1766ms)
-		FinalizeReload (0ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (2057ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (61ms)
-				SetLoadedEditorAssemblies (25ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (239ms)
-				ProcessInitializeOnLoadAttributes (1579ms)
-				ProcessInitializeOnLoadMethodAttributes (143ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (55ms)
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 32.81 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6788 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7702.
-Memory consumption went from 250.7 MB to 248.5 MB.
-Total: 14.619000 ms (FindLiveObjects: 2.145200 ms CreateObjectMapping: 0.923900 ms MarkObjects: 9.329200 ms  DeleteObjects: 2.218700 ms)
+Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7740.
+Memory consumption went from 254.9 MB to 252.7 MB.
+Total: 13.044400 ms (FindLiveObjects: 1.297500 ms CreateObjectMapping: 0.793400 ms MarkObjects: 9.024700 ms  DeleteObjects: 1.926600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -551,9 +740,92 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 219.652594 seconds.
-  path: Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab
-  artifactKey: Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/四天王/Effect/連続爆発 エフェクト接続済.prefab using Guid(7186463549cb52343916c8b5d9814945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0929e502b95f7e1f674165fabe6a2ea') in 0.918552 seconds 
+  Time since last request: 368.173228 seconds.
+  path: Assets/UnityChanSpringBone-release-1.1
+  artifactKey: Guid(10256abcb4c6e344584cfbac96424d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityChanSpringBone-release-1.1 using Guid(10256abcb4c6e344584cfbac96424d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b0d671ff638760201c5567a8dd6b63') in 0.101846 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 623
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.615831 seconds.
+  path: Assets/UnityChanSpringBone-release-1.1/UnityChanSpringBone-release-1.1
+  artifactKey: Guid(b1f29e635663e5b41ba5aeae356ebfaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityChanSpringBone-release-1.1/UnityChanSpringBone-release-1.1 using Guid(b1f29e635663e5b41ba5aeae356ebfaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc605feceba2dd0e83e13234634cdf89') in 0.003295 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.315402 seconds.
+  path: Assets/UnityChanSpringBone-release-1.1/UnityChanSpringBone-release-1.1/Editor
+  artifactKey: Guid(9c00ba08991a5944c9f2db47cc3ef00e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityChanSpringBone-release-1.1/UnityChanSpringBone-release-1.1/Editor using Guid(9c00ba08991a5944c9f2db47cc3ef00e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4b6c8c587d3d2521b822786ee99b51') in 0.001998 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  4.364 seconds
+Refreshing native plugins compatible for Editor in 16.60 ms, found 7 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-New main project
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.327 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1461ms)
+		BeginReloadAssembly (1131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (37ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (4ms)
+			CreateAndSetChildDomain (498ms)
+		LoadAllAssembliesAndSetupDomain (2914ms)
+			LoadAssemblies (2316ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1041ms)
+				TypeCache.Initialize (965ms)
+					TypeCache.ScanAssembly (891ms)
+				ResolveRequiredComponents (37ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (1109ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (11ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (200ms)
+				ProcessInitializeOnLoadAttributes (748ms)
+				ProcessInitializeOnLoadMethodAttributes (109ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 21.26 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6765 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 99 unused Assets / (2.2 MB). Loaded Objects now: 7734.
+Memory consumption went from 254.5 MB to 252.3 MB.
+Total: 10.283400 ms (FindLiveObjects: 1.137000 ms CreateObjectMapping: 0.496000 ms MarkObjects: 7.159700 ms  DeleteObjects: 1.488700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 

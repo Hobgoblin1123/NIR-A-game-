@@ -34,6 +34,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     private bool SPAttack;
     [SerializeField]
     private ExplainMantTimes SPeffect1;
+    [SerializeField]
+    private Admin_Chest admin_Chest;
 
 
 
@@ -133,7 +135,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             SetState(EnemyState.Move);
         }
 
-        if(aiLevel == 3)
+        if(aiLevel >= 3)
         {
             lookPosition = Quaternion.LookRotation(charaTransform.position - transform.position).normalized;
         }
@@ -143,9 +145,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
 
     public void SetState(EnemyState s)
     {
-
-        Debug.Log("状態変更の関数が呼ばれたよぉ　状態は " + s);
-        var PostState = state;
+        if(state == EnemyState.Die)return;       
+         var PostState = state;
         state = s;
         if(s == EnemyState.Wait)
         {
@@ -235,6 +236,10 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             animator.SetFloat("Speed" , 0);
             animator.SetTrigger("Attack8");
         }
+        else if(s == EnemyState.Die)
+        {
+            animator.SetTrigger("Die");
+        }
     }
 
     public void Damage(float hp)
@@ -322,4 +327,11 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         effect[n].EffectEnd();
         effect[n].gameObject.SetActive(false);
     }
+
+    public void DestroyEvent()
+    {
+        Instantiate(admin_Chest.gameObject , transform.position ,transform.rotation);
+        Destroy(this.gameObject);
+    }
 }
+
