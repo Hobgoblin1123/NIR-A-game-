@@ -19,6 +19,8 @@ public class Move : MonoBehaviour
 	private AudioClip[] sound;                      //主人公が使う効果音を格納
 	[SerializeField]
 	private Admin_Effect[] effects;                 //主人公が使うエフェクト(prefabではなく、あらかじめインスタンス化すること)を格納
+	[SerializeField]
+	private SPAttackBySickle sPAttackBySickle;
 	// HP関連
 
     public float charahp;                          //現在HPを定義
@@ -48,6 +50,8 @@ public class Move : MonoBehaviour
 	private Admin_UI admin_UI;                      //Admin_UIをアタッチ
 	[SerializeField]
 	private bool tutorial;
+	[SerializeField]
+	private bool SubScene;
 
 
 
@@ -66,6 +70,10 @@ public class Move : MonoBehaviour
 		if(tutorial == true)
 		{
 			posi = new Vector3(1,3,21);
+		}
+		if(SubScene == true)
+		{
+			posi = new Vector3(-1.88f, 0 ,1.6f);
 		}
 		//ただし、そのY座標がが-1より小さい場合は一以上とみなし警告文を表示し、位置をリセットする
 		if(posi.y < -1)
@@ -461,6 +469,11 @@ public class Move : MonoBehaviour
 	{
 		effects[animationEvent.intParameter].gameObject.SetActive(true);
 		effects[animationEvent.intParameter].EffectStart((int)animationEvent.floatParameter);
+
+		if(animationEvent.intParameter == -2)
+		{
+			Instantiate(sPAttackBySickle.gameObject , transform.position , transform.rotation , transform);
+		}
 	}
 
 	// アニメーションより命令を受け取り、エフェクトを終了する

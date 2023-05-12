@@ -73,16 +73,17 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
         {
             longAttackInterval = 8;
             takeDistanceDamageCount = 60;
-            admin_EnemyStatus.EnemyLevel = 50;
+            admin_EnemyStatus.EnemyLevel = 60;
             admin_EnemyStatus.RiseAttackStatus = 10;
+            admin_EnemyStatus.RiseHPStatus = 2000;
         }
         else if( aiLevel == 3)
         {
             longAttackInterval = 2;
-            takeDistanceDamageCount = 10;
+            takeDistanceDamageCount = 20;
             admin_EnemyStatus.EnemyLevel = 70;
             admin_EnemyStatus.RiseAttackStatus = 40;
-            admin_EnemyStatus.RiseHPStatus = 2000;
+            admin_EnemyStatus.RiseHPStatus = 4000;
         }
     }
     // Start is called before the first frame update
@@ -179,13 +180,17 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
                 {
                     animator.SetTrigger("Attack1");
                 }
-                else if(n > 60)
+                else if(n < 60 && n >= 40)
                 {
                     animator.SetTrigger("Attack3");
                 }
-                else
+                else if(n >= 60 && n < 80)
                 {
                     animator.SetTrigger("Attack2");
+                }
+                else
+                {
+                    animator.SetTrigger("Attack" + Random.Range(4 ,7));
                 }
             }
             else
@@ -202,9 +207,13 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
                 {
                     animator.SetTrigger("Attack2");
                 }
-                else
+                else if(n >=50 && n < 70)
                 {
                     animator.SetTrigger("Attack7");
+                }
+                else
+                {
+                    animator.SetTrigger("Attack" + Random.Range(4,7));
                 }
             }
             
@@ -293,7 +302,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     IEnumerator Back()
     {
         yield return new WaitForSeconds(3f);
-        admin_EnemyStatus.AttackStatus -= admin_EnemyStatus.AttackStatus;
+        admin_EnemyStatus.AttackStatus -= admin_EnemyStatus.AttackStatus/2;
     }
 
 

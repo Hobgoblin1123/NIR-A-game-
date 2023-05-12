@@ -79,11 +79,7 @@ public class Admin_EnemyEffect : MonoBehaviour
         if(SPEffect == true)return;
         damage = GetComponentInParent<Admin_EnemyStatus>().AttackStatus * DamageMagnification;
         coll = GetComponent<Collider>();
-        if(ColliderONTime > 0)
-        {
-            coll.enabled = false;
-            StartCoroutine(ColliderOn());
-        }
+
     }
 
     IEnumerator ColliderOn()
@@ -110,6 +106,13 @@ public class Admin_EnemyEffect : MonoBehaviour
         transform.localScale = firstTransForm[n].scale;
         transform.Rotate(firstTransForm[n].Addrotation);
         time = DamageInterval;
+        if(ColliderONTime > 0)
+        {
+            Debug.Log(gameObject);
+            if(coll == null)coll = GetComponent<Collider>();
+            coll.enabled = false;
+            StartCoroutine(ColliderOn());
+        }
         if(emitterFlag == true)
         {
             effekseerEmitter.Play();
@@ -170,7 +173,6 @@ public class Admin_EnemyEffect : MonoBehaviour
             {
                 var dame = c.charahp*0.9f;
                 c.TakeDamage(dame);
-                Debug.Log(("残りHPの9割のダメージを与えるよん"));
             }
             
         }

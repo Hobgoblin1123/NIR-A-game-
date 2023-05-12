@@ -73,6 +73,7 @@ public class Admin_EnemyStatus : MonoBehaviour
         AttackStatus =  + EnemyLevel*2 + RiseAttackStatus;
         admin = GameObject.Find("管理").GetComponent<Admin>();
         audioSource = GetComponent<AudioSource>();
+        HPSlider.gameObject.SetActive(true);
         if(type == EnemyType.Ghost)
         {
             adminEnemy = GetComponent<Admin_Enemy>();

@@ -25,7 +25,7 @@ public class Admin_Effect : MonoBehaviour
     public FirstTransForm[] firstTransForm;       //エフェクトが発生する位置情報を配列化　複数のパターンを保存可能
     [SerializeField]
     private float time;                           //連続攻撃時間を定義
-    // [SerializeField]
+    [SerializeField]
     private EffekseerEmitter effekseerEmitter;    //アタッチ
     [SerializeField]
     private GameObject colliderObj;               //コライダーを動かく場合、動かすコライダーがついたprefabがアタッチされる
@@ -61,11 +61,15 @@ public class Admin_Effect : MonoBehaviour
     //エフェクトを再生するときに呼ばれる関数
     public void EffectStart(int n)
     {
-        var parent = GetComponentInParent<Transform>();//親の位置を取得
-        transform.rotation = transform.parent.rotation;//回転を親に合わせる
-        transform.localPosition = firstTransForm[n].position;//ローカルポジションを変更
-        transform.localScale = firstTransForm[n].scale;//スケール変更
-        transform.Rotate(firstTransForm[n].Addrotation);//回転
+        if(n != -1)
+        {
+            var parent = GetComponentInParent<Transform>();//親の位置を取得
+            transform.rotation = transform.parent.rotation;//回転を親に合わせる
+            transform.localPosition = firstTransForm[n].position;//ローカルポジションを変更
+            transform.localScale = firstTransForm[n].scale;//スケール変更
+            transform.Rotate(firstTransForm[n].Addrotation);//回転
+        }
+        
         if(canMoveCollider == true)
         {
             colliderObj.transform.localPosition = Vector3.zero;//コライダーの位置を初期化
@@ -99,6 +103,7 @@ public class Admin_Effect : MonoBehaviour
         else
         {
             effect.Stop();
+            
         }
         
     }
@@ -111,7 +116,6 @@ public class Admin_Effect : MonoBehaviour
             var damage = Admin.LastAttackStatus() * DamageMagnification + Admin_SkillTree.AllRaiseDamage;//ダメージ量を計算
             Debug.Log(collider + "に" + damage + "だめーじ");
             Debug.Log(Admin.LastAttackStatus());
-            Debug.Log(Admin_SkillTree.AllRaiseDamage);
             collider.GetComponent<Admin_EnemyStatus>().TakeDamage(damage);//相手にダメージを与えるよ
         }
     }

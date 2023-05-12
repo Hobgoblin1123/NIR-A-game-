@@ -9,7 +9,6 @@ public class EffectColliderSender2 : MonoBehaviour
     void Start()
     {
         admin_Effect = GetComponentInParent<Admin_EnemyEffect>();
-        Debug.Log(admin_Effect);
     }
 
     // 当たり判定をadmin_effectへ転送する関数

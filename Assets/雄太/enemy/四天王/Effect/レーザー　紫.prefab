@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5565617086869709884}
   - component: {fileID: 3084583335978322499}
-  - component: {fileID: 536891299346478773}
   - component: {fileID: 3507697990635047315}
+  - component: {fileID: 536891299346478773}
   m_Layer: 0
   m_Name: "\u30EC\u30FC\u30B6\u30FC\u3000\u7D2B"
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3084583335978322499
 MonoBehaviour:
@@ -52,29 +52,6 @@ MonoBehaviour:
   effectAsset: {fileID: 11400000, guid: fa1ae124237cd194fb3126ca83401351, type: 2}
   playOnStart: 1
   isLooping: 0
---- !u!136 &536891299346478773
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5565617086869709859}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.54
-  m_Height: 28.52
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: -14}
 --- !u!114 &3507697990635047315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,4 +78,31 @@ MonoBehaviour:
   colliderObj: {fileID: 0}
   colliderMoveTransform: {x: 0, y: 0, z: 0}
   colliderMoveTime: 0
+  SPDamage: 0
   ColliderONTime: 2
+  SPEffect: 0
+  SPEffects: []
+  SPEffects2: []
+--- !u!136 &536891299346478773
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5565617086869709859}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.54
+  m_Height: 28.52
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: -14}
