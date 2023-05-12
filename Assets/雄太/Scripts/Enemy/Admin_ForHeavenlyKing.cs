@@ -30,7 +30,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     private int damageCount;
     private int takeDistanceDamageCount = 10;
     [SerializeField]
-    private Transform[] takeDistancePosition;
+    private Vector3[] takeDistancePosition;
     private bool isHalfHP = false;
     private bool SPAttack;
     [SerializeField]
@@ -101,6 +101,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(state == EnemyState.Die)return;
         distance = Vector3.SqrMagnitude(transform.position - charaTransform.position);
 
         if(state == EnemyState.Move)
@@ -147,7 +148,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
 
     public void SetState(EnemyState s)
     {
-        if(state == EnemyState.Die)return;       
+        if(state == EnemyState.Die)return;
+
          var PostState = state;
         state = s;
         if(s == EnemyState.Wait)
@@ -272,11 +274,29 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
 
     private void TakeDistance()
     {
-        transform.DOMove(takeDistancePosition[Random.Range(0 , takeDistancePosition.Length)].position , 0.5f);
+        this.gameObject.transform.DOMove(takeDistancePosition[1] , 0.5f);
         effect[14].gameObject.SetActive(true);
         effect[14].EffectStart(0);
-        SetState(EnemyState.LongAttack);
+        if(isHalfHP == false)
+        {
+            SetState(EnemyState.LongAttack);
+            animator.Play("レーザー１");
+        }
+        else
+        {
+            SetState(EnemyState.Attack);
+            animator.Play("ためて爆発");
+        }
+        admin_EnemyStatus.AttackStatus += admin_EnemyStatus.AttackStatus;
+        StartCoroutine("Back");
     }
+    IEnumerator Back()
+    {
+        yield return new WaitForSeconds(3f);
+        admin_EnemyStatus.AttackStatus -= admin_EnemyStatus.AttackStatus;
+    }
+
+
 
     private void DecideNextState()
     {

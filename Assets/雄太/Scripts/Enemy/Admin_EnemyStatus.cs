@@ -187,6 +187,7 @@ public class Admin_EnemyStatus : MonoBehaviour
         }
         else if(type == EnemyType.ForHeavenlyKing)
         {
+            if(admin_ForHeavenlyKing.state == Admin_ForHeavenlyKing.EnemyState.SPAttackEnd || admin_ForHeavenlyKing.state == Admin_ForHeavenlyKing.EnemyState.Die)return;
             HP -= damage;
             HPSlider.value = HP/HPStatus;
             admin_ForHeavenlyKing.Damage(HP);

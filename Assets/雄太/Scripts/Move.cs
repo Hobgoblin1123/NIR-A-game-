@@ -475,7 +475,6 @@ public class Move : MonoBehaviour
 	{
 		foreach (var item in effects) 
 		{
-			if(item.gameObject.activeSelf == false)return;
 			item.gameObject.SetActive(false);
 			item.EffectEnd();
 		}
