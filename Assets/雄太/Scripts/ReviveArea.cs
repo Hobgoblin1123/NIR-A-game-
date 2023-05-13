@@ -10,7 +10,7 @@ public class ReviveArea : MonoBehaviour
 
     //定数を定義
     const float REVIVE_LESS_POINT_PER_TIME = 0.07f;
-    const float REVIVE_UP_POINT_PER_TIME = 0.02f;
+    const float REVIVE_UP_POINT_PER_TIME = 0.2f;
 
     // Start is called before the first frame update
     void Start()

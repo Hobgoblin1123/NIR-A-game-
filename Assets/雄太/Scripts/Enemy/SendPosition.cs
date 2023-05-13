@@ -10,6 +10,7 @@ public class SendPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(admin_ForHeavenlyKing == null)return;
         admin_ForHeavenlyKing.charaTransform = transform;
     }
 }

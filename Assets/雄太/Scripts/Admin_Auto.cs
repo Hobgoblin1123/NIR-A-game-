@@ -10,7 +10,7 @@ public class Admin_Auto : MonoBehaviour
     [SerializeField]
     private float HPStatus = 100;        //きゃらのHPを設定
     [SerializeField]
-    private float AttackStatus = 10;     //キャラの攻撃力を設定
+    public float AttackStatus = 10;     //キャラの攻撃力を設定
 
     public float hp;　　　　　　　　　　　//HPを設定
     
@@ -28,10 +28,12 @@ public class Admin_Auto : MonoBehaviour
     public Slider hpSlider;        //HPスライダーを適用
     [SerializeField]
     private ReviveArea reviveArea;//復活エリアのprefabをアタッチ
+    [SerializeField]
+    private Admin_Effect effe;///これはちょうちょ
 
 
     const float ROTATE_SPEED = 600f;
-    const float MOVE_TO_ATTACK_DISTANCE =4;
+    const float MOVE_TO_ATTACK_DISTANCE = 5;
 
 
 
@@ -172,5 +174,16 @@ public class Admin_Auto : MonoBehaviour
     public void AttackStart(int n)
     {
         audioSource.PlayOneShot(audioClips[n]);
+        effe.gameObject.SetActive(true);
+		effe.EffectStart(0);
+        StartCoroutine(EndEffe());
+    }
+
+    IEnumerator EndEffe()
+    {
+        yield return new WaitForSeconds(0.1f);
+        effe.EffectEnd();
+        effe.gameObject.SetActive(false);
+		
     }
 }

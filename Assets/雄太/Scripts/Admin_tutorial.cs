@@ -1,8 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using UnityEngine.SceneManagement;
 
 public class Admin_tutorial : MonoBehaviour
 {
@@ -24,6 +24,12 @@ public class Admin_tutorial : MonoBehaviour
     private int stateNumber;
     [SerializeField]
     private GameObject chara;
+    [SerializeField]
+    private GameObject loadingUI;
+    // ロードの進捗状況を管理するための変数
+    private AsyncOperation async;
+    // ロードするシーンの名前
+    public string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +72,16 @@ public class Admin_tutorial : MonoBehaviour
         {
 
         }
+
+        if(Input.GetKeyDown(KeyCode.LeftAlt))//左のシフトキーが押されている間はカーソルを見せる
+        {
+            ShowCursor();
+        }
+
+        if(Input.GetKeyUp(KeyCode.LeftAlt))//左のシフトキーから指が離れたらカーソルを隠す
+        {
+            HideCursor();
+        }
     }
     public void PlayTimeLine(int n)
     {
@@ -102,7 +118,7 @@ public class Admin_tutorial : MonoBehaviour
         else if(n == 4)
         {
             stateNumber = 6;
-            move.enabled = true;
+            NextScene();
         }
     }
 
@@ -121,5 +137,36 @@ public class Admin_tutorial : MonoBehaviour
             chara.transform.position = new Vector3(1,3,-21);
             Debug.Log("キャラ移動");
         }
+    }
+
+    public void NextScene()
+    {
+        StartCoroutine(Load());
+    }
+    private IEnumerator Load() {
+        // ロード画面を表示する
+        loadingUI.SetActive(true);
+
+        // シーンを非同期でロードする
+        async = SceneManager.LoadSceneAsync(sceneName);
+
+        // ロードが完了するまで待機する
+        while (!async.isDone) {
+            yield return null;
+        }
+
+        // ロード画面を非表示にする
+        loadingUI.SetActive(false);
+    }
+
+    public void ShowCursor()//カーソルを見せたいときに呼ぶ関数
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+    public void HideCursor()//カーソルを隠したいときに呼ぶ関数
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
