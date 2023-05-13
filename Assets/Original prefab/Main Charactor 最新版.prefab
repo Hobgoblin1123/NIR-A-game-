@@ -9404,6 +9404,8 @@ MonoBehaviour:
   - {fileID: 5597267350374997694}
   - {fileID: 5597267350374997694}
   - {fileID: 5597267350374997694}
+  - {fileID: 5162313079142698507}
+  - {fileID: 5162313079142698507}
   sPAttackBySickle: {fileID: 0}
   charahp: 0
   slider: {fileID: 0}
@@ -13621,18 +13623,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6246866893679700831, guid: dc73eb3c9ea398147ad46854a587721f,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246866893679700831, guid: dc73eb3c9ea398147ad46854a587721f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246866893679700831, guid: dc73eb3c9ea398147ad46854a587721f,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6246866893679700831, guid: dc73eb3c9ea398147ad46854a587721f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6246866893679700831, guid: dc73eb3c9ea398147ad46854a587721f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 6246866893679700831, guid: dc73eb3c9ea398147ad46854a587721f,
         type: 3}
@@ -13669,11 +13681,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6246866893679700831, guid: dc73eb3c9ea398147ad46854a587721f,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8064198791383204965, guid: dc73eb3c9ea398147ad46854a587721f,
         type: 3}
       propertyPath: effectAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 471dd4bacd7fa544a81826a655029571,
+      objectReference: {fileID: 11400000, guid: be7f2f94c16b27c46abf8b5713773afd,
         type: 2}
     - target: {fileID: 8856274638192125784, guid: dc73eb3c9ea398147ad46854a587721f,
         type: 3}
@@ -13721,10 +13738,16 @@ MonoBehaviour:
   isDamageEffect: 1
   canMoveCollider: 0
   effect: {fileID: 0}
-  DamageMagnification: 1
+  DamageMagnification: 3
   ContinueDamage: 0
   DamageInterval: 0.2
-  firstTransForm: []
+  firstTransForm:
+  - position: {x: 0, y: 0, z: 2.64}
+    Addrotation: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  - position: {x: 0, y: 0, z: 2.64}
+    Addrotation: {x: 0, y: 0, z: 0}
+    scale: {x: 0.5, y: 1, z: 0.5}
   time: 0
   effekseerEmitter: {fileID: 0}
   colliderObj: {fileID: 0}
