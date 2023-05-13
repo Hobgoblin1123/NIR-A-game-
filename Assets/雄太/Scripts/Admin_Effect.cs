@@ -33,6 +33,8 @@ public class Admin_Effect : MonoBehaviour
     private Vector3 colliderMoveTransform = Vector3.zero;//　コライダーが移動する移動先のlocalPosition
     [SerializeField]
     private float colliderMoveTime = 0f;//コライダーが動く場合、移動する時間
+    [SerializeField]
+    private bool SPState;
     
     
 
@@ -115,6 +117,10 @@ public class Admin_Effect : MonoBehaviour
         if(collider.tag == "Enemy" &&ContinueDamage == false)
         {
             var damage = Admin.LastAttackStatus() * DamageMagnification + Admin_SkillTree.AllRaiseDamage;//ダメージ量を計算
+            if(SPState == true)
+            {
+                damage = GetComponentInParent<Admin_Auto>().AttackStatus;
+            }
             Debug.Log(collider + "に" + damage + "だめーじ");
             Debug.Log(Admin.LastAttackStatus());
             collider.GetComponent<Admin_EnemyStatus>().TakeDamage(damage);//相手にダメージを与えるよ

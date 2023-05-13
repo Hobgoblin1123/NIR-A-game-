@@ -44,10 +44,8 @@ public class Admin_EnemyEffect : MonoBehaviour
     [SerializeField]
     private bool SPEffect = false;
     [SerializeField]
-    private Admin_EnemyEffect[] SPEffects;
-    [SerializeField]
-    private Admin_EnemyEffect[] SPEffects2;
-
+    private bool isAutoChara = false;
+    
     [System.Serializable]
     public struct FirstTransForm
     {
@@ -58,7 +56,7 @@ public class Admin_EnemyEffect : MonoBehaviour
 
     void Awake()
     {
-        if(SPEffect == true)return;
+        
         if(GetComponent<EffekseerEmitter>())
         {
             effekseerEmitter = GetComponent<EffekseerEmitter>();
@@ -77,6 +75,11 @@ public class Admin_EnemyEffect : MonoBehaviour
     void Start()
     {
         if(SPEffect == true)return;
+        if(isAutoChara == true)
+        {
+            damage = GetComponentInParent<Admin_Auto>().AttackStatus;
+            return;
+        }
         damage = GetComponentInParent<Admin_EnemyStatus>().AttackStatus * DamageMagnification;
         coll = GetComponent<Collider>();
 
