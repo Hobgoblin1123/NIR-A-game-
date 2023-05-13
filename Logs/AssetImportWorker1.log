@@ -15,7 +15,7 @@ C:/Users/dedro/NIR=A(game)
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57123
+60224
 Successfully changed project path to: C:/Users/dedro/NIR=A(game)
 C:/Users/dedro/NIR=A(game)
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/dedro/NIR=A(game)
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25808] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 623607174 [EditorId] 623607174 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [21112] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 2810906540 [EditorId] 2810906540 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25808] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 623607174 [EditorId] 623607174 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21112] Host "[IP] 192.168.0.5 [Port] 0 [Flags] 2 [Guid] 2810906540 [EditorId] 2810906540 [Version] 1048832 [Id] WindowsEditor(7,Hobgoblin-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 34.78 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 31.90 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -69,41 +69,41 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009270 seconds.
-- Loaded All Assemblies, in  0.466 seconds
+Registered in 0.009247 seconds.
+- Loaded All Assemblies, in  0.426 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.370 seconds
+- Finished resetting the current domain, in  0.316 seconds
 Domain Reload Profiling:
-	ReloadAssembly (272ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (264ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (137ms)
+			LoadAssemblies (132ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
-				TypeCache.Initialize (181ms)
-					TypeCache.ScanAssembly (178ms)
+			SetupTypeCache (152ms)
+				TypeCache.Initialize (151ms)
+					TypeCache.ScanAssembly (149ms)
 				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (291ms)
+			SetupLoadedEditorAssemblies (249ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (9ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (196ms)
-				ProcessInitializeOnLoadMethodAttributes (73ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -113,53 +113,53 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\dedro\NIR=A(game)\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.176 seconds
-Refreshing native plugins compatible for Editor in 14.28 ms, found 7 plugins.
+- Loaded All Assemblies, in  0.978 seconds
+Refreshing native plugins compatible for Editor in 12.95 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.009 seconds
+- Finished resetting the current domain, in  0.975 seconds
 Domain Reload Profiling:
-	ReloadAssembly (242ms)
-		BeginReloadAssembly (149ms)
+	ReloadAssembly (235ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		LoadAllAssembliesAndSetupDomain (931ms)
-			LoadAssemblies (616ms)
+			CreateAndSetChildDomain (25ms)
+		LoadAllAssembliesAndSetupDomain (740ms)
+			LoadAssemblies (440ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (386ms)
-				TypeCache.Initialize (322ms)
-					TypeCache.ScanAssembly (316ms)
-				ResolveRequiredComponents (25ms)
+			SetupTypeCache (370ms)
+				TypeCache.Initialize (311ms)
+					TypeCache.ScanAssembly (303ms)
+				ResolveRequiredComponents (18ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (808ms)
+			SetupLoadedEditorAssemblies (759ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (618ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (585ms)
 				ProcessInitializeOnLoadMethodAttributes (76ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 15.82 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 13.36 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7058 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 7519.
-Memory consumption went from 304.7 MB to 302.4 MB.
-Total: 7.950900 ms (FindLiveObjects: 0.748500 ms CreateObjectMapping: 0.293900 ms MarkObjects: 5.673900 ms  DeleteObjects: 1.233000 ms)
+Unloading 128 unused Assets / (2.3 MB). Loaded Objects now: 7519.
+Memory consumption went from 304.7 MB to 302.5 MB.
+Total: 5.511100 ms (FindLiveObjects: 0.612400 ms CreateObjectMapping: 0.238900 ms MarkObjects: 3.866200 ms  DeleteObjects: 0.792500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -175,9 +175,249 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 65801.423366 seconds.
-  path: Assets/雄太/chara/character/Animators/鎌終了.anim
-  artifactKey: Guid(3e73a315dc49a9c4095ffe6da35bb5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/chara/character/Animators/鎌終了.anim using Guid(3e73a315dc49a9c4095ffe6da35bb5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f123e75c1a67fa1056d0cdc3f84eda3') in 0.023572 seconds 
+  Time since last request: 70985.956153 seconds.
+  path: Assets/Standard Assets/Vehicles/Car/Audio/AccelerationHigh.wav
+  artifactKey: Guid(03e3bd08a6e70684dbe299a3e185fdd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Vehicles/Car/Audio/AccelerationHigh.wav using Guid(03e3bd08a6e70684dbe299a3e185fdd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e0f356560532a96cc754141a19482d') in 0.108973 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 40.712677 seconds.
+  path: Assets/雄太/sounds/槍1.mp3
+  artifactKey: Guid(c0ce25a53cd14b44fa14999440330e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/sounds/槍1.mp3 using Guid(c0ce25a53cd14b44fa14999440330e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78a3f9f3966cd32fc619db563b2155d') in 0.013030 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 383.573345 seconds.
+  path: Assets/Standard Assets/Characters/FirstPersonCharacter/Audio/Footstep02.wav
+  artifactKey: Guid(8bc94ec6ed537e743b481638bdcd503d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Characters/FirstPersonCharacter/Audio/Footstep02.wav using Guid(8bc94ec6ed537e743b481638bdcd503d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abdcd7c6432876ec1f3250a56e01e329') in 0.024448 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.758002 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Bird_01.wav
+  artifactKey: Guid(a34665858920ce74fa901557acec6279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Bird_01.wav using Guid(a34665858920ce74fa901557acec6279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510df895ab287905afc2b86e46a4681d') in 0.012797 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Bird_02.wav
+  artifactKey: Guid(d41e565414380044c8075a0865a91e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Bird_02.wav using Guid(d41e565414380044c8075a0865a91e4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ae4c674c1b46730df3b2b09339c3b7') in 0.013244 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.059855 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Bird_05.wav
+  artifactKey: Guid(129b445e66bf3c842b1dc45c21dc11e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Bird_05.wav using Guid(129b445e66bf3c842b1dc45c21dc11e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9153a41276490673348375c91a670f70') in 0.009378 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Bird_07.wav
+  artifactKey: Guid(20cf1d03ffc2c4a4bbffba20fcf3f75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Bird_07.wav using Guid(20cf1d03ffc2c4a4bbffba20fcf3f75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720ef8f49368ee04fdc5289cee3a44a5') in 0.012732 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Land_Water.wav
+  artifactKey: Guid(b2568d6e097e864498d44005251a5f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Land_Water.wav using Guid(b2568d6e097e864498d44005251a5f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1198b1d1d4535b8e755df5f4e0940d') in 0.013669 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Land_Wood.wav
+  artifactKey: Guid(d19361dabab31e94893913e00357be95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Land_Wood.wav using Guid(d19361dabab31e94893913e00357be95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad3e0b241b676541c993d32fc4621b6') in 0.011423 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Water_02.wav
+  artifactKey: Guid(6b82ca531e941df4083ca4a0238ace12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Water_02.wav using Guid(6b82ca531e941df4083ca4a0238ace12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095771f9e66a08ccb06587b8fff77eaa') in 0.013029 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_03.wav
+  artifactKey: Guid(179c3436465598b498dea48c92d80712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_03.wav using Guid(179c3436465598b498dea48c92d80712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467bf84c7a58edaf73a68ef320bd8a29') in 0.011425 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Wood_03.wav
+  artifactKey: Guid(913dab96961bb724f9dd59f8e211d056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Wood_03.wav using Guid(913dab96961bb724f9dd59f8e211d056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b620d81a77ff4e204b0dffa9c0c4c6f') in 0.021242 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Wood_02.wav
+  artifactKey: Guid(40cd30757a32c7f469d8f5c433e804e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Wood_02.wav using Guid(40cd30757a32c7f469d8f5c433e804e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a09e601db91ffb423416f26076f8d8') in 0.017955 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Water_04.wav
+  artifactKey: Guid(50cff1c1d32629f4392f3364a9c0b66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Water_04.wav using Guid(50cff1c1d32629f4392f3364a9c0b66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c88c9af033271698544a518b400bd7') in 0.015815 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Water_07.wav
+  artifactKey: Guid(a75d49ff4b9bea4459093fe4735b5790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Water_07.wav using Guid(a75d49ff4b9bea4459093fe4735b5790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860607a16dc6a2f6260301854c7479d6') in 0.013692 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Water_03.wav
+  artifactKey: Guid(95f9c9751dd337340b7b6b7eef8f8a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Water_03.wav using Guid(95f9c9751dd337340b7b6b7eef8f8a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99bd5379860d56af9ed72de0df7fd18f') in 0.012928 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Effekseer/Example/Effects/Sound/Laser.ogg
+  artifactKey: Guid(c686b01b94fa30c499fe459f72030512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effekseer/Example/Effects/Sound/Laser.ogg using Guid(c686b01b94fa30c499fe459f72030512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8538d8bd7dd3305a155a353faf16dfa2') in 0.012499 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Standard Assets/Characters/FirstPersonCharacter/Audio/Land.wav
+  artifactKey: Guid(3b09d59f4499d45428baa7a21e954296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Characters/FirstPersonCharacter/Audio/Land.wav using Guid(3b09d59f4499d45428baa7a21e954296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11eb423d29ebec115746b50181831e57') in 0.010638 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Grass_02.wav
+  artifactKey: Guid(07d6c79ac5a1e3a4094f31a17377867e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Grass_02.wav using Guid(07d6c79ac5a1e3a4094f31a17377867e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2f5ed81fd8a6cccdae9dc7075d706e') in 0.018016 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_01.wav
+  artifactKey: Guid(bfdae5c4ec215164e9e3bc1a41c43c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_01.wav using Guid(bfdae5c4ec215164e9e3bc1a41c43c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289ab7156f45fee476695b066e43eeaa') in 0.018351 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_04.wav
+  artifactKey: Guid(db0dce178e8b8744c83950758acad34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_04.wav using Guid(db0dce178e8b8744c83950758acad34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f4bbdcd13c61dd9afa39e89403bec7') in 0.011464 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_02.wav
+  artifactKey: Guid(8d3d0c77dce16bc41b0086c112651191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Dirt_02.wav using Guid(8d3d0c77dce16bc41b0086c112651191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a73792eb39aa2fdca40b0077e774259') in 0.017799 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Water_06.wav
+  artifactKey: Guid(62142b1656d402643af1363f7b381b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Water_06.wav using Guid(62142b1656d402643af1363f7b381b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bb704230ce2da6004ed978fdae2d6c') in 0.018311 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Standard Assets/Characters/FirstPersonCharacter/Audio/Jump.wav
+  artifactKey: Guid(5897aeed9b676024fbb8c694b421a861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Characters/FirstPersonCharacter/Audio/Jump.wav using Guid(5897aeed9b676024fbb8c694b421a861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d965eb2407676b1c0303943e343ac5') in 0.010754 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Wood_01.wav
+  artifactKey: Guid(fb292fd7d47d74542aec4778f93afd9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Step_Wood_01.wav using Guid(fb292fd7d47d74542aec4778f93afd9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8fb51fed7e4f95ef6992d4c5672b92') in 0.017353 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Char_Land_Dirt.wav
+  artifactKey: Guid(f7c55af852ea4ec42beb950a6d63dcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Char_Land_Dirt.wav using Guid(f7c55af852ea4ec42beb950a6d63dcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e224cbef6465ae69ec802bec5ec4a6b') in 0.014177 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Bird_06.wav
+  artifactKey: Guid(c0db749673aaa0346abace323aa89da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Bird_06.wav using Guid(c0db749673aaa0346abace323aa89da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f567873e847076fd97d2952ad8463e0c') in 0.011868 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/IL3DN/Audio/wav音声/IL3DN_Water_05.wav
+  artifactKey: Guid(887d632bea0ec5a4294e99d6342e8568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IL3DN/Audio/wav音声/IL3DN_Water_05.wav using Guid(887d632bea0ec5a4294e99d6342e8568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188669b9f5f5e10322f5dfc3c20aeb34') in 0.012551 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.640898 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_bell.wav
+  artifactKey: Guid(46fcbc6f93e08024dba40fbe88155614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_aura_bell.wav using Guid(46fcbc6f93e08024dba40fbe88155614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341405e518f9e15fe5338f582aec92ad') in 0.012226 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.024582 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_wind.wav
+  artifactKey: Guid(63b4155ef41540f4685302a83db73e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_gale_wind.wav using Guid(63b4155ef41540f4685302a83db73e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce13ec9bbeb0be3fb11db02701508853') in 0.016661 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_pitch.wav
+  artifactKey: Guid(45129facdf9a45e4192b169f8958889e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/武器/Sound/Fantasy SFX for Particle Distort Texture effect library/msfx_chrono_latency_pitch.wav using Guid(45129facdf9a45e4192b169f8958889e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d97b4ffff642310b742619f4e03eb3') in 0.015775 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
