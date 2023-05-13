@@ -57,8 +57,10 @@ public class Move : MonoBehaviour
 	[SerializeField]
 	private Admin_Effect HralEffect;
 	private float cureTime;
+	public bool reflectDamage;
+	public float reflectRate;
 	[SerializeField]
-	private float main;
+	private Admin_Effect reflectArea;
 
 
 
@@ -147,6 +149,14 @@ public class Move : MonoBehaviour
 			if(b < 0)b = 0;
 			charahp -= b;//現在HPを計算
             slider.value = charahp/ Admin.HPStatus;	// Sliderに現在HPを適用
+
+			if(reflectDamage == true)
+			{
+				var g = Instantiate(reflectArea.gameObject , transform.position ,transform.rotation ,transform);
+				//反射攻撃のダメージをここで設定する
+				var reflect = damage*reflectRate;
+				Destroy(g , 1f);
+			}
 		}
 		else if(state != MyState.JUAttack)//回避中にダメージ判定を受けたら実行
 		{

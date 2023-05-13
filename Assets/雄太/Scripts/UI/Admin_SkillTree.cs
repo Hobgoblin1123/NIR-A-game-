@@ -115,7 +115,13 @@ public class Admin_SkillTree : MonoBehaviour
                         move.CureRate += g.addStatus;
                         Debug.Log("自動回復をセット");
                     }
+                    else if(g.skillType == SkillType.SPSkill2)
+                    {
+                        move.reflectDamage = true;
+                        move.reflectRate += g.addStatus;
+                    }
                     admin.RaiseHPBySkillTree();
+                    
                 }
                 if(n == skillsTreeUnites[i].skills.Length-1)
                 {
@@ -171,7 +177,15 @@ public class Admin_SkillTree : MonoBehaviour
                 }
                 else if(g.skillType == SkillType.SPSkill1)
                 {
-                    Debug.Log("なんか特別なやつもらえるらしいけどなにも実装してないでwwwww");
+                    move.AutoCure = true;
+                    move.CureRate += g.addStatus;
+                    Debug.Log("自動回復をセット");
+                }
+                else if(g.skillType == SkillType.SPSkill2)
+                {
+                    move.reflectDamage = true;
+                    move.reflectRate += g.addStatus;
+                    Debug.Log("反射攻撃をセット");
                 }
 
 
@@ -293,8 +307,12 @@ public class Admin_SkillTree : MonoBehaviour
         }
         else if(skillType == SkillType.SPSkill1)
         {
-            explanationPanel.text = "有効にすると特殊スキルを取得";
+            explanationPanel.text = "有効にすると自動回復能力を取得。1秒で+" + raiseStatus+"%回復";
             explanationPoint.text = "スキルポイントを"+point+"使用する";
+        }
+        else if(skillType == SkillType.SPSkill2)
+        {
+            explanationPanel.text = "有効にすると受けたダメージの+"+raiseStatus+"%を敵に与える。";
         }
     }
 }
