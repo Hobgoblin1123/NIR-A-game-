@@ -37,6 +37,8 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     private ExplainMantTimes SPeffect1;
     [SerializeField]
     private Admin_Chest admin_Chest;
+    [SerializeField]
+    private Admin_Event admin_Event;
 
 
 
@@ -62,6 +64,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     void Awake()
     {
         admin_EnemyStatus = GetComponent<Admin_EnemyStatus>();
+        aiLevel = admin_Event.level;
         if(aiLevel == 1)
         {
             longAttackInterval = 20;
