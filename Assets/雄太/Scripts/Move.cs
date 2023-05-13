@@ -370,6 +370,7 @@ public class Move : MonoBehaviour
 		if (tempState == MyState.Normal)
 		{
 			state = MyState.Normal;
+			animator.SetFloat("2Speed" , 0);
 		}
 		// Attack状態にする
 		else if (tempState == MyState.Attack)

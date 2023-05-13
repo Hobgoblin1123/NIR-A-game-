@@ -20,6 +20,8 @@ public class Admin_Event : MonoBehaviour
     public int subw;
     private int naww;
     public bool withFight;
+    [SerializeField]
+    private GameObject HIROIN;
     
     // Start is called before the first frame update
     void Start()
@@ -44,11 +46,15 @@ public class Admin_Event : MonoBehaviour
         else if(n == 1)
         {
             director.Play(timeline[1]);
+            
+            move.SetState(Move.MyState.Normal);
             move.enabled = false;
         }
         if(n == 2)
         {
             director.Pause();
+            
+            move.SetState(Move.MyState.Normal);
             move.enabled = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -64,6 +70,16 @@ public class Admin_Event : MonoBehaviour
         if(n == 4)
         {
             move.enabled = true;
+        }
+        if(n == 5)
+        {
+            move.enabled = true;
+            move.transform.position = new Vector3(-25,0.4f,41);
+            move.transform.eulerAngles = new Vector3(0,180,0);
+            if(withFight == true)
+            {
+                HIROIN.SetActive(true);
+            }
         }
     }
 
@@ -86,11 +102,11 @@ public class Admin_Event : MonoBehaviour
     {
         if(n == 1)
         {
-            mainw = n;
+            mainw = naww;
         }
         else if(n == 2)
         {
-            subw = n;
+            subw = naww;
         }
 
         if(mainw != 0 && subw !=0)
