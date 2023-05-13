@@ -17,6 +17,7 @@ public class SearchEnemy : MonoBehaviour {
 
     void Update() 
     {
+        // if(admin.isTestStage == true)return;
         if(admin.LockOn == false && admin.LockEnemy == null) return;//主人公が敵をロックしているとき、そいつとの距離が一定以上過ぎるとロック状態を解除する
 
         float distance = Vector3.SqrMagnitude(admin.LockEnemy.transform.position - transform.position);//距離計算

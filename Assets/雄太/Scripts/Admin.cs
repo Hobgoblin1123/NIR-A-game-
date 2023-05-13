@@ -68,7 +68,7 @@ public class Admin : MonoBehaviour
     [SerializeField]
     private int SelectEdNumber;              //会話ボタン配列の何番目を選んでいるか定義
     [SerializeField]
-    private bool isTestStage = false;
+    public bool isTestStage = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -210,8 +210,14 @@ public class Admin : MonoBehaviour
         LockEnemy = searchEnemy.Search(); //一番近くにいる
         if(LockEnemy == null) return;     //からの場合は実行しない
         
+        if(isTestStage == true)
+        {
+            LockOn = true;
+            return;
+        }
 
         float dis = Vector3.SqrMagnitude(LockEnemy.transform.position-this.transform.position);//近いオブジェクトとの距離を計算
+        Debug.Log("一番近くにいる敵は" + LockEnemy);
         var adminEnemy = LockEnemy.GetComponent<Admin_EnemyStatus>();//敵のadmin_enemystatusコンポーネントを取得
         // ロック可能距離内でかつ、トークフラッグがfalseなら
         if(dis <= LockDistance*LockDistance && adminEnemy.TalkFalg() == false && adminEnemy.HP > 0)
@@ -228,7 +234,7 @@ public class Admin : MonoBehaviour
     // すでにロック状態下で再度ロック判定を行う関数　　動作不安定
     public void SecondLockOn()
     {
-        
+        if(isTestStage == true)return;
         // Ray ray = new Ray(transform.position , characterScript.velocity);
         RaycastHit hit;//レイを飛ばす
         //レイに当たったオブジェクトが敵なら再度ロックオンを行う
