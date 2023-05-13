@@ -52,6 +52,13 @@ public class Move : MonoBehaviour
 	private bool tutorial;
 	[SerializeField]
 	private bool SubScene;
+	public bool AutoCure;
+	public float CureRate;
+	[SerializeField]
+	private Admin_Effect HralEffect;
+	private float cureTime;
+	[SerializeField]
+	private float main;
 
 
 
@@ -158,7 +165,6 @@ public class Move : MonoBehaviour
         {
 			SetState(MyState.Die);
         }
-		Debug.Log(charahp);
 	}
 	
 
@@ -197,6 +203,35 @@ public class Move : MonoBehaviour
 		if(state == MyState.Die)return;//死んでるなら実行しない
 
 		if(Input.GetKeyDown(KeyCode.H))SetState(MyState.JUAttack);
+
+
+		if(AutoCure == true && charahp < Admin.HPStatus)
+		{
+			cureTime += Time.deltaTime;
+			if(charahp < Admin.HPStatus &cureTime >1 )
+
+			{
+				cureTime = 0;
+				charahp += charahp*CureRate;
+				slider.value = charahp/ Admin.HPStatus;	// Sliderに現在HPを適用
+
+				if(HralEffect.gameObject.activeSelf == false)
+				{
+					HralEffect.gameObject.SetActive(true);
+					HralEffect.EffectStart(0);
+				}
+			}
+			
+		}
+		else if(AutoCure == false || charahp >= Admin.HPStatus)
+		{
+			if(HralEffect.gameObject.activeSelf == true)
+			{
+				HralEffect.gameObject.SetActive(false);
+				HralEffect.EffectEnd();
+			}
+			
+		}
 
 		//スタミナが最大値より低いなら、1秒に1づつ回復させる
 		if(physicalStrength < MAX_PHYSICAL_STRENGH)

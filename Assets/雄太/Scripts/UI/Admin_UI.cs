@@ -26,7 +26,7 @@ public class Admin_UI : MonoBehaviour
         private Canvas AlarmParent;//アラームを表示する親オブジェクトをアタッチ
 
         [SerializeField]
-        private Move move;//アタッチ
+        public Move move;//アタッチ
         [SerializeField]
         public Admin admin;//アタッチ
         [SerializeField]

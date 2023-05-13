@@ -29,6 +29,7 @@ public class Admin_SkillTree : MonoBehaviour
     private Admin_UI admin_UI;
     private Admin admin;
     private Admin_Date admin_Date;
+    private Move move;
 
     public enum SkillType
     {
@@ -75,6 +76,7 @@ public class Admin_SkillTree : MonoBehaviour
         AllRaiseDefence = 0;
         AllRaiseHP = 0;
         admin_UI = GetComponentInParent<Admin_UI>();
+        move = admin_UI.move;
         admin = admin_UI.admin;
         admin_Date = admin_UI.admin_Date;
 
@@ -109,7 +111,9 @@ public class Admin_SkillTree : MonoBehaviour
                     }
                     else if(g.skillType == SkillType.SPSkill1)
                     {
-                        Debug.Log("なんか特別なやつもらえるらしいけどなにも実装してないでwwwww");
+                        move.AutoCure = true;
+                        move.CureRate += g.addStatus;
+                        Debug.Log("自動回復をセット");
                     }
                     admin.RaiseHPBySkillTree();
                 }
