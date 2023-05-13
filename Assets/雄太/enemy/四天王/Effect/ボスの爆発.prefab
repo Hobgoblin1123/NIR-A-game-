@@ -19173,8 +19173,6 @@ GameObject:
   - component: {fileID: 400008}
   - component: {fileID: 1619273901464356519}
   - component: {fileID: 5417550818962990160}
-  - component: {fileID: 6129913614418135405}
-  - component: {fileID: 5478024722277875854}
   m_Layer: 0
   m_Name: "\u30DC\u30B9\u306E\u7206\u767A"
   m_TagString: Untagged
@@ -23996,48 +23994,3 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &6129913614418135405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea50821423895744c96e37d7ef108de8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDamageEffect: 1
-  canMoveCollider: 0
-  effect: {fileID: 1619273901464356519}
-  DamageMagnification: 1.2
-  ContinueDamage: 0
-  DamageInterval: 0
-  firstTransForm: []
-  time: 0
-  colliderObj: {fileID: 0}
-  colliderMoveTransform: {x: 0, y: 0, z: 0}
-  colliderMoveTime: 0
-  ColliderONTime: 0
---- !u!135 &5478024722277875854
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100008}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 6.02
-  m_Center: {x: 0, y: 0, z: 0}

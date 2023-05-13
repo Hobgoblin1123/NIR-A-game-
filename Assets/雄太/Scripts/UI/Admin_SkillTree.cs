@@ -118,7 +118,7 @@ public class Admin_SkillTree : MonoBehaviour
                     else if(g.skillType == SkillType.SPSkill2)
                     {
                         move.reflectDamage = true;
-                        move.reflectRate += g.addStatus;
+                        Move.reflectRate += g.addStatus;
                     }
                     admin.RaiseHPBySkillTree();
                     
@@ -184,7 +184,7 @@ public class Admin_SkillTree : MonoBehaviour
                 else if(g.skillType == SkillType.SPSkill2)
                 {
                     move.reflectDamage = true;
-                    move.reflectRate += g.addStatus;
+                    Move.reflectRate += g.addStatus;
                     Debug.Log("反射攻撃をセット");
                 }
 
@@ -312,7 +312,7 @@ public class Admin_SkillTree : MonoBehaviour
         }
         else if(skillType == SkillType.SPSkill2)
         {
-            explanationPanel.text = "有効にすると受けたダメージの+"+raiseStatus+"%を敵に与える。";
+            explanationPanel.text = "有効にすると受けた攻撃力の+"+raiseStatus+"%を敵に与える。";
         }
     }
 }

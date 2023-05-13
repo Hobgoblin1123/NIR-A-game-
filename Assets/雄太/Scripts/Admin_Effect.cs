@@ -102,6 +102,7 @@ public class Admin_Effect : MonoBehaviour
         }
         else
         {
+            Debug.Log(gameObject);
             effect.Stop();
             
         }

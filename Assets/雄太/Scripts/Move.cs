@@ -58,9 +58,9 @@ public class Move : MonoBehaviour
 	private Admin_Effect HralEffect;
 	private float cureTime;
 	public bool reflectDamage;
-	public float reflectRate;
+	public static float reflectRate;
 	[SerializeField]
-	private Admin_Effect reflectArea;
+	private ReclectAttack reflectArea;
 
 
 
@@ -82,7 +82,7 @@ public class Move : MonoBehaviour
 		}
 		if(SubScene == true)
 		{
-			posi = new Vector3(-1.88f, 0 ,1.6f);
+			posi = ResetPosition;
 		}
 		//ただし、そのY座標がが-1より小さい場合は一以上とみなし警告文を表示し、位置をリセットする
 		if(posi.y < -1)
@@ -153,8 +153,8 @@ public class Move : MonoBehaviour
 			if(reflectDamage == true)
 			{
 				var g = Instantiate(reflectArea.gameObject , transform.position ,transform.rotation ,transform);
-				//反射攻撃のダメージをここで設定する
-				var reflect = damage*reflectRate;
+
+				
 				Destroy(g , 1f);
 			}
 		}

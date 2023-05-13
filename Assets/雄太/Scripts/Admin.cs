@@ -387,8 +387,8 @@ public class Admin : MonoBehaviour
     public void RaiseHPBySkillTree()
     {
         var n = Admin_SkillTree.AllRaiseHP/100*HPStatus;
-        HPStatus += n;
-        characterScript.charahp += n;
+        HPStatus = 80 + CharaLevel*20 + n;
+        characterScript.charahp = HPStatus;
         characterScript.slider.value = characterScript.charahp/HPStatus;
     }
 
