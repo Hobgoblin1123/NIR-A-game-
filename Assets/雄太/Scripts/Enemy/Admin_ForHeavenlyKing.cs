@@ -365,6 +365,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     public void DestroyEvent()
     {
         Instantiate(admin_Chest.gameObject , transform.position ,transform.rotation);
+        admin_Event.DieEnemy();
         Destroy(this.gameObject);
     }
 }

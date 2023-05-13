@@ -71,6 +71,7 @@ public class Admin_SkillTree : MonoBehaviour
     // Start is called before the first frame update
     public void StartByAdmin_UI()
     {
+       
         AllRaiseAttack = 0;
         AllRaiseDamage = 0;
         AllRaiseDefence = 0;
@@ -79,7 +80,15 @@ public class Admin_SkillTree : MonoBehaviour
         move = admin_UI.move;
         admin = admin_UI.admin;
         admin_Date = admin_UI.admin_Date;
-
+        if(admin.isTestStage == true)
+        {
+            skillPointText.text = 15.ToString();
+            return;
+        } 
+        else 
+        {
+            skillPointText.text = PlayerPrefs.GetInt("skillPoint").ToString();
+        }
         for (int i = 0; i < skillsTreeUnites.Length; i++)
         {
             var n = PlayerPrefs.GetInt(i.ToString());
@@ -130,7 +139,7 @@ public class Admin_SkillTree : MonoBehaviour
             }
         }
 
-        skillPointText.text = PlayerPrefs.GetInt("skillPoint").ToString();
+        
     }
 
     // Update is called once per frame

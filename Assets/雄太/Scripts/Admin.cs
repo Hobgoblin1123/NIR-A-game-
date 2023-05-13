@@ -69,6 +69,8 @@ public class Admin : MonoBehaviour
     private int SelectEdNumber;              //会話ボタン配列の何番目を選んでいるか定義
     [SerializeField]
     public bool isTestStage = false;
+    [SerializeField]
+    private Admin_Event admin_Event;
 
     // Start is called before the first frame update
     void Awake()
@@ -81,6 +83,9 @@ public class Admin : MonoBehaviour
         if(isTestStage == true)
         {
             CharaLevel = 50;
+            MainWeapon = admin_Event.mainw;
+            SubWeapon = admin_Event.subw;
+
         }
         HPStatus = 80 + CharaLevel*20;
         AttackStatus = 8 + CharaLevel*2;
@@ -112,6 +117,10 @@ public class Admin : MonoBehaviour
         LockOn = false;
         ChangeAutoRun(PlayerPrefs.GetInt("AutoRun"));//自動ダッシュをするかしないか保存されたデータを読み込み
         skillPoints = PlayerPrefs.GetInt("skillPoint");
+        if(isTestStage == true)
+        {
+            skillPoints = 15;
+        }
     }
 
     void Update()
