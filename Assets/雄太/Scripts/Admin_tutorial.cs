@@ -72,6 +72,16 @@ public class Admin_tutorial : MonoBehaviour
         {
 
         }
+
+        if(Input.GetKeyDown(KeyCode.LeftAlt))//左のシフトキーが押されている間はカーソルを見せる
+        {
+            ShowCursor();
+        }
+
+        if(Input.GetKeyUp(KeyCode.LeftAlt))//左のシフトキーから指が離れたらカーソルを隠す
+        {
+            HideCursor();
+        }
     }
     public void PlayTimeLine(int n)
     {
@@ -129,7 +139,7 @@ public class Admin_tutorial : MonoBehaviour
         }
     }
 
-    private void NextScene()
+    public void NextScene()
     {
         StartCoroutine(Load());
     }
@@ -147,5 +157,16 @@ public class Admin_tutorial : MonoBehaviour
 
         // ロード画面を非表示にする
         loadingUI.SetActive(false);
+    }
+
+    public void ShowCursor()//カーソルを見せたいときに呼ぶ関数
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+    public void HideCursor()//カーソルを隠したいときに呼ぶ関数
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
