@@ -77,15 +77,15 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             longAttackInterval = 8;
             takeDistanceDamageCount = 60;
             admin_EnemyStatus.EnemyLevel = 60;
-            admin_EnemyStatus.RiseAttackStatus = 10;
-            admin_EnemyStatus.RiseHPStatus = 2000;
+            admin_EnemyStatus.RiseAttackStatus = 70;
+            admin_EnemyStatus.RiseHPStatus = 3000;
         }
         else if( aiLevel == 3)
         {
             longAttackInterval = 2;
             takeDistanceDamageCount = 20;
             admin_EnemyStatus.EnemyLevel = 70;
-            admin_EnemyStatus.RiseAttackStatus = -100;
+            admin_EnemyStatus.RiseAttackStatus = -60;
             admin_EnemyStatus.RiseHPStatus = 4000;
         }
     }
