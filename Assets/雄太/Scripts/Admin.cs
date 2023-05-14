@@ -75,6 +75,7 @@ public class Admin : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        PlayerPrefs.DeleteAll();
         //保存されているパラメーター情報を読み込み、適用
         CharaLevel = PlayerPrefs.GetInt("LEVEL");
         MainEXP = PlayerPrefs.GetFloat("EXP");
@@ -83,10 +84,11 @@ public class Admin : MonoBehaviour
         if(isTestStage == true)
         {
             CharaLevel = 50;
-            MainWeapon = admin_Event.mainw;
-            SubWeapon = admin_Event.subw;
+            MainWeapon = 2;
+            SubWeapon = 3;
 
         }
+        
         HPStatus = 80 + CharaLevel*20;
         AttackStatus = 8 + CharaLevel*2;
         LevelUPEXP = 10 * CharaLevel * CharaLevel + 10 * CharaLevel;
@@ -114,12 +116,13 @@ public class Admin : MonoBehaviour
         audioSource.clip = BGM[PlayerPrefs.GetInt("BGM")];//保存されていたＢＧＭをaudiosourceに設定
         audioSource.Play();//BGmを再生
 
+
         LockOn = false;
         ChangeAutoRun(PlayerPrefs.GetInt("AutoRun"));//自動ダッシュをするかしないか保存されたデータを読み込み
         skillPoints = PlayerPrefs.GetInt("skillPoint");
         if(isTestStage == true)
         {
-            skillPoints = 15;
+            skillPoints = 100;
         }
     }
 

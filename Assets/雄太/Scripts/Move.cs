@@ -145,10 +145,12 @@ public class Move : MonoBehaviour
 		if(state != MyState.Avoidance && state != MyState.JUAttack)//回避、特殊攻撃でなければダメージを受ける
 		{
 			SetState(MyState.Damage);//ダメージ状態に変更
-			var b = damage - Admin.LastDefenceStatus();
-			if(b < 0)b = 0;
-			charahp -= b;//現在HPを計算
+			// var b = damage - Admin.LastDefenceStatus();
+			// if(b < 0)b = 0;
+			// charahp -= b;//現在HPを計算
+			charahp -= damage;
             slider.value = charahp/ Admin.HPStatus;	// Sliderに現在HPを適用
+			Debug.Log("ダメージを" + damage + "受けた");
 
 			if(reflectDamage == true)
 			{
@@ -370,7 +372,6 @@ public class Move : MonoBehaviour
 		if (tempState == MyState.Normal)
 		{
 			state = MyState.Normal;
-			animator.SetFloat("2Speed" , 0);
 		}
 		// Attack状態にする
 		else if (tempState == MyState.Attack)

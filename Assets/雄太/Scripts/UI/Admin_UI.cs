@@ -94,7 +94,7 @@ public class Admin_UI : MonoBehaviour
         }        
         if(PlayerPrefs.GetInt("Shadows") == 0)//影情報をロード
         {
-            toggledates[1].ToggleOn();
+            // toggledates[1].ToggleOn();
             shadows = true;
             ChangeShadowBool();
         }
@@ -138,7 +138,7 @@ public class Admin_UI : MonoBehaviour
             ControlCanvas.enabled = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed)*CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE;//感度を設定
+            roteCamera._angularPerPixel = new Vector2(8 , 4)*CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE;//感度を設定
             isWorkeingMobilePlatform = true;
 		}
 		else //if (Application.platform == RuntimePlatform.WindowsPlayer) 
@@ -148,8 +148,8 @@ public class Admin_UI : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             Debug.Log(AIM_X_speed);
-            cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = AIM_X_speed;//感度を設定
-            cinemachinePOV.m_VerticalAxis.m_MaxSpeed = AIM_Y_speed;
+            cinemachinePOV.m_HorizontalAxis.m_MaxSpeed = 8;//感度を設定
+            cinemachinePOV.m_VerticalAxis.m_MaxSpeed = 8;
             Debug.Log("感度更新できてるはず");
             isWorkeingMobilePlatform = false;
             Destroy(ControlCanvas.gameObject.GetComponent<CanvasScaler>());

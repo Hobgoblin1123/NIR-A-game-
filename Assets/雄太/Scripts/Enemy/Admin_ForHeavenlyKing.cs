@@ -64,7 +64,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
     void Awake()
     {
         admin_EnemyStatus = GetComponent<Admin_EnemyStatus>();
-        aiLevel = admin_Event.level;
+        // aiLevel = admin_Event.level;
         if(aiLevel == 1)
         {
             longAttackInterval = 20;
@@ -85,7 +85,7 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             longAttackInterval = 2;
             takeDistanceDamageCount = 20;
             admin_EnemyStatus.EnemyLevel = 70;
-            admin_EnemyStatus.RiseAttackStatus = 40;
+            admin_EnemyStatus.RiseAttackStatus = -100;
             admin_EnemyStatus.RiseHPStatus = 4000;
         }
     }
