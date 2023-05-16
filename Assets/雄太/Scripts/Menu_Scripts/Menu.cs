@@ -92,14 +92,14 @@ public class Menu : MonoBehaviour
         }
     // transPanel();
 
-       if(Input.GetKeyDown(KeyCode.LeftAlt))
-        {
-            ShowCursor();
-        }
-        if(Input.GetKeyUp(KeyCode.LeftAlt) && inventoryUI.activeSelf == false)
-        {
-            HideCursor();
-        }
+    //    if(Input.GetKeyDown(KeyCode.LeftAlt))
+    //     {
+    //         ShowCursor();
+    //     }
+    //     if(Input.GetKeyUp(KeyCode.LeftAlt) && inventoryUI.activeSelf == false)
+    //     {
+    //         HideCursor();
+    //     }
     }
 
     public void GetKeyEscape(int n)
@@ -130,16 +130,16 @@ public class Menu : MonoBehaviour
     
 
     }
-    public void ShowCursor()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
-    public void HideCursor()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
+    // public void ShowCursor()
+    // {
+    //     Cursor.lockState = CursorLockMode.None;
+    //     Cursor.visible = true;
+    // }
+    // public void HideCursor()
+    // {
+    //     Cursor.lockState = CursorLockMode.Locked;
+    //     Cursor.visible = false;
+    // }
 
 
 }

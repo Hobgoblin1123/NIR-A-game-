@@ -31,7 +31,7 @@ public class roteCamera : MonoBehaviour
         if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
             MainCamera.transform.position = new Vector3(0,-1.78f , -5.63f);
-            MainCamera.transform.rotation = Quaternion.Euler(-34 , 0 , 0);
+            MainCamera.transform.rotation = Quaternion.Euler(34 , 0 , 0);
             cinemachineBrain.enabled = false;
         }
         else
@@ -49,14 +49,14 @@ public class roteCamera : MonoBehaviour
     #region Move
 
     /// <summary> ドラッグ操作開始（移動用） </summary>
-    private void OnBeginDragMove(PointerEventData eventData)
+    public void OnBeginDragMove(PointerEventData eventData)
     {
         // タッチ開始位置を保持
         _movePointerPosBegin = eventData.position;
     }
 
     /// <summary> ドラッグ操作中（移動用） </summary>
-    private void OnDragMove(PointerEventData eventData)
+    public void OnDragMove(PointerEventData eventData)
     {
         // タッチ開始位置からのスワイプ量を移動ベクトルにする
         var vector = eventData.position - _movePointerPosBegin;
@@ -64,7 +64,7 @@ public class roteCamera : MonoBehaviour
     }
 
     /// <summary> ドラッグ操作終了（移動用） </summary>
-    private void OnEndDragMove(PointerEventData eventData)
+    public void OnEndDragMove(PointerEventData eventData)
     {
         // 移動ベクトルを解消
         _moveVector = Vector3.zero;

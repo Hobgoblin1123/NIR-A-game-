@@ -23,18 +23,18 @@ public class InventoryManager : MonoBehaviour
 
         inventory.SetActive(!inventory.activeSelf);
 
-        if (inventory.activeSelf)
-        {
-            Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
+        // if (inventory.activeSelf)
+        // {
+        //     Time.timeScale = 0;
+        //     Cursor.lockState = CursorLockMode.None;
+        //     Cursor.visible = true;
+        // }
 
-        else{
-            Time.timeScale = 1;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+        // else{
+        //     Time.timeScale = 1;
+        //     Cursor.lockState = CursorLockMode.Locked;
+        //     Cursor.visible = false;
 
-        }
+        // }
     }
 }
