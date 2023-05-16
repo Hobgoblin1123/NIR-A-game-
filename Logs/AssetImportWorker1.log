@@ -15,7 +15,7 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59861
+59064
 Successfully changed project path to: C:/3Dgame/NIR-A-game-/NIR-A-game-
 C:/3Dgame/NIR-A-game-/NIR-A-game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19156] Host "[IP] 192.168.11.3 [Port] 0 [Flags] 2 [Guid] 1242646684 [EditorId] 1242646684 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14840] Host "[IP] 192.168.2.73 [Port] 0 [Flags] 2 [Guid] 1846052911 [EditorId] 1846052911 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19156] Host "[IP] 192.168.11.3 [Port] 0 [Flags] 2 [Guid] 1242646684 [EditorId] 1242646684 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14840] Host "[IP] 192.168.2.73 [Port] 0 [Flags] 2 [Guid] 1846052911 [EditorId] 1846052911 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 542.28 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 26.65 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56872
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010530 seconds.
-- Loaded All Assemblies, in  1.056 seconds
+Registered in 0.038052 seconds.
+- Loaded All Assemblies, in  1.802 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 568 ms
+Android Extension - Scanning For ADB Devices 1378 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.048 seconds
+- Finished resetting the current domain, in  2.665 seconds
 Domain Reload Profiling:
-	ReloadAssembly (642ms)
-		BeginReloadAssembly (349ms)
+	ReloadAssembly (1345ms)
+		BeginReloadAssembly (866ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (3ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (345ms)
+			LoadAssemblies (857ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (401ms)
-				TypeCache.Initialize (396ms)
-					TypeCache.ScanAssembly (392ms)
+			SetupTypeCache (440ms)
+				TypeCache.Initialize (437ms)
+					TypeCache.ScanAssembly (432ms)
 				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (963ms)
+			SetupLoadedEditorAssemblies (2436ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (703ms)
-				SetLoadedEditorAssemblies (5ms)
+				InitializePlatformSupportModulesInManaged (1872ms)
+				SetLoadedEditorAssemblies (15ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (171ms)
-				ProcessInitializeOnLoadMethodAttributes (80ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (222ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in 10.012 seconds
-Refreshing native plugins compatible for Editor in 11.24 ms, found 7 plugins.
+- Loaded All Assemblies, in  3.029 seconds
+Refreshing native plugins compatible for Editor in 69.06 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -127,46 +127,46 @@ Native extension for WebGL target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.023 seconds
+- Finished resetting the current domain, in  3.735 seconds
 Domain Reload Profiling:
-	ReloadAssembly (425ms)
-		BeginReloadAssembly (262ms)
+	ReloadAssembly (659ms)
+		BeginReloadAssembly (407ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (38ms)
-		LoadAllAssembliesAndSetupDomain (9579ms)
-			LoadAssemblies (8311ms)
+			CreateAndSetChildDomain (56ms)
+		LoadAllAssembliesAndSetupDomain (2366ms)
+			LoadAssemblies (1152ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1401ms)
-				TypeCache.Initialize (1136ms)
-					TypeCache.ScanAssembly (1119ms)
-				ResolveRequiredComponents (204ms)
+			SetupTypeCache (1433ms)
+				TypeCache.Initialize (1049ms)
+					TypeCache.ScanAssembly (1028ms)
+				ResolveRequiredComponents (195ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (2308ms)
-				LogAssemblyErrors (1ms)
-				InitializePlatformSupportModulesInManaged (98ms)
-				SetLoadedEditorAssemblies (6ms)
+			SetupLoadedEditorAssemblies (2547ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (64ms)
+				SetLoadedEditorAssemblies (12ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (173ms)
-				ProcessInitializeOnLoadAttributes (1887ms)
-				ProcessInitializeOnLoadMethodAttributes (134ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (219ms)
+				ProcessInitializeOnLoadAttributes (2011ms)
+				ProcessInitializeOnLoadMethodAttributes (222ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
+			AwakeInstancesAfterBackupRestoration (17ms)
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
-Refreshing native plugins compatible for Editor in 13.41 ms, found 7 plugins.
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
+Refreshing native plugins compatible for Editor in 19.65 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7057 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 128 unused Assets / (2.2 MB). Loaded Objects now: 7520.
-Memory consumption went from 302.0 MB to 299.8 MB.
-Total: 19.173100 ms (FindLiveObjects: 1.859900 ms CreateObjectMapping: 0.986600 ms MarkObjects: 12.449900 ms  DeleteObjects: 3.873500 ms)
+Unloading 7056 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (2.3 MB). Loaded Objects now: 7517.
+Memory consumption went from 298.5 MB to 296.2 MB.
+Total: 15.639300 ms (FindLiveObjects: 1.190900 ms CreateObjectMapping: 0.602400 ms MarkObjects: 6.800700 ms  DeleteObjects: 7.042000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,10 +182,10 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 16604.463811 seconds.
-  path: Assets/雄太/enemy/Shader/eff_tex_grow_001.png
-  artifactKey: Guid(79bccb80463f03f43b041708ad2a1005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/雄太/enemy/Shader/eff_tex_grow_001.png using Guid(79bccb80463f03f43b041708ad2a1005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9033de154fe95af2ae2a370e459a0a0f') in 0.209236 seconds 
+  Time since last request: 177385.742712 seconds.
+  path: Assets/雄太/newEffect/UnityTechnologies/ParticlePack/Readme.asset
+  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/newEffect/UnityTechnologies/ParticlePack/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48e6ee8a34b3861045fed756f5a923f') in 0.076395 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
@@ -193,8 +193,8 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  8.066 seconds
-Refreshing native plugins compatible for Editor in 8.02 ms, found 7 plugins.
+- Loaded All Assemblies, in  7.172 seconds
+Refreshing native plugins compatible for Editor in 30.60 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -202,112 +202,45 @@ Native extension for WebGL target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 17.443 seconds
+- Finished resetting the current domain, in  6.642 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3664ms)
-		BeginReloadAssembly (3547ms)
+	ReloadAssembly (3420ms)
+		BeginReloadAssembly (3261ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (146ms)
+			DisableScriptedObjects (86ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (4ms)
-			CreateAndSetChildDomain (2565ms)
-		LoadAllAssembliesAndSetupDomain (4399ms)
-			LoadAssemblies (1334ms)
+			ReleaseScriptingObjects (5ms)
+			CreateAndSetChildDomain (1874ms)
+		LoadAllAssembliesAndSetupDomain (3748ms)
+			LoadAssemblies (2452ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (3244ms)
-				TypeCache.Initialize (3195ms)
-					TypeCache.ScanAssembly (3163ms)
-				ResolveRequiredComponents (24ms)
+			SetupTypeCache (1516ms)
+				TypeCache.Initialize (1447ms)
+					TypeCache.ScanAssembly (1357ms)
+				ResolveRequiredComponents (41ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (1382ms)
+			SetupLoadedEditorAssemblies (1654ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (5ms)
+				InitializePlatformSupportModulesInManaged (59ms)
+				SetLoadedEditorAssemblies (9ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (1134ms)
-				ProcessInitializeOnLoadMethodAttributes (93ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 23.32 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6785 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7556.
-Memory consumption went from 245.0 MB to 242.8 MB.
-Total: 14.087300 ms (FindLiveObjects: 1.211800 ms CreateObjectMapping: 0.849200 ms MarkObjects: 10.654100 ms  DeleteObjects: 1.369900 ms)
-
-Prepare: number of updated asset objects reloaded= 1
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.858 seconds
-Refreshing native plugins compatible for Editor in 5.99 ms, found 7 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-New main project
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.112 seconds
-Domain Reload Profiling:
-	ReloadAssembly (682ms)
-		BeginReloadAssembly (575ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (26ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (283ms)
-		LoadAllAssembliesAndSetupDomain (2174ms)
-			LoadAssemblies (1838ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (503ms)
-				TypeCache.Initialize (459ms)
-					TypeCache.ScanAssembly (442ms)
-				ResolveRequiredComponents (28ms)
-		FinalizeReload (0ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (752ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
-				SetLoadedEditorAssemblies (5ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (511ms)
-				ProcessInitializeOnLoadMethodAttributes (103ms)
+				BeforeProcessingInitializeOnLoad (162ms)
+				ProcessInitializeOnLoadAttributes (1263ms)
+				ProcessInitializeOnLoadMethodAttributes (153ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (56ms)
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
+			AwakeInstancesAfterBackupRestoration (39ms)
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 9.07 ms, found 7 plugins.
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 31.83 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6769 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7573.
-Memory consumption went from 244.0 MB to 241.8 MB.
-Total: 15.571300 ms (FindLiveObjects: 1.465400 ms CreateObjectMapping: 0.348000 ms MarkObjects: 12.529500 ms  DeleteObjects: 1.226800 ms)
+Unloading 6785 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (2.3 MB). Loaded Objects now: 7551.
+Memory consumption went from 241.8 MB to 239.5 MB.
+Total: 31.164500 ms (FindLiveObjects: 1.860400 ms CreateObjectMapping: 0.971000 ms MarkObjects: 26.877100 ms  DeleteObjects: 1.452200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -324,105 +257,369 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1278.608962 seconds.
-  path: Assets/Effekseer/Prefab/後方回避.prefab
-  artifactKey: Guid(10875651005bf5440a9b3bc353a0f78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Effekseer/Prefab/後方回避.prefab using Guid(10875651005bf5440a9b3bc353a0f78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ec8463bb91d96217925e3b93e7a1de') in 0.527621 seconds 
+  Time since last request: 705.596926 seconds.
+  path: Assets/雄太/New Physic Material.physicMaterial
+  artifactKey: Guid(e4231a028e3f14a4aa67f930bb77e7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/New Physic Material.physicMaterial using Guid(e4231a028e3f14a4aa67f930bb77e7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1cc1841b760156dbbe6581c52e8e0fd') in 3.740792 seconds 
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 159.716632 seconds.
-  path: Assets/Effekseer/Example/Effects/雷1.asset
-  artifactKey: Guid(471dd4bacd7fa544a81826a655029571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Effekseer/Example/Effects/雷1.asset using Guid(471dd4bacd7fa544a81826a655029571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea91349536eb57d6537942f93f32c0a6') in 0.047163 seconds 
+  Time since last request: 0.001061 seconds.
+  path: Assets/雄太/UI/item_stone.png
+  artifactKey: Guid(f3d686305939c498bb408135b69b817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/item_stone.png using Guid(f3d686305939c498bb408135b69b817b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70025c3c3c51f7161313aebe2c71a08a') in 0.567863 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/雄太/チュートリアル 4.playable
+  artifactKey: Guid(6a120146fe336a640ae92c242edea1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/チュートリアル 4.playable using Guid(6a120146fe336a640ae92c242edea1a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ee8dcb0621dcc29657978fbca7f2b6') in 0.045350 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/雄太/UI/Prefab_UI
+  artifactKey: Guid(2f232fa37ec077e43b932fc2ff25c59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/Prefab_UI using Guid(2f232fa37ec077e43b932fc2ff25c59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6551310b5e9036b99efd57d7f5bb3f1') in 0.001293 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/雄太/UI/Corporate-Logo-Bold-ver3 SDF.asset
+  artifactKey: Guid(ffc569415b5cb68468e1e788cf174981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/Corporate-Logo-Bold-ver3 SDF.asset using Guid(ffc569415b5cb68468e1e788cf174981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6487d16d07071d96d4636f81feadf75') in 2.752458 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/雄太/UI/剣.png
+  artifactKey: Guid(75283505051a5f44aa4b7aa28c1c4b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/剣.png using Guid(75283505051a5f44aa4b7aa28c1c4b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '346c299c6e2477dadde3ba272cad9030') in 0.058048 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/雄太/UI/拳.jpg
+  artifactKey: Guid(ace41bf5957327345a7cf39e6f3b27d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/拳.jpg using Guid(ace41bf5957327345a7cf39e6f3b27d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a10ab52d85e2edd199735fca768c285a') in 0.104032 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/雄太/UI/menu.png
+  artifactKey: Guid(7f23b41d9550be04e89d6b74067d0654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/menu.png using Guid(7f23b41d9550be04e89d6b74067d0654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6de3bc4b616cd25d45d70d4890897f') in 0.108520 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/雄太/UI/Prefab_UI/槍.prefab
+  artifactKey: Guid(bfd17836281410c4fa0a6f56ffc39cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/Prefab_UI/槍.prefab using Guid(bfd17836281410c4fa0a6f56ffc39cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ebd99d1fc3a1fb23cae71a9296fd1c') in 0.059347 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/雄太/UI/大見出し.png
+  artifactKey: Guid(b3b210ca73cd30b4bbe6a8c699a53b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/大見出し.png using Guid(b3b210ca73cd30b4bbe6a8c699a53b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc4e0d412abb7fb0bd34341d0df4dc4') in 0.056307 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/雄太/UI/NotoSansJP-VariableFont_wght SDF.asset
+  artifactKey: Guid(263fdffcea1e9de4ebaf609ea6337859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/NotoSansJP-VariableFont_wght SDF.asset using Guid(263fdffcea1e9de4ebaf609ea6337859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f8cd59b992da5ce4d1a5752cc4a7370') in 0.314824 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/雄太/stop.signal
+  artifactKey: Guid(fe847ac8dec7a544bbb5a3f401913746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/stop.signal using Guid(fe847ac8dec7a544bbb5a3f401913746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3fd0c9d1d417c68ff71b8f70d0bfb6') in 0.007545 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/雄太/UI/戻る.png
+  artifactKey: Guid(a219425c057cedf40b5e80e14ba2f2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/戻る.png using Guid(a219425c057cedf40b5e80e14ba2f2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9cd186b797ea9ac76e4f1492277ccc') in 0.116504 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/雄太/UI/ボタン_無印.png
+  artifactKey: Guid(2caa58445fc8bfb4eaac7d718273a3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/ボタン_無印.png using Guid(2caa58445fc8bfb4eaac7d718273a3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa3f46aa645bcb509d6de292514f912') in 0.083311 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/雄太/動けるよ.signal
+  artifactKey: Guid(3907437f21b690d49b9425b102f4fbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/動けるよ.signal using Guid(3907437f21b690d49b9425b102f4fbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e4e0fd6920f44070fb1313d5ac4b54') in 0.005082 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/雄太/UI/Prefab_UI/剣.prefab
+  artifactKey: Guid(fab8eb76b6ee3ad448da2577ed85a185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/Prefab_UI/剣.prefab using Guid(fab8eb76b6ee3ad448da2577ed85a185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ca4addeee8bf0bae5460c188d47933') in 0.021903 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/雄太/UI/トグルボタン_背景.png
+  artifactKey: Guid(2c62fcff3ef4a784f932ad7757ded70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/トグルボタン_背景.png using Guid(2c62fcff3ef4a784f932ad7757ded70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fdbdee4aead0b3472a54fa56ef80077') in 0.132159 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/雄太/startButtle.signal
+  artifactKey: Guid(78a2686bfd07a144593a423e84d605aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/startButtle.signal using Guid(78a2686bfd07a144593a423e84d605aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c41413b5481d540008a2ddc3f004fc') in 0.005030 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000737 seconds.
+  path: Assets/雄太/UI/Prefab_UI/銃.prefab
+  artifactKey: Guid(9b002806e4033834ab012cf9271318be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/Prefab_UI/銃.prefab using Guid(9b002806e4033834ab012cf9271318be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571d7c27f0c50124d93a7540cb4c4343') in 0.009423 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/雄太/チュートリアル.playable
+  artifactKey: Guid(a504fb23ab25cdb468fb0359a688ba77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/チュートリアル.playable using Guid(a504fb23ab25cdb468fb0359a688ba77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed346c391d77ea95a9ca698fa68bfeb3') in 0.017921 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/雄太/チュートリアル 3.playable
+  artifactKey: Guid(f60e309527f7dae45b7db66c5ca9b6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/チュートリアル 3.playable using Guid(f60e309527f7dae45b7db66c5ca9b6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6dd6b013d66946d50a668df335fdd6c') in 0.011110 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/雄太/四天王線2.playable
+  artifactKey: Guid(7258eb00feaf0b14bb81a12b7521a49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/四天王線2.playable using Guid(7258eb00feaf0b14bb81a12b7521a49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b7d58ee1d91cb497b902d13cad208d') in 0.007982 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/雄太/その１.signal
+  artifactKey: Guid(f308f1be9d79a3d43a191c8531bf8010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/その１.signal using Guid(f308f1be9d79a3d43a191c8531bf8010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a0bfab4b91b5e2657ccfb67f286cd4') in 0.003778 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/雄太/UI/小見出し.png
+  artifactKey: Guid(77f54a4ceb2227e43a90e058eeea85bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/UI/小見出し.png using Guid(77f54a4ceb2227e43a90e058eeea85bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38eff4f170e4e8156e29aee017adaa4') in 0.113894 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.071748 seconds.
+  path: Assets/雄太/image/istockphoto-1179377734-612x612.jpg
+  artifactKey: Guid(cba4bc067b857ea45bab65c1b8ecd634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/istockphoto-1179377734-612x612.jpg using Guid(cba4bc067b857ea45bab65c1b8ecd634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db826ff9aa2650ebdf62c06d608fdf52') in 0.049681 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/雄太/image/回避用画面効果.png
+  artifactKey: Guid(6de055a8083564e4897b387be47c2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/回避用画面効果.png using Guid(6de055a8083564e4897b387be47c2526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d900703fffd004bf606530ffade744') in 0.179141 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/雄太/image
+  artifactKey: Guid(878fd3ef2b0471340af05b8b08b63499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image using Guid(878fd3ef2b0471340af05b8b08b63499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e51eaa8850c93c1376256c85242d310') in 0.001436 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/雄太/image/SelectEdge.jpg
+  artifactKey: Guid(42e9a54fbb02f2a4ebc3c28a3432d45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/SelectEdge.jpg using Guid(42e9a54fbb02f2a4ebc3c28a3432d45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207ba2b26a8642cd8828b12fb45ff03a') in 0.125483 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 34.625507 seconds.
+  path: Assets/雄太/image/攻撃ボタン.png
+  artifactKey: Guid(0f05463f16e18ae40baf85f04382e22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/攻撃ボタン.png using Guid(0f05463f16e18ae40baf85f04382e22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0c2694195f17127cb02f5dc3d226f3') in 0.148107 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Effekseer/Example/Effects/雷2.asset
-  artifactKey: Guid(18ead5d213988e347b43fe76e4ba3a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Effekseer/Example/Effects/雷2.asset using Guid(18ead5d213988e347b43fe76e4ba3a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52168b2e959fbcc06933dbbe093c7f57') in 0.005537 seconds 
+  Time since last request: 0.000061 seconds.
+  path: Assets/雄太/image/武器変更　UI.png
+  artifactKey: Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/武器変更　UI.png using Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e055bb01f0e2f87d9d09b2e1b86f06') in 0.048507 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
-Received Prepare
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 25.44 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (2.2 MB). Loaded Objects now: 7573.
-Memory consumption went from 136.9 MB to 134.7 MB.
-Total: 151.579300 ms (FindLiveObjects: 3.069300 ms CreateObjectMapping: 0.397900 ms MarkObjects: 146.052600 ms  DeleteObjects: 2.056400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Received Import Request.
+  Time since last request: 12.635545 seconds.
+  path: Assets/雄太/image/回避ボタン.png
+  artifactKey: Guid(ecc10d34e85eedf40af369b355422937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/回避ボタン.png using Guid(ecc10d34e85eedf40af369b355422937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eafb98cc26a5897329bcdc9e4cce885') in 0.100556 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
-Received Prepare
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 36.61 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (2.0 MB). Loaded Objects now: 7573.
-Memory consumption went from 133.9 MB to 131.9 MB.
-Total: 177.869100 ms (FindLiveObjects: 6.387100 ms CreateObjectMapping: 0.921400 ms MarkObjects: 167.567400 ms  DeleteObjects: 2.989000 ms)
-
-Shader 'IL3DN/Branch': fallback shader 'False' not found
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
-
-=================================================================
-	Native Crash Reporting
-=================================================================
-Got a UNKNOWN while executing native code. This usually indicates
-a fatal error in the mono runtime or one of the native libraries 
-used by your application.
-=================================================================
-
-=================================================================
-	Managed Stacktrace:
-=================================================================
-=================================================================
-Received signal SIGSEGV
-Obtained 27 stack frames
-0x00007ff6bd743683 (Unity) keywords::KeywordRemap::Init
-0x00007ff6bd749aba (Unity) ShaderLab::IntShader::CreateKeywordRemap
-0x00007ff6bd74c2c4 (Unity) ShaderLab::IntShader::ResolveFallback
-0x00007ff6bd6ac27f (Unity) ShaderFromSerializedShaderMainThread
-0x00007ff6bf16c680 (Unity) Shader::CreateFromParsedForm
-0x00007ff6bf16b520 (Unity) Shader::AwakeFromLoad
-0x00007ff6bda4005f (Unity) AwakeFromLoadQueue::InvokePersistentManagerAwake
-0x00007ff6bda40d5c (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
-0x00007ff6bda40ec3 (Unity) AwakeFromLoadQueue::PersistentManagerAwakeFromLoad
-0x00007ff6bda11e12 (Unity) PersistentManager::IntegrateAllThreadedObjects
-0x00007ff6bda12730 (Unity) PersistentManager::LoadAndIntegrateAllPreallocatedObjects
-0x00007ff6bda138ab (Unity) PersistentManager::LoadObjects
-0x00007ff6bee1f466 (Unity) ReloadAssetIfLoaded
-0x00007ff6bede7976 (Unity) ReloadUpdatedAssets
-0x00007ff6beddbe5a (Unity) <lambda_b37b41f03089e3cb3f55061bbc93253d>::operator()
-0x00007ff6bee154d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
-0x00007ff6bee0147e (Unity) asio::detail::win_iocp_io_context::do_one
-0x00007ff6bee030e4 (Unity) asio::detail::win_iocp_io_context::run
-0x00007ff6bee1387c (Unity) IOService::Run
-0x00007ff6bede826f (Unity) AssetImportWorkerClient::Run
-0x00007ff6bedb2f77 (Unity) RunAssetImportWorkerClientV2
-0x00007ff6bedb2ffb (Unity) RunAssetImporterV2
-0x00007ff6be5a0e53 (Unity) Application::InitializeProject
-0x00007ff6bea3dda5 (Unity) WinMain
-0x00007ff6bfe20ffe (Unity) __scrt_common_main_seh
-0x00007ffdccee26ad (KERNEL32) BaseThreadInitThunk
-0x00007ffdcef2a9f8 (ntdll) RtlUserThreadStart
-
+Received Import Request.
+  Time since last request: 10.517809 seconds.
+  path: Assets/雄太/image/武器変更　UI.png
+  artifactKey: Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/武器変更　UI.png using Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46d4c3027cf01ee8535828c92683811') in 0.200100 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 19.702879 seconds.
+  path: Assets/雄太/image/武器変更　UI.png
+  artifactKey: Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/武器変更　UI.png using Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c753f53af65d2ab6163267f1ff7b7a5') in 0.092679 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.330482 seconds.
+  path: Assets/雄太/image/武器変更　UI.png
+  artifactKey: Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/武器変更　UI.png using Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7439f815645dbf976fcce066ddc24fa') in 0.226855 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.919373 seconds.
+  path: Assets/雄太/image/攻撃ボタン.png
+  artifactKey: Guid(0f05463f16e18ae40baf85f04382e22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/攻撃ボタン.png using Guid(0f05463f16e18ae40baf85f04382e22f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87e01c6fe363bdd6bb00b9b0d54670a') in 0.177468 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/雄太/image/武器変更　UI.png
+  artifactKey: Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/雄太/image/武器変更　UI.png using Guid(99300b17e3f7ee947aac674d89f953a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54aaeaa59c9f5578707faf087cfbb4e2') in 0.230335 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 190.538180 seconds.
+  path: Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png
+  artifactKey: Guid(5b56d9fa0e8bd6e409ed188db38a692c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png using Guid(5b56d9fa0e8bd6e409ed188db38a692c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd4a4a2fc9609654501a1139151ee01b') in 0.157010 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Fungus/Resources/Sprites/Background.png
+  artifactKey: Guid(78bc8db714c3749cc8bd8c0b7e525b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fungus/Resources/Sprites/Background.png using Guid(78bc8db714c3749cc8bd8c0b7e525b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f972ba7d8e817f1fee78f663b4402d04') in 0.069711 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowUpSprite.png
+  artifactKey: Guid(4db017495c69e8140a56a0e2b669e3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonArrowUpSprite.png using Guid(4db017495c69e8140a56a0e2b669e3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe2c94272af6aff32ab4d659a3abd77') in 0.129897 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain.png
+  artifactKey: Guid(84487d73ca4b791498332d8f6858417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain.png using Guid(84487d73ca4b791498332d8f6858417f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d96dfd201f741b464171553e3de4fa') in 0.076164 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged.png
+  artifactKey: Guid(54628aafa20f64b40ae661038ee7abf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged.png using Guid(54628aafa20f64b40ae661038ee7abf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879cd522d1785f68edb9dea0527ccc7f') in 0.085970 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline_Arrows.png
+  artifactKey: Guid(48c0d4d6bebaa934384b07aa1e2f8184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline_Arrows.png using Guid(48c0d4d6bebaa934384b07aa1e2f8184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f389e2ca893dae15e0093a5d92a181d') in 0.099751 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png
+  artifactKey: Guid(1d0c184845252df44a655359de388cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png using Guid(1d0c184845252df44a655359de388cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375f60535d5023c5f0d4cc27c468fa8d') in 0.080699 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png
+  artifactKey: Guid(f588d850485d0ae479d73cf3bd0b7b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png using Guid(f588d850485d0ae479d73cf3bd0b7b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cf817b1757fba29afb8f5fa23a1f0b') in 0.117774 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.116821 seconds.
+  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeUpSprite.png
+  artifactKey: Guid(827c9cd4a3943534f909ac6473e17288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeUpSprite.png using Guid(827c9cd4a3943534f909ac6473e17288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366ebb7d2225828e3fb7302ce2247787') in 0.050845 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonCameraCycleUpSprite.png
+  artifactKey: Guid(a3983c59ebf804b4abba687bd7c9e92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonCameraCycleUpSprite.png using Guid(a3983c59ebf804b4abba687bd7c9e92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f549d2b9e4412718d86258e9dc1b23a9') in 0.064307 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3

@@ -241,11 +241,13 @@ public class Admin_UI : MonoBehaviour
 
     public void ShowCursor()//カーソルを見せたいときに呼ぶ関数
     {
+        if(isWorkeingMobilePlatform == true)return;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
     public void HideCursor()//カーソルを隠したいときに呼ぶ関数
     {
+        if(isWorkeingMobilePlatform == true)return;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

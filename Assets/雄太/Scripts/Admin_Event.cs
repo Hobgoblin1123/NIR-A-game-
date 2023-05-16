@@ -74,14 +74,14 @@ public class Admin_Event : MonoBehaviour
             move.SetState(Move.MyState.Normal);
             move.enabled = false;
             admin.enabled = false;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            // Cursor.lockState = CursorLockMode.None;
+            // Cursor.visible = true;
         }
         if(n == 3)
         {
             director.Resume();
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            // Cursor.lockState = CursorLockMode.Locked;
+            // Cursor.visible = false;
             if(mainw == 0)mainw = 2;
             else if(subw == 0)subw = 2;
         }

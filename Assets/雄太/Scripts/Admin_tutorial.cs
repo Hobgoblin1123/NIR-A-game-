@@ -73,15 +73,15 @@ public class Admin_tutorial : MonoBehaviour
 
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftAlt))//左のシフトキーが押されている間はカーソルを見せる
-        {
-            ShowCursor();
-        }
+        // if(Input.GetKeyDown(KeyCode.LeftAlt))//左のシフトキーが押されている間はカーソルを見せる
+        // {
+        //     ShowCursor();
+        // }
 
-        if(Input.GetKeyUp(KeyCode.LeftAlt))//左のシフトキーから指が離れたらカーソルを隠す
-        {
-            HideCursor();
-        }
+        // if(Input.GetKeyUp(KeyCode.LeftAlt))//左のシフトキーから指が離れたらカーソルを隠す
+        // {
+        //     HideCursor();
+        // }
     }
     public void PlayTimeLine(int n)
     {

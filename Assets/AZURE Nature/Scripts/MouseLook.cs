@@ -13,14 +13,14 @@ public class MouseLook : MonoBehaviour
 
     private void Awake()
     {
-        LockCursor();
+        // LockCursor();
         xAxisClamp = 0.0f;
     }
     
-    private void LockCursor()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    // private void LockCursor()
+    // {
+    //     Cursor.lockState = CursorLockMode.Locked;
+    // }
 
     private void Update()
     {

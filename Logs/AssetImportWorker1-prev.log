@@ -15,7 +15,7 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58730
+55405
 Successfully changed project path to: C:/3Dgame/NIR-A-game-/NIR-A-game-
 C:/3Dgame/NIR-A-game-/NIR-A-game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11684] Host "[IP] 192.168.11.3 [Port] 0 [Flags] 2 [Guid] 1791289507 [EditorId] 1791289507 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [31116] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 4048436721 [EditorId] 4048436721 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11684] Host "[IP] 192.168.11.3 [Port] 0 [Flags] 2 [Guid] 1791289507 [EditorId] 1791289507 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [31116] Host "[IP] 192.168.11.9 [Port] 0 [Flags] 2 [Guid] 4048436721 [EditorId] 4048436721 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 24.52 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 53.86 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.12f1 (022dac4955a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56232
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016734 seconds.
-- Loaded All Assemblies, in  0.669 seconds
+Registered in 0.015074 seconds.
+- Loaded All Assemblies, in  0.748 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 687 ms
+Android Extension - Scanning For ADB Devices 668 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.612 seconds
+- Finished resetting the current domain, in  1.369 seconds
 Domain Reload Profiling:
-	ReloadAssembly (401ms)
-		BeginReloadAssembly (215ms)
+	ReloadAssembly (421ms)
+		BeginReloadAssembly (228ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
+			CreateAndSetChildDomain (3ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (213ms)
+			LoadAssemblies (221ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (257ms)
-				TypeCache.Initialize (255ms)
-					TypeCache.ScanAssembly (251ms)
-				ResolveRequiredComponents (2ms)
+			SetupTypeCache (315ms)
+				TypeCache.Initialize (314ms)
+					TypeCache.ScanAssembly (311ms)
+				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (1459ms)
+			SetupLoadedEditorAssemblies (1254ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (1115ms)
-				SetLoadedEditorAssemblies (10ms)
+				InitializePlatformSupportModulesInManaged (860ms)
+				SetLoadedEditorAssemblies (15ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (226ms)
-				ProcessInitializeOnLoadMethodAttributes (105ms)
+				ProcessInitializeOnLoadAttributes (270ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.380 seconds
-Refreshing native plugins compatible for Editor in 20.41 ms, found 7 plugins.
+- Loaded All Assemblies, in  2.514 seconds
+Refreshing native plugins compatible for Editor in 29.04 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
@@ -127,46 +127,46 @@ Native extension for WebGL target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.287 seconds
+- Finished resetting the current domain, in  2.022 seconds
 Domain Reload Profiling:
-	ReloadAssembly (536ms)
-		BeginReloadAssembly (404ms)
+	ReloadAssembly (377ms)
+		BeginReloadAssembly (251ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (61ms)
-		LoadAllAssembliesAndSetupDomain (1974ms)
-			LoadAssemblies (989ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		LoadAllAssembliesAndSetupDomain (2126ms)
+			LoadAssemblies (1172ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1014ms)
-				TypeCache.Initialize (904ms)
-					TypeCache.ScanAssembly (859ms)
-				ResolveRequiredComponents (40ms)
+			SetupTypeCache (1090ms)
+				TypeCache.Initialize (899ms)
+					TypeCache.ScanAssembly (875ms)
+				ResolveRequiredComponents (63ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (3045ms)
+			SetupLoadedEditorAssemblies (1657ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (87ms)
-				SetLoadedEditorAssemblies (9ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (303ms)
-				ProcessInitializeOnLoadAttributes (2529ms)
-				ProcessInitializeOnLoadMethodAttributes (108ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (1393ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 72.13 ms, found 7 plugins.
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 18.65 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7057 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 128 unused Assets / (2.3 MB). Loaded Objects now: 7520.
-Memory consumption went from 302.5 MB to 300.2 MB.
-Total: 25.697400 ms (FindLiveObjects: 4.216500 ms CreateObjectMapping: 1.423000 ms MarkObjects: 14.085800 ms  DeleteObjects: 5.969200 ms)
+Unloading 7055 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 128 unused Assets / (2.0 MB). Loaded Objects now: 7512.
+Memory consumption went from 299.1 MB to 297.0 MB.
+Total: 351.209700 ms (FindLiveObjects: 1.161200 ms CreateObjectMapping: 0.747700 ms MarkObjects: 346.619100 ms  DeleteObjects: 2.679200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,126 +182,102 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 14509.258059 seconds.
+  Time since last request: 10683.802182 seconds.
+  path: Assets/EffekseerSettings.asset
+  artifactKey: Guid(6256342802bbc624bb7af9d391674f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffekseerSettings.asset using Guid(6256342802bbc624bb7af9d391674f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155cf122bc946f271927f5868294c5da') in 0.075456 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/主人公の位置.signal
+  artifactKey: Guid(c2fa62a65271b8b45aae070ad73e8840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/主人公の位置.signal using Guid(c2fa62a65271b8b45aae070ad73e8840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab469edcf672f5582ff155198eee0d4') in 0.003456 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Scenes/NewLayer 3.terrainlayer
+  artifactKey: Guid(30fbe819100630d419e2be42f9e61d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NewLayer 3.terrainlayer using Guid(30fbe819100630d419e2be42f9e61d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad6a6f5f9b92c4347352e112bdff82f') in 0.129459 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/NewLayer.terrainlayer
+  artifactKey: Guid(e89f8f4d8119b5449b80af7a54a581f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NewLayer.terrainlayer using Guid(e89f8f4d8119b5449b80af7a54a581f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc25795d6fe7948bf4f89296e5b598d') in 0.029131 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/NewLayer 1.terrainlayer
+  artifactKey: Guid(1397c41add270334c9cfc2cb7c459559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer 1.terrainlayer using Guid(1397c41add270334c9cfc2cb7c459559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb74beb4109ef301fc1fb5130c6e07f') in 0.075709 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Dragon_Bump_Col2.jpg
+  artifactKey: Guid(c953cacc90bd64f4f99d5a53a527002c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon_Bump_Col2.jpg using Guid(c953cacc90bd64f4f99d5a53a527002c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5400b7bd0fcb292efc8d218fc404e6') in 0.044518 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Dragon_Nor_mirror2.jpg
+  artifactKey: Guid(313a5da3122c9de4399adc8119d44d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon_Nor_mirror2.jpg using Guid(313a5da3122c9de4399adc8119d44d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7d1933d0b3ffcb65198edb6a63717d') in 0.042205 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Point Light.prefab
+  artifactKey: Guid(2c48722539051494c94ab6c4f74a9f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Point Light.prefab using Guid(2c48722539051494c94ab6c4f74a9f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20cf4e4f4825bb13d411e4c88e846db1') in 0.015053 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/yari.prefab
+  artifactKey: Guid(26b853a400b7dcb42bbb1b182fa1c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/yari.prefab using Guid(26b853a400b7dcb42bbb1b182fa1c56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0635401f0f4728d20681529f5a41a096') in 0.007445 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
   path: Assets/Scenes/四天王戦.unity
   artifactKey: Guid(f3ed38b0caebe724db6d3a2ec286ef1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/四天王戦.unity using Guid(f3ed38b0caebe724db6d3a2ec286ef1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4d6bd111c83e0e2944b2aae895dab5') in 0.032513 seconds 
+Start importing Assets/Scenes/四天王戦.unity using Guid(f3ed38b0caebe724db6d3a2ec286ef1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4d6bd111c83e0e2944b2aae895dab5') in 0.001280 seconds 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  4.623 seconds
-Refreshing native plugins compatible for Editor in 14.51 ms, found 7 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <27586baf39bf4babbfd8a2caabe8e228>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <27586baf39bf4babbfd8a2caabe8e228>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <27586baf39bf4babbfd8a2caabe8e228>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <27586baf39bf4babbfd8a2caabe8e228>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ae93fefe62eb49e6b9ef3807ffd33dc7>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-New main project
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 12.732 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1618ms)
-		BeginReloadAssembly (1496ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (40ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (1143ms)
-		LoadAllAssembliesAndSetupDomain (3002ms)
-			LoadAssemblies (2126ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1014ms)
-				TypeCache.Initialize (953ms)
-					TypeCache.ScanAssembly (868ms)
-				ResolveRequiredComponents (41ms)
-		FinalizeReload (0ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (3542ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (138ms)
-				SetLoadedEditorAssemblies (25ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (329ms)
-				ProcessInitializeOnLoadAttributes (2520ms)
-				ProcessInitializeOnLoadMethodAttributes (504ms)
-				AfterProcessingInitializeOnLoad (24ms)
-				EditorAssembliesLoaded (2ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (101ms)
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 123.65 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6785 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 76 unused Assets / (2.2 MB). Loaded Objects now: 7553.
-Memory consumption went from 244.9 MB to 242.7 MB.
-Total: 45.549800 ms (FindLiveObjects: 1.851700 ms CreateObjectMapping: 1.712100 ms MarkObjects: 38.541100 ms  DeleteObjects: 3.405000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/BGE_Dragon_2.7_Animation_Only.fbx
+  artifactKey: Guid(c158f326581f96f4491ef1fbbe5d56ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BGE_Dragon_2.7_Animation_Only.fbx using Guid(c158f326581f96f4491ef1fbbe5d56ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74eece1fabad837c243b6e2b14c71b83') in 3.721491 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 385
 ========================================================================
 Received Prepare
-Shader 'IL3DN/Leaf': fallback shader 'False' not found
 Shader 'IL3DN/Branch': fallback shader 'False' not found
-Refreshing native plugins compatible for Editor in 16.44 ms, found 7 plugins.
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
+Refreshing native plugins compatible for Editor in 98.78 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (2.2 MB). Loaded Objects now: 7553.
-Memory consumption went from 138.9 MB to 136.7 MB.
-Total: 46.933400 ms (FindLiveObjects: 0.983500 ms CreateObjectMapping: 1.007700 ms MarkObjects: 43.359300 ms  DeleteObjects: 1.580500 ms)
+Unloading 18 unused Assets / (2.3 MB). Loaded Objects now: 7621.
+Memory consumption went from 137.4 MB to 135.1 MB.
+Total: 274.798200 ms (FindLiveObjects: 56.157000 ms CreateObjectMapping: 1.880300 ms MarkObjects: 211.614800 ms  DeleteObjects: 4.917400 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Shader 'IL3DN/Branch': fallback shader 'False' not found
+Shader 'IL3DN/Leaf': fallback shader 'False' not found
