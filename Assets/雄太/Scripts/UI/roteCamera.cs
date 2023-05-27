@@ -32,6 +32,7 @@ public class roteCamera : MonoBehaviour
         {
             MainCamera.transform.position = new Vector3(0,-1.78f , -5.63f);
             MainCamera.transform.rotation = Quaternion.Euler(34 , 0 , 0);
+            transform.eulerAngles = new Vector3(-34 ,0,0);
             cinemachineBrain.enabled = false;
         }
         else
@@ -43,33 +44,34 @@ public class roteCamera : MonoBehaviour
     private void Update() 
     {
         transform.position = targetTransform.position;
+        Debug.Log(MainCamera.transform.eulerAngles);
     }
 
-    /// 移動操作
-    #region Move
+    // /// 移動操作
+    // #region Move
 
-    /// <summary> ドラッグ操作開始（移動用） </summary>
-    public void OnBeginDragMove(PointerEventData eventData)
-    {
-        // タッチ開始位置を保持
-        _movePointerPosBegin = eventData.position;
-    }
+    // /// <summary> ドラッグ操作開始（移動用） </summary>
+    // public void OnBeginDragMove(PointerEventData eventData)
+    // {
+    //     // タッチ開始位置を保持
+    //     _movePointerPosBegin = eventData.position;
+    // }
 
-    /// <summary> ドラッグ操作中（移動用） </summary>
-    public void OnDragMove(PointerEventData eventData)
-    {
-        // タッチ開始位置からのスワイプ量を移動ベクトルにする
-        var vector = eventData.position - _movePointerPosBegin;
-        _moveVector = new Vector3(vector.x, 0f, vector.y);
-    }
+    // /// <summary> ドラッグ操作中（移動用） </summary>
+    // public void OnDragMove(PointerEventData eventData)
+    // {
+    //     // タッチ開始位置からのスワイプ量を移動ベクトルにする
+    //     var vector = eventData.position - _movePointerPosBegin;
+    //     _moveVector = new Vector3(vector.x, 0f, vector.y);
+    // }
 
-    /// <summary> ドラッグ操作終了（移動用） </summary>
-    public void OnEndDragMove(PointerEventData eventData)
-    {
-        // 移動ベクトルを解消
-        _moveVector = Vector3.zero;
-    }
-     #endregion
+    // /// <summary> ドラッグ操作終了（移動用） </summary>
+    // public void OnEndDragMove(PointerEventData eventData)
+    // {
+    //     // 移動ベクトルを解消
+    //     _moveVector = Vector3.zero;
+    // }
+    //  #endregion
 
     /// カメラ操作
     #region Look
@@ -77,6 +79,7 @@ public class roteCamera : MonoBehaviour
     private void OnBeginDragLook(PointerEventData eventData)
     {
         _lookPointerPosPre = _lookController.GetPositionOnCanvas(eventData.position);
+        Debug.Log("ドラッグ開始");
     }
 
     /// <summary> ドラッグ操作中（カメラ用） </summary>
@@ -88,15 +91,19 @@ public class roteCamera : MonoBehaviour
         // 操作量に応じてカメラを回転
         LookRotate(new Vector2(-vector.y, vector.x));
         _lookPointerPosPre = pointerPosOnCanvas;
+        Debug.Log("ドラッグしている最中です");
     }
 
     [SerializeField]
     private Vector2 n;
     private void LookRotate(Vector2 angles)
     {
+        Debug.Log("ここを通れば、回転をするメソッドが呼ばれています");
         Vector2 deltaAngles = angles * _angularPerPixel;
         _camera.transform.localEulerAngles = new Vector3(Mathf.Clamp(deltaAngles.x + _camera.transform.localEulerAngles.x, n.x , n.y), _camera.transform.localEulerAngles.y);
         transform.eulerAngles += new Vector3(0f, deltaAngles.y);
+        Debug.Log("ここを通れば回転は終了しているはずです またその回転量は" + deltaAngles );
+        Debug.Log("渡された回転量は" + angles + "また、その倍率は" + _angularPerPixel);
     }
     #endregion
 }

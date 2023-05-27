@@ -71,7 +71,7 @@ public class Admin_UI : MonoBehaviour
     private bool tutorial;
 
     //スクリプト定数
-    const float CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE = 1/100*2.5f;
+    const float CAMERA_ROTE_SPEED_MAGNIFICATION_FOR_MOBILE = 2.5f/100;
     
     // Start is called before the first frame update
     void Start()
@@ -138,7 +138,7 @@ public class Admin_UI : MonoBehaviour
             ControlCanvas.enabled = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            roteCamera._angularPerPixel = new Vector2(8 , 4)*CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE;//感度を設定
+            roteCamera._angularPerPixel = new Vector2(8 , 4)*CAMERA_ROTE_SPEED_MAGNIFICATION_FOR_MOBILE;//感度を設定
             isWorkeingMobilePlatform = true;
 		}
 		else //if (Application.platform == RuntimePlatform.WindowsPlayer) 
@@ -424,7 +424,7 @@ public class Admin_UI : MonoBehaviour
 
         if(isWorkeingMobilePlatform == true)//モバイルで動いているとき、バーチャルコントローラーのアイム感度を変更
         {
-            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed)*CAMERA_ROTE_SPEED_MAGNIFICATION_TO_MOBILE;
+            roteCamera._angularPerPixel = new Vector2(AIM_X_speed , AIM_Y_speed)*CAMERA_ROTE_SPEED_MAGNIFICATION_FOR_MOBILE;
         }
         else//パソコンで動いているとき、シネマシンのＰＯＶspeedを変更
         {
