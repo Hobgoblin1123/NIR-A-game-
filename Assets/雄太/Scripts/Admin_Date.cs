@@ -32,7 +32,7 @@ public class Admin_Date : MonoBehaviour
 
     private void Awake() 
     {
-        if(PlayerPrefs.GetFloat("Sun_x") == 0)//初期位置から判断して、ゲームが初回起動と判断されたなら各保存情報を設定する
+        if(PlayerPrefs.GetFloat("posi_y") == 0)//初期位置から判断して、ゲームが初回起動と判断されたなら各保存情報を設定する
         {
             move.transform.position = FirstCharaPOsition;//初期位置を設定
             Admin.CharaLevel = 1;//レベルを設定
@@ -105,6 +105,7 @@ public class Admin_Date : MonoBehaviour
         PlayerPrefs.Save();//セーブを実行
         time = 0;
         Debug.Log("データをセーブしました");
+
     }
 
     // 個別データを保存する関数
