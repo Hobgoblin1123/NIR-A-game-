@@ -17,8 +17,6 @@ public class Admin : MonoBehaviour
     [Header("設定オブジェクト") , Tooltip("このスクリプトで使うゲームオブジェクト、プレファブを格納する所")]
         [SerializeField]
         private Text[] Statust_UI;             //ステータスを表示するtextを配列化して定義
-        // [SerializeField]
-        // private Slider VolumeSlider;        
         [SerializeField]
         private Transform TalkButtonPanel;    //会話開始ボタンを表示するオブジェクトをアタッチ
         [SerializeField]
@@ -52,14 +50,11 @@ public class Admin : MonoBehaviour
         public TalkEvent TalkTargetObj;     //現在話しているオブジェクトが追加される
         public static int WeaponNumber;     //現在装備している武器ナンバーを定義
         public  int skillPoints = 10;             //スキルを取得するのに必要なスキルポイントを格納
-        
-
 
     private int LevelUPEXP;                  //次のレベルアップに必要な経験値総量を定義
     [SerializeField]
     private Move characterScript;            //アタッチだよ
     private AudioSource audioSource;         //アタッチだよぉ
-    
     private SearchEnemy searchEnemy;         //アタッチだよぉぉ
     private Flowchart flowchart;             //以下略
     [HideInInspector]
@@ -75,7 +70,6 @@ public class Admin : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        PlayerPrefs.DeleteAll();
         //保存されているパラメーター情報を読み込み、適用
         CharaLevel = PlayerPrefs.GetInt("LEVEL");
         MainEXP = PlayerPrefs.GetFloat("EXP");
@@ -86,7 +80,6 @@ public class Admin : MonoBehaviour
             CharaLevel = 50;
             MainWeapon = 2;
             SubWeapon = 3;
-
         }
         
         HPStatus = 80 + CharaLevel*20;
@@ -210,11 +203,6 @@ public class Admin : MonoBehaviour
             audioSource.Play();            //BGMを再生
         }
     }
-
-    // public void Volum()
-    // {
-    //     audioSource.volume = VolumeSlider.value;
-    // }
 
     // 敵をロックするプログラム　未ロックで攻撃時に呼ばれる
     public void LockOnEnemy()

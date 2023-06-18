@@ -191,7 +191,6 @@ public class Admin_Date : MonoBehaviour
                         {
                         Debug.Log(admin_SkillTree.GetSkillAvtiveSelf(i,h));
                         PlayerPrefs.SetInt(i.ToString() , h -1);
-                        Debug.Log(admin.isWorkeingMobileImage());
                         Debug.Log("スキルの幹は" + i + "で保存されたスキル番号は" + (h-1));
                         break;
                         }

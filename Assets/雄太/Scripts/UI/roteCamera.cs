@@ -30,8 +30,8 @@ public class roteCamera : MonoBehaviour
 
         if(Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
-            MainCamera.transform.position = new Vector3(0,-1.78f , -5.63f);
-            MainCamera.transform.rotation = Quaternion.Euler(34 , 0 , 0);
+            MainCamera.transform.localPosition = new Vector3(0,-2.2f , -4.7f);
+            MainCamera.transform.localRotation = Quaternion.Euler(-45 , 0 , 0);
             cinemachineBrain.enabled = false;
         }
         else

@@ -214,7 +214,7 @@ public class Move : MonoBehaviour
 	{
 		if(state == MyState.Die)return;//死んでるなら実行しない
 
-		if(Input.GetKeyDown(KeyCode.H))SetState(MyState.JUAttack);
+		if(Input.GetKeyDown(KeyCode.H))SetState(MyState.JUAttack);//デバッグ用
 
 
 		if(AutoCure == true && charahp < Admin.HPStatus)
@@ -239,8 +239,8 @@ public class Move : MonoBehaviour
 		{
 			if(HralEffect.gameObject.activeSelf == true)
 			{
-				HralEffect.gameObject.SetActive(false);
 				HralEffect.EffectEnd();
+				HralEffect.gameObject.SetActive(false);
 			}
 			
 		}
@@ -350,7 +350,7 @@ public class Move : MonoBehaviour
 	//ボタンを押されたときに、またはモバイルで指定のボタンが押されたときに呼ばれる
 	public void GetInput(int n)
 	{
-		if(state == MyState.TalkEvent && state == MyState.JUAttack)return;//会話、特殊攻撃状態なら無効
+		if(state == MyState.TalkEvent || state == MyState.JUAttack)return;//会話、特殊攻撃状態なら無効
 
 		//スタミナがあり、回避、ダメージ状態ではない時、回避する
 		if(n == 0 && physicalStrength > 2f && state != MyState.Damage && state !=MyState.Avoidance)
@@ -535,8 +535,8 @@ public class Move : MonoBehaviour
 	{
 		foreach (var item in effects) 
 		{
-			item.gameObject.SetActive(false);
 			item.EffectEnd();
+			item.gameObject.SetActive(false);
 		}
 	}
 }
