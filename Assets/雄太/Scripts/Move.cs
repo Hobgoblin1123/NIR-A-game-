@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class Move : MonoBehaviour
 {
 	private CharacterController characterController;//主人公用の当たり判定をアタッチ
-	[HideInInspector]
-	public Vector3 velocity;                        //移動方向を定義
+	private Vector3 velocity;                        //移動方向を定義
 	private Animator animator;                      //animatorをアタッチ
 	private float Speed;                            //animatorに渡すspeed量を定義
     public MyState state;                           //キャラの状態を定義
@@ -61,6 +60,7 @@ public class Move : MonoBehaviour
 	public static float reflectRate;
 	[SerializeField]
 	private ReclectAttack reflectArea;
+	public float moveDirection;
 
 
 
@@ -71,6 +71,7 @@ public class Move : MonoBehaviour
 	const float CHARACTER_ROTATE_SPEED = 600;
 	const float EFFECT_VOLUME = 0.4f;
 	const float REVIVE_TIME = 8;
+	const float DOWN_RAY_DISTANCE = 0.15f;
 
 	void Awake() 
     {
@@ -116,6 +117,7 @@ public class Move : MonoBehaviour
 	SPAttack,
 	JUAttack,
 	Jump,
+	Fall,
 	TalkEvent,
 	Avoidance,
 	Die
@@ -345,15 +347,58 @@ public class Move : MonoBehaviour
 		{
 			lockInterval += Time.deltaTime;
 		}
+
+		//落下処理
+		if(IsGround() == true)
+		{
+			if(state == MyState.Fall)
+			{
+				animator.SetBool("Fall" , false);
+				SetState(MyState.Normal);
+			}
+			if(Input.GetButtonDown("Jump"))GetInput(3);
+		}
+		else
+		{
+			if(state != MyState.Fall)
+			{
+				SetState(MyState.Fall);
+			}
+		}
+
+		if(state == MyState.Fall || state == MyState.Jump)
+		{
+			//移動方向を定義
+			var horizontal = 0f;
+			var vertical = 0f;
+			//wasdにより入力量を変更
+			if(isWorkeingMobilePlatform == false)//パソコンの場合はwasdによって移動量を変更
+			{
+				horizontal = Input.GetAxis("Horizontal");
+				vertical = Input.GetAxis("Vertical");
+			}
+			else//スマホの場合はバーチャルコントローラーによって移動量を変更
+			{
+				horizontal = fixedJoystick.Horizontal;
+				vertical = fixedJoystick.Vertical;
+			}
+
+			var t = isWorkeingMobilePlatform? ParentCamera.transform : mainCamera.transform;//カメラの回転量をモバイルであるかないかで参照元を変更
+			var horizontalRotation = Quaternion.AngleAxis( t.eulerAngles.y, Vector3.up);//カメラの向きを取得
+			velocity = horizontalRotation * new Vector3(horizontal, 0, vertical).normalized;//カメラの向きと入力量から移動方向を決定
+			characterController.Move(velocity * moveDirection * Time.deltaTime);
+		}
+		
+
 	}
 
 	//ボタンを押されたときに、またはモバイルで指定のボタンが押されたときに呼ばれる
 	public void GetInput(int n)
 	{
-		if(state == MyState.TalkEvent || state == MyState.JUAttack)return;//会話、特殊攻撃状態なら無効
+		if(state == MyState.TalkEvent || state == MyState.JUAttack || state == MyState.Fall || state == MyState.Jump && state != MyState.Damage && state !=MyState.Avoidance)return;//会話、特殊攻撃状態なら無効
 
 		//スタミナがあり、回避、ダメージ状態ではない時、回避する
-		if(n == 0 && physicalStrength > 2f && state != MyState.Damage && state !=MyState.Avoidance)
+		if(n == 0 && physicalStrength > 2f)
 		{
 			SetState(MyState.Avoidance);
 			physicalStrength -= 3;//スタミナを3消費
@@ -362,7 +407,9 @@ public class Move : MonoBehaviour
 		}
 
 		//敵を攻撃する
-		if(n == 1 && state != MyState.Avoidance)SetState(MyState.Attack);
+		if(n == 1 )SetState(MyState.Attack);
+
+		if(n == 3 && IsGround() == true)SetState(MyState.Jump);
 	}
 	
 	//キャラの状態を変更する中枢関数
@@ -415,7 +462,13 @@ public class Move : MonoBehaviour
 		}
 		else if(tempState == MyState.Jump)//ジャンプ？知らない子ですね
 		{
+			state = MyState.Jump;
 			animator.SetTrigger("Jump");
+		}
+		else if(tempState == MyState.Fall)
+		{
+			state = MyState.Fall;
+			animator.SetBool("Fall" , true);
 		}
 		// 回避状態にする
 		else if (tempState == MyState.Avoidance)
@@ -538,6 +591,23 @@ public class Move : MonoBehaviour
 			item.EffectEnd();
 			item.gameObject.SetActive(false);
 		}
+	}
+
+	public bool IsGround()
+	{
+		if(characterController.isGrounded == true)
+		{
+			return true;
+		}
+		else
+		{
+			Ray ray = new Ray(transform.position , Vector3.down);
+			RaycastHit hit;
+
+			if(Physics.Raycast(ray,out hit , DOWN_RAY_DISTANCE))return true;
+		}
+
+		return false;		
 	}
 }
 
