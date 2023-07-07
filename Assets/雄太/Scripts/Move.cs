@@ -349,7 +349,7 @@ public class Move : MonoBehaviour
 		}
 
 		//落下処理
-		if(IsGround() == true)
+		if(IsGround(null) == true)
 		{
 			if(state == MyState.Fall)
 			{
@@ -409,7 +409,7 @@ public class Move : MonoBehaviour
 		//敵を攻撃する
 		if(n == 1 )SetState(MyState.Attack);
 
-		if(n == 3 && IsGround() == true)SetState(MyState.Jump);
+		if(n == 3 && IsGround(null) == true)SetState(MyState.Jump);
 	}
 	
 	//キャラの状態を変更する中枢関数
@@ -593,18 +593,41 @@ public class Move : MonoBehaviour
 		}
 	}
 
-	public bool IsGround()
+	public bool IsGround(string tag)
 	{
 		if(characterController.isGrounded == true)
 		{
-			return true;
+			if(tag == null)
+			{
+				return true;
+			}
+			else
+			{
+				Ray ray = new Ray(transform.position , Vector3.down);
+				RaycastHit hit;
+
+				if(Physics.Raycast(ray,out hit , DOWN_RAY_DISTANCE))
+				{
+					if(hit.collider.CompareTag(tag) == true)return true;
+				}
+			}
 		}
 		else
 		{
 			Ray ray = new Ray(transform.position , Vector3.down);
 			RaycastHit hit;
 
-			if(Physics.Raycast(ray,out hit , DOWN_RAY_DISTANCE))return true;
+			if(Physics.Raycast(ray,out hit , DOWN_RAY_DISTANCE))
+			{
+				if(tag == null)
+				{
+					return true;
+				}
+				else if(hit.collider.CompareTag(tag) == true)
+				{
+					return true;
+				}
+			}
 		}
 
 		return false;		
