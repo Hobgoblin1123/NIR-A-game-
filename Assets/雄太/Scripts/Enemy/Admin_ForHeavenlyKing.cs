@@ -142,10 +142,10 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
             SetState(EnemyState.Move);
         }
 
-        if(aiLevel >= 3)
-        {
-            lookPosition = Quaternion.LookRotation(charaTransform.position - transform.position).normalized;
-        }
+        // if(aiLevel >= 3)
+        // {
+        //     lookPosition = Quaternion.LookRotation(charaTransform.position - transform.position).normalized;
+        // }
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation , lookPosition  , 600*Time.deltaTime);
     }
@@ -333,8 +333,6 @@ public class Admin_ForHeavenlyKing : MonoBehaviour
 
     public void SetLookRotation()
     {
-        if(aiLevel == 3)return;
-
         lookPosition = Quaternion.LookRotation(charaTransform.position - transform.position).normalized;
     }
 

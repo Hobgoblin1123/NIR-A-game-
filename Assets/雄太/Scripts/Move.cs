@@ -60,7 +60,9 @@ public class Move : MonoBehaviour
 	public static float reflectRate;
 	[SerializeField]
 	private ReclectAttack reflectArea;
-	public float moveDirection;
+	public float moveDirection_run = 8;
+	public float moveDirection_walk = 3;
+	private float jumpElapsedTime;
 
 
 
@@ -72,6 +74,7 @@ public class Move : MonoBehaviour
 	const float EFFECT_VOLUME = 0.4f;
 	const float REVIVE_TIME = 8;
 	const float DOWN_RAY_DISTANCE = 0.15f;
+	const float JUMP_INTERVAL_MAX_TIME = 0.3f;
 
 	void Awake() 
     {
@@ -366,6 +369,8 @@ public class Move : MonoBehaviour
 			}
 		}
 
+
+		//落下中の移動処理　　　　　　　　　　　　　　　将来的に移動処理をすべてプログラムで行うようにし、ここの部分は削除すること
 		if(state == MyState.Fall || state == MyState.Jump)
 		{
 			//移動方向を定義
@@ -383,13 +388,39 @@ public class Move : MonoBehaviour
 				vertical = fixedJoystick.Vertical;
 			}
 
+			var moveDirection = 0f;
+
+			if(AutoRunFlag == false)//自動ダッシュがオフの場合、Shiftキーで走る
+			{
+				if(Input.GetKey(KeyCode.LeftShift))
+				{
+					moveDirection = moveDirection_run;
+				}
+				else
+				{
+					moveDirection = moveDirection_walk;
+				}
+			}
+			else//自動ダッシュがオンの場合は、shiftキーで歩く
+			{
+				if(Input.GetKey(KeyCode.LeftShift))
+				{
+					moveDirection = moveDirection_walk;
+				}
+				else
+				{
+					moveDirection = moveDirection_run;
+				}
+			}
+
 			var t = isWorkeingMobilePlatform? ParentCamera.transform : mainCamera.transform;//カメラの回転量をモバイルであるかないかで参照元を変更
 			var horizontalRotation = Quaternion.AngleAxis( t.eulerAngles.y, Vector3.up);//カメラの向きを取得
 			velocity = horizontalRotation * new Vector3(horizontal, 0, vertical).normalized;//カメラの向きと入力量から移動方向を決定
 			characterController.Move(velocity * moveDirection * Time.deltaTime);
 		}
-		
 
+		//ジャンプからの時間を更新
+		jumpElapsedTime += Time.deltaTime;
 	}
 
 	//ボタンを押されたときに、またはモバイルで指定のボタンが押されたときに呼ばれる
@@ -409,12 +440,13 @@ public class Move : MonoBehaviour
 		//敵を攻撃する
 		if(n == 1 )SetState(MyState.Attack);
 
-		if(n == 3 && IsGround(null) == true)SetState(MyState.Jump);
+		if(n == 3 && IsGround(null) == true && jumpElapsedTime >= JUMP_INTERVAL_MAX_TIME)SetState(MyState.Jump);
 	}
 	
 	//キャラの状態を変更する中枢関数
 	public void SetState(MyState tempState)
 	{
+		var postState = state;
 		//Normal状態にする
 		if (tempState == MyState.Normal)
 		{
@@ -505,6 +537,14 @@ public class Move : MonoBehaviour
 			this.tag = "Untagged";//自身のタグをUntaggedに変更する
 			StartCoroutine("Revive");//復活処理のコルーチンを起動
 		}
+
+
+
+		//変更前の状態による条件
+		if(postState == MyState.Fall)
+		{
+			jumpElapsedTime = 0;
+		}
 	}
 	
 	// 敵を復活させるコルーチン関数
@@ -593,6 +633,10 @@ public class Move : MonoBehaviour
 		}
 	}
 
+	/// <summary>
+	/// 地面との接触判定を行う。tag == null の場合は、すべての物体について接触判定が行われる
+	/// </summary>
+	/// <returns>接しているならtrue,接していないならfalseを返す</returns>
 	public bool IsGround(string tag)
 	{
 		if(characterController.isGrounded == true)
@@ -606,7 +650,7 @@ public class Move : MonoBehaviour
 				Ray ray = new Ray(transform.position , Vector3.down);
 				RaycastHit hit;
 
-				if(Physics.Raycast(ray,out hit , DOWN_RAY_DISTANCE))
+				if(Physics.Raycast(ray , out hit , DOWN_RAY_DISTANCE))
 				{
 					if(hit.collider.CompareTag(tag) == true)return true;
 				}

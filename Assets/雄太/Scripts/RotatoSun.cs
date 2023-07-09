@@ -63,6 +63,8 @@ public class RotatoSun : MonoBehaviour
             RenderSettings.skybox = skyBox[0];
             light.intensity = 0.4f;
         }
+
+        if(Input.GetKeyDown(KeyCode.P))GoSleep();
     }
 
     public void GoSleep()//寝る等の時間帯が変わるイベントの際、ここを呼び出すことで、夜なら昼に、昼なら夜に変更できる
