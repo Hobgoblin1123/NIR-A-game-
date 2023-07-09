@@ -15,7 +15,7 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61536
+51630
 Successfully changed project path to: C:/3Dgame/NIR-A-game-/NIR-A-game-
 C:/3Dgame/NIR-A-game-/NIR-A-game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/3Dgame/NIR-A-game-/NIR-A-game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11008] Host "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 2066918247 [EditorId] 2066918247 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [13036] Host "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 1679512006 [EditorId] 1679512006 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11008] Host "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 2066918247 [EditorId] 2066918247 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13036] Host "[IP] 192.168.11.2 [Port] 0 [Flags] 2 [Guid] 1679512006 [EditorId] 1679512006 [Version] 1048832 [Id] WindowsEditor(7,meganenomegane) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 889.38 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 44.70 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.4f1 (35713cd46cd7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
@@ -71,7 +71,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -79,47 +79,47 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/E
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.021838 seconds.
-- Loaded All Assemblies, in  0.682 seconds
+Registered in 0.016298 seconds.
+- Loaded All Assemblies, in  0.806 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 779 ms
+Android Extension - Scanning For ADB Devices 478 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.290 seconds
-Domain Reload Profiling: 1971ms
-	BeginReloadAssembly (254ms)
+- Finished resetting the current domain, in  1.044 seconds
+Domain Reload Profiling: 1846ms
+	BeginReloadAssembly (294ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (108ms)
-	LoadAllAssembliesAndSetupDomain (230ms)
-		LoadAssemblies (249ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (122ms)
+	LoadAllAssembliesAndSetupDomain (314ms)
+		LoadAssemblies (291ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (223ms)
-			TypeCache.Refresh (221ms)
-				TypeCache.ScanAssembly (201ms)
+		AnalyzeDomain (300ms)
+			TypeCache.Refresh (298ms)
+				TypeCache.ScanAssembly (279ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1291ms)
+	FinalizeReload (1045ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1176ms)
+		SetupLoadedEditorAssemblies (933ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (957ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (678ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (144ms)
-			ProcessInitializeOnLoadMethodAttributes (65ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (171ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -129,28 +129,28 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  6.111 seconds
-Refreshing native plugins compatible for Editor in 12.92 ms, found 7 plugins.
+- Loaded All Assemblies, in  2.357 seconds
+Refreshing native plugins compatible for Editor in 15.24 ms, found 7 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+Error loading file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\3Dgame\NIR-A-game-\NIR-A-game-\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
   at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <da771086bc2e4cfc9ad0a72e083a7f98>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
+  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].GetState (UnityEngine.Hash128 key, T defaultValue) [0x00041] in <da771086bc2e4cfc9ad0a72e083a7f98>:0 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:GetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
 UnityEditor.Tools:OnEnable ()
 UnityEngine.ScriptableObject:CreateInstance (System.Type)
 UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
@@ -166,49 +166,49 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-New main project
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.444 seconds
-Domain Reload Profiling: 8552ms
-	BeginReloadAssembly (445ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (44ms)
+- Finished resetting the current domain, in  2.353 seconds
+Domain Reload Profiling: 4770ms
+	BeginReloadAssembly (248ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
+		ReleaseScriptingObjects (1ms)
 		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (5526ms)
-		LoadAssemblies (4865ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (2011ms)
+		LoadAssemblies (811ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (752ms)
-			TypeCache.Refresh (665ms)
-				TypeCache.ScanAssembly (638ms)
-			ScanForSourceGeneratedMonoScriptInfo (49ms)
-			ResolveRequiredComponents (38ms)
-	FinalizeReload (2445ms)
+		AnalyzeDomain (1225ms)
+			TypeCache.Refresh (1116ms)
+				TypeCache.ScanAssembly (997ms)
+			ScanForSourceGeneratedMonoScriptInfo (66ms)
+			ResolveRequiredComponents (43ms)
+	FinalizeReload (2354ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2115ms)
+		SetupLoadedEditorAssemblies (1988ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (57ms)
+			InitializePlatformSupportModulesInManaged (68ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (112ms)
-			ProcessInitializeOnLoadAttributes (1819ms)
-			ProcessInitializeOnLoadMethodAttributes (113ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (1635ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Shader 'IL3DN/Branch': fallback shader 'False' not found
 Shader 'IL3DN/Leaf': fallback shader 'False' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 15.78 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 13.78 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7103 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 128 unused Assets / (2.3 MB). Loaded Objects now: 7567.
 Memory consumption went from 312.1 MB to 309.8 MB.
-Total: 9.457000 ms (FindLiveObjects: 1.010900 ms CreateObjectMapping: 0.663000 ms MarkObjects: 6.197700 ms  DeleteObjects: 1.583400 ms)
+Total: 13.886000 ms (FindLiveObjects: 1.282100 ms CreateObjectMapping: 0.759900 ms MarkObjects: 10.057100 ms  DeleteObjects: 1.784400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -225,17 +225,417 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 53707.613114 seconds.
-  path: Assets/Original prefab/UI/警告文/すでに持ってるよ.prefab
-  artifactKey: Guid(d023f170770234d43a65626674a2332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Original prefab/UI/警告文/すでに持ってるよ.prefab using Guid(d023f170770234d43a65626674a2332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f973daaa2d0267044960175a3d3672') in 0.118865 seconds
+  Time since last request: 3066.022592 seconds.
+  path: Assets/Original prefab/自動戦闘巫女.prefab
+  artifactKey: Guid(0070c32b1e9293349a46255c29fcb0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/自動戦闘巫女.prefab using Guid(0070c32b1e9293349a46255c29fcb0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea18e3f9be4802988a3d2b9877f18aa') in 0.139313 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
+Number of asset objects unloaded after import = 774
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Original prefab/UI/警告文/本当にいい？.prefab
-  artifactKey: Guid(e23edc63b07ee6b4a95dbfa508501e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Original prefab/UI/警告文/本当にいい？.prefab using Guid(e23edc63b07ee6b4a95dbfa508501e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f5290579450feee1c07956c6bf21e7') in 0.028221 seconds
+  Time since last request: 0.000089 seconds.
+  path: Assets/Original prefab/Main Charactor 最新版.prefab
+  artifactKey: Guid(c91a5ad51d3e4b24189a24357c367201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/Main Charactor 最新版.prefab using Guid(c91a5ad51d3e4b24189a24357c367201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b030f2edede0f3c49f2f9660fcf672') in 0.267453 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 819
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Original prefab/Administration.prefab
+  artifactKey: Guid(ddc003f7a7238204fa5f786b9577a1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/Administration.prefab using Guid(ddc003f7a7238204fa5f786b9577a1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9a930778dea76cd6dd48d0a33a1d13') in 0.002865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Original prefab/Directional Light.prefab
+  artifactKey: Guid(3f7ab134afc30684da3a847a2d00efd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/Directional Light.prefab using Guid(3f7ab134afc30684da3a847a2d00efd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05b029ff1f51a9fa59f1830e6eeb7c2') in 0.004088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Original prefab/AppearEnemy.prefab
+  artifactKey: Guid(58cd212ee9b572a44b52ea16cbd2662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/AppearEnemy.prefab using Guid(58cd212ee9b572a44b52ea16cbd2662a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93197fbbed13a17d79227ce364cf4181') in 0.144557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 180
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Original prefab/light.prefab
+  artifactKey: Guid(835012618e4873a4b97b15b6a06d35d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/light.prefab using Guid(835012618e4873a4b97b15b6a06d35d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34d470c3158d822dc4e2bcc4a5339d4e') in 0.002220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 4.148460 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90685e0deefa8310dae11334939bf08') in 0.362831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 1.824301 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4eee3597e808fbbcd649400fdadcd0') in 0.291491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 4.940691 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024d4aecbff52722c097cfc7cb3634ac') in 0.297794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 1.539227 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ac584aa52a79a795f97761babb8e84') in 0.284051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 4.737363 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11fef85bea38a288826102d38589c6c') in 0.284186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 16.236719 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30fd7fc2c8102b96ee30bd8b1397895') in 0.300161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1259
+========================================================================
+Received Import Request.
+  Time since last request: 7.738149 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91fd3764934e71a787b12f9b602ecdac') in 0.300111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1259
+========================================================================
+Received Import Request.
+  Time since last request: 15.588868 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade796b2195950c98a09feb1da66c433') in 0.292308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1263
+========================================================================
+Received Import Request.
+  Time since last request: 18.077979 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fc8785d11c933e29c7fca73504a477') in 0.268426 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1263
+========================================================================
+Received Import Request.
+  Time since last request: 5.364378 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3500f4b720ce108401e506e0d0974ddc') in 0.297388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1263
+========================================================================
+Received Import Request.
+  Time since last request: 4.895825 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe0ac73af40dd6c447b1d7206f1c792') in 0.280609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1263
+========================================================================
+Received Import Request.
+  Time since last request: 8.163957 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7130d9f7852cf525e3a4ab03f881cb97') in 0.288275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1263
+========================================================================
+Received Import Request.
+  Time since last request: 10.609436 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea78a137e8394bf63fe052d31f6e8ef') in 0.284568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1263
+========================================================================
+Received Import Request.
+  Time since last request: 9.516777 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d22ac3ba4669865d41fb6f7a20cc47') in 0.288689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1263
+========================================================================
+Received Import Request.
+  Time since last request: 13.662325 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4907fb40660945effa46f83c4d72f9a1') in 0.284109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.323401 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75fb83339b23f907aecdf18e6819a71') in 0.284027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 11.903873 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f50284abd2d3ba86c5f24534409e12') in 0.286683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1253
+========================================================================
+Received Import Request.
+  Time since last request: 91.316054 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2a05737f5aee54bdf5380dde4651f9') in 0.356374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 29.689746 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4b597e2cb098258660d5ebe103b8ed') in 0.307190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 14.081978 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb38b8da051cac4bb45def68f0b910b2') in 0.302810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 25.615717 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f4fb99a1d300ed785345e2bb11e62eb') in 0.287238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.720674 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb4a1bc016088f5861d3527d2ba7b51') in 0.284943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.336389 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d041e986ccc64541b85bc0f9ed36e07') in 0.281949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.341453 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a5eac0b2cc49a341a40a93e149118c') in 0.295702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.715877 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fe0b918191635f7f8e415d42234624') in 0.290122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 3.330833 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd547c735e8dd40498a616f201f575698') in 0.294059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 3.153709 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e286e0faa6680363ee91379dbf674cd1') in 0.286354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 3.745373 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db656a0d6bf4061d4191a56d7db63628') in 0.287730 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 5.960319 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982887b53c11d66dda34a766fde6d39d') in 0.301883 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 15.058335 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90cb3b4c42e6cdf1feeb1a1726d5cbb1') in 0.285589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 16.673751 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c36fd9fab109fe6252a6ec9e0664855') in 0.293732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 10.529752 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e79bbdb3cd3d99411f3edb1ed29c772') in 0.302323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 4.224144 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e7b73152dcac9f89f1bc28c6125122') in 0.296185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 3.821676 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6d0ff8447df2634e9cb4bb3ccb6e27') in 0.286427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 6.510870 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40746348bbc8eaf0038088831c0f82b') in 0.309271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 8.865110 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe7f388b4f6fd3dbaa4475abe1407fd') in 0.365378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 13.930856 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6782f582d7b2b127c364519c62a71e15') in 0.290256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 6.573874 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f1a0950049ac946e1d7e61c76910624') in 0.332768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 7.537166 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e9a381e26ebfebccabaa5cc5bc11f8') in 0.305028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.695777 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7d41dc2e0750aea137fc60715fb2ae') in 0.282239 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 7.784245 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b7bef04f15cef54de11f0a23474a90') in 0.294735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.934177 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b486ddf21ac79168a4863bd268490b3') in 0.291725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 3.576656 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dab05a00381d0a3b7e8f4a9dd63119e') in 0.290806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 3.118457 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d610aa26bdc0e698fc56836d8d21a9') in 0.300573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 4.517632 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334f84dbf02ef44118f6cb16c60127a5') in 0.290074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254
+========================================================================
+Received Import Request.
+  Time since last request: 2.918439 seconds.
+  path: Assets/Original prefab/統合UIシステム.prefab
+  artifactKey: Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Original prefab/統合UIシステム.prefab using Guid(fd619452c8812ff4684dd4ab6c07531e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f229a490e6f2bf2459e9754b29aa5195') in 0.301067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1254

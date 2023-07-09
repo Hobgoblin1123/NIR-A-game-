@@ -73,7 +73,7 @@ public class Move : MonoBehaviour
 	const float CHARACTER_ROTATE_SPEED = 600;
 	const float EFFECT_VOLUME = 0.4f;
 	const float REVIVE_TIME = 8;
-	const float DOWN_RAY_DISTANCE = 0.15f;
+	const float DOWN_RAY_DISTANCE = 0.13f;
 	const float JUMP_INTERVAL_MAX_TIME = 0.3f;
 
 	void Awake() 
@@ -357,6 +357,7 @@ public class Move : MonoBehaviour
 			if(state == MyState.Fall)
 			{
 				animator.SetBool("Fall" , false);
+				Debug.Log("落ちる判定が解除されているよ");
 				SetState(MyState.Normal);
 			}
 			if(Input.GetButtonDown("Jump"))GetInput(3);
@@ -496,6 +497,8 @@ public class Move : MonoBehaviour
 		{
 			state = MyState.Jump;
 			animator.SetTrigger("Jump");
+			StartCoroutine("ToFall");
+
 		}
 		else if(tempState == MyState.Fall)
 		{
@@ -557,6 +560,13 @@ public class Move : MonoBehaviour
 		animator.Play("Idle");//アニメーションのIDLEを再生する
 		SetState(MyState.Normal);//状態をノーマルにする
 		this.tag = "Player";//タグをプレイヤーに治す
+	}
+
+	//ジャンプ状態から落下状態に移行するコルーチン
+	IEnumerator ToFall()
+	{
+		yield return new WaitForSeconds(0.3f);
+		state = MyState.Fall;
 	}
 
 	// 以下　processcharaAnimaEvent
