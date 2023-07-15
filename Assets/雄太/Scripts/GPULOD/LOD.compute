@@ -1,0 +1,108 @@
+#pragma kernel UpdateLOD
+
+// 入力バッファ: ローカル空間座標とメッシュごとのLODデータ
+#pragma uav meshData
+#pragma uav lodData
+
+// バッファ: メッシュごとのLODデータ
+#pragma buffer lodBuffer
+
+// バッファ: メッシュの頂点データ
+#pragma buffer vertexBuffer
+
+// バッファ: メッシュの三角形インデックスデータ
+#pragma buffer indexBuffer
+
+// バッファ: メッシュのLOD閾値データ
+#pragma buffer lodThresholdBuffer
+
+// バッファ: カメラ位置データ
+#pragma buffer cameraBuffer
+
+// バッファ: ローカル空間座標データ
+#pragma buffer localPositionBuffer
+
+// パラメータ: LODレベルの数
+#pragma int lodLevels 1.0
+
+// パラメータ: カメラの視野角
+#pragma float fieldOfView
+
+// パラメータ: カメラのアスペクト比
+#pragma float aspectRatio
+
+
+
+
+// パラメータ: LOD切り替えの距離係数
+#ifndef lodSwitchDistanceFactor
+#define lodSwitchDistanceFactor 1.0
+#endif
+
+
+// パラメータ: メッシュの最大頂点数
+#pragma int maxVerticesPerMesh
+
+// パラメータ: メッシュの最大インデックス数
+#pragma int maxIndicesPerMesh
+
+// カーネル関数: LODシステムの更新
+RWStructuredBuffer<float3> meshData;
+RWStructuredBuffer<float> lodData;
+RWStructuredBuffer<float4> lodBuffer;
+RWStructuredBuffer<float3> vertexBuffer;
+RWStructuredBuffer<uint> indexBuffer;
+RWStructuredBuffer<float> lodThresholdBuffer;
+RWStructuredBuffer<float3> cameraBuffer;
+RWStructuredBuffer<float3> localPositionBuffer;
+
+[numthreads(32, 1, 1)]
+void UpdateLOD(uint3 id : SV_DispatchThreadID)
+{
+    // メッシュのインデックスを取得
+    uint meshIndex = id.x;
+
+    // カメラの位置を取得
+    float3 cameraPosition = cameraBuffer[0];
+
+    // ローカル空間座標を取得
+    float3 localPosition = localPositionBuffer[meshIndex];
+
+    // カメラとメッシュの距離を計算
+    float distance = length(cameraPosition - localPosition);
+
+    // LOD切り替えの距離を計算
+    float lodSwitchDistance = lodSwitchDistanceFactor * distance;
+
+    // LODレベルを決定
+    int lodLevel = 0;
+    for (int i = 0; i < lodLevels; i++)
+    {
+        if (distance <= lodThresholdBuffer[i])
+        {
+            lodLevel = i;
+            break;
+        }
+    }
+
+    // LODデータを更新
+    lodData[meshIndex] = lodLevel;
+
+    // メッシュデータを更新
+    uint vertexOffset = meshIndex * maxVerticesPerMesh;
+    uint indexOffset = meshIndex * maxIndicesPerMesh;
+
+    float4 lodInfo = lodBuffer[lodLevel];
+    uint vertexCount = (uint)lodInfo.x;
+    uint indexCount = (uint)lodInfo.y;
+
+    for (uint i = 0; i < vertexCount; i++)
+    {
+        meshData[vertexOffset + i] = vertexBuffer[vertexOffset + i];
+    }
+
+    for (uint i = 0; i < indexCount; i++)
+    {
+        meshData[maxVerticesPerMesh + indexOffset + i] = indexBuffer[maxVerticesPerMesh + indexOffset + i];
+    }
+}
